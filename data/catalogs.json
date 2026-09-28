@@ -70,10 +70,12 @@
       "label": "Cavalerie lourde"
     },
     "ranged_cavalry": {
-      "label": "Unité montée à distance"
+      "label": "Unité montée à distance",
+      "icon": "img/icons/units/barbarian_horse_archer.png"
     },
     "recon": {
-      "label": "Reconnaissance"
+      "label": "Reconnaissance",
+      "icon": "img/icons/units/scout.png"
     },
     "siege": {
       "label": "Siège",
@@ -91,8 +93,8 @@
       "label": "Naval assaut en mer",
       "icon": "img/icons/units/privateer.png"
     },
-    "naval_support": {
-      "label": "Naval soutien"
+    "support": {
+      "label": "Soutien"
     },
     "air_fighter": {
       "label": "Chasseur aérien",
