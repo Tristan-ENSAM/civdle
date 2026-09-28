@@ -24,7 +24,7 @@ These silhouettes take precedence over the ones computed from the BBG
 portraits by ``tools/bbg/make_silhouettes.py``: the ids listed in
 ``mapping.json`` are skipped by that script.
 
-Then ``silhouette`` and ``silhouetteFocus`` are updated in
+Then ``silhouette``, ``silhouetteFocus`` and ``silhouetteSource`` ("game") are updated in
 ``data/leaders.json`` for the imported ids (same focus rule as
 ``tools/bbg/build.py``: a deterministic point on the outline).
 
@@ -86,6 +86,7 @@ def main(src_dir):
         make_silhouette(found[key], ROOT / rel)
         by_id[lid]["silhouette"] = rel
         by_id[lid]["silhouetteFocus"] = silhouette_focus(ROOT / rel, lid)
+        by_id[lid]["silhouetteSource"] = "game"
         done.append(lid)
     leaders_path.write_text(json.dumps(leaders, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(done)} silhouettes written from game textures")

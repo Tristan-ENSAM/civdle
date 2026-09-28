@@ -22,6 +22,8 @@ Outputs
 - ``data/leaders.json`` (overwritten)
 - ``data/catalogs.json`` (overwritten)
 - ``img/portraits/<id>.webp``
+- ``silhouetteSource``: "game" (tools/game/import_textures.py) or "cutout"
+  (make_silhouettes.py), None without silhouette.
 - ``silhouette`` field: ``img/silhouettes/<id>.png`` when it exists (made by
   ``make_silhouettes.py``) and is not listed in ``silhouettes_rejected.json``
 
@@ -222,6 +224,7 @@ def main(bbg_dir, version):
     src = json.loads((Path(__file__).parent / "sources.json").read_text(encoding="utf-8"))
 
     rejected = json.loads((Path(__file__).parent / "silhouettes_rejected.json").read_text(encoding="utf-8"))
+    game_ids = set(json.loads((ROOT / "tools" / "game" / "mapping.json").read_text(encoding="utf-8"))["textures"].values())
     out_dir = ROOT / "img" / "portraits"
     out_dir.mkdir(parents=True, exist_ok=True)
     leaders, used_ids = [], set()
@@ -262,6 +265,9 @@ def main(bbg_dir, version):
         sil = None
         if (ROOT / "img" / "silhouettes" / f"{lid}.png").exists() and lid not in rejected:
             sil = f"img/silhouettes/{lid}.png"
+        # "game": exact outline from the official textures (tools/game);
+        # "cutout": estimated by background removal (make_silhouettes.py).
+        sil_source = None if sil is None else ("game" if lid in game_ids else "cutout")
 
         ext = src["extension"].get(f["leaderKey"])
         if ext is None:
@@ -292,6 +298,7 @@ def main(bbg_dir, version):
             "portrait": portrait,
             "silhouette": sil,
             "silhouetteFocus": silhouette_focus(ROOT / sil, lid) if sil else None,
+            "silhouetteSource": sil_source,
             "descriptions": texts,
             "maskWords": sorted(set(mask_words([name_fr, name_en]) + [civ_en]
                                     + [it["name"] for it in f["items"]])),

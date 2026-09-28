@@ -2,7 +2,8 @@
  * Mode "Silhouette": a black silhouette of the answer, zoomed on one spot;
  * each wrong guess zooms out.
  *
- * Image source: `leader.silhouette`, a cut-out figure on a transparent
+ * Image source: `leader.silhouette`, filtered by `leader.silhouetteSource`
+ * (see SOURCES), a cut-out figure on a transparent
  * background (turned black by CSS). Leaders without one are not drawn in this
  * mode: the raw portraits are round medallions and would all look like discs.
  *
@@ -22,6 +23,11 @@ const ZOOM_START = 5;
 const STEPS = 8;
 const FOCUS_MIN = 30;
 const FOCUS_MAX = 70;
+// Accepted values of `leader.silhouetteSource`: "game" = exact outline from
+// the official textures (tools/game/import_textures.py); "cutout" = estimated
+// by background removal from the BBG medallion (tools/bbg/make_silhouettes.py),
+// which has visible errors on some leaders. Add "cutout" to re-enable them.
+const SOURCES = ["game"];
 
 export function zoomFor(nGuesses, won) {
   if (won) return 1;
@@ -42,8 +48,8 @@ export default {
   label: "Silhouette",
   hint: "Reconnais la silhouette : la vue se dézoome à chaque essai.",
 
-  // Only leaders with a validated cut-out silhouette (see tools/bbg/make_silhouettes.py).
-  eligible: (l) => !!l.silhouette,
+  // Only leaders whose silhouette source is in SOURCES (see the header).
+  eligible: (l) => !!l.silhouette && SOURCES.includes(l.silhouetteSource),
 
   setup(ctx) {
     ctx.els.clue.innerHTML = `<div class="frame silhouette-frame"><img alt="Silhouette mystère" draggable="false"></div>`;
