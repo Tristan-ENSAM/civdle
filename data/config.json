@@ -1,0 +1,47 @@
+{
+  "siteTitle": "Civdle",
+  "timezone": "Europe/Paris",
+  "epoch": "2026-01-01",
+  "salt": "change-me",
+  "eras": [
+    "Ère 1 (test)",
+    "Ère 2 (test)",
+    "Ère 3 (test)",
+    "Ère 4 (test)"
+  ],
+  "classicAttributes": [
+    {
+      "key": "civilization",
+      "label": "Civilisation",
+      "type": "exact"
+    },
+    {
+      "key": "era",
+      "label": "Ère",
+      "type": "ordered",
+      "order": "eras"
+    },
+    {
+      "key": "continent",
+      "label": "Continent",
+      "type": "exact"
+    },
+    {
+      "key": "uniqueDistrict",
+      "label": "Quartier unique",
+      "type": "exact",
+      "catalog": "districts"
+    },
+    {
+      "key": "uniqueUnitClass",
+      "label": "Type d'unité unique",
+      "type": "set",
+      "catalog": "unitClasses"
+    },
+    {
+      "key": "gender",
+      "label": "Genre",
+      "type": "exact"
+    }
+  ]
+}

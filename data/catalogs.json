@@ -1,0 +1,12 @@
+{
+  "districts": {
+    "district_a": { "label": "Quartier A (test)", "icon": "img/icons/test_district_a.svg" },
+    "district_d": { "label": "Quartier D (test)", "icon": "img/icons/test_district_d.svg" },
+    "district_e": { "label": "Quartier E (test)", "icon": "img/icons/test_district_e.svg" }
+  },
+  "unitClasses": {
+    "class_1": { "label": "Classe 1 (test)", "icon": "img/icons/test_class_1.svg" },
+    "class_2": { "label": "Classe 2 (test)", "icon": "img/icons/test_class_2.svg" },
+    "class_3": { "label": "Classe 3 (test)", "icon": "img/icons/test_class_3.svg" }
+  }
+}

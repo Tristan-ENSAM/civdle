@@ -1,0 +1,120 @@
+[
+  {
+    "id": "test_alpha",
+    "name": "Alpha (test)",
+    "aliases": [
+      "alpha"
+    ],
+    "civilization": "Civ A",
+    "era": "Ère 1 (test)",
+    "continent": "Continent X",
+    "uniqueDistrict": "district_a",
+    "uniqueUnitClass": [
+      "class_1"
+    ],
+    "gender": "Homme",
+    "portrait": "img/portraits/test_alpha.svg",
+    "descriptions": [
+      "Alpha a régné sur Civ A pendant de longues années de test.",
+      "Chef fictif créé uniquement pour vérifier le fonctionnement du site."
+    ]
+  },
+  {
+    "id": "test_beta",
+    "name": "Bêta (test)",
+    "aliases": [
+      "beta"
+    ],
+    "civilization": "Civ B",
+    "era": "Ère 2 (test)",
+    "continent": "Continent X",
+    "uniqueDistrict": null,
+    "uniqueUnitClass": [
+      "class_2",
+      "class_3"
+    ],
+    "gender": "Femme",
+    "portrait": "img/portraits/test_beta.svg",
+    "descriptions": [
+      "Bêta a unifié les tribus fictives de Civ B.",
+      "Ses deux unités uniques sont des données de test."
+    ]
+  },
+  {
+    "id": "test_gamma",
+    "name": "Gamma (test)",
+    "aliases": [
+      "gamma"
+    ],
+    "civilization": "Civ A",
+    "era": "Ère 3 (test)",
+    "continent": "Continent Y",
+    "uniqueDistrict": "district_a",
+    "uniqueUnitClass": [
+      "class_1"
+    ],
+    "gender": "Femme",
+    "portrait": "img/portraits/test_gamma.svg",
+    "descriptions": [
+      "Gamma partage sa civilisation avec Alpha (cas de test : deux leaders pour une civ)."
+    ]
+  },
+  {
+    "id": "test_delta",
+    "name": "Delta (test)",
+    "aliases": [],
+    "civilization": "Civ D",
+    "era": "Ère 4 (test)",
+    "continent": "Continent Z",
+    "uniqueDistrict": "district_d",
+    "uniqueUnitClass": [
+      "class_3"
+    ],
+    "gender": "Homme",
+    "portrait": "img/portraits/test_delta.svg",
+    "descriptions": [
+      "Delta est un leader fictif dont l'unité unique recoupe partiellement celle de Bêta."
+    ]
+  },
+  {
+    "id": "test_epsilon",
+    "name": "Epsilon (test)",
+    "aliases": [],
+    "civilization": "Civ E",
+    "era": "Ère 2 (test)",
+    "continent": "Continent Y",
+    "uniqueDistrict": "district_e",
+    "uniqueUnitClass": [
+      "class_2"
+    ],
+    "gender": "Homme",
+    "portrait": "img/portraits/test_epsilon.svg",
+    "descriptions": [
+      "Epsilon (test) n'a qu'un seul extrait de description."
+    ]
+  },
+  {
+    "id": "test_zeta",
+    "name": "Zêta (test)",
+    "aliases": [
+      "zeta"
+    ],
+    "civilization": "Civ F",
+    "era": "Ère 1 (test)",
+    "continent": "Continent Z",
+    "uniqueDistrict": null,
+    "uniqueUnitClass": [
+      "class_1",
+      "class_2"
+    ],
+    "gender": "Femme",
+    "portrait": "img/portraits/test_zeta.svg",
+    "descriptions": [
+      "Zêta est le dernier leader de test.",
+      "Son nom et sa civilisation sont masqués automatiquement dans ce texte : Zêta (test), Civ F."
+    ],
+    "maskWords": [
+      "Zêta"
+    ]
+  }
+]
