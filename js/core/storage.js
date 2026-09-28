@@ -1,7 +1,9 @@
 /**
  * Persistence of each mode's daily progress in localStorage.
  *
- * Key layout: "civdle:<modeId>:<YYYY-MM-DD>" -> { guesses: string[], won: boolean }.
+ * Key layout: "civdle:<modeId>:<YYYY-MM-DD>" -> { guesses: string[], won: boolean,
+ * answerId: string } (answerId lets the game discard a state played against a
+ * different answer, e.g. after a salt change).
  * All accesses are wrapped in try/catch: in private browsing or with blocked
  * storage the game still works, it just forgets progress on reload.
  */
@@ -18,10 +20,10 @@ export function loadState(modeId, dateStr) {
     const raw = localStorage.getItem(key(modeId, dateStr));
     if (raw) {
       const s = JSON.parse(raw);
-      if (Array.isArray(s.guesses)) return { guesses: s.guesses, won: !!s.won };
+      if (Array.isArray(s.guesses)) return { guesses: s.guesses, won: !!s.won, answerId: s.answerId ?? null };
     }
   } catch (_) { /* storage unavailable or corrupted: start fresh */ }
-  return { guesses: [], won: false };
+  return { guesses: [], won: false, answerId: null };
 }
 
 /** Save a mode's state for a date. Silently ignored if storage is unavailable. */

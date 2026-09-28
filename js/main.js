@@ -4,7 +4,7 @@
  * link can point directly to a mode.
  */
 import { loadData } from "./core/data.js";
-import { dateInTimezone } from "./core/daily.js";
+import { dateInTimezone, pickDaily } from "./core/daily.js";
 import { loadState } from "./core/storage.js";
 import { mountMode } from "./core/game.js";
 import modes from "./modes/index.js";
@@ -32,7 +32,9 @@ async function main() {
       const a = document.createElement("a");
       a.href = `#${m.id}`;
       a.className = m.id === currentId ? "active" : "";
-      if (loadState(m.id, dateStr).won) a.classList.add("solved");
+      const st = loadState(m.id, dateStr);
+      const ans = pickDaily(leaders, m.id, dateStr, config, (l) => (m.eligible ? m.eligible(l, config) : true));
+      if (st.won && ans && st.answerId === ans.id) a.classList.add("solved");
       a.textContent = m.label;
       tabs.appendChild(a);
     }

@@ -39,7 +39,10 @@ export function mountMode(mode, env) {
     return;
   }
 
-  const state = loadState(mode.id, dateStr);
+  let state = loadState(mode.id, dateStr);
+  // A stored state only applies to the answer it was played against: if the
+  // daily answer changed (new salt, data update), start over.
+  if (state.answerId !== answer.id) state = { guesses: [], won: false, answerId: answer.id };
   // Drop stored ids that no longer exist in the data.
   state.guesses = state.guesses.filter((id) => byId.has(id));
 
