@@ -25,18 +25,47 @@ Le bouton « Copier le résultat » utilise l'API presse-papiers, qui exige HTTP
 index.html
 css/style.css
 data/config.json        réglages + colonnes du mode Classique
-data/leaders.json       données des leaders (actuellement : 6 leaders FICTIFS de test)
+data/leaders.json       88 leaders (généré, voir « Données »)
 data/catalogs.json      catalogues identifiant -> libellé + icône (quartiers, types d'unités)
-img/portraits/          portraits (actuellement : placeholders de test)
-img/icons/              icônes des catalogues (actuellement : placeholders de test)
+img/portraits/          portraits (générés depuis le site BBG)
+img/icons/              icônes des quartiers et types d'unités
 js/main.js              chargement, onglets, routage (#classic, #portrait…)
 js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage)
 js/modes/               un fichier par mode + index.js (registre)
+tools/bbg/               génération des données depuis BBG + sources.json
 tools/csv2json.py       conversion CSV -> leaders.json
 tools/leaders_template.csv
 ```
 
 ## Données
+
+### Provenance
+
+`data/leaders.json`, `data/catalogs.json` et `img/portraits/` sont **générés** par `tools/bbg/build.py` ; ne pas les éditer à la main (sauf `era`, voir plus bas), les modifications seraient écrasées à la prochaine génération.
+
+| Champ | Source |
+|---|---|
+| leaders, civilisation, textes des descriptions, portraits | Site BBG (dépôt `civ6bbg/civ6bbg.github.io`), `fr_FR/leaders_7.5.html`, `en_US/leaders_7.5.html`, `images/leaders/` |
+| `uniqueUnitClass` | 1re phrase de la description BBG de chaque unité unique (« Unité de cavalerie lourde… »), règles dans `UNIT_CLASS_RULES` |
+| `uniqueDistrict` | quartier de base remplacé, lu dans « remplaçant le … » de la description BBG |
+| `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader |
+| `gender` | Wikidata, propriété P21 |
+| `continent` | champ « Location » des pages civilisation du wiki (Wikidata/Wikipédia pour les civs BBG Expanded) ; le texte source est conservé dans `tools/bbg/sources.json` |
+| `silhouetteFocus` | calculé : point du contour de la silhouette (transparence du portrait) |
+| `era` | **non renseigné** : aucune source ; colonne retirée du mode Classique tant qu'elle est vide |
+
+Le détail (règles, cas interprétés marqués `"interpretation": true`) est dans `tools/bbg/sources.json`.
+
+### Régénérer les données
+
+```
+git clone --depth 1 --filter=blob:none --sparse https://github.com/civ6bbg/civ6bbg.github.io bbg
+git -C bbg sparse-checkout set --no-cone '/fr_FR/leaders_7.5.html' '/en_US/leaders_7.5.html' '/images/leaders/'
+pip install pillow
+python tools/bbg/build.py bbg 7.5
+```
+
+Pour une nouvelle version BBG : remplacer `7.5`, puis compléter `tools/bbg/sources.json` pour les nouveaux leaders (le script signale sur la sortie d'erreur toute valeur manquante ou toute unité/quartier non classé ; il ne devine rien).
 
 ### config.json
 
@@ -44,9 +73,9 @@ tools/leaders_template.csv
 |---|---|
 | `timezone` | Fuseau qui définit « aujourd'hui » pour tous les joueurs (défaut `Europe/Paris`). |
 | `epoch` | Date du jour n° 0 de la séquence. |
-| `salt` | Chaîne quelconque ; la changer rebat toutes les séquences. À changer avant la mise en ligne. |
-| `eras` | Liste ordonnée des ères, utilisée pour les flèches ↑/↓. **Les valeurs actuelles sont des placeholders.** |
-| `classicAttributes` | Colonnes du mode Classique : `key` (champ du leader), `label`, `type`, et facultativement `catalog`. |
+| `salt` | Chaîne quelconque ; la changer rebat toutes les séquences. À changer avant l'annonce du site. |
+| `eras` | Liste ordonnée des ères, pour une colonne de type `ordered` (vide actuellement). |
+| `classicAttributes` | Colonnes du mode Classique : `key` (champ du leader), `label`, `type`, et facultativement `catalog` / `order`. |
 
 Types de comparaison disponibles pour `classicAttributes` :
 
@@ -54,59 +83,39 @@ Types de comparaison disponibles pour `classicAttributes` :
 - `set` : liste de valeurs ; vert si mêmes éléments, orange si au moins un en commun, rouge sinon.
 - `ordered` : la valeur doit figurer dans la liste nommée par `order` (ex. `"order": "eras"`) ; rouge + flèche vers la réponse si différent.
 
-Option `catalog` : les valeurs du leader sont des identifiants, comparés tels quels, et affichés par l'icône correspondante de `catalogs.json` (libellé en infobulle). Sans icône, ou si l'image ne se charge pas, le libellé s'affiche en texte.
+Option `catalog` : les valeurs sont des identifiants, comparés tels quels, affichés par l'icône correspondante de `catalogs.json` (libellé en infobulle ; sans icône, le libellé s'affiche en texte).
 
-Ajouter une colonne = ajouter le champ dans les leaders et une entrée dans `classicAttributes` (plus un catalogue si elle s'affiche en icônes). Aucun code à modifier.
+### Activer la colonne Ère
 
-### catalogs.json
+1. Remplir `era` pour chaque leader dans `data/leaders.json` (attention : écrasé par `build.py` ; reporter ensuite les valeurs dans le script ou `sources.json`).
+2. Mettre la liste ordonnée des ères dans `config.eras`.
+3. Ajouter `{ "key": "era", "label": "Ère", "type": "ordered", "order": "eras" }` dans `classicAttributes`.
 
-```json
-{
-  "districts": {
-    "id_quartier": { "label": "Nom du quartier", "icon": "img/icons/xxx.png" }
-  },
-  "unitClasses": {
-    "cav_lourde": { "label": "Cavalerie lourde", "icon": "img/icons/xxx.png" }
-  }
-}
-```
-
-- `districts` : un identifiant par quartier unique, avec son logo.
-- `unitClasses` : un identifiant par type d'unité, avec le logo de l'unité de base de la catégorie. Le leader référence le type de son ou ses unités uniques, pas l'unité elle-même.
-- Deux leaders sont « identiques » sur une colonne s'ils ont le même identifiant : l'icône n'intervient pas dans la comparaison.
-- Un identifiant utilisé par un leader mais absent du catalogue est signalé dans la console.
-
-### leaders.json
+### Format d'un leader
 
 ```json
 {
-  "id": "identifiant_unique",
-  "name": "Nom affiché",
-  "aliases": ["autres noms acceptés à la saisie"],
-  "civilization": "…",
-  "era": "… (doit figurer dans config.eras)",
-  "continent": "…",
-  "uniqueDistrict": "id du catalogue districts, ou null",
-  "uniqueUnitClass": ["id(s) du catalogue unitClasses"],
-  "gender": "…",
-  "portrait": "img/portraits/xxx.png",
-  "silhouette": "img/silhouettes/xxx.png",
-  "silhouetteFocus": [48, 30],
-  "descriptions": ["extrait 1 (le plus difficile)", "extrait 2", "…"],
-  "maskWords": ["mots supplémentaires à masquer dans les descriptions"]
+  "id": "america-teddy-roosevelt-rough-rider",
+  "name": "Theodore Roosevelt (Rough Rider)",
+  "aliases": ["Teddy Roosevelt", "…"],
+  "civilization": "Amérique",
+  "era": null,
+  "continent": ["Amérique du Nord"],
+  "uniqueDistrict": [],
+  "uniqueUnitClass": ["air_fighter", "heavy_cavalry"],
+  "gender": "Homme",
+  "extension": "Jeu de base",
+  "portrait": "img/portraits/….webp",
+  "silhouetteFocus": [26.6, 89.8],
+  "descriptions": ["capacité du leader", "capacité de la civ", "éléments uniques…"],
+  "maskWords": ["mots masqués dans les descriptions"],
+  "source": { "bbg": "leaders_7.5.html", "civKey": "…", "leaderKey": "…" }
 }
 ```
 
-- Champs facultatifs : `aliases`, `silhouette`, `silhouetteFocus`, `maskWords`.
-- Un leader sans `portrait` est exclu des modes Portrait et Silhouette (sauf s'il a une `silhouette`) ; sans `descriptions`, il est exclu du mode Description. Il reste devinable partout.
-- Les incohérences (id en double, attribut absent, ère inconnue, identifiant absent d'un catalogue) sont signalées dans la console du navigateur au chargement.
-- Recherche à la saisie : insensible à la casse et aux accents, sur `name` et `aliases`.
-
-Depuis un tableur : exporter en CSV avec l'en-tête de `tools/leaders_template.csv` (listes séparées par `|`, `silhouetteFocus` au format `x;y`), puis :
-
-```
-python tools/csv2json.py leaders.csv data/leaders.json
-```
+- Recherche à la saisie : insensible à la casse et aux accents, sur `name` et `aliases` (noms anglais inclus).
+- Les incohérences (id en double, attribut absent, identifiant absent d'un catalogue) sont signalées dans la console du navigateur.
+- `tools/csv2json.py` reste disponible pour saisir des leaders à la main depuis un tableur.
 
 ## Fonctionnement du tirage quotidien
 
@@ -151,7 +160,7 @@ Le moteur (`js/core/game.js`) gère le reste : leader du jour, saisie, historiqu
 Valeurs par défaut arbitraires, en tête de fichier :
 
 - `js/modes/portrait.js` : `BLUR_START = 24` (px), `STEPS = 8` (flou nul après 8 essais).
-- `js/modes/silhouette.js` : `ZOOM_START = 6`, `STEPS = 8`, zone du point de zoom aléatoire `30–70 %`.
+- `js/modes/silhouette.js` : `ZOOM_START = 5`, `STEPS = 8` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues
 
@@ -159,4 +168,4 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - **Silhouette** : l'image doit avoir un fond transparent, sinon tout le cadre devient noir. Sans `silhouetteFocus`, le point de zoom aléatoire peut tomber dans le vide au début.
 - **Masquage des descriptions** : insensible à la casse mais pas aux accents (« Zeta » ne masque pas « Zêta ») ; ajouter les variantes dans `aliases` ou `maskWords`.
 - **Progression** : stockée dans le `localStorage` du navigateur, donc propre à chaque appareil.
-- **Droits** : les portraits et textes officiels du jeu appartiennent à leurs ayants droit.
+- **Droits** : les portraits (issus du site BBG) et les textes du jeu appartiennent à leurs ayants droit.

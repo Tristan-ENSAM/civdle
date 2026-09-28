@@ -3,12 +3,7 @@
   "timezone": "Europe/Paris",
   "epoch": "2026-01-01",
   "salt": "change-me",
-  "eras": [
-    "Ère 1 (test)",
-    "Ère 2 (test)",
-    "Ère 3 (test)",
-    "Ère 4 (test)"
-  ],
+  "eras": [],
   "classicAttributes": [
     {
       "key": "civilization",
@@ -16,20 +11,14 @@
       "type": "exact"
     },
     {
-      "key": "era",
-      "label": "Ère",
-      "type": "ordered",
-      "order": "eras"
-    },
-    {
       "key": "continent",
       "label": "Continent",
-      "type": "exact"
+      "type": "set"
     },
     {
       "key": "uniqueDistrict",
       "label": "Quartier unique",
-      "type": "exact",
+      "type": "set",
       "catalog": "districts"
     },
     {
@@ -41,6 +30,11 @@
     {
       "key": "gender",
       "label": "Genre",
+      "type": "exact"
+    },
+    {
+      "key": "extension",
+      "label": "Extension",
       "type": "exact"
     }
   ]

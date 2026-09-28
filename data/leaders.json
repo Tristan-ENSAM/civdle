@@ -1,120 +1,3697 @@
 [
   {
-    "id": "test_alpha",
-    "name": "Alpha (test)",
-    "aliases": [
-      "alpha"
-    ],
-    "civilization": "Civ A",
-    "era": "Ère 1 (test)",
-    "continent": "Continent X",
-    "uniqueDistrict": "district_a",
-    "uniqueUnitClass": [
-      "class_1"
-    ],
-    "gender": "Homme",
-    "portrait": "img/portraits/test_alpha.svg",
-    "descriptions": [
-      "Alpha a régné sur Civ A pendant de longues années de test.",
-      "Chef fictif créé uniquement pour vérifier le fonctionnement du site."
-    ]
-  },
-  {
-    "id": "test_beta",
-    "name": "Bêta (test)",
-    "aliases": [
-      "beta"
-    ],
-    "civilization": "Civ B",
-    "era": "Ère 2 (test)",
-    "continent": "Continent X",
-    "uniqueDistrict": null,
-    "uniqueUnitClass": [
-      "class_2",
-      "class_3"
-    ],
-    "gender": "Femme",
-    "portrait": "img/portraits/test_beta.svg",
-    "descriptions": [
-      "Bêta a unifié les tribus fictives de Civ B.",
-      "Ses deux unités uniques sont des données de test."
-    ]
-  },
-  {
-    "id": "test_gamma",
-    "name": "Gamma (test)",
-    "aliases": [
-      "gamma"
-    ],
-    "civilization": "Civ A",
-    "era": "Ère 3 (test)",
-    "continent": "Continent Y",
-    "uniqueDistrict": "district_a",
-    "uniqueUnitClass": [
-      "class_1"
-    ],
-    "gender": "Femme",
-    "portrait": "img/portraits/test_gamma.svg",
-    "descriptions": [
-      "Gamma partage sa civilisation avec Alpha (cas de test : deux leaders pour une civ)."
-    ]
-  },
-  {
-    "id": "test_delta",
-    "name": "Delta (test)",
+    "id": "america-abraham-lincoln",
+    "name": "Abraham Lincoln",
     "aliases": [],
-    "civilization": "Civ D",
-    "era": "Ère 4 (test)",
-    "continent": "Continent Z",
-    "uniqueDistrict": "district_d",
+    "civilization": "Amérique",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
     "uniqueUnitClass": [
-      "class_3"
+      "air_fighter"
     ],
     "gender": "Homme",
-    "portrait": "img/portraits/test_delta.svg",
-    "descriptions": [
-      "Delta est un leader fictif dont l'unité unique recoupe partiellement celle de Bêta."
-    ]
-  },
-  {
-    "id": "test_epsilon",
-    "name": "Epsilon (test)",
-    "aliases": [],
-    "civilization": "Civ E",
-    "era": "Ère 2 (test)",
-    "continent": "Continent Y",
-    "uniqueDistrict": "district_e",
-    "uniqueUnitClass": [
-      "class_2"
+    "extension": "Great Negotiators Pack",
+    "portrait": "img/portraits/america-abraham-lincoln.webp",
+    "silhouetteFocus": [
+      13.3,
+      26.2
     ],
-    "gender": "Homme",
-    "portrait": "img/portraits/test_epsilon.svg",
     "descriptions": [
-      "Epsilon (test) n'a qu'un seul extrait de description."
-    ]
-  },
-  {
-    "id": "test_zeta",
-    "name": "Zêta (test)",
-    "aliases": [
-      "zeta"
-    ],
-    "civilization": "Civ F",
-    "era": "Ère 1 (test)",
-    "continent": "Continent Z",
-    "uniqueDistrict": null,
-    "uniqueUnitClass": [
-      "class_1",
-      "class_2"
-    ],
-    "gender": "Femme",
-    "portrait": "img/portraits/test_zeta.svg",
-    "descriptions": [
-      "Zêta est le dernier leader de test.",
-      "Son nom et sa civilisation sont masqués automatiquement dans ce texte : Zêta (test), Civ F."
+      "Production +100% pour la construction de Zones industrielles et d'Aqueducs.\n Activités +2 et Loyauté +3 pour les Zones industrielles, et Culture +2 pour leurs bâtiments.\nAchever une Zone industrielle ou l'un de ses bâtiments octroie une unité de combat rapproché gratuite, dont la création et l'entretien ne nécessitent pas de ressources.\n\nLoyauté -2 par tour pour chaque plantation.",
+      "Les emplacements de cartes Diplomatiques sont convertis en emplacements de cartes Joker.\n Faveurs diplomatiques +1 pour chaque emplacement de doctrine Joker.\n\nBias : T4 Montagnes (plaine et de prairie).",
+      "Bâtiment exclusif à l'Amérique, remplaçant le centre de diffusion.\n\n Tourisme de la ville +30% vers les autres civilisations, à partir de l'ère moderne.",
+      "Unité de chasseur aérien de l'ère atomique exclusive à l'Amérique, remplaçant le Chasseur.\n\n Portée d'attaque +2. Puissance de combat +5 contre les chasseurs. Expérience de combat +50 %.\n\nDébloqué par Vol avancé Technologie"
     ],
     "maskWords": [
-      "Zêta"
-    ]
+      "Abraham",
+      "America",
+      "Lincoln",
+      "P-51 Mustang",
+      "Studio de cinéma"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_AMERICA_NAME",
+      "leaderKey": "LOC_LEADER_ABRAHAM_LINCOLN_NAME"
+    }
+  },
+  {
+    "id": "america-teddy-roosevelt-bull-moose",
+    "name": "Theodore Roosevelt (Élan)",
+    "aliases": [
+      "Teddy Roosevelt",
+      "Teddy Roosevelt (Bull Moose)",
+      "Theodore Roosevelt"
+    ],
+    "civilization": "Amérique",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "air_fighter"
+    ],
+    "gender": "Homme",
+    "extension": "Teddy Roosevelt Persona Pack",
+    "portrait": "img/portraits/america-teddy-roosevelt-bull-moose.webp",
+    "silhouetteFocus": [
+      60.2,
+      5.5
+    ],
+    "descriptions": [
+      "Au Code Juridique, les cases à l'Attrait époustouflant fournissent des rendements supplémentaires :\n • Science +1 si adjacentes à une case de merveille naturelle ou de montagne (passe à +2 à l'Astronomie).\n • Culture +1 si adjacentes à une case de merveille mondiale ou de bois (passe à +2 aux Lumières).\n\nLes Foires Médiévales permettent de planter des bois.",
+      "Les emplacements de cartes Diplomatiques sont convertis en emplacements de cartes Joker.\n Faveurs diplomatiques +1 pour chaque emplacement de doctrine Joker.\n\nBias : T4 Montagnes (plaine et de prairie).",
+      "Bâtiment exclusif à l'Amérique, remplaçant le centre de diffusion.\n\n Tourisme de la ville +30% vers les autres civilisations, à partir de l'ère moderne.",
+      "Unité de chasseur aérien de l'ère atomique exclusive à l'Amérique, remplaçant le Chasseur.\n\n Portée d'attaque +2. Puissance de combat +5 contre les chasseurs. Expérience de combat +50 %.\n\nDébloqué par Vol avancé Technologie"
+    ],
+    "maskWords": [
+      "America",
+      "P-51 Mustang",
+      "Roosevelt",
+      "Studio de cinéma",
+      "Teddy",
+      "Theodore"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_AMERICA_NAME",
+      "leaderKey": "LOC_LEADER_T_ROOSEVELT_ORIGINAL_NAME"
+    }
+  },
+  {
+    "id": "america-teddy-roosevelt-rough-rider",
+    "name": "Theodore Roosevelt (Rough Rider)",
+    "aliases": [
+      "Teddy Roosevelt",
+      "Teddy Roosevelt (Rough Rider)",
+      "Theodore Roosevelt"
+    ],
+    "civilization": "Amérique",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "air_fighter",
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/america-teddy-roosevelt-rough-rider.webp",
+    "silhouetteFocus": [
+      26.6,
+      89.8
+    ],
+    "descriptions": [
+      "Puissance de combat +1 pour chaque ère franchie (dont l'ère antique) dans les arbres technologique ou dogmatique (+5 max à l'ère industrielle).\n\nLes émissaires envoyés dans une Cité-état avec laquelle vous échangez une route commerciale comptent pour deux.",
+      "Les emplacements de cartes Diplomatiques sont convertis en emplacements de cartes Joker.\n Faveurs diplomatiques +1 pour chaque emplacement de doctrine Joker.\n\nBias : T4 Montagnes (plaine et de prairie).",
+      "Bâtiment exclusif à l'Amérique, remplaçant le centre de diffusion.\n\n Tourisme de la ville +30% vers les autres civilisations, à partir de l'ère moderne.",
+      "Unité de chasseur aérien de l'ère atomique exclusive à l'Amérique, remplaçant le Chasseur.\n\n Portée d'attaque +2. Puissance de combat +5 contre les chasseurs. Expérience de combat +50 %.\n\nDébloqué par Vol avancé Technologie",
+      "Unité de cavalerie lourde de l'ère industrielle exclusive à Theodore Roosevelt (Rough Rider), remplaçant le Cuirassier.\n\n PM +1 et coût d'entretien réduit.\n Puissance de combat +5 lorsque le combat se déroule sur une case de collines.\n\nTuer une unité rapporte 25% de sa Puissance de combat de base en Culture (vitesse en ligne).\n\nDébloqué par Balistique Technologie"
+    ],
+    "maskWords": [
+      "America",
+      "P-51 Mustang",
+      "Roosevelt",
+      "Rough Rider",
+      "Studio de cinéma",
+      "Teddy",
+      "Theodore"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_AMERICA_NAME",
+      "leaderKey": "LOC_LEADER_T_ROOSEVELT_ROUGHRIDER_NAME"
+    }
+  },
+  {
+    "id": "arabia-saladin-vizier",
+    "name": "Saladin (vizir)",
+    "aliases": [
+      "Saladin",
+      "Saladin (Vizier)"
+    ],
+    "civilization": "Arabie",
+    "era": null,
+    "continent": [
+      "Asie",
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/arabia-saladin-vizier.webp",
+    "silhouetteFocus": [
+      30.9,
+      91.4
+    ],
+    "descriptions": [
+      "Le lieu de culte de votre religion peut être acheté par n'importe quel joueur pour 10% de son coût normal en Foi. Ce bâtiment augmente de 5% la Science, la Culture et la Foi générées par la ville (+5% à l'Église Réformée et +5% quand votre religion est terminée).",
+      "À l'Astrologie, points de Prophète illustre +1.\nLe dernier Prophète illustre est automatiquement recruté, si vous n'en avez pas déjà eu.\n\n Science +1 pour chaque ville étrangère suivant votre religion.\n\nCampus : Science +1 par Lieu saint adjacent.\nLieux saints : Foi +1 par Campus adjacent.",
+      "Bâtiment exclusif à l'Arabie, remplaçant l'université.\n\nFournit un montant de Foi égal au bonus de proximité du Campus.",
+      "Unité de cavalerie lourde de l'ère médiévale exclusive à l'Arabie, remplaçant le Chevalier.\n\nSe soigne toujours en fin de tour, même après un déplacement ou un combat.\n\nDébloqué par Étriers Technologie"
+    ],
+    "maskWords": [
+      "Arabia",
+      "Mamelouk",
+      "Médersa",
+      "Saladin"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ARABIA_NAME",
+      "leaderKey": "LOC_LEADER_SALADIN_ORIGINAL_NAME"
+    }
+  },
+  {
+    "id": "arabia-saladin-sultan",
+    "name": "Saladin (sultan)",
+    "aliases": [
+      "Saladin",
+      "Saladin (Sultan)"
+    ],
+    "civilization": "Arabie",
+    "era": null,
+    "continent": [
+      "Asie",
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Great Negotiators Pack",
+    "portrait": "img/portraits/arabia-saladin-sultan.webp",
+    "silhouetteFocus": [
+      53.9,
+      96.9
+    ],
+    "descriptions": [
+      "Puissance de combat +5 pour les unités militaires se trouvant dans un rayon de 2 cases autour d'un Apôtre.\n\nPeut acheter les bâtiments du Campement et du Campus avec de la Foi, 10% moins cher.",
+      "À l'Astrologie, points de Prophète illustre +1.\nLe dernier Prophète illustre est automatiquement recruté, si vous n'en avez pas déjà eu.\n\n Science +1 pour chaque ville étrangère suivant votre religion.\n\nCampus : Science +1 par Lieu saint adjacent.\nLieux saints : Foi +1 par Campus adjacent.",
+      "Bâtiment exclusif à l'Arabie, remplaçant l'université.\n\nFournit un montant de Foi égal au bonus de proximité du Campus.",
+      "Unité de cavalerie lourde de l'ère médiévale exclusive à l'Arabie, remplaçant le Chevalier.\n\nSe soigne toujours en fin de tour, même après un déplacement ou un combat.\n\nDébloqué par Étriers Technologie"
+    ],
+    "maskWords": [
+      "Arabia",
+      "Mamelouk",
+      "Médersa",
+      "Saladin"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ARABIA_NAME",
+      "leaderKey": "LOC_LEADER_SALADIN_ALT_NAME"
+    }
+  },
+  {
+    "id": "australia-john-curtin",
+    "name": "John Curtin",
+    "aliases": [],
+    "civilization": "Australie",
+    "era": null,
+    "continent": [
+      "Océanie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Australia Civilization & Scenario Pack",
+    "portrait": "img/portraits/australia-john-curtin.webp",
+    "silhouetteFocus": [
+      95.3,
+      41.4
+    ],
+    "descriptions": [
+      "Production +50% pendant 10 tours après avoir libéré une ville.",
+      "Bonus de proximité +1 pour les Plateformes commerciales, les Campus, les Places du théâtre et les Lieux saints placés sur une case à l'Attrait charmant (passe à +3 si l'Attrait est époustouflant).\nAu Premier Empire, Activités +1 pour les Centres-villes placés sur une case à l'Attrait charmant (passe à +2 si l'Attrait est époustouflant).\n Habitations +3 pour les villes côtières.\n\nLes pâturages déclenchent une bombe culturelle et gagnent +1 Production à la Philosophie Politique.\n\nBias : T1 Côte / T4 Chevaux, Moutons, Bétail / -T2 Plaines inondables / -T4 Forêts tropicales / Spécial : \"I am Salty\".",
+      "Aménagement exclusif à l'Australie, débloqué aux Guildes.\n\n Nourriture +1, Production +1 et Habitations +0.5.\n Nourriture +1 pour chaque pâturage adjacent.\n Nourriture +1 tous les deux élevages de l'Outback adjacents au Déploiement Rapide.\n Production +1 tous les deux élevages de l'Outback adjacents à l'Industrialisation.\n\n Production +1 pour les pâturages pour chaque élevage de l'Outback adjacent à l'Industrialisation.\nAttrait +1 pour les cases adjacentes.\n\nNe peut être construit que sur une case de prairie, de plaine ou de désert.",
+      "Unité de combat rapproché de l'ère moderne exclusive à l'Australie, remplaçant l'Infanterie.\n\n Puissance de base +3. Puissance de combat +10 sur les cases côtières. Puissance de combat +5 en territoire neutre ou étranger.\n\nDébloqué par Raffinage Technologie"
+    ],
+    "maskWords": [
+      "Australia",
+      "Curtin",
+      "Digger",
+      "John",
+      "Élevage de l'Outback"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_AUSTRALIA_NAME",
+      "leaderKey": "LOC_LEADER_JOHN_CURTIN_NAME"
+    }
+  },
+  {
+    "id": "aztec-montezuma",
+    "name": "Moctezuma",
+    "aliases": [
+      "Montezuma"
+    ],
+    "civilization": "Aztèques",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/aztec-montezuma.webp",
+    "silhouetteFocus": [
+      8.6,
+      68.8
+    ],
+    "descriptions": [
+      "Chaque ressource de luxe différente aménagée en territoire aztèque octroie de l'Activité à deux villes supplémentaires, ainsi que +1 Puissance de combat en attaque aux unités militaires terrestres et navales. Ces deux bonus fonctionnent avec Colæos.",
+      "Les Bâtisseurs et les Ingénieurs militaires peuvent dépenser une charge pour compléter 30% du coût en Production d'un quartier.\n\n Production +50% pour les unités militaires terrestres de combat rapproché.",
+      "Bâtiment exclusif aux Aztèques, remplaçant l'arena.\n\n Culture +1 et Activités +1 pour les Centres-villes dans un rayon de 6 cases ne profitant pas déjà d'un terrain de Tlachtli. Tourisme +3.",
+      "Unité de combat rapproché de l'ère antique exclusive aux Aztèques, remplaçant le Guerrier.\n\n Puissance de base +8.\n\nTuer une unité a une chance de faire apparaître un Bâtisseur."
+    ],
+    "maskWords": [
+      "Aztec",
+      "Guerrier aigle",
+      "Moctezuma",
+      "Montezuma",
+      "Terrain de Tlachtli"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_AZTEC_NAME",
+      "leaderKey": "LOC_LEADER_MONTEZUMA_NAME"
+    }
+  },
+  {
+    "id": "babylon-hammurabi",
+    "name": "Hammurabi",
+    "aliases": [],
+    "civilization": "Babylone",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Babylon Pack",
+    "portrait": "img/portraits/babylon-hammurabi.webp",
+    "silhouetteFocus": [
+      6.6,
+      36.7
+    ],
+    "descriptions": [
+      "Lorsqu'un quartier spécialisé (à l'exception de la Place de la gouvernance) est achevé pour la première fois dans votre Empire, le bâtiment au coût de Production le plus bas y est immédiatement construit.",
+      "Achever une bibliothèque octroie un Eurêka.\n\nBias : T3 Rivières.",
+      "Bâtiment exclusif à Babylone, remplaçant le moulin.\n\n Production +2.\n\n Nourriture +1 pour les cases aménagées en eau douce (excepté les fermes). Production +1 pour les fermes.",
+      "Unité de combat rapproché de l'ère antique exclusive à Babylone.\n\nChamps de vision de 3 cases. Puissance de combat +17 contre les unités de cavalerie lourde et légère."
+    ],
+    "maskWords": [
+      "Babylon",
+      "Hammurabi",
+      "Palgum",
+      "Sâbum kibittum"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_BABYLON_STK_NAME",
+      "leaderKey": "LOC_LEADER_HAMMURABI_NAME"
+    }
+  },
+  {
+    "id": "brazil-pedro-ii",
+    "name": "Pierre II du Brésil",
+    "aliases": [
+      "Pedro II"
+    ],
+    "civilization": "Brésil",
+    "era": null,
+    "continent": [
+      "Amérique du Sud"
+    ],
+    "uniqueDistrict": [
+      "entertainment_complex",
+      "water_entertainment_complex"
+    ],
+    "uniqueUnitClass": [
+      "naval_ranged"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/brazil-pedro-ii.webp",
+    "silhouetteFocus": [
+      29.3,
+      90.6
+    ],
+    "descriptions": [
+      "Après avoir recruté ou financé un Personnage illustre, 20% des points dépensés vous sont restitués.",
+      "Les cases de forêt tropicale :\n • Fournissent +1 de bonus de proximité aux Plateformes commerciales, Campus, Places du théâtre et Lieux saints adjacents.\n • Appliquent un Attrait de +1 aux cases adjacentes, au lieu de -1.\n • Non aménagées, fournissent +1 Production à la Construction.\n\nBias : T2 Forêts tropicales.",
+      "Quartier exclusif au Brésil, remplaçant le Complexe de loisirs.\n\n Activités +2.\n\nPermet de lancer un projet unique, qui octroie +1 Activités quand il est en cours ainsi que des points d'Ingénieur illustre, de Marchand illustre, d'Écrivain illustre, d'Artiste illustre et de Musicien illustre.\n\nNe compte pas dans la limitation de quartiers en fonction du nombre de Citoyens.\n\nNe peut pas être construit dans une ville possédant déjà un Copacabana.",
+      "Quartier exclusif au Brésil, remplaçant le Parc aquatique.\n\n Activités +2.\n\nPermet de lancer un projet unique, qui octroie +1 Activités quand il est en cours ainsi que des points d'Ingénieur illustre, de Marchand illustre, d'Écrivain illustre, d'Artiste illustre et de Musicien illustre.\n\nNe compte pas dans la limitation de quartiers en fonction du nombre de Citoyens.\n\nNe peut pas être construit dans une ville possédant déjà un Carnaval de rue.",
+      "Unité navale de combat à distance de l'ère industrielle exclusive au Brésil, remplaçant le Cuirassé.\n\n Puissance de base de combat rapproché et à distance -5. Puissance de combat rapproché et à distance +10 à Raffinage.\n\nDébloqué par Nationalisme Dogme"
+    ],
+    "maskWords": [
+      "Brazil",
+      "Brésil",
+      "Carnaval de rue",
+      "Copacabana",
+      "Minas Geraes",
+      "Pedro",
+      "Pierre"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_BRAZIL_NAME",
+      "leaderKey": "LOC_LEADER_PEDRO_NAME"
+    }
+  },
+  {
+    "id": "byzantium-basil-ii",
+    "name": "Basile II",
+    "aliases": [
+      "Basil II"
+    ],
+    "civilization": "Byzance",
+    "era": null,
+    "continent": [
+      "Europe",
+      "Asie"
+    ],
+    "uniqueDistrict": [
+      "entertainment_complex"
+    ],
+    "uniqueUnitClass": [
+      "naval_ranged",
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Byzantium & Gaul Pack",
+    "portrait": "img/portraits/byzantium-basil-ii.webp",
+    "silhouetteFocus": [
+      35.2,
+      93.4
+    ],
+    "descriptions": [
+      "Les unités de cavalerie lourdes et légères font 100% de dégâts aux villes où votre religion est majoritaire.",
+      "Puissance de combat +2 et Puissance religieuse +3 pour les unités pour chaque ville sainte convertie à votre religion (y compris la vôtre).\n\nTuer une unité (d'une civilisation ou d'une Cité-état) propage votre religion aux villes proches.\n\nLes Lieux saints octroient +1 point de Prophète illustre.",
+      "Quartier exclusif à Byzance, remplaçant le Complexe de loisirs.\n\nAchever ses bâtiments octroie l'unité de cavalerie lourde la plus puissante débloquée.",
+      "Unité navale de combat à distance de l'ère classique exclusive à Byzance, remplaçant la Quadrirème.\n\n Puissance de base +5. Portée +1.\n\nDébloqué par Construction navale Technologie",
+      "Unité de cavalerie lourde de l'ère médiévale exclusive à Basile II, remplaçant le Chevalier.\n\n Puissance de combat ou religieuse +2 pour les unités dans un rayon d'une case.\n\nDébloqué par Droit divin Dogme"
+    ],
+    "maskWords": [
+      "Basil",
+      "Basile",
+      "Byzantium",
+      "Dromon",
+      "Hippodrome",
+      "Tagma"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_BYZANTIUM_NAME",
+      "leaderKey": "LOC_LEADER_BASIL_NAME"
+    }
+  },
+  {
+    "id": "byzantium-theodora",
+    "name": "Théodora",
+    "aliases": [
+      "Theodora"
+    ],
+    "civilization": "Byzance",
+    "era": null,
+    "continent": [
+      "Europe",
+      "Asie"
+    ],
+    "uniqueDistrict": [
+      "entertainment_complex"
+    ],
+    "uniqueUnitClass": [
+      "naval_ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Great Builders Pack",
+    "portrait": "img/portraits/byzantium-theodora.webp",
+    "silhouetteFocus": [
+      78.1,
+      88.3
+    ],
+    "descriptions": [
+      "Les Hippodromes et les Lieux saints fournissent +1 Foi par ferme adjacente.\n\nLes Lieux saints fournissent +1 Culture pour chaque quartier adjacent à la Philosophie Politique.",
+      "Puissance de combat +2 et Puissance religieuse +3 pour les unités pour chaque ville sainte convertie à votre religion (y compris la vôtre).\n\nTuer une unité (d'une civilisation ou d'une Cité-état) propage votre religion aux villes proches.\n\nLes Lieux saints octroient +1 point de Prophète illustre.",
+      "Quartier exclusif à Byzance, remplaçant le Complexe de loisirs.\n\nAchever ses bâtiments octroie l'unité de cavalerie lourde la plus puissante débloquée.",
+      "Unité navale de combat à distance de l'ère classique exclusive à Byzance, remplaçant la Quadrirème.\n\n Puissance de base +5. Portée +1.\n\nDébloqué par Construction navale Technologie"
+    ],
+    "maskWords": [
+      "Byzantium",
+      "Dromon",
+      "Hippodrome",
+      "Theodora",
+      "Théodora"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_BYZANTIUM_NAME",
+      "leaderKey": "LOC_LEADER_THEODORA_NAME"
+    }
+  },
+  {
+    "id": "canada-wilfrid-laurier",
+    "name": "Wilfrid Laurier",
+    "aliases": [],
+    "civilization": "Canada",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "light_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/canada-wilfrid-laurier.webp",
+    "silhouetteFocus": [
+      22.7,
+      85.9
+    ],
+    "descriptions": [
+      "Nourriture +1 pour les Centres-villes sur une case de toundra. Peut aménager des fermes sur les cases de toundra.\n\nSur les cases de neige et de toundra :\n • Nourriture +2 pour les camps et les fermes.\n • Nourriture +1 pour les pâturages.\n • Production +2 pour les mines et les scieries.\n • Taux d'accumulation de ressources stratégiques doublé.\n • Coût d'achat de ce type de cases réduit de 50%.",
+      "Impossible de déclarer ou de subir une guerre surprise, ni de déclarer la guerre aux Cités-états.\n\n Faveurs diplomatiques +1 tous les 100 de Tourisme.\n Faveurs diplomatiques des urgences et compétitions +100%.",
+      "Aménagement exclusif au Canada, débloqué au Service Diplomatique.\n\n Activités +1.\n Nourriture +2 et Production +2 au Sport Professionnel.\n Culture +1 pour chaque case de toundra et de neige adjacente.\n Culture +4 si adjacent à un stade.\n\nAttrait +2 pour les cases adjacentes.\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nPeut être construit sur une case de toundra ou de neige. Un par ville.",
+      "Unité de cavalerie légère de l'ère moderne exclusive au Canada.\n\n Puissance de combat +5 dans un rayon de 4 cases autour d'un parc national (passe à +10 s'il vous appartient).\nPeut créer un parc national.\n\nDébloqué par Conservation Dogme"
+    ],
+    "maskWords": [
+      "Canada",
+      "Laurier",
+      "Patinoire",
+      "Police montée",
+      "Wilfrid"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CANADA_NAME",
+      "leaderKey": "LOC_LEADER_LAURIER_NAME"
+    }
+  },
+  {
+    "id": "china-kublai-khan-china",
+    "name": "Kubilai Khan (Chine)",
+    "aliases": [
+      "Kubilai Khan",
+      "Kublai Khan",
+      "Kublai Khan (China)"
+    ],
+    "civilization": "Chine",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Homme",
+    "extension": "Vietnam & Kublai Khan Pack",
+    "portrait": "img/portraits/china-kublai-khan-china.webp",
+    "silhouetteFocus": [
+      61.7,
+      94.5
+    ],
+    "descriptions": [
+      "Tous les gouvernements ont un emplacement de doctrine Économique supplémentaire.\n\n Science +1 et Culture +1 pour les routes commerciales internationales (+1 supplémentaire toutes les 25 cases franchies).\nDéclenche un Eurêka et une Inspiration aléatoires lors de l'ouverture du premier comptoir commercial dans une ville d'une autre civilisation.\n\nChine uniquement : Culture +1 pour les cases de Grande Muraille adjacentes à une autre case de Grande Muraille.",
+      "Les Eurêka et les Inspirations fournissent 5% supplémentaires vers l'obtention des technologies et des dogmes.",
+      "Aménagement exclusif à la Chine, débloqué à la Maçonnerie.\n\n Production +1.\n Or +1 pour chaque case de Grande Muraille adjacente.\n Culture +1 pour chaque case de Grande Muraille adjacente aux Châteaux.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\n Puissance de combat en défense +4, Vision +1 et retranchement instantané.\n\nDoit être construite sur une ligne longeant la frontière de votre Empire. Peut uniquement être pillée, mais jamais détruite par les catastrophes naturelles.",
+      "Unité de combat à distance de l'ère médiévale exclusive à la Chine, remplaçant l'Arbalétrier.\n\n Puissance d'attaque à distance +7 en cas d'attaque sur une unité adjacente.\n\nDébloqué par Mécanique Technologie"
+    ],
+    "maskWords": [
+      "China",
+      "Grande Muraille",
+      "Kubilai",
+      "Kublai",
+      "Tigre accroupi"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CHINA_NAME",
+      "leaderKey": "LOC_LEADER_KUBLAI_KHAN_C_NAME"
+    }
+  },
+  {
+    "id": "china-qin-mandate-of-heaven",
+    "name": "Qin (Mandat du Ciel)",
+    "aliases": [
+      "Qin",
+      "Qin (Mandate of Heaven)"
+    ],
+    "civilization": "Chine",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/china-qin-mandate-of-heaven.webp",
+    "silhouetteFocus": [
+      57.4,
+      1.6
+    ],
+    "descriptions": [
+      "Charges +1 pour les Bâtisseurs. Vous pouvez dépenser une charge de Bâtisseur pour compléter 15% du coût de Production d'une merveille des ères antique ou classique.\n\n Nourriture +1 pour les villes pour chaque merveille mondiale construite.\nChaque fois que vous achevez une merveille, vous obtenez un Eurêka et une Inspiration aléatoires de l'ère de la merveille.\n\nLes Canaux sont débloqués à la Maçonnerie.\n\n Or +1 et Foi +1 pour les cases de Grande Muraille adjacentes à une autre case de Grande Muraille.",
+      "Les Eurêka et les Inspirations fournissent 5% supplémentaires vers l'obtention des technologies et des dogmes.",
+      "Aménagement exclusif à la Chine, débloqué à la Maçonnerie.\n\n Production +1.\n Or +1 pour chaque case de Grande Muraille adjacente.\n Culture +1 pour chaque case de Grande Muraille adjacente aux Châteaux.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\n Puissance de combat en défense +4, Vision +1 et retranchement instantané.\n\nDoit être construite sur une ligne longeant la frontière de votre Empire. Peut uniquement être pillée, mais jamais détruite par les catastrophes naturelles.",
+      "Unité de combat à distance de l'ère médiévale exclusive à la Chine, remplaçant l'Arbalétrier.\n\n Puissance d'attaque à distance +7 en cas d'attaque sur une unité adjacente.\n\nDébloqué par Mécanique Technologie"
+    ],
+    "maskWords": [
+      "China",
+      "Grande Muraille",
+      "Qin",
+      "Tigre accroupi"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CHINA_NAME",
+      "leaderKey": "LOC_LEADER_QIN_ORIGINAL_NAME"
+    }
+  },
+  {
+    "id": "china-qin-unifier",
+    "name": "Qin (unificateur)",
+    "aliases": [
+      "Qin",
+      "Qin (Unifier)"
+    ],
+    "civilization": "Chine",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Homme",
+    "extension": "Rulers of China Pack",
+    "portrait": "img/portraits/china-qin-unifier.webp",
+    "silhouetteFocus": [
+      78.1,
+      88.7
+    ],
+    "descriptions": [
+      "Production +50% pour la construction des bâtiments du Campement. Points d'Écrivain illustre +1 pour les Campements. Les casernes et les écuries ont 2 emplacements de chefs-d'oeuvre littéraires.\n Nourriture +1 pour les chefs-d'œuvre littéraires.\n\nRecruter un Général illustre ou un Écrivain illustre octroie un Eurêka et une Inspiration aléatoires.\n\nLes unités de combat rapproché peuvent convertir les barbares adjacents, mais disparaissent dans l'action.\n\n Production +1 pour les cases de Grande Muraille adjacentes à une autre case de Grande Muraille.",
+      "Les Eurêka et les Inspirations fournissent 5% supplémentaires vers l'obtention des technologies et des dogmes.",
+      "Aménagement exclusif à la Chine, débloqué à la Maçonnerie.\n\n Production +1.\n Or +1 pour chaque case de Grande Muraille adjacente.\n Culture +1 pour chaque case de Grande Muraille adjacente aux Châteaux.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\n Puissance de combat en défense +4, Vision +1 et retranchement instantané.\n\nDoit être construite sur une ligne longeant la frontière de votre Empire. Peut uniquement être pillée, mais jamais détruite par les catastrophes naturelles.",
+      "Unité de combat à distance de l'ère médiévale exclusive à la Chine, remplaçant l'Arbalétrier.\n\n Puissance d'attaque à distance +7 en cas d'attaque sur une unité adjacente.\n\nDébloqué par Mécanique Technologie"
+    ],
+    "maskWords": [
+      "China",
+      "Grande Muraille",
+      "Qin",
+      "Tigre accroupi"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CHINA_NAME",
+      "leaderKey": "LOC_LEADER_QIN_ALT_NAME"
+    }
+  },
+  {
+    "id": "china-wu-zetian",
+    "name": "Wu Zetian",
+    "aliases": [],
+    "civilization": "Chine",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Rulers of China Pack",
+    "portrait": "img/portraits/china-wu-zetian.webp",
+    "silhouetteFocus": [
+      27.0,
+      89.5
+    ],
+    "descriptions": [
+      "Les espions offensifs bénéficient virtuellement d'un niveau de plus. Lorsqu'un espion offensif réussit sa mission, vous gagnez 100% de la Science, de la Culture et de la Foi générées lors de ce tour dans la ville cible.\n\nVous recevez un espion gratuit et votre nombre maximum d'espions augmente de 1 à la Fonction Publique. Les Espions peuvent être achetés contre de la Foi.\n\n Puissance de combat +3 pour les unités militaires terrestres se trouvant dans un rayon de 3 cases autour d'une unité de reconnaissance.\n\nAchever un bâtiment de la Place de la gouvernance et du Quartier diplomatique octroie un Eurêka et une Inspiration aléatoires.\n\n Science +1 pour les cases de Grande Muraille adjacentes à une autre case de Grande Muraille.",
+      "Les Eurêka et les Inspirations fournissent 5% supplémentaires vers l'obtention des technologies et des dogmes.",
+      "Aménagement exclusif à la Chine, débloqué à la Maçonnerie.\n\n Production +1.\n Or +1 pour chaque case de Grande Muraille adjacente.\n Culture +1 pour chaque case de Grande Muraille adjacente aux Châteaux.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\n Puissance de combat en défense +4, Vision +1 et retranchement instantané.\n\nDoit être construite sur une ligne longeant la frontière de votre Empire. Peut uniquement être pillée, mais jamais détruite par les catastrophes naturelles.",
+      "Unité de combat à distance de l'ère médiévale exclusive à la Chine, remplaçant l'Arbalétrier.\n\n Puissance d'attaque à distance +7 en cas d'attaque sur une unité adjacente.\n\nDébloqué par Mécanique Technologie"
+    ],
+    "maskWords": [
+      "China",
+      "Grande Muraille",
+      "Tigre accroupi",
+      "Zetian"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CHINA_NAME",
+      "leaderKey": "LOC_LEADER_WU_ZETIAN_NAME"
+    }
+  },
+  {
+    "id": "china-yongle",
+    "name": "Ming Yongle",
+    "aliases": [
+      "Yongle"
+    ],
+    "civilization": "Chine",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Homme",
+    "extension": "Rulers of China Pack",
+    "portrait": "img/portraits/china-yongle.webp",
+    "silhouetteFocus": [
+      36.7,
+      93.8
+    ],
+    "descriptions": [
+      "Vos villes peuvent lancer 3 projets uniques qui permettent de convertir 70% de la Production en Nourriture ou en Foi, ou 150% en Or.\n\n Or +0.5, Science +0.7 et Culture +0.5 par Citoyens dans les villes avec 10 Citoyens ou plus.\n\nChaque fois qu'une ville atteint 13 Citoyens, vous obtenez un Eurêka aléatoire. Chaque fois qu'une ville atteint 18 Citoyens, vous obtenez une Inspiration aléatoire.\n\n Nourriture +1 pour les cases de Grande Muraille adjacentes à une autre case de Grande Muraille.",
+      "Les Eurêka et les Inspirations fournissent 5% supplémentaires vers l'obtention des technologies et des dogmes.",
+      "Aménagement exclusif à la Chine, débloqué à la Maçonnerie.\n\n Production +1.\n Or +1 pour chaque case de Grande Muraille adjacente.\n Culture +1 pour chaque case de Grande Muraille adjacente aux Châteaux.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\n Puissance de combat en défense +4, Vision +1 et retranchement instantané.\n\nDoit être construite sur une ligne longeant la frontière de votre Empire. Peut uniquement être pillée, mais jamais détruite par les catastrophes naturelles.",
+      "Unité de combat à distance de l'ère médiévale exclusive à la Chine, remplaçant l'Arbalétrier.\n\n Puissance d'attaque à distance +7 en cas d'attaque sur une unité adjacente.\n\nDébloqué par Mécanique Technologie"
+    ],
+    "maskWords": [
+      "China",
+      "Grande Muraille",
+      "Ming",
+      "Tigre accroupi",
+      "Yongle"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CHINA_NAME",
+      "leaderKey": "LOC_LEADER_YONGLE_NAME"
+    }
+  },
+  {
+    "id": "cree-poundmaker",
+    "name": "Poundmaker",
+    "aliases": [],
+    "civilization": "Cris",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "recon"
+    ],
+    "gender": "Homme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/cree-poundmaker.webp",
+    "silhouetteFocus": [
+      87.5,
+      23.0
+    ],
+    "descriptions": [
+      "Vos routes commerciales sortantes fournissent +1 Nourriture pour chaque case de camp ou de pâturage appartenant à la ville d'arrivée (dans un rayon de 3 cases). Les routes commerciales entrantes octroient à vos villes +1 Or pour chaque case de camp ou de pâturage appartenant à la ville d'arrivée (dans un rayon de 3 cases).\n\nLes alliances vous offrent une visibilité commune.",
+      "Capacité de routes commerciales +1 à la Poterie.\n\nLes villes cries rentrent en possession des cases neutres traversées par un Négociant (dans à un rayon de 3 cases autour de la ville).\n\nBias : T4 Cerfs, Bétail, Chevaux, Moutons.",
+      "Aménagement exclusif aux Cris, débloqué à la Poterie.\n\n Production +1 et Habitations +1.\n Nourriture +1 toutes les 2 cases de ressource bonus adjacentes (pour chaque case de ressource bonus adjacente à la Conservation).\n Production +1 et Habitations +1 à la Fonction Publique.\n Or +1 si adjacent à une case de ressource de luxe.\n Or +2 par case de ressource de luxe adjacente à la Cartographie.\n\nDoit être placé adjacent à une case de ressource bonus ou de luxe. Deux mekewaps ne peuvent pas être adjacents.",
+      "Unité de reconnaissance de l'ère antique exclusive aux Cris, remplaçant l'Éclaireur.\n\n Puissance de base +5. Puissance de combat +5 contre les unités militaires plus puissantes.\nDispose d'une promotion gratuite."
+    ],
+    "maskWords": [
+      "Cree",
+      "Mekewāp",
+      "Okichitaw",
+      "Poundmaker"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CREE_NAME",
+      "leaderKey": "LOC_LEADER_POUNDMAKER_NAME"
+    }
+  },
+  {
+    "id": "taino-anacaona",
+    "name": "Anacaona",
+    "aliases": [],
+    "civilization": "Taïno",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [
+      "entertainment_complex"
+    ],
+    "uniqueUnitClass": [
+      "recon"
+    ],
+    "gender": "Femme",
+    "extension": "BBG Expanded 7.5",
+    "portrait": "img/portraits/taino-anacaona.webp",
+    "silhouetteFocus": [
+      7.3,
+      38.6
+    ],
+    "descriptions": [
+      "À la Philosophie Politique, chaque engagement d'ère choisi octroie un emplacement de doctrine différent :\n • doctrine Militaire :\n -Tambours de guerre\n -Aux armes !\n -Guerre automatisée\n\n • doctrine Économique :\n -Libre pensée\n -Réforme de la monnaie\n -Le ciel et les étoiles\n\n • doctrine Diplomatique :\n -Le stylo, le pinceau et la voix\n -Hic Sunt Dracones\n -Gardien des mensonges\n\n • doctrine Joker :\n -Monumentalité\n -Le cœur de la vapeur\n -Vacances de rêve\n\n Or +5% pour les villes heureuses (passe à +10% pour les villes en liesse et +15% pour les villes euphoriques).",
+      "Les doctrines qui octroient des points de Personnage illustre fournissent +2 Nourriture aux villes possédant le quartier correspondant et +1 Nourriture par bâtiment dans ce quartier.\n\n Activités +1 dans les villes possédant un Batey par doctrine Diplomatique dans le gouvernement.",
+      "Quartier exclusif aux Taïnos, remplaçant le Complexe de loisirs.\n\nEn plus des bonus du Complexe de loisirs, Production +2 et Or +3 pour chaque Plateforme commerciale adjacente, ainsi que Production +4 et Or +6 pour chaque Port adjacent.\n\nL'arena possède 2 emplacements de chefs-d'œuvre littéraires.\n\nPermet de lancer un projet unique, qui fournit 30% de la Production en Foi chaque tour, et octroie des points d'Écrivain illustre, d'Artiste illustre et de Musicien illustre à sa complétion. Génère 20% de points d'Écrivain illustre supplémentaires qu'un projet à la Place de théâtre.",
+      "Aménagement exclusif aux Taïnos.\n\n Culture +1.\n Culture +1 aux Foires Médiévales.\n Culture +1 à l'Histoire Naturelle.\n Or +2 pour chaque ressource bonus ou de luxe adjacente au Mercantilisme.\n\nSi adjacent à une case de ressource de luxe ou bonus :\n • Plaine : Nourriture +1 et Production +1.\n • Pairie : Nourriture +2.\n • Toundra : Nourriture +1.\n\nDoit être placé sur une case de plaine, de pairie ou de toundra, adjacente à une ressource bonus ou de luxe. Ne peut pas être aménagé adjacent à un autre Conuco.",
+      "Unité unique de reconnaissance de l'ère antique exclusive aux Taïnos, remplaçant le Guerrier.\n\n PM +1 et Vision +1.\n Puissance de base -5. Puissance de combat +5 contre les unités militaires plus puissantes.\n\nGarde ses promotions de reconnaissance à l'amélioration.\n\nTuer une unité rapporte 50% de sa Puissance de combat de base en Foi (vitesse en ligne)."
+    ],
+    "maskWords": [
+      "Anacaona",
+      "Batey",
+      "Conuco",
+      "Macana",
+      "Taíno"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_CVS_TAINO_NAME",
+      "leaderKey": "LOC_LEADER_CVS_ANACAONA_NAME"
+    }
+  },
+  {
+    "id": "egypt-cleopatra-egyptian",
+    "name": "Cléopâtre (Égyptienne)",
+    "aliases": [
+      "Cleopatra",
+      "Cleopatra (Egyptian)",
+      "Cléopâtre"
+    ],
+    "civilization": "Égypte",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged_cavalry"
+    ],
+    "gender": "Femme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/egypt-cleopatra-egyptian.webp",
+    "silhouetteFocus": [
+      7.8,
+      33.2
+    ],
+    "descriptions": [
+      "Production +15% pour la construction de Plateformes commerciales et de Places du théâtre pour les villes fondées sur une rivière.\n\n Or +6 pour vos routes commerciales internationales. Les routes commerciales internationales étrangères menant à vos villes fournissent +1 Nourriture à la ville de départ et +2 Or à la ville d'arrivée.\nÉchanger avec des alliés génère deux fois plus de points d'alliance.",
+      "Production +15% pour la construction de quartiers et de merveilles adjacents à une rivière.\n\nNe subit aucun dégât d'inondation.\n\nBias : T2 Plaines et prairies inondables / T5 Rivières, Désert inondable.",
+      "Aménagement exclusif à l'Égypte, débloqué à l'Artisanat.\n\n Culture +1 et Foi +2.\n Nourriture +1 et Production +1 si construit sur une case de désert.\n Nourriture +1 si construit sur une case de plaines.\n Production +1 si construit sur une case de prairie.\n Culture +1 si construit sur une case de plaines inondables.\n Culture +1 au Service Diplomatique.\n Culture +1 et Foi +1 si adjacent à une merveille mondiale.\n\nAttrait +2 pour les cases adjacentes.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nNe peut pas être construit sur une case de neige. Deux sphinx ne peuvent pas être adjacents.",
+      "Unité montée d'attaque à distance de l'ère antique exclusive à l'Égypte.\n\nDispose de 4 PM quand elle commence son tour sur une case sans caractéristique de terrain.\n\nDébloqué par Maçonnerie Technologie"
+    ],
+    "maskWords": [
+      "Archer sur char Maryannu",
+      "Cleopatra",
+      "Cléopâtre",
+      "Egypt",
+      "Sphinx"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_EGYPT_NAME",
+      "leaderKey": "LOC_LEADER_CLEOPATRA_ORIGINAL_NAME"
+    }
+  },
+  {
+    "id": "egypt-cleopatra-ptolemaic",
+    "name": "Cléopâtre (Ptolémaïque)",
+    "aliases": [
+      "Cleopatra",
+      "Cleopatra (Ptolemaic)",
+      "Cléopâtre"
+    ],
+    "civilization": "Égypte",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged_cavalry"
+    ],
+    "gender": "Femme",
+    "extension": "Rulers of the Sahara Pack",
+    "portrait": "img/portraits/egypt-cleopatra-ptolemaic.webp",
+    "silhouetteFocus": [
+      56.6,
+      2.3
+    ],
+    "descriptions": [
+      "Production +15% pour la construction de Campements et de Campus pour les villes fondées sur une rivière.\nBonus de proximité +2 en Science pour les Campements et les Campus adjacents à une rivière.\n\nÀ partir de l'ère classique, les rivières n'infligent plus de pénalité de Puissance de combat et de PM aux unités militaires.",
+      "Production +15% pour la construction de quartiers et de merveilles adjacents à une rivière.\n\nNe subit aucun dégât d'inondation.\n\nBias : T2 Plaines et prairies inondables / T5 Rivières, Désert inondable.",
+      "Aménagement exclusif à l'Égypte, débloqué à l'Artisanat.\n\n Culture +1 et Foi +2.\n Nourriture +1 et Production +1 si construit sur une case de désert.\n Nourriture +1 si construit sur une case de plaines.\n Production +1 si construit sur une case de prairie.\n Culture +1 si construit sur une case de plaines inondables.\n Culture +1 au Service Diplomatique.\n Culture +1 et Foi +1 si adjacent à une merveille mondiale.\n\nAttrait +2 pour les cases adjacentes.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nNe peut pas être construit sur une case de neige. Deux sphinx ne peuvent pas être adjacents.",
+      "Unité montée d'attaque à distance de l'ère antique exclusive à l'Égypte.\n\nDispose de 4 PM quand elle commence son tour sur une case sans caractéristique de terrain.\n\nDébloqué par Maçonnerie Technologie"
+    ],
+    "maskWords": [
+      "Archer sur char Maryannu",
+      "Cleopatra",
+      "Cléopâtre",
+      "Egypt",
+      "Sphinx"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_EGYPT_NAME",
+      "leaderKey": "LOC_LEADER_CLEOPATRA_ALT_NAME"
+    }
+  },
+  {
+    "id": "egypt-ramses-ii",
+    "name": "Ramsès II",
+    "aliases": [
+      "Ramses II"
+    ],
+    "civilization": "Égypte",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Rulers of the Sahara Pack",
+    "portrait": "img/portraits/egypt-ramses-ii.webp",
+    "silhouetteFocus": [
+      34.8,
+      7.8
+    ],
+    "descriptions": [
+      "Production +15% pour la construction de Zones industrielles et de Lieux saints pour les villes fondées sur une rivière.\n Production +1 pour les Lieux saints adjacents à une rivière.\n\nAchever un bâtiment rapporte 10% de son coût en Production en Culture (passe à 20% si la ville possède une merveille mondiale).\nAchever une merveille mondiale rapporte 25% de son coût en Production en Culture.",
+      "Production +15% pour la construction de quartiers et de merveilles adjacents à une rivière.\n\nNe subit aucun dégât d'inondation.\n\nBias : T2 Plaines et prairies inondables / T5 Rivières, Désert inondable.",
+      "Aménagement exclusif à l'Égypte, débloqué à l'Artisanat.\n\n Culture +1 et Foi +2.\n Nourriture +1 et Production +1 si construit sur une case de désert.\n Nourriture +1 si construit sur une case de plaines.\n Production +1 si construit sur une case de prairie.\n Culture +1 si construit sur une case de plaines inondables.\n Culture +1 au Service Diplomatique.\n Culture +1 et Foi +1 si adjacent à une merveille mondiale.\n\nAttrait +2 pour les cases adjacentes.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nNe peut pas être construit sur une case de neige. Deux sphinx ne peuvent pas être adjacents.",
+      "Unité montée d'attaque à distance de l'ère antique exclusive à l'Égypte.\n\nDispose de 4 PM quand elle commence son tour sur une case sans caractéristique de terrain.\n\nDébloqué par Maçonnerie Technologie"
+    ],
+    "maskWords": [
+      "Archer sur char Maryannu",
+      "Egypt",
+      "Ramses",
+      "Ramsès",
+      "Sphinx"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_EGYPT_NAME",
+      "leaderKey": "LOC_LEADER_RAMSES_NAME"
+    }
+  },
+  {
+    "id": "england-eleanor-of-aquitaine-england",
+    "name": "Aliénor d'Aquitaine (Angleterre)",
+    "aliases": [
+      "Aliénor d'Aquitaine",
+      "Eleanor of Aquitaine",
+      "Eleanor of Aquitaine (England)"
+    ],
+    "civilization": "Angleterre",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "harbor"
+    ],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/england-eleanor-of-aquitaine-england.webp",
+    "silhouetteFocus": [
+      14.1,
+      77.7
+    ],
+    "descriptions": [
+      "Production +100% pour la construction des bâtiments de la Place du théâtre.\n\nLes chefs-d'œuvre fournissent des rendements supplémentaires en fonction :\n • de leur type :\n - littéraires et reliques : +1.\n - artistiques et artéfacts : +2.\n - musicaux : +4.\n • des quartiers présents dans la ville :\n - Nourriture pour un Quartier résidentiel.\n - Production pour une Zone industrielle.\n - Or pour un Port et/ou une Plateforme commerciale.\n - Science pour un Campus.\n - Culture pour une Place du théâtre.\n - Foi pour un Lieu saint.\n\nLe bonus de suzerain d'Anshan ne peut pas être utilisé par Aliénor.\n\nLoyauté -1 par tour dans les villes étrangères pour chaque chef-d'œuvre présent dans l'une des villes d'Aliénor, dans un rayon de 9 cases. Une ville qui devient libre sous l'influence d'Aliénor rejoint celle-ci directement.\n\nAliénor France uniquement : Production +20% pour les merveilles mondiales des ères antique et classique.",
+      "Les mines de Fer et de Charbon fournissent 2 unités supplémentaires par tour. Stocks de ressources stratégiques +10 grâce aux bâtiments du Port (vitesse en ligne).\n\n Production +100% et charges +2 pour les ingénieurs militaires.\nRendements +3 pour les bâtiments alimentés en électricité.\n\nBias : T1 Côte / T5 Fer, Charbon.",
+      "Quartier exclusif à l'Angleterre, remplaçant le Port.\n\nBonus de proximité +2 et loyauté +4 par tour en cas de construction sur un continent étranger.\n PM +1 pour les unités navales.",
+      "Unité de combat à distance de l'ère médiévale exclusive à l'Angleterre, remplaçant l'Arbalétrier.\n\n Puissance de combat +4 si adjacent à un autre Longbowman.\n\nDébloqué par Foires médiévales Dogme"
+    ],
+    "maskWords": [
+      "Aliénor",
+      "Aquitaine",
+      "Eleanor",
+      "England",
+      "Longbowman",
+      "Port militaire de la Royal Navy"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
+      "leaderKey": "LOC_LEADER_ELEANOR_NAME"
+    }
+  },
+  {
+    "id": "england-elizabeth-i",
+    "name": "Élisabeth Ire",
+    "aliases": [
+      "Elizabeth I"
+    ],
+    "civilization": "Angleterre",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "harbor"
+    ],
+    "uniqueUnitClass": [
+      "ranged",
+      "naval_raider"
+    ],
+    "gender": "Femme",
+    "extension": "Rulers of England Pack",
+    "portrait": "img/portraits/england-elizabeth-i.webp",
+    "silhouetteFocus": [
+      6.2,
+      63.7
+    ],
+    "descriptions": [
+      "Capacité de routes commerciales +1 à la Construction Navale, à l'Exploration et le Mercantilisme. Vos routes commerciales menant à une Cité-état fournissent +3 Or pour chaque quartier spécialisé dans la ville d'origine.\n\n Or +100% pour le pillage de routes commerciales avec les unités navales.\n PM +1 et Vision +1 pour les unités navales d'assaut en mer. La promotion d'une unité navale d'assaut en mer ne met pas fin à son tour.",
+      "Les mines de Fer et de Charbon fournissent 2 unités supplémentaires par tour. Stocks de ressources stratégiques +10 grâce aux bâtiments du Port (vitesse en ligne).\n\n Production +100% et charges +2 pour les ingénieurs militaires.\nRendements +3 pour les bâtiments alimentés en électricité.\n\nBias : T1 Côte / T5 Fer, Charbon.",
+      "Quartier exclusif à l'Angleterre, remplaçant le Port.\n\nBonus de proximité +2 et loyauté +4 par tour en cas de construction sur un continent étranger.\n PM +1 pour les unités navales.",
+      "Unité de combat à distance de l'ère médiévale exclusive à l'Angleterre, remplaçant l'Arbalétrier.\n\n Puissance de combat +4 si adjacent à un autre Longbowman.\n\nDébloqué par Foires médiévales Dogme",
+      "Unité navale d'assaut en mer de la Renaissance exclusive à Élisabeth, remplaçant le Corsaire.\n\n Puissance de base +3.\nTuer une unité navale offre une chance de la capturer.\nNe peut être vue que par d'autres unités navales d'assaut en mer à moins de lui être adjacent. Révèle les unités d'assaut en mer dans son champ de vision.\n\nDébloqué par Exploration Dogme"
+    ],
+    "maskWords": [
+      "Chien de mer",
+      "Elizabeth",
+      "England",
+      "Longbowman",
+      "Port militaire de la Royal Navy",
+      "Élisabeth"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
+      "leaderKey": "LOC_LEADER_ELIZABETH_NAME"
+    }
+  },
+  {
+    "id": "england-victoria-age-of-empire",
+    "name": "Victoria (ère impériale)",
+    "aliases": [
+      "Victoria",
+      "Victoria (Age of Empire)"
+    ],
+    "civilization": "Angleterre",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "harbor"
+    ],
+    "uniqueUnitClass": [
+      "ranged",
+      "melee"
+    ],
+    "gender": "Femme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/england-victoria-age-of-empire.webp",
+    "silhouetteFocus": [
+      74.6,
+      7.8
+    ],
+    "descriptions": [
+      "Les unités navales de combat rapproché font profiter de leur vitesse de déplacement à leur escorte.\n\nAchever un Port de la Royal Navy octroie l'unité navale la plus puissante débloquée.\nFonder ou annexer une ville à 10 cases ou plus de votre Capitale octroie l'unité de combat rapproché la plus puissante débloquée.\n\nPoints d'Amiral illustre +1 pour les phares.",
+      "Les mines de Fer et de Charbon fournissent 2 unités supplémentaires par tour. Stocks de ressources stratégiques +10 grâce aux bâtiments du Port (vitesse en ligne).\n\n Production +100% et charges +2 pour les ingénieurs militaires.\nRendements +3 pour les bâtiments alimentés en électricité.\n\nBias : T1 Côte / T5 Fer, Charbon.",
+      "Quartier exclusif à l'Angleterre, remplaçant le Port.\n\nBonus de proximité +2 et loyauté +4 par tour en cas de construction sur un continent étranger.\n PM +1 pour les unités navales.",
+      "Unité de combat à distance de l'ère médiévale exclusive à l'Angleterre, remplaçant l'Arbalétrier.\n\n Puissance de combat +4 si adjacent à un autre Longbowman.\n\nDébloqué par Foires médiévales Dogme",
+      "Unité de combat rapproché de l'ère industrielle exclusive à Victoria (ère impériale), remplaçant l'Infanterie de ligne.\n\n Puissance de base +5. Puissance de combat +5 sur un continent autre que celui de votre Capitale.\nPas de pénalité de PM et de Puissance de combat lors d'un débarquement.\n\nDébloqué par Science militaire Technologie"
+    ],
+    "maskWords": [
+      "England",
+      "Longbowman",
+      "Port militaire de la Royal Navy",
+      "Tunique rouge",
+      "Victoria"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
+      "leaderKey": "LOC_LEADER_VICTORIA_ORIGINAL_NAME"
+    }
+  },
+  {
+    "id": "england-victoria-age-of-steam",
+    "name": "Victoria (ère de la vapeur)",
+    "aliases": [
+      "Victoria",
+      "Victoria (Age of Steam)"
+    ],
+    "civilization": "Angleterre",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "harbor"
+    ],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Rulers of England Pack",
+    "portrait": "img/portraits/england-victoria-age-of-steam.webp",
+    "silhouetteFocus": [
+      18.0,
+      18.4
+    ],
+    "descriptions": [
+      "Production +20% pour la construction des bâtiments de la Zone industrielle.\n Production +5% dans les villes pour chaque usine et centrale dans la Zone industrielle.\nLes Zones industrielles fournissent +1 Production pour chaque Port de la Royal Navy adjacent.\n\nPoints d'Ingénieur illustre +1 pour les phares.\n Production +1 pour toutes les ressources stratégiques aménagées.",
+      "Les mines de Fer et de Charbon fournissent 2 unités supplémentaires par tour. Stocks de ressources stratégiques +10 grâce aux bâtiments du Port (vitesse en ligne).\n\n Production +100% et charges +2 pour les ingénieurs militaires.\nRendements +3 pour les bâtiments alimentés en électricité.\n\nBias : T1 Côte / T5 Fer, Charbon.",
+      "Quartier exclusif à l'Angleterre, remplaçant le Port.\n\nBonus de proximité +2 et loyauté +4 par tour en cas de construction sur un continent étranger.\n PM +1 pour les unités navales.",
+      "Unité de combat à distance de l'ère médiévale exclusive à l'Angleterre, remplaçant l'Arbalétrier.\n\n Puissance de combat +4 si adjacent à un autre Longbowman.\n\nDébloqué par Foires médiévales Dogme"
+    ],
+    "maskWords": [
+      "England",
+      "Longbowman",
+      "Port militaire de la Royal Navy",
+      "Victoria"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
+      "leaderKey": "LOC_LEADER_VICTORIA_ALT_NAME"
+    }
+  },
+  {
+    "id": "ethiopia-menelik-ii",
+    "name": "Menelik II",
+    "aliases": [],
+    "civilization": "Éthiopie",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "light_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Ethiopia Pack",
+    "portrait": "img/portraits/ethiopia-menelik-ii.webp",
+    "silhouetteFocus": [
+      74.2,
+      11.3
+    ],
+    "descriptions": [
+      "Les villes fondées sur une case de collines ou une ressource fournissent 10% de la Foi générée en Science et Culture.",
+      "Les routes commerciales internationales fournissent +0.5 Foi par ressource dans la ville d'origine.\n Foi +1 pour les ressources aménagées à la Philosophie Politique.\n\nPeut acheter des musées archéologiques et des archéologues avec de la Foi.\n\nBias : T3 Collines (de plaine et de prairie).",
+      "Aménagement exclusif à l'Éthiopie, débloqué à la Dramaturgie et Poésie.\n\n Foi +1 pour chaque case de collines ou de montagnes adjacente.\n\nAttrait +1 pour les cases adjacentes.\n\nGénère du Tourisme par le biais de la Foi à l'Aviation.\n\nNe peut pas être détruite par les catastrophes naturelles. Ne peut être construite que sur une colline ou un sol volcanique. Deux églises rupestres ne peuvent pas être adjacentes",
+      "Unité de cavalerie légère de l'ère médiévale exclusive à l'Éthiopie, remplaçant le Coursier.\n\n Puissance de base +2 et Champ de vision +1. Puissance de combat +4 lorsque le combat se déroule sur une case de collines. \n PM +1 quand elle commence son tour sur une case de collines.\n\nDébloqué par Châteaux Technologie"
+    ],
+    "maskWords": [
+      "Cavalerie oromo",
+      "Ethiopia",
+      "Menelik",
+      "Église rupestre"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ETHIOPIA_NAME",
+      "leaderKey": "LOC_LEADER_MENELIK_NAME"
+    }
+  },
+  {
+    "id": "france-catherine-de-medici-black-queen",
+    "name": "Catherine de Médicis (reine noire)",
+    "aliases": [
+      "Catherine de Medici",
+      "Catherine de Medici (Black Queen)",
+      "Catherine de Médicis"
+    ],
+    "civilization": "France",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Femme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/france-catherine-de-medici-black-queen.webp",
+    "silhouetteFocus": [
+      5.1,
+      43.0
+    ],
+    "descriptions": [
+      "Vous disposez d'un niveau de visibilité diplomatique supplémentaire avec les civilisations rencontrées.",
+      "Tous les espions commencent avec une promotion gratuite.\nAux Châteaux, vous recevez un Espion et la capacité d'en former augmente de 1.\n\n Production +20% pour la construction de merveilles des ères médiévale, de la Renaissance et industrielles.\n Tourisme +50% pour les merveilles mondiales.\n\nBias : T4 Rivières.",
+      "Aménagement exclusif à la France, débloqué à la Féodalité.\n Nourriture +1, Or +1, Culture +1 et Habitations +1.\n Or +2 si placé sur une rivière.\n Or +1 et Culture +1 pour chaque case de ressource de luxe adjacente.\n Culture +1 pour chaque merveille adjacente (passe à +2 à l'Aviation).\nAttrait +1 pour les cases adjacentes.\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nDeux castels ne peuvent pas être adjacents.",
+      "Unité de combat rapproché de l'ère industrielle exclusive à la France, remplaçant l'Infanterie de ligne.\n\n Puissance de base +5.\n Puissance de combat +5 sur le continent de sa Capitale.\n\nTuer une unité octroie 10 points de Général illustre.\n\nDébloqué par Science militaire Technologie"
+    ],
+    "maskWords": [
+      "Castel",
+      "Catherine",
+      "France",
+      "Garde impérial",
+      "Medici",
+      "Médicis"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_FRANCE_NAME",
+      "leaderKey": "LOC_LEADER_CATHERINE_DE_MEDICI_EXPANDED_NAME"
+    }
+  },
+  {
+    "id": "france-catherine-de-medici-magnificence",
+    "name": "Catherine de Médicis (splendeur)",
+    "aliases": [
+      "Catherine de Medici",
+      "Catherine de Medici (Magnificence)",
+      "Catherine de Médicis"
+    ],
+    "civilization": "France",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Femme",
+    "extension": "Catherine de Medici Persona Pack",
+    "portrait": "img/portraits/france-catherine-de-medici-magnificence.webp",
+    "silhouetteFocus": [
+      74.6,
+      10.2
+    ],
+    "descriptions": [
+      "Les cases de ressource aménagées fournissent des rendements supplémentaires :\n • Culture +1 à l'Artisanat.\n • Culture +1 si adjacentes à une Place de théâtre.\n • Activités +1 si adjacentes à un castel (ressource de luxe uniquement).\n\nPour les villes heureuses :\n • Culture +5%.\n • Points d'Écrivain illustre +1 pour les Places du théâtre.\nPour les villes en liesse :\n • Culture +10%.\n • +1 points d'Écrivain illustre et d'Artiste illustre pour les Places du théâtre.\nPour les villes euphoriques :\n • Culture +15%.\n • +1 points d'Écrivain illustre, d'Artiste illustre et de Musicien illustre pour les Places du théâtre.\n\nLa Place du théâtre permet de lancer un projet unique.",
+      "Tous les espions commencent avec une promotion gratuite.\nAux Châteaux, vous recevez un Espion et la capacité d'en former augmente de 1.\n\n Production +20% pour la construction de merveilles des ères médiévale, de la Renaissance et industrielles.\n Tourisme +50% pour les merveilles mondiales.\n\nBias : T4 Rivières.",
+      "Aménagement exclusif à la France, débloqué à la Féodalité.\n Nourriture +1, Or +1, Culture +1 et Habitations +1.\n Or +2 si placé sur une rivière.\n Or +1 et Culture +1 pour chaque case de ressource de luxe adjacente.\n Culture +1 pour chaque merveille adjacente (passe à +2 à l'Aviation).\nAttrait +1 pour les cases adjacentes.\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nDeux castels ne peuvent pas être adjacents.",
+      "Unité de combat rapproché de l'ère industrielle exclusive à la France, remplaçant l'Infanterie de ligne.\n\n Puissance de base +5.\n Puissance de combat +5 sur le continent de sa Capitale.\n\nTuer une unité octroie 10 points de Général illustre.\n\nDébloqué par Science militaire Technologie"
+    ],
+    "maskWords": [
+      "Castel",
+      "Catherine",
+      "France",
+      "Garde impérial",
+      "Medici",
+      "Médicis"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_FRANCE_NAME",
+      "leaderKey": "LOC_LEADER_CATHERINE_DE_MEDICI_ALT_NAME"
+    }
+  },
+  {
+    "id": "france-eleanor-of-aquitaine-france",
+    "name": "Aliénor d'Aquitaine (France)",
+    "aliases": [
+      "Aliénor d'Aquitaine",
+      "Eleanor of Aquitaine",
+      "Eleanor of Aquitaine (France)"
+    ],
+    "civilization": "France",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Femme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/france-eleanor-of-aquitaine-france.webp",
+    "silhouetteFocus": [
+      91.0,
+      69.9
+    ],
+    "descriptions": [
+      "Production +100% pour la construction des bâtiments de la Place du théâtre.\n\nLes chefs-d'œuvre fournissent des rendements supplémentaires en fonction :\n • de leur type :\n - littéraires et reliques : +1.\n - artistiques et artéfacts : +2.\n - musicaux : +4.\n • des quartiers présents dans la ville :\n - Nourriture pour un Quartier résidentiel.\n - Production pour une Zone industrielle.\n - Or pour un Port et/ou une Plateforme commerciale.\n - Science pour un Campus.\n - Culture pour une Place du théâtre.\n - Foi pour un Lieu saint.\n\nLe bonus de suzerain d'Anshan ne peut pas être utilisé par Aliénor.\n\nLoyauté -1 par tour dans les villes étrangères pour chaque chef-d'œuvre présent dans l'une des villes d'Aliénor, dans un rayon de 9 cases. Une ville qui devient libre sous l'influence d'Aliénor rejoint celle-ci directement.\n\nAliénor France uniquement : Production +20% pour les merveilles mondiales des ères antique et classique.",
+      "Tous les espions commencent avec une promotion gratuite.\nAux Châteaux, vous recevez un Espion et la capacité d'en former augmente de 1.\n\n Production +20% pour la construction de merveilles des ères médiévale, de la Renaissance et industrielles.\n Tourisme +50% pour les merveilles mondiales.\n\nBias : T4 Rivières.",
+      "Aménagement exclusif à la France, débloqué à la Féodalité.\n Nourriture +1, Or +1, Culture +1 et Habitations +1.\n Or +2 si placé sur une rivière.\n Or +1 et Culture +1 pour chaque case de ressource de luxe adjacente.\n Culture +1 pour chaque merveille adjacente (passe à +2 à l'Aviation).\nAttrait +1 pour les cases adjacentes.\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nDeux castels ne peuvent pas être adjacents.",
+      "Unité de combat rapproché de l'ère industrielle exclusive à la France, remplaçant l'Infanterie de ligne.\n\n Puissance de base +5.\n Puissance de combat +5 sur le continent de sa Capitale.\n\nTuer une unité octroie 10 points de Général illustre.\n\nDébloqué par Science militaire Technologie"
+    ],
+    "maskWords": [
+      "Aliénor",
+      "Aquitaine",
+      "Castel",
+      "Eleanor",
+      "France",
+      "Garde impérial"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_FRANCE_NAME",
+      "leaderKey": "LOC_LEADER_ELEANOR_FRANCE_NAME"
+    }
+  },
+  {
+    "id": "gaul-ambiorix",
+    "name": "Ambiorix",
+    "aliases": [],
+    "civilization": "Gaule",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "industrial_zone"
+    ],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Byzantium & Gaul Pack",
+    "portrait": "img/portraits/gaul-ambiorix.webp",
+    "silhouetteFocus": [
+      70.3,
+      9.0
+    ],
+    "descriptions": [
+      "Puissance de combat +1 pour les unités de combat rapproché et anti-cavalerie pour chaque unité militaire adjacente.\n\nAu Travail du Bronze, achever une unité militaire terrestre octroie 25% de son coût en Production en Culture.\n\nAménager une mine déclenche une bombe culturelle.",
+      "Pour les quartiers spécialisés :\n • Bonus de proximité +1 des cases de carrière.\n • Bonus de proximité +0.5 des mines.\n • Pas de bonus de proximité habituel des autres quartiers.\n • Ne peuvent pas être placés adjacents à un Centre-ville.\n\nBias : T3 Fer / T5 Ressources bonus et de luxe à mine et à carrière.",
+      "Quartier exclusif à la Gaule, remplaçant la Zone industrielle et débloqué au Travail du Fer.\n\n Production +2 par case de ressource stratégique adjacente.\n Production +1 par case de carrière adjacente.\n\nL'Oppidum est un quartier défendable.\n\nProvoque une bombe culturelle sur les cases neutres à sa complétion.",
+      "Unité de combat rapproché de l'ère antique exclusive à la Gaule, remplaçant le Guerrier.\n\n Puissance de combat +10 contre les unités militaires plus puissantes.\n Puissance de combat +5 contre les quartiers défendables."
+    ],
+    "maskWords": [
+      "Ambiorix",
+      "Gaul",
+      "Gésates",
+      "Oppidum"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GAUL_NAME",
+      "leaderKey": "LOC_LEADER_AMBIORIX_NAME"
+    }
+  },
+  {
+    "id": "gaul-vercingetorix",
+    "name": "Vercingétorix",
+    "aliases": [
+      "Vercingetorix"
+    ],
+    "civilization": "Gaule",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "industrial_zone"
+    ],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "BBG Expanded 7.1",
+    "portrait": "img/portraits/gaul-vercingetorix.webp",
+    "silhouetteFocus": [
+      0.8,
+      48.4
+    ],
+    "descriptions": [
+      "Culture +1 pour les mines au Travail du Bronze.\n\n Influence +1 par atelier.",
+      "Pour les quartiers spécialisés :\n • Bonus de proximité +1 des cases de carrière.\n • Bonus de proximité +0.5 des mines.\n • Pas de bonus de proximité habituel des autres quartiers.\n • Ne peuvent pas être placés adjacents à un Centre-ville.\n\nBias : T3 Fer / T5 Ressources bonus et de luxe à mine et à carrière.",
+      "Quartier exclusif à la Gaule, remplaçant la Zone industrielle et débloqué au Travail du Fer.\n\n Production +2 par case de ressource stratégique adjacente.\n Production +1 par case de carrière adjacente.\n\nL'Oppidum est un quartier défendable.\n\nProvoque une bombe culturelle sur les cases neutres à sa complétion.",
+      "Unité de combat rapproché de l'ère antique exclusive à la Gaule, remplaçant le Guerrier.\n\n Puissance de combat +10 contre les unités militaires plus puissantes.\n Puissance de combat +5 contre les quartiers défendables."
+    ],
+    "maskWords": [
+      "Gaul",
+      "Gésates",
+      "Oppidum",
+      "Vercingetorix",
+      "Vercingétorix"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GAUL_NAME",
+      "leaderKey": "LOC_LEADER_SUK_VERCINGETORIX_NAME"
+    }
+  },
+  {
+    "id": "georgia-tamar",
+    "name": "Tamar",
+    "aliases": [],
+    "civilization": "Géorgie",
+    "era": null,
+    "continent": [
+      "Europe",
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Femme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/georgia-tamar.webp",
+    "silhouetteFocus": [
+      14.5,
+      78.1
+    ],
+    "descriptions": [
+      "Si votre religion est majoritaire dans votre Empire, chaque émissaire envoyé dans une Cité-état où votre religion est majoritaire est doublé.\n Foi +1 pour chaque émissaire dans une Cité-état.\n\nTuer une unité rapporte 50% de sa Puissance de combat de base en Foi (vitesse en ligne).",
+      "Production +50% pour la construction de remparts.\n\nLorsque vous prenez un engagement au début d'un âge d'or ou d'un âge héroïque, vous obtenez également le bonus correspondant d'âge normal visant à augmenter le score d'ère.\n\nBias : T4 Ressource à carrière.",
+      "Bâtiment exclusif à la Géorgie, remplaçant les remparts antiques.\n\nDéfenses extérieures +25.\n\n Culture +1 et Foi +4.\n Foi +3 et Tourisme +1 lors d'un âge d'or.\nPoints de Prophète illustre +1.\n Tourisme +1 à la Conservation.",
+      "Unité de combat rapproché de l'ère médiévale exclusive à la Géorgie, remplaçant l'Homme d'armes.\n\n Puissance de base +2.\n Puissance de combat +7 lorsque le combat se déroule sur une case de collines.\nPas de pénalité de mouvement sur les collines.\n\nDébloqué par Tactique militaire Technologie"
+    ],
+    "maskWords": [
+      "Georgia",
+      "Khevsour",
+      "Tamar",
+      "Tsikhe"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GEORGIA_NAME",
+      "leaderKey": "LOC_LEADER_TAMAR_NAME"
+    }
+  },
+  {
+    "id": "germany-frederick-barbarossa",
+    "name": "Frédéric Barberousse",
+    "aliases": [
+      "Frederick Barbarossa"
+    ],
+    "civilization": "Allemagne",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "industrial_zone"
+    ],
+    "uniqueUnitClass": [
+      "heavy_cavalry",
+      "naval_raider"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/germany-frederick-barbarossa.webp",
+    "silhouetteFocus": [
+      5.1,
+      55.1
+    ],
+    "descriptions": [
+      "Tous les gouvernements ont un emplacement de doctrine Militaire supplémentaire.\n\n Puissance de combat +7 contre les Cités-états, et les unités uniques.\n\nHanses : Production +2 par Campement adjacent.",
+      "Aux Guildes, les villes ont un emplacement de quartier spécialisé supplémentaire.\n\nBias : T3 Rivières.",
+      "Quartier exclusif à l'Allemagne, remplaçant la Zone industrielle.\n\n Production +2 pour chaque Aqueduc, Canal et Barrage adjacent.\n Production +1 pour chaque case de ressource adjacente.",
+      "Unité de cavalerie lourde de l'ère moderne exclusive à Frédéric Barberousse, remplaçant le blindé.\n\n Puissance de base +3.\n Puissance de base +3 si non adjacent à un autre Tiger I.\n\nDébloqué par Combustion Technologie",
+      "Unité navale d'assaut en mer de l'ère moderne exclusive à l'Allemagne, remplaçant le Sous-marin.\n\n Puissance de combat +10 et Champ de vision +1 sur les cases d'océan.\nNe peut être vue que par d'autres unités navales d'assaut en mer à moins de lui être adjacent. Révèle les unités d'assaut en mer dans son champ de vision.\n\nDébloqué par Électricité Technologie"
+    ],
+    "maskWords": [
+      "Barbarossa",
+      "Barberousse",
+      "Frederick",
+      "Frédéric",
+      "Germany",
+      "Hanse",
+      "Tigre I",
+      "U-Boot"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GERMANY_NAME",
+      "leaderKey": "LOC_LEADER_BARBAROSSA_NAME"
+    }
+  },
+  {
+    "id": "germany-ludwig-ii",
+    "name": "Louis II",
+    "aliases": [
+      "Ludwig II"
+    ],
+    "civilization": "Allemagne",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "industrial_zone"
+    ],
+    "uniqueUnitClass": [
+      "naval_raider"
+    ],
+    "gender": "Homme",
+    "extension": "Great Builders Pack",
+    "portrait": "img/portraits/germany-ludwig-ii.webp",
+    "silhouetteFocus": [
+      92.6,
+      34.8
+    ],
+    "descriptions": [
+      "Les merveilles mondiales en construction ou terminées reçoivent +1 Culture pour chaque quartier adjacent. Cette Culture génère du Tourisme aux Châteaux.\n\nHanses : Production +2 par Plateforme commerciale adjacente.",
+      "Aux Guildes, les villes ont un emplacement de quartier spécialisé supplémentaire.\n\nBias : T3 Rivières.",
+      "Quartier exclusif à l'Allemagne, remplaçant la Zone industrielle.\n\n Production +2 pour chaque Aqueduc, Canal et Barrage adjacent.\n Production +1 pour chaque case de ressource adjacente.",
+      "Unité navale d'assaut en mer de l'ère moderne exclusive à l'Allemagne, remplaçant le Sous-marin.\n\n Puissance de combat +10 et Champ de vision +1 sur les cases d'océan.\nNe peut être vue que par d'autres unités navales d'assaut en mer à moins de lui être adjacent. Révèle les unités d'assaut en mer dans son champ de vision.\n\nDébloqué par Électricité Technologie"
+    ],
+    "maskWords": [
+      "Germany",
+      "Hanse",
+      "Louis",
+      "Ludwig",
+      "U-Boot"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GERMANY_NAME",
+      "leaderKey": "LOC_LEADER_LUDWIG_NAME"
+    }
+  },
+  {
+    "id": "gran-colombia-simon-bolivar",
+    "name": "Simón Bolívar",
+    "aliases": [],
+    "civilization": "Grande Colombie",
+    "era": null,
+    "continent": [
+      "Amérique du Sud",
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "light_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Maya & Gran Colombia Pack",
+    "portrait": "img/portraits/gran-colombia-simon-bolivar.webp",
+    "silhouetteFocus": [
+      95.7,
+      52.3
+    ],
+    "descriptions": [
+      "Vous obtenez un Comandante General quand le jeu entre dans une nouvelle ère.\nLe recrutement des Généraux illustres est impossible.",
+      "PM +1 pour les unités militaires à la Philosophie Politique.\nLa promotion des unités aériennes, de cavalerie, ou d'un Espion ne met pas fin à leur tour.\n\nBias : T5 Ressources à plantation.",
+      "Aménagement exclusif à la Grande Colombie, débloqué aux Foires Médiévales.\n\n Production +1, Or +2 et Habitations +0.5.\n Nourriture +1 toutes les 2 cases de plantations adjacentes (pour chaque case de plantation aux Pièces de Rechange).\n\n Production +1 pour les plantations et les haciendas, toutes les 2 cases d'haciendas adjacentes (pour chaque case d'hacienda adjacente au Mercantilisme).\n\nNe peut être construite que sur une case de plaine ou de prairie.",
+      "Unité de cavalerie légère de l'ère industrielle exclusive à la Colombie, remplaçant la Cavalerie.\n\n Puissance de combat +2 pour chaque Llanero adjacent.\nSe soigne entièrement si elle est proche d'un Comandante General qui active sa compétence de retraite.\n\nDébloqué par Science militaire Technologie",
+      "Personnage illustre spécial exclusif à Simón Bolívar. Chaque personnage illustre a ses propres compétences, notamment un effet passif et un effet de retraite."
+    ],
+    "maskWords": [
+      "Bolívar",
+      "Comandante General",
+      "Gran Colombia",
+      "Hacienda",
+      "Llanero",
+      "Simón"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GRAN_COLOMBIA_NAME",
+      "leaderKey": "LOC_LEADER_SIMON_BOLIVAR_NAME"
+    }
+  },
+  {
+    "id": "greece-gorgo",
+    "name": "Gorgô",
+    "aliases": [
+      "Gorgo"
+    ],
+    "civilization": "Grèce",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "theater"
+    ],
+    "uniqueUnitClass": [
+      "anti_cavalry"
+    ],
+    "gender": "Femme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/greece-gorgo.webp",
+    "silhouetteFocus": [
+      73.0,
+      10.2
+    ],
+    "descriptions": [
+      "Puissance de combat +1 pour chaque emplacement de doctrine Militaire du gouvernement.\nTuer une unité rapporte 50% de sa Puissance de combat de base en Culture (vitesse en ligne).",
+      "Au Premier Empire, tous les gouvernements ont un emplacement de doctrine Joker supplémentaire.\n\nBias : T4 Collines (de plaine et de prairie).",
+      "Quartier exclusif à la Grèce, remplaçant la Place du théâtre.\n\n Culture +2 pour chaque Complexe de loisirs, Parc aquatique et merveille mondiale adjacent.\n Culture +1 pour chaque Centre-ville adjacent.\n Culture +1 pour chaque quartier adjacent, au lieu du +0.5 habituel.\n\nNe peut être construit que sur une case de collines.",
+      "Unité d'anti-cavalerie de l'ère antique exclusive à la Grèce, remplaçant le Lancier.\n\n Puissance de base +3.\n Puissance de combat +7 si adjacente à un autre Hoplite.\n\nDébloqué par Travail du bronze Technologie"
+    ],
+    "maskWords": [
+      "Acropole",
+      "Gorgo",
+      "Gorgô",
+      "Greece",
+      "Hoplite"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GREECE_NAME",
+      "leaderKey": "LOC_LEADER_GORGO_NAME"
+    }
+  },
+  {
+    "id": "greece-pericles",
+    "name": "Périclès",
+    "aliases": [
+      "Pericles"
+    ],
+    "civilization": "Grèce",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "theater"
+    ],
+    "uniqueUnitClass": [
+      "anti_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/greece-pericles.webp",
+    "silhouetteFocus": [
+      20.7,
+      15.2
+    ],
+    "descriptions": [
+      "Culture +5% et Tourisme +5% par Cité-état vassale.\nAchever un amphithéâtre octroie un émissaire.\n\nLes Acropoles fournissent +1 Production par merveilles mondiales adjacentes et +0.5 par quartier adjacent.",
+      "Au Premier Empire, tous les gouvernements ont un emplacement de doctrine Joker supplémentaire.\n\nBias : T4 Collines (de plaine et de prairie).",
+      "Quartier exclusif à la Grèce, remplaçant la Place du théâtre.\n\n Culture +2 pour chaque Complexe de loisirs, Parc aquatique et merveille mondiale adjacent.\n Culture +1 pour chaque Centre-ville adjacent.\n Culture +1 pour chaque quartier adjacent, au lieu du +0.5 habituel.\n\nNe peut être construit que sur une case de collines.",
+      "Unité d'anti-cavalerie de l'ère antique exclusive à la Grèce, remplaçant le Lancier.\n\n Puissance de base +3.\n Puissance de combat +7 si adjacente à un autre Hoplite.\n\nDébloqué par Travail du bronze Technologie"
+    ],
+    "maskWords": [
+      "Acropole",
+      "Greece",
+      "Hoplite",
+      "Pericles",
+      "Périclès"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_GREECE_NAME",
+      "leaderKey": "LOC_LEADER_PERICLES_NAME"
+    }
+  },
+  {
+    "id": "hungary-matthias-corvinus",
+    "name": "Matthias Corvin",
+    "aliases": [
+      "Matthias Corvinus"
+    ],
+    "civilization": "Hongrie",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "light_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/hungary-matthias-corvinus.webp",
+    "silhouetteFocus": [
+      82.8,
+      14.5
+    ],
+    "descriptions": [
+      "PM +1 pour les unités levées de Cités-états. Améliorer des unités levées coûte 75% d'Or et de ressources en moins. Si vous levez les troupes d'une Cité-état, vous y recevez 1 émissaire dans cette Cité-état.",
+      "Production +50% pour les quartiers et bâtiments construits adjacents au Centre-ville, mais de l'autre côté d'un cours d'eau par rapport à celui-ci.\n\nBias : T4 Rivières / T5 Failles géothermiques.",
+      "Bâtiment exclusif à la Hongrie, remplaçant le zoo.\n\n Activités +2 et Tourisme +3 si la ville possède une case de fissure géothermique.\n\n Production +2 et Activités +2 pour les Centres-villes dans un rayon de 6 cases ne profitant pas déjà d'une station thermale.",
+      "Unité de cavalerie légère de l'ère médiévale exclusive à la Hongrie, remplaçant le Coursier.\n\n Puissance de base +3.\n Puissance de combat +2 pour chaque unité levée adjacente.\n\nDébloqué par Châteaux Technologie",
+      "Unité de cavalerie légère de l'ère industrielle exclusive à la Hongrie, remplaçant le Cavalerie.\n\n Puissance de combat +2 pour chaque Cité-état vassale.\n\nDébloqué par Science militaire Technologie"
+    ],
+    "maskWords": [
+      "Armée noire",
+      "Corvin",
+      "Corvinus",
+      "Hungary",
+      "Hussard",
+      "Matthias",
+      "Station thermale"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_HUNGARY_NAME",
+      "leaderKey": "LOC_LEADER_MATTHIAS_CORVINUS_NAME"
+    }
+  },
+  {
+    "id": "inca-pachacuti",
+    "name": "Pachacutec",
+    "aliases": [
+      "Pachacuti"
+    ],
+    "civilization": "Incas",
+    "era": null,
+    "continent": [
+      "Amérique du Sud"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "recon"
+    ],
+    "gender": "Homme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/inca-pachacuti.webp",
+    "silhouetteFocus": [
+      95.3,
+      55.5
+    ],
+    "descriptions": [
+      "Nourriture +1 pour les routes commerciales intérieures pour chaque case de montagne de la ville d'origine.\n Or +1 pour les routes commerciales internationales pour chaque case de montagne de la ville d'origine.\n\nVous débloquez le Qhapaq Ñan au Commerce avec l'Étranger.",
+      "Sur les cases de montagnes :\n • Production +2 (passe à +3 à l'ère industrielle).\n • Nourriture +1 pour chaque case de culture en terrasses adjacente.\n • Coût d'achat de cases réduit de 50%.\n\nLes unités de reconnaissance peuvent construire un Qhapaq Ñan (1 Charge) au Commerce avec l'Étranger.\n\nPas de perte de rendements (non liés à la Nourriture) due à une pénalité d'Activités.\n\nBias : T3 Montagnes (de plaine et de prairie).",
+      "Aménagement exclusif à Pachacutec, débloqué au Commerce à l'Étranger.\n\nFait office de portail de déplacement sur une chaîne de montagnes : les unités entrent dans un portail et ressortent par un autre pour 2  PM.\nAugmente l'Or reçu des routes commerciales traversant le Qhapaq Ñan.\n\nNe peut être construit que sur une case de montagne. Ne peut pas être pillée ou supprimée.",
+      "Aménagement exclusif aux Incas.\n\n Nourriture +1 et Habitations +1.\n Nourriture +1 pour chaque case de montagne adjacente.\n Production +2 pour chaque Aqueduc adjacent.\n Production +1 si adjacente à de l'eau douce, mais pas à un Aqueduc.\n Production +1 si la ville possède un moulin.\n Nourriture +1 toutes les 2 cases de culture en terrasses adjacentes (pour chaque culture en terrasses aux Pièces de rechange).\n\nNe peut être construite que sur une case de collines de prairie, de plaine et de désert.",
+      "Unité de reconnaissance de l'ère médiévale exclusive aux Incas, remplaçant l'Escarmoucheur.\n\n Puissance de base à distance +5. Peut attaquer deux fois dans le même tour.\n\nDébloqué par Mécanique Technologie"
+    ],
+    "maskWords": [
+      "Culture en terrasses",
+      "Huaraca",
+      "Inca",
+      "Pachacutec",
+      "Pachacuti",
+      "Qhapaq Ñan"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_INCA_NAME",
+      "leaderKey": "LOC_LEADER_PACHACUTI_NAME"
+    }
+  },
+  {
+    "id": "india-chandragupta",
+    "name": "Chandragupta",
+    "aliases": [],
+    "civilization": "Inde",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/india-chandragupta.webp",
+    "silhouetteFocus": [
+      6.6,
+      63.3
+    ],
+    "descriptions": [
+      "Les autels et les temples octroient respectivement +1 PM et +1 Vision aux unités militaires formées dans la ville.\n Puissance de combat +1 pour les unités formées pour chaque bâtiment dans le Lieu saint de la ville.",
+      "Vos villes reçoivent les bonus de croyance de chaque religion possédant au moins un fidèle.\n\n Activités +1 pour les villes dont la religion dominante est la vôtre.\n\nCharges de propagation +2 pour les Missionnaires.\nPression religieuse +100% sur vos routes commerciales.",
+      "Aménagement exclusif à l'Inde, débloqué à l'Irrigation.\n\n Nourriture +1, Foi +1 et Habitations +1.\n Nourriture +1 pour chaque case de ferme adjacente.\n Foi +1 si adjacent à un Lieu saint.\n Nourriture +1 et Foi +1 à la Féodalité.\n Habitations +1 à l'Assainissement.\n\nNe peut pas être construit sur une case de collines ou adjacent à un autre puits à degrés.",
+      "Unité de cavalerie lourde de l'ère classique exclusive à l'Inde.\n\nChamp de vision +1.\n\n Puissance de combat -3 pour les unités militaires ennemies adjacentes.\n\nDébloqué par Équitation Technologie"
+    ],
+    "maskWords": [
+      "Chandragupta",
+      "India",
+      "Puits à degrés",
+      "Vāru"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_INDIA_NAME",
+      "leaderKey": "LOC_LEADER_CHANDRAGUPTA_NAME"
+    }
+  },
+  {
+    "id": "india-gandhi",
+    "name": "Gandhi",
+    "aliases": [],
+    "civilization": "Inde",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/india-gandhi.webp",
+    "silhouetteFocus": [
+      22.3,
+      85.9
+    ],
+    "descriptions": [
+      "Octroie une croyance supplémentaire à la fondation d'une religion.\n Foi +5 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre.\n PM +1 pour les Bâtisseurs et les Colons formés dans les villes possédant un Lieu saint.\n\nUsure de la guerre +50% pour les civilisations qui combattent Gandhi.",
+      "Vos villes reçoivent les bonus de croyance de chaque religion possédant au moins un fidèle.\n\n Activités +1 pour les villes dont la religion dominante est la vôtre.\n\nCharges de propagation +2 pour les Missionnaires.\nPression religieuse +100% sur vos routes commerciales.",
+      "Aménagement exclusif à l'Inde, débloqué à l'Irrigation.\n\n Nourriture +1, Foi +1 et Habitations +1.\n Nourriture +1 pour chaque case de ferme adjacente.\n Foi +1 si adjacent à un Lieu saint.\n Nourriture +1 et Foi +1 à la Féodalité.\n Habitations +1 à l'Assainissement.\n\nNe peut pas être construit sur une case de collines ou adjacent à un autre puits à degrés.",
+      "Unité de cavalerie lourde de l'ère classique exclusive à l'Inde.\n\nChamp de vision +1.\n\n Puissance de combat -3 pour les unités militaires ennemies adjacentes.\n\nDébloqué par Équitation Technologie"
+    ],
+    "maskWords": [
+      "Gandhi",
+      "India",
+      "Puits à degrés",
+      "Vāru"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_INDIA_NAME",
+      "leaderKey": "LOC_LEADER_GANDHI_NAME"
+    }
+  },
+  {
+    "id": "indonesia-gitarja",
+    "name": "Dyah Gitarja",
+    "aliases": [
+      "Gitarja"
+    ],
+    "civilization": "Indonésie",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "naval_ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Khmer and Indonesia Civilization & Scenario Pack",
+    "portrait": "img/portraits/indonesia-gitarja.webp",
+    "silhouetteFocus": [
+      64.5,
+      6.6
+    ],
+    "descriptions": [
+      "À la Navigation à Voile, les quartiers construits sur ou adjacents à une case de lac ou de côte fournissent de la Foi :\n • +2 pour les Centres-villes.\n • +1 pour vos quartiers spécialisés (passe à +2 à la Construction Navale).\n\nLes unités religieuses ne consomment pas de PM pour embarquer ou débarquer.",
+      "Bonus de proximité +0.5 pour les Zones industrielles, Campus, Places du théâtre et Lieux saints pour chaque case de côte ou de lac adjacente. Activités +1 pour les Complexes de loisirs adjacents à une côte ou un lac.\n\nBias : T1 Côte.",
+      "Aménagement exclusif à l'Indonésie, débloqué à la Construction Navale.\n\n Production +1 et Habitations +1.\n Nourriture +1 et Foi +1 pour chaque case de bateau de pêche adjacente.\n Production +1 au Génie Civil.\n\nGénère du Tourisme par le biais de la Nourriture à l'Aviation.\n\nDoit être placé sur une case de côte ou de lac adjacente à une ressource maritime.",
+      "Unité navale de combat à distance de l'ère de la Renaissance exclusive à l'Indonésie, remplaçant la Frégate.\n\n PM +1.\n Puissance de combat +5 si elle est en formation avec une autre unité, qui profite de la vitesse de déplacement de la Jonque.\n\nDébloqué par Exploration Dogme"
+    ],
+    "maskWords": [
+      "Dyah",
+      "Gitarja",
+      "Indonesia",
+      "Jonque",
+      "Kampung"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_INDONESIA_NAME",
+      "leaderKey": "LOC_LEADER_GITARJA_NAME"
+    }
+  },
+  {
+    "id": "japan-hojo-tokimune",
+    "name": "Hōjō Tokimune",
+    "aliases": [
+      "Hojo Tokimune"
+    ],
+    "civilization": "Japon",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/japan-hojo-tokimune.webp",
+    "silhouetteFocus": [
+      5.5,
+      41.4
+    ],
+    "descriptions": [
+      "Production +100% pour les Campements, les Places du théâtre et les Lieux saints.\nLes Plateformes commerciales et Ports bénéficient d'un bonus de proximité standard, plutôt que mineur, de la part des autres quartiers.\n\n Puissance de combat +3 pour les unités militaires terrestres adjacentes à une case de côte et pour les unités militaires navales sur une case de côte.\n\nLes unités ne subissent pas de dégâts des tempêtes. Les civilisations en guerre avec le Japon subissent +100% de dégâts dûs aux tempêtes dans le territoire japonais.",
+      "Les quartiers (sauf Plateforme commerciale et Port) bénéficient d'un bonus de proximité standard, plutôt que mineur, de la part des autres quartiers.\nLes Plateformes commerciales japonaises ne bénéficient pas du bonus de proximité habituel de la part des rivières.\n\nBias : T1 Côtes.",
+      "Bâtiment exclusif au Japon, remplaçant l'usine.\n\n Culture +4.\n\n Production +3 (passe à +8 quand la ville est alimentée) pour tous les Centres-villes dans un rayon de 6 cases ne profiant pas déjà d'une usine d'électronique.",
+      "Unité de combat rapproché de l'ère médiévale exclusive au Japon, remplaçant l'Homme d'armes.\n\n Puissance de base +2.\nNe subit pas de pénalité de combat lorsqu'elle est blessée.\n\nDébloqué par Mercenaires Dogme"
+    ],
+    "maskWords": [
+      "Hojo",
+      "Hōjō",
+      "Japan",
+      "Samouraï",
+      "Tokimune",
+      "Usine d'électronique"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_JAPAN_NAME",
+      "leaderKey": "LOC_LEADER_HOJO_NAME"
+    }
+  },
+  {
+    "id": "japan-tokugawa",
+    "name": "Tokugawa",
+    "aliases": [],
+    "civilization": "Japon",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Great Commanders Pack",
+    "portrait": "img/portraits/japan-tokugawa.webp",
+    "silhouetteFocus": [
+      61.3,
+      6.2
+    ],
+    "descriptions": [
+      "Science +0.5 (passe à +1 à l'Éducation) et Culture +0.5 (passe à +1 à l'Humanisme) pour vos routes commerciales intérieures pour chaque quartier spécialisé de la ville de destination.\n\nLes routes commerciales internationales que vous envoyez et recevez vous fournissent 25% de rendements en moins et n'appliquent pas le bonus de Tourisme habituel de 25% envers les civilisations étrangères.\n\nLoyauté totale pour les villes à 6 cases ou moins de votre Capitale. Tourisme +1 pour chaque quartier à l'Aviation.",
+      "Les quartiers (sauf Plateforme commerciale et Port) bénéficient d'un bonus de proximité standard, plutôt que mineur, de la part des autres quartiers.\nLes Plateformes commerciales japonaises ne bénéficient pas du bonus de proximité habituel de la part des rivières.\n\nBias : T1 Côtes.",
+      "Bâtiment exclusif au Japon, remplaçant l'usine.\n\n Culture +4.\n\n Production +3 (passe à +8 quand la ville est alimentée) pour tous les Centres-villes dans un rayon de 6 cases ne profiant pas déjà d'une usine d'électronique.",
+      "Unité de combat rapproché de l'ère médiévale exclusive au Japon, remplaçant l'Homme d'armes.\n\n Puissance de base +2.\nNe subit pas de pénalité de combat lorsqu'elle est blessée.\n\nDébloqué par Mercenaires Dogme"
+    ],
+    "maskWords": [
+      "Japan",
+      "Samouraï",
+      "Tokugawa",
+      "Usine d'électronique"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_JAPAN_NAME",
+      "leaderKey": "LOC_LEADER_TOKUGAWA_NAME"
+    }
+  },
+  {
+    "id": "khmer-jayavarman-vii",
+    "name": "Jayavarman VII",
+    "aliases": [
+      "Jayavarman VII"
+    ],
+    "civilization": "Peuple khmer",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "siege"
+    ],
+    "gender": "Homme",
+    "extension": "Khmer and Indonesia Civilization & Scenario Pack",
+    "portrait": "img/portraits/khmer-jayavarman-vii.webp",
+    "silhouetteFocus": [
+      47.7,
+      95.7
+    ],
+    "descriptions": [
+      "Nourriture +1, et Habitations +2 pour les Lieux saints adjacents à une rivière.",
+      "Activités +1 dans les villes possédant un Aqueduc.\n Nourriture +2 pour les fermes adjacentes à un Aqueduc.\n Foi +1 pour les fermes adjacentes à un Lieu saint.\n\nAchever un Lieu saint déclenche une bombe culturelle.\n\nBias : T3 Rivières.",
+      "Bâtiment exclusif aux Khmers, remplaçant le temple.\n\n Foi +6.\n Culture +0.3 pour chaque Citoyen dans la ville. À l'Aviation, Tourisme +10 dans la ville si elle possède au moins 10 Citoyens et Tourisme +20 dans la ville si elle possède au moins 20 Citoyens.",
+      "Unité de siège de l'ère médiévale exclusive aux Khmers, remplaçant le Trébuchet.\n\n Puissance de base de combat rapproché et à distance +5.\nLe Domrey peut se déplacer et tirer dans le même tour.\nExerce une zone de contrôle.\n\nDébloqué par Ingénierie militaire Technologie"
+    ],
+    "maskWords": [
+      "Domrey",
+      "Jayavarman",
+      "Khmer",
+      "Prasat"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_KHMER_NAME",
+      "leaderKey": "LOC_LEADER_JAYAVARMAN_NAME"
+    }
+  },
+  {
+    "id": "kongo-mvemba-a-nzinga",
+    "name": "Mvemba a Nzinga",
+    "aliases": [],
+    "civilization": "Kongo",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [
+      "neighborhood"
+    ],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/kongo-mvemba-a-nzinga.webp",
+    "silhouetteFocus": [
+      6.2,
+      62.5
+    ],
+    "descriptions": [
+      "Ne peut ni construire de Lieux saints, ni recruter de Prophète illustre, ni fonder de religion. Reçoit un Apôtre de la religion dominante de la ville lorsqu'il construit un Mbanza ou une Place du théâtre.\n Or +1 et Culture +0.2 par Citoyens dans vos villes converties à n'importe quelle religion.\n\nÀ partir de l'ère classique, les unités militaires et les Généraux illustres se déplacent sans pénalité de PM dans les cases de bois et de forêts tropicales.\n\nPour les cases de bois et de forêt tropicale :\n • Production +1 si adjacentes à un Campement.\n • Nourriture +1 si adjacentes à un Campement si la ville possède un Mbanza.\n\nPoints de Général illustre +1 pour les écuries et les casernes.",
+      "Nourriture +2, Production +2, Or +4 et Foi +2 pour les reliques, les artefacts et les sculptures.\nVous obtenez une relique à chaque fois que vous achevez un bâtiment de la Place de la gouvernance.\nLe palais peut accueillir 5 chefs-d'œuvre.\n\nPoints d'Écrivain, d'Artiste et de Musicien illustres +50%.\n\n Production +100% pour les Archéologues.\n\nBias : T3 Forêts tropicales / T5 Forêts.",
+      "Quartier exclusif au Kongo, remplaçant le Quartier résidentiel.\n\n Nourriture +2, Or +4 et Habitations +5, quel que soit l'Attrait.\n\nNe peut être construit que sur une case de bois ou de forêt tropicale.",
+      "Unité de combat rapproché de l'ère classique exclusive au Kongo, remplaçant le Spadassin.\n\n Puissance de base +2.\n Puissance de combat en défense +10 contre les attaques à distance.\nPeut voir à travers les bois et les forêts tropicales.\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Kongo",
+      "Mbanza",
+      "Mvemba",
+      "Ngao Mbeba",
+      "Nzinga"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_KONGO_NAME",
+      "leaderKey": "LOC_LEADER_MVEMBA_NAME"
+    }
+  },
+  {
+    "id": "kongo-nzinga-mbande",
+    "name": "Njinga Mbandi",
+    "aliases": [
+      "Nzinga Mbande"
+    ],
+    "civilization": "Kongo",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [
+      "neighborhood"
+    ],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Femme",
+    "extension": "Great Negotiators Pack",
+    "portrait": "img/portraits/kongo-nzinga-mbande.webp",
+    "silhouetteFocus": [
+      19.9,
+      8.2
+    ],
+    "descriptions": [
+      "Or +15% et Culture +15% dans les villes avec un Mbanza (non cumulable). Bonus de proximité +2 pour les Plateformes commerciales et les Places du théâtre adjacentes à un Mbanza.\n\nCoût d'achat en Or des Archéologues -50%.\n\nLes unités civiles se déplacent sans pénalité de PM dans les cases de bois et de forêts tropicales.\n\nPoints de Marchand illustre +50%.",
+      "Nourriture +2, Production +2, Or +4 et Foi +2 pour les reliques, les artefacts et les sculptures.\nVous obtenez une relique à chaque fois que vous achevez un bâtiment de la Place de la gouvernance.\nLe palais peut accueillir 5 chefs-d'œuvre.\n\nPoints d'Écrivain, d'Artiste et de Musicien illustres +50%.\n\n Production +100% pour les Archéologues.\n\nBias : T3 Forêts tropicales / T5 Forêts.",
+      "Quartier exclusif au Kongo, remplaçant le Quartier résidentiel.\n\n Nourriture +2, Or +4 et Habitations +5, quel que soit l'Attrait.\n\nNe peut être construit que sur une case de bois ou de forêt tropicale.",
+      "Unité de combat rapproché de l'ère classique exclusive au Kongo, remplaçant le Spadassin.\n\n Puissance de base +2.\n Puissance de combat en défense +10 contre les attaques à distance.\nPeut voir à travers les bois et les forêts tropicales.\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Kongo",
+      "Mbande",
+      "Mbandi",
+      "Mbanza",
+      "Ngao Mbeba",
+      "Njinga",
+      "Nzinga"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_KONGO_NAME",
+      "leaderKey": "LOC_LEADER_NZINGA_MBANDE_NAME"
+    }
+  },
+  {
+    "id": "korea-sejong",
+    "name": "Sejong",
+    "aliases": [],
+    "civilization": "Corée",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [
+      "campus"
+    ],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Homme",
+    "extension": "Great Builders Pack",
+    "portrait": "img/portraits/korea-sejong.webp",
+    "silhouetteFocus": [
+      15.2,
+      80.5
+    ],
+    "descriptions": [
+      "Lorsque vous découvrez la première technologie d'une nouvelle ère, vous gagnez de la Culture équivalente à 2 fois la Science produite ce tour.\n\nSeowons : Science +2 par Place du théâtre adjacente, Science -1 par quartier adjacent.\nPlaces du théâtre : Culture +2 par Seowon adjacente.\n\n Culture +1 et Tourisme +2 pour chaque quartier spécialisé dans les villes possédant une Seowon et une Place du théâtre.\n\n Production +30% pour les Bâtisseurs à la Féodalité.",
+      "Les Seowon octroient des rendements supplémentaires aux cases adjacentes :\n • Nourriture +1 pour les cases de ferme.\n • Science +1 pour les cases de mine.\n\nBias : T4 Collines (de plaine et de prairie).",
+      "Quartier exclusif à la Corée, remplaçant le Campus.\n\n Bonus de proximité de base +1. Science +1 toutes les 2 cases de mine adjacentes. Science +2 pour chaque fissure géothermique adjacente. En plus de fournir de la Science, les spécialistes fournissent +1 Nourriture.\n\nAchever une Seowon déclenche une bombe culturelle.\n\nSejong uniquement : Science +2 par Place du théâtre adjacente. Science -1 par quartier adjacent.",
+      "Unité de combat à distance de la Renaissance exclusive à la Corée, remplaçant le Canon de campagne.\n\n Puissance de base de combat rapproché -5.\n\nCoût d'entretien réduit.\n\nNe peut pas se déplacer et attaquer dans le même tour.\n\nDébloqué par Poudre à canon Technologie"
+    ],
+    "maskWords": [
+      "Hwacha",
+      "Korea",
+      "Sejong",
+      "Seowon"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_KOREA_NAME",
+      "leaderKey": "LOC_LEADER_SEJONG_NAME"
+    }
+  },
+  {
+    "id": "korea-seondeok",
+    "name": "Seondeok",
+    "aliases": [],
+    "civilization": "Corée",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [
+      "campus"
+    ],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/korea-seondeok.webp",
+    "silhouetteFocus": [
+      89.5,
+      73.8
+    ],
+    "descriptions": [
+      "Activités +1 pour les villes avec un gouverneur.\nRendements +30% pour les bâtiments de la Seowon pour chaque promotion du gouverneur établi dans la ville.\nRendements -10% dans les villes sans gouverneur à la Féodalité. Titre de gouverneur +1 à la Féodalité.",
+      "Les Seowon octroient des rendements supplémentaires aux cases adjacentes :\n • Nourriture +1 pour les cases de ferme.\n • Science +1 pour les cases de mine.\n\nBias : T4 Collines (de plaine et de prairie).",
+      "Quartier exclusif à la Corée, remplaçant le Campus.\n\n Bonus de proximité de base +1. Science +1 toutes les 2 cases de mine adjacentes. Science +2 pour chaque fissure géothermique adjacente. En plus de fournir de la Science, les spécialistes fournissent +1 Nourriture.\n\nAchever une Seowon déclenche une bombe culturelle.\n\nSejong uniquement : Science +2 par Place du théâtre adjacente. Science -1 par quartier adjacent.",
+      "Unité de combat à distance de la Renaissance exclusive à la Corée, remplaçant le Canon de campagne.\n\n Puissance de base de combat rapproché -5.\n\nCoût d'entretien réduit.\n\nNe peut pas se déplacer et attaquer dans le même tour.\n\nDébloqué par Poudre à canon Technologie"
+    ],
+    "maskWords": [
+      "Hwacha",
+      "Korea",
+      "Seondeok",
+      "Seowon"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_KOREA_NAME",
+      "leaderKey": "LOC_LEADER_SEONDEOK_NAME"
+    }
+  },
+  {
+    "id": "macedon-alexander",
+    "name": "Alexandre",
+    "aliases": [
+      "Alexander"
+    ],
+    "civilization": "Macédoine",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "heavy_cavalry",
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Persia and Macedon Civilization & Scenario Pack",
+    "portrait": "img/portraits/macedon-alexander.webp",
+    "silhouetteFocus": [
+      8.6,
+      31.6
+    ],
+    "descriptions": [
+      "Les villes ne génèrent pas d'usure de guerre.\nToutes les unités militaires sont entièrement soignées lorsque vous capturez une ville dotée d'une merveille mondiale.\nTuer une unité rapporte 20% de sa Puissance de combat de base en Science (vitesse en ligne).",
+      "Lorsque vous capturez une ville, octroie :\n • Production +20% dans vos villes pendant 10 tours.\n • un Eurêka pour chaque Campement ou Campus dans la ville.\n • Inspiration pour chaque Place du théâtre ou Lieu saint dans la ville.",
+      "Bâtiment exclusif à la Macédoine, remplaçant la caserne.\n\nExpérience au combat +25% pour toutes les unités de combat rapproché, à distance et Hétairoi.\n\nAchever une unité militaire octroie 20% de son coût en Production en Science.\n\nRéserve de ressources stratégiques +5 (vitesse en ligne).\n Fer +2 par tour lorsqu'il est découvert.\n\nConstruction impossible dans un Campement possédant déjà une écurie.",
+      "Unité de cavalerie lourde de l'ère classique exclusive à Alexandre.\n\n Puissance de combat +5 si adjacente à un Général illustre.\nCommence avec une promotion gratuite.\nTuer une unité octroie 5 points de Général illustre.\n\nDébloqué par Équitation Technologie",
+      "Unité de combat rapproché de l'ère classique exclusive à la Macédoine, remplaçant le Spadassin.\n\n Puissance de base +2.\n Puissance de combat +10 contre les quartiers défendables.\nBonus de soutien reçu +50%.\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Alexander",
+      "Alexandre",
+      "Basilikoi Paides",
+      "Hypaspiste",
+      "Hétairoi",
+      "Macedon"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MACEDON_NAME",
+      "leaderKey": "LOC_LEADER_ALEXANDER_NAME"
+    }
+  },
+  {
+    "id": "macedon-olympias",
+    "name": "Olympias",
+    "aliases": [],
+    "civilization": "Macédoine",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Femme",
+    "extension": "BBG Expanded 7.1",
+    "portrait": "img/portraits/macedon-olympias.webp",
+    "silhouetteFocus": [
+      92.8,
+      59.9
+    ],
+    "descriptions": [
+      "Science +0.5 par Citoyen dans les villes possédant un Lieu saint et un Campement doté d'un basilikoi paides.\nAchever un Lieu saint et un basilikoi paides dans la même ville octroie un émissaire\n\n Puissance de combat en attaque +2 pour les unités de combat rapproché et de cavalerie lourde pour chaque Cité-état vassale.",
+      "Lorsque vous capturez une ville, octroie :\n • Production +20% dans vos villes pendant 10 tours.\n • un Eurêka pour chaque Campement ou Campus dans la ville.\n • Inspiration pour chaque Place du théâtre ou Lieu saint dans la ville.",
+      "Bâtiment exclusif à la Macédoine, remplaçant la caserne.\n\nExpérience au combat +25% pour toutes les unités de combat rapproché, à distance et Hétairoi.\n\nAchever une unité militaire octroie 20% de son coût en Production en Science.\n\nRéserve de ressources stratégiques +5 (vitesse en ligne).\n Fer +2 par tour lorsqu'il est découvert.\n\nConstruction impossible dans un Campement possédant déjà une écurie.",
+      "Unité de combat rapproché de l'ère classique exclusive à la Macédoine, remplaçant le Spadassin.\n\n Puissance de base +2.\n Puissance de combat +10 contre les quartiers défendables.\nBonus de soutien reçu +50%.\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Basilikoi Paides",
+      "Hypaspiste",
+      "Macedon",
+      "Olympias"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MACEDON_NAME",
+      "leaderKey": "LOC_LEADER_JFD_OLYMPIAS_NAME"
+    }
+  },
+  {
+    "id": "mali-mansa-musa",
+    "name": "Mansa Moussa",
+    "aliases": [
+      "Mansa Musa"
+    ],
+    "civilization": "Mali",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [
+      "commercial_hub"
+    ],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/mali-mansa-musa.webp",
+    "silhouetteFocus": [
+      9.4,
+      28.9
+    ],
+    "descriptions": [
+      "Capacité des routes commerciales +1 aux Banques.\n\n Production +10% pour la construction des Lieux saints et de leurs bâtiments.\nLes Sugubas reçoivent un bonus de proximité majeur des Lieux saints.",
+      "Sur les cases de désert :\n • Foi +2 pour les Centres-villes ( Foi +2 pour la Capitale peu importe la case) au Commerce à l'Étranger.\n • Nourriture +2.\n • Or +2 pour les mines.\n • Peut aménager des fermes.\n\nPeut acheter les bâtiments de la Suguba avec de la Foi.\n\nBias : T1 Désert / T5 Ressources à mine (sauf Uranium).",
+      "Quartier exclusif au Mali, remplaçant la Plateforme commerciale.\n\n Or +1 pour chaque rivière, oasis et Centre-ville adjacent.\n\nLes unités, quartiers et bâtiments de cette ville sont 10% moins chers à l'achat ( Or et Foi).",
+      "Unité de cavalerie lourde de l'ère médiévale exclusive au Mali, remplaçant le Chevalier.\n\n Puissance de base +3.\n\nLes Négociants terrestres à 4 cases ou moins sont immunisés au pillage.\n\nTuer une unité rapporte 50% de sa Puissance de combat de base en Or (vitesse en ligne).\n\nDébloqué par Étriers Technologie"
+    ],
+    "maskWords": [
+      "Cavalerie Mandékalou",
+      "Mali",
+      "Mansa",
+      "Moussa",
+      "Musa",
+      "Suguba"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MALI_NAME",
+      "leaderKey": "LOC_LEADER_MANSA_MUSA_NAME"
+    }
+  },
+  {
+    "id": "mali-sundiata-keita",
+    "name": "Soundiata Keïta",
+    "aliases": [
+      "Sundiata Keita"
+    ],
+    "civilization": "Mali",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [
+      "commercial_hub"
+    ],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Rulers of the Sahara Pack",
+    "portrait": "img/portraits/mali-sundiata-keita.webp",
+    "silhouetteFocus": [
+      27.0,
+      89.5
+    ],
+    "descriptions": [
+      "Coût en Or -30% pour le recrutement de Personnages illustres.\nPoints d'Écrivain illustre +1 par tour dans les villes possédant une Suguba et une Place du théâtre.\n\nLes marchés ont 2 emplacements de chefs-d'œuvre littéraires (uniquement pour les villes fondées par Soundiata).\n Or +4 et Culture +2 pour les chefs-d'œuvre littéraires.\n\nLes Sugubas reçoivent un bonus de proximité majeur des Places du théâtre.",
+      "Sur les cases de désert :\n • Foi +2 pour les Centres-villes ( Foi +2 pour la Capitale peu importe la case) au Commerce à l'Étranger.\n • Nourriture +2.\n • Or +2 pour les mines.\n • Peut aménager des fermes.\n\nPeut acheter les bâtiments de la Suguba avec de la Foi.\n\nBias : T1 Désert / T5 Ressources à mine (sauf Uranium).",
+      "Quartier exclusif au Mali, remplaçant la Plateforme commerciale.\n\n Or +1 pour chaque rivière, oasis et Centre-ville adjacent.\n\nLes unités, quartiers et bâtiments de cette ville sont 10% moins chers à l'achat ( Or et Foi).",
+      "Unité de cavalerie lourde de l'ère médiévale exclusive au Mali, remplaçant le Chevalier.\n\n Puissance de base +3.\n\nLes Négociants terrestres à 4 cases ou moins sont immunisés au pillage.\n\nTuer une unité rapporte 50% de sa Puissance de combat de base en Or (vitesse en ligne).\n\nDébloqué par Étriers Technologie"
+    ],
+    "maskWords": [
+      "Cavalerie Mandékalou",
+      "Keita",
+      "Keïta",
+      "Mali",
+      "Soundiata",
+      "Suguba",
+      "Sundiata"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MALI_NAME",
+      "leaderKey": "LOC_LEADER_SUNDIATA_KEITA_NAME"
+    }
+  },
+  {
+    "id": "maori-kupe",
+    "name": "Kupe",
+    "aliases": [],
+    "civilization": "Maoris",
+    "era": null,
+    "continent": [
+      "Océanie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/maori-kupe.webp",
+    "silhouetteFocus": [
+      5.1,
+      59.4
+    ],
+    "descriptions": [
+      "Habitations +3 pour la Capitale.\n\nLes Colons peuvent embarquer à la Navigation à Voile.",
+      "Nourriture +1 pour les bateaux de pêche à la Navigation Astronomique.\n\n Production +1 pour les cases de bois et de forêt tropicale non aménagées au Premier Empire (passe à +2 au Mercantilisme et à +4 à la Conservation).\n\n PM +2 pour les unités embarquées à la Construction Navale.\n\nImpossible de récolter les ressources, ni d'obtenir d'Écrivain illustre.\n\nBias : T1 Côte.",
+      "Bâtiment exclusif aux Maoris, remplaçant l'amphithéâtre.\n\n Culture +1 et Foi +1 pour les cases de bois, forêt tropicale, marais, oasis, récif, faille géothermique, plaines inondables et merveille naturelle, ainsi que Tourisme +1 à l'Aviation pour ces mêmes cases.\n\nAucun coût d'entretien.\nAucun emplacement de chef-d'œuvre.\nNe produit pas de points d'Écrivain illustre.",
+      "Aménagement exclusif aux Maoris, débloque à la Construction.\n\n Puissance de combat en défense +4, Vision +1 et retranchement instantané.\nUne unité maorie occupant un pā se soigne, même si elle vient juste de se déplacer ou d'attaquer.\n\nDoit être construit sur une case de collines, par un Toa maori.",
+      "Unité de combat rapproché de l'ère classique exclusive au Maori, remplaçant le Spadassin.\n\n Puissance de base +2.\n Puissance de combat -3 pour les unités militaires ennemies adjacentes.\n\nPeut construire un Pā (1 charge).\n\nNe nécessite pas de Fer.\n\nDébloqué par Construction Technologie"
+    ],
+    "maskWords": [
+      "Kupe",
+      "Marae",
+      "Māori",
+      "Pā",
+      "Toa"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MAORI_NAME",
+      "leaderKey": "LOC_LEADER_KUPE_NAME"
+    }
+  },
+  {
+    "id": "mapuche-lautaro",
+    "name": "Lautaro",
+    "aliases": [],
+    "civilization": "Mapuches",
+    "era": null,
+    "continent": [
+      "Amérique du Sud"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "light_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/mapuche-lautaro.webp",
+    "silhouetteFocus": [
+      7.0,
+      35.9
+    ],
+    "descriptions": [
+      "Puissance de combat +3 contre les villes libres ou les civilisations en âge d'or ou héroïque. Tuer une unité ennemie qui se trouve sur le territoire d'une ville ennemie fait perdre 15 points de loyauté à cette ville, 30 si la civilisation vit un âge d'or ou un héroïque.\n\nAttrait +1 pour les cases des villes possédant un Campement.",
+      "Pour les villes possédant un gouverneur :\n • Production +5% (passe à +15% si vous n'avez pas fondé la ville).\n • Culture +5% (passe à +15% si vous n'avez pas fondé la ville).\n • Expérience de combat +10% pour les unités formées.\n • Loyauté +4 pour les villes dans un rayon de 9 cases.\n\nBias : T4 Montagnes (de plaine et de prairie) / -T3 Plaines inondables.",
+      "Aménagement exclusif aux Mapuches, débloqué à l'Artisanat.\n\n Production +1.\n Production +1 à la Fonction Publique.\nFournit une quantité de Culture correspondant à 75% de l'Attrait de la case.\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nNe peut être posé que sur une case à l'Attrait époustouflant.",
+      "Unité de cavalerie légère de l'ère médiévale exclusive aux Mapuches, remplaçant le Coursier.\n\n Puissance de base +2.\n PM +1 si elle commence son tour sur une case sans caractéristique de terrain.\nCommence avec une promotion gratuite.\n\nDébloqué par Châteaux Technologie"
+    ],
+    "maskWords": [
+      "Cavalier malón",
+      "Chemamull",
+      "Lautaro",
+      "Mapuche"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MAPUCHE_NAME",
+      "leaderKey": "LOC_LEADER_LAUTARO_NAME"
+    }
+  },
+  {
+    "id": "maya-lady-six-sky",
+    "name": "Dame Six Cieux",
+    "aliases": [
+      "Lady Six Sky"
+    ],
+    "civilization": "Maya",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [
+      "campus"
+    ],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Maya & Gran Colombia Pack",
+    "portrait": "img/portraits/maya-lady-six-sky.webp",
+    "silhouetteFocus": [
+      82.0,
+      82.8
+    ],
+    "descriptions": [
+      "Tous les rendements sont augmentés de 5% dans les villes situées dans un rayon de 6 cases autour de votre Capitale. Les autres villes (sauf votre Capitale) voient tous leurs rendements diminués de 10%.\n Puissance de combat +3 pour les unités militaires situées dans un rayon de 6 cases autour de votre Capitale.",
+      "Les villes n'obtiennent pas d'Habitations de l'eau douce et des cases côtières. Habitations +1 pour la Capitale. Les Centres-villes gagnent +1 Activités pour chaque ressource de luxe adjacente.\n\nLes fermes fournissent +1 Or et +1 Habitations, ainsi que +1 Production par Observatoire adjacent.\nScience +1 pour les plantations par Observatoire adjacent (passe à +2 à l'Éducation).\n\nBias : T3 Ressources de luxe à plantation / T4 Bananes.",
+      "Quartier exclusif aux Mayas, remplaçant le Campus.\n\n Science +1 pour chaque case de plantation adjacente.\n Science +1 toutes les deux cases de ferme adjacentes.\n Science +2 pour chaque case de fissure géothermique adjacente.\n Habitations +1.",
+      "Unité de combat à distance de l'ère antique exclusive aux Mayas, remplaçant l'Archer.\n\n Puissance de base à combat à distance +3.\n Puissance de combat +5 contre les unités blessées.\n\nDébloqué par Tir à l'arc Technologie"
+    ],
+    "maskWords": [
+      "Cieux",
+      "Hul-Che",
+      "Maya",
+      "Observatoire",
+      "Six",
+      "Sky"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MAYA_NAME",
+      "leaderKey": "LOC_LEADER_LADY_SIX_SKY_NAME"
+    }
+  },
+  {
+    "id": "maya-te-k-inich-ii",
+    "name": "Te' K'inich II",
+    "aliases": [],
+    "civilization": "Maya",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [
+      "campus"
+    ],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Homme",
+    "extension": "BBG Expanded 7.1",
+    "portrait": "img/portraits/maya-te-k-inich-ii.webp",
+    "silhouetteFocus": [
+      14.6,
+      81.3
+    ],
+    "descriptions": [
+      "À partir de l'ère classique, Puissance de combat -2 pour les unités dans un rayon de 6 cases autour de la Capitale.\n Puissance de combat +4 pour les unités à 7 cases ou plus de la Capitale.\n\nLes unités se soignent de 5 PV et gagnent 2 XP quand vous recevez un Eurêka.",
+      "Les villes n'obtiennent pas d'Habitations de l'eau douce et des cases côtières. Habitations +1 pour la Capitale. Les Centres-villes gagnent +1 Activités pour chaque ressource de luxe adjacente.\n\nLes fermes fournissent +1 Or et +1 Habitations, ainsi que +1 Production par Observatoire adjacent.\nScience +1 pour les plantations par Observatoire adjacent (passe à +2 à l'Éducation).\n\nBias : T3 Ressources de luxe à plantation / T4 Bananes.",
+      "Quartier exclusif aux Mayas, remplaçant le Campus.\n\n Science +1 pour chaque case de plantation adjacente.\n Science +1 toutes les deux cases de ferme adjacentes.\n Science +2 pour chaque case de fissure géothermique adjacente.\n Habitations +1.",
+      "Unité de combat à distance de l'ère antique exclusive aux Mayas, remplaçant l'Archer.\n\n Puissance de base à combat à distance +3.\n Puissance de combat +5 contre les unités blessées.\n\nDébloqué par Tir à l'arc Technologie"
+    ],
+    "maskWords": [
+      "Hul-Che",
+      "K'inich",
+      "Maya",
+      "Observatoire",
+      "Te'"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MAYA_NAME",
+      "leaderKey": "LOC_LEADER_LL_TEKINICH_II_NAME"
+    }
+  },
+  {
+    "id": "austria-maria-theresa",
+    "name": "Maria Theresa",
+    "aliases": [],
+    "civilization": "Autriche",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "recon"
+    ],
+    "gender": "Femme",
+    "extension": "BBG Expanded 7.5",
+    "portrait": "img/portraits/austria-maria-theresa.webp",
+    "silhouetteFocus": [
+      6.8,
+      44.6
+    ],
+    "descriptions": [
+      "Les gouverneurs établis octroient les bonus suivants :\n • Points d'influence par tour +1.\n • Production +15% pour les quartiers.\n • Production +15% pour les unités.\n\nLes quartiers spécialisés (sauf dans la Capitale) fournissent +1 d'Habitations si un exemplaire est construit dans la Capitale.",
+      "À la complétion d'un bâtiment de la Place de la gouvernance, vous recevez un Diplomate illustre, qui peut absorber une Cité-état vassale.",
+      "Bâtiment exclusif à l'Autriche, remplaçant le Zoo, débloqué aux Lumières. Science +1 et Culture +1 pour chaque quartier spécialisé de la ville. Activités +2 pour les villes dans un rayon de 6 cases. Bonus thématique quand les chefs-d'œuvre proviennent de Personnages illustres différents.",
+      "Personnage illustre unique à l'Autriche.\n\nPeut absorber une Cité-état vassale.\n\n Faveurs diplomatique +1 par tour si adjacent à une étrangère.",
+      "Unité de reconnaissance de l'ère industrielle exclusive à l'Autriche, remplaçant le Ranger.\n\n Puissance de combat à distance de base +5. Puissance de combat +5 dans un rayon de 3 cases autour d'un territoire allié. Exerce une zone de contrôle.\n\nDébloqué par Rainurage Technologie"
+    ],
+    "maskWords": [
+      "Austria",
+      "Café",
+      "Diplomate illustre",
+      "Garde-frontière",
+      "Maria",
+      "Theresa"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MER_AUSTRIA_NAME",
+      "leaderKey": "LOC_LEADER_MER_MARIA_THERESA_NAME"
+    }
+  },
+  {
+    "id": "goths-theodoric",
+    "name": "Théodoric le Grand",
+    "aliases": [
+      "Theodoric"
+    ],
+    "civilization": "Goths",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "anti_cavalry",
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "BBG Expanded 7.5",
+    "portrait": "img/portraits/goths-theodoric.webp",
+    "silhouetteFocus": [
+      32.1,
+      9.1
+    ],
+    "descriptions": [
+      "PM +1 pour les unités militaire terrestres hors cavalerie dans un rayon de 6 cases d'un Hlaiw.",
+      "Au Premier Empire, fonder ou conquérir une ville pour la première fois octroie +1 Citoyens dans toutes vos villes dans un rayon de 6 cases avec au moins 2 Habitations libres.",
+      "Bâtiment exclusif aux Goths, remplaçant l'autel.\n\n Culture +1 et Foi +1. Culture +0.25 et Foi +0.25 par Citoyen dans la ville.",
+      "Unité d'anti-cavalerie de l'ère médiévale exclusive aux Goths, remplaçant le Piquier.\n\n Puissance de combat de base +2.\n\nTuer une unité rapporte 50% de sa Puissance de combat de base en Culture (vitesse en ligne). Pour former un Gadrauht, une ville doit avoir au moins 2 Citoyens. Former un Gadrauht fait perdre 1 Citoyen si la ville ne possède pas de Temple.\nGagne une promotion gratuite.\n\nDébloqué par Tactique militaire Technologie",
+      "Unité de combat rapproché de l'ère classique exclusive à Théodoric le Grand, remplaçant le Spadassin.\n\n Puissance de base +2.\n Puissance de combat +5 contre les quartiers et les unités dans un quartier. Gagne une promotion gratuite.\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Gadrauht",
+      "Goths",
+      "Hlaiw",
+      "Militōnd",
+      "Theodoric",
+      "Théodoric"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MER_GOTHS_NAME",
+      "leaderKey": "LOC_LEADER_MER_THEODORIC_NAME"
+    }
+  },
+  {
+    "id": "mongolia-genghis-khan",
+    "name": "Gengis Khan",
+    "aliases": [
+      "Genghis Khan"
+    ],
+    "civilization": "Mongolie",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/mongolia-genghis-khan.webp",
+    "silhouetteFocus": [
+      53.1,
+      0.8
+    ],
+    "descriptions": [
+      "Puissance de combat +3 pour les unités de cavalerie (sauf lourde).\nTuer une unité de cavalerie offre une chance de la capturer.",
+      "Établir une route commerciale crée immédiatement un comptoir commercial dans la ville de destination.\n\nLe bonus de Puissance de combat lié à la visibilité diplomatique est doublé.\n\nBias : T4 Chevaux.",
+      "Bâtiment exclusif à la Mongolie, remplaçant l'écurie.\n\n PM +1 pour les unités de cavalerie.\nExpérience au combat +25 % pour les unités de cavalerie formées dans cette ville.\nRéserve de ressources stratégiques +10 (en vitesse normale).\n Chevaux +2 par tour une fois qu'il est découvert.\n\nConstruction impossible dans un Campement possédant déjà une caserne.",
+      "Unité montée de combat à distance exclusive à la Mongolie.\n\nFait profiter de sa vitesse de déplacement aux unités civiles et de soutien escortées.\n\nDébloqué par Étriers Technologie"
+    ],
+    "maskWords": [
+      "Genghis",
+      "Gengis",
+      "Keshik",
+      "Mongolia",
+      "Ordo"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MONGOLIA_NAME",
+      "leaderKey": "LOC_LEADER_GENGHIS_KHAN_NAME"
+    }
+  },
+  {
+    "id": "mongolia-kublai-khan-mongolia",
+    "name": "Kubilai Khan (Mongolie)",
+    "aliases": [
+      "Kubilai Khan",
+      "Kublai Khan",
+      "Kublai Khan (Mongolia)"
+    ],
+    "civilization": "Mongolie",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Vietnam & Kublai Khan Pack",
+    "portrait": "img/portraits/mongolia-kublai-khan-mongolia.webp",
+    "silhouetteFocus": [
+      19.9,
+      84.4
+    ],
+    "descriptions": [
+      "Tous les gouvernements ont un emplacement de doctrine Économique supplémentaire.\n\n Science +1 et Culture +1 pour les routes commerciales internationales (+1 supplémentaire toutes les 25 cases franchies).\nDéclenche un Eurêka et une Inspiration aléatoires lors de l'ouverture du premier comptoir commercial dans une ville d'une autre civilisation.\n\nChine uniquement : Culture +1 pour les cases de Grande Muraille adjacentes à une autre case de Grande Muraille.",
+      "Établir une route commerciale crée immédiatement un comptoir commercial dans la ville de destination.\n\nLe bonus de Puissance de combat lié à la visibilité diplomatique est doublé.\n\nBias : T4 Chevaux.",
+      "Bâtiment exclusif à la Mongolie, remplaçant l'écurie.\n\n PM +1 pour les unités de cavalerie.\nExpérience au combat +25 % pour les unités de cavalerie formées dans cette ville.\nRéserve de ressources stratégiques +10 (en vitesse normale).\n Chevaux +2 par tour une fois qu'il est découvert.\n\nConstruction impossible dans un Campement possédant déjà une caserne.",
+      "Unité montée de combat à distance exclusive à la Mongolie.\n\nFait profiter de sa vitesse de déplacement aux unités civiles et de soutien escortées.\n\nDébloqué par Étriers Technologie"
+    ],
+    "maskWords": [
+      "Keshik",
+      "Kubilai",
+      "Kublai",
+      "Mongolia",
+      "Ordo"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_MONGOLIA_NAME",
+      "leaderKey": "LOC_LEADER_KUBLAI_KHAN_NAME"
+    }
+  },
+  {
+    "id": "netherlands-wilhelmina",
+    "name": "Wilhelmine",
+    "aliases": [
+      "Wilhelmina"
+    ],
+    "civilization": "Pays-Bas",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "naval_ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/netherlands-wilhelmina.webp",
+    "silhouetteFocus": [
+      57.0,
+      0.8
+    ],
+    "descriptions": [
+      "Culture +2 pour vos routes commerciales internationales.\nLes routes commerciales internationales étrangères menant à vos villes fournissent +1 Culture à la ville de départ et +2 Culture à la ville d'arrivée.\nLoyauté +2 pour la ville de départ de vos routes commerciales intérieures.\n\n Puissance de combat +3 pour vos unités navales sur une case de polder.\n\nPoints d'Amiral illustre +1 pour les Campus.",
+      "Bonus de proximité +2 pour les Zones industrielles, les Campus et les Places du théâtre adjacents à une rivière.\n\n Production +50% pour les Barrages et les barrières anti-inondation.\n\nAchever un Port déclenche une bombe culturelle.\n\nBias : T2 Rivières / T3 Côte.",
+      "Aménagement exclusif aux Pays-Bas, débloqué à la Féodalité.\n\n Nourriture +1, Production +1 et Habitations +0.5.\n Nourriture +1 pour chaque case de polder adjacente (passe à +2 aux Pièces de Rechange).\n Production +1 toutes les deux cases de polder adjacentes (pour chaque case de polder adjacente aux Pièces de Rechange).\n Production +1 pour chaque Port adjacent.\n Or +4 au Génie Civil.\n\nDoit être placé sur une case de côte ou de lac adjacente à au moins une case de terre franchissable.",
+      "Unité navale de combat à distance de la Renaissance exclusive aux Pays-Bas, remplaçant la Frégate.\n\n Puissance de base de combat rapproché et à distance +5. Puissance de combat +7 contre les quartiers défendables.\n\nDébloqué par Voiles carrées Technologie"
+    ],
+    "maskWords": [
+      "De Zeven Provinciën",
+      "Netherlands",
+      "Polder",
+      "Wilhelmina",
+      "Wilhelmine"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_NETHERLANDS_NAME",
+      "leaderKey": "LOC_LEADER_WILHELMINA_NAME"
+    }
+  },
+  {
+    "id": "norway-harald-hardrada-varangian",
+    "name": "Harald Hardråde (Varègue)",
+    "aliases": [
+      "Harald Hardrada",
+      "Harald Hardrada (Varangian)",
+      "Harald Hardråde"
+    ],
+    "civilization": "Norvège",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Rulers of England Pack",
+    "portrait": "img/portraits/norway-harald-hardrada-varangian.webp",
+    "silhouetteFocus": [
+      57.4,
+      0.8
+    ],
+    "descriptions": [
+      "Production +25% pour la construction des bâtiments du Lieu saint.\n Point d'influence +1 par tour pour les stavkirkes.\n\n Puissance de combat en attaque +1 pour les unités navales pour chaque Cité-état vassale.\nLes unités levées sont améliorées :\n • PM +1.\n • Coût en Or de levée -75%.\n • Tuer une unité rapporte 50% de sa Puissance de combat de base en Science, Culture et Foi (vitesse en ligne).\n\nLorsque vous convertissez une ville pour la première fois avec une unité religieuse, vous gagnez 10 Science et 10 Culture par Citoyen.",
+      "Production +50% pour la construction de Lieux saints.\nLieux saints : Foi +1 par case de côte ou de lac adjacente.\nPorts : Or +2 par Lieu saint adjacent.\n\nLes unités navales de combat rapproché peuvent se soigner sur les cases de côte neutres.\nL'embarquement et le débarquement des unités ne consomment pas de PM.\n\nBias : T1 Côte / T5 Forêts / -T4 Forêts tropicales.",
+      "Bâtiment exclusif à la Norvège remplaçant le temple.\n\n Foi +1 sur les cases de ressource de la ville.\n Production +1 sur les cases de ressource côtière de la ville.",
+      "Unité de combat rapproché de l'ère médiévale exclusive à la Norvège, remplaçant l'Homme d'armes.\n\n Puissance de base -6.\n PM +2 lorsqu'elle commence son tour en territoire ennemi ou embarquée.\n Puissance de combat en attaque +10.\n\nPeut être achetée contre de la Foi.\n\nDébloqué par Féodalité Dogme"
+    ],
+    "maskWords": [
+      "Berserker",
+      "Harald",
+      "Hardrada",
+      "Hardråde",
+      "Norway",
+      "Stavkirke"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_NORWAY_NAME",
+      "leaderKey": "LOC_LEADER_HARALD_ALT_NAME"
+    }
+  },
+  {
+    "id": "norway-harald-hardrada-konge",
+    "name": "Harald Hardråde (Konge)",
+    "aliases": [
+      "Harald Hardrada",
+      "Harald Hardrada (Konge)",
+      "Harald Hardråde"
+    ],
+    "civilization": "Norvège",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee",
+      "naval_melee"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/norway-harald-hardrada-konge.webp",
+    "silhouetteFocus": [
+      37.5,
+      94.1
+    ],
+    "descriptions": [
+      "Production +25% pour la formation d'unités navales de combat rapproché, qui peuvent attaquer les côtes.\nLe pillage et l'assaut côtier des cases de mine octroient de la Science, en plus de l'Or. Le pillage et l'assaut côtier des cases carrière, pâturage, plantation et camp octroient de la Culture, en plus de la Foi.\n\n Puissance de combat +3 pour les unités navales de combat rapproché.\nLes unités hors quadrirèmes peuvent traverser les cases d'océan à la Construction Navale.\nLes Berserkers et les Langskip consomment toujours 1 point de PM pour naviguer sur les cases d'océan.",
+      "Production +50% pour la construction de Lieux saints.\nLieux saints : Foi +1 par case de côte ou de lac adjacente.\nPorts : Or +2 par Lieu saint adjacent.\n\nLes unités navales de combat rapproché peuvent se soigner sur les cases de côte neutres.\nL'embarquement et le débarquement des unités ne consomment pas de PM.\n\nBias : T1 Côte / T5 Forêts / -T4 Forêts tropicales.",
+      "Bâtiment exclusif à la Norvège remplaçant le temple.\n\n Foi +1 sur les cases de ressource de la ville.\n Production +1 sur les cases de ressource côtière de la ville.",
+      "Unité de combat rapproché de l'ère médiévale exclusive à la Norvège, remplaçant l'Homme d'armes.\n\n Puissance de base -6.\n PM +2 lorsqu'elle commence son tour en territoire ennemi ou embarquée.\n Puissance de combat en attaque +10.\n\nPeut être achetée contre de la Foi.\n\nDébloqué par Féodalité Dogme",
+      "Unité navale de combat rapproché exclusive à Harald Konge, remplaçant la Galère.\n\n PM +1 si elle commence son tour sur une case de côte. Ignore les zones de contrôle.\n\nDébloqué par Navigation à voile Technologie"
+    ],
+    "maskWords": [
+      "Berserker",
+      "Harald",
+      "Hardrada",
+      "Hardråde",
+      "Langskip",
+      "Norway",
+      "Stavkirke"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_NORWAY_NAME",
+      "leaderKey": "LOC_LEADER_HARDRADA_ORIGINAL_NAME"
+    }
+  },
+  {
+    "id": "nubia-amanitore",
+    "name": "Amanitoré",
+    "aliases": [
+      "Amanitore"
+    ],
+    "civilization": "Nubie",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Nubia Civilization & Scenario Pack",
+    "portrait": "img/portraits/nubia-amanitore.webp",
+    "silhouetteFocus": [
+      59.4,
+      94.9
+    ],
+    "descriptions": [
+      "Production +20% pour la construction de quartiers (passe à +40% quand la ville possède une pyramide nubienne).",
+      "Production +30% et Expérience de combat +50% pour les unités d'attaque à distance terrestre et navale.\n\n Production +1 pour les cases de mine sur des ressources stratégiques. Or +2 pour les cases de mine sur des ressources bonus et de luxe.\n\nBias : T2 Plaines / T5 Ressources à mine.",
+      "Aménagement exclusif à la Nubie, débloqué à l'Artisanat.\n\n Nourriture +2 et Foi +2.\n\nLes quartiers adjacents octroient des rendements supplémentaires selon les quartiers adjacents:\n • Nourriture +1 si adjacente à un Centre-ville.\n • Production +1 par Zone industrielle, Campement et Aérodrome.\n • Or +1 par Plateforme commerciale et Port.\n • Or +2 et Culture +1 par Place de la gouvernance et Quartier diplomatique.\n • Science +1 par Campus.\n • Culture +1 par Place du théâtre.\n • Foi +1 par Lieu saint.\n\nBonus de proximité +1 pour les quartiers adjacents.\n\nDoit être construit sur une case plate. Un par ville. Deux pyramides nubiennes ne peuvent pas être adjacentes.",
+      "Unité de combat à distance de l'ère antique exclusive à la Nubie, remplaçant l'Archer.\n\n Puissance de base de combat rapproché +2 et à distance +5.\n PM +1.\n\nDébloqué par Tir à l'arc Technologie"
+    ],
+    "maskWords": [
+      "Amanitore",
+      "Amanitoré",
+      "Archer Pítati",
+      "Nubia",
+      "Pyramide nubienne"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_NUBIA_NAME",
+      "leaderKey": "LOC_LEADER_AMANITORE_NAME"
+    }
+  },
+  {
+    "id": "ottomans-suleiman-kanuni",
+    "name": "Soliman (kanuni)",
+    "aliases": [
+      "Soliman",
+      "Suleiman",
+      "Suleiman (Kanuni)"
+    ],
+    "civilization": "Ottomans",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "naval_raider",
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/ottomans-suleiman-kanuni.webp",
+    "silhouetteFocus": [
+      73.8,
+      89.5
+    ],
+    "descriptions": [
+      "Vous avez la possibilité de recruter un gouverneur supplémentaire exclusif disposant de capacités militaires et diplomatiques.\n\nTitre de gouverneur +1 à la Poudre à Canon.",
+      "Production +50% pour les unités de siège.\n Puissance de combat +3 pour les unités de siège.\n\nCapturer une ville ne réduit pas son nombre de Citoyens.\n Activités +1 et loyauté +4 par tour pour les villes non fondées par les Ottomans.\n\nAchever un grand bazar octroie un titre de gouverneur.\n\nBias : T3 Rivières / T5 Salpêtre.",
+      "Bâtiment exclusif aux Ottomans, remplaçant la banque.\n\n Activités +1 pour chaque case de ressource de luxe aménagée dans cette ville.\n Or +2 pour les routes commerciales à l'origine de cette ville.\n Or +1 pour les routes commerciales à destination de cette ville.\n\nPermet de créer une route commerciale supplémentaire.\n\nAccumulez une ressource stratégique supplémentaire pour chaque type de ressource stratégique aménagée dans cette ville.",
+      "Unité navale d'assaut en mer de l'ère médiévale exclusive aux Ottomans, remplaçant le Corsaire.\n\nLes assauts côtiers ne coûtent pas de PM.\n\nPeut naviguer sur les cases d'océan sans avoir recherché la Cartographie.\nNe peut être vu que par d'autres unités navales d'assaut en mer à moins de lui être adjacent. Révèle les unités d'assaut en mer dans le champ de vision.\n\nDébloqué par Foires médiévales Dogme",
+      "Unité de combat rapproché de la Renaissance exclusive à Soliman Kanuni, remplaçant le Mousquetaire.\n\n Puissance de base +5.\nCommence avec une promotion gratuite.\n\nPour former un Janissaire, une ville doit avoir au moins 2 Citoyens. Si la ville est fondée par Soliman, elle perd 1 Citoyen.\n\nDébloqué par Poudre à canon Technologie"
+    ],
+    "maskWords": [
+      "Corsaire barbaresque",
+      "Grand bazar",
+      "Janissaire",
+      "Ottomans",
+      "Soliman",
+      "Suleiman"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_OTTOMAN_NAME",
+      "leaderKey": "LOC_LEADER_SULEIMAN_ORIGINAL_NAME"
+    }
+  },
+  {
+    "id": "ottomans-suleiman-muhtesem",
+    "name": "Soliman (muhteşem)",
+    "aliases": [
+      "Soliman",
+      "Suleiman",
+      "Suleiman (Muhteşem)"
+    ],
+    "civilization": "Ottomans",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "naval_raider"
+    ],
+    "gender": "Homme",
+    "extension": "Great Commanders Pack",
+    "portrait": "img/portraits/ottomans-suleiman-muhtesem.webp",
+    "silhouetteFocus": [
+      93.8,
+      33.2
+    ],
+    "descriptions": [
+      "Science +10% et Culture +10% lors d'un âge d'or ou héroïque.\n Puissance de combat +2 en âge sombre ou normal (passe à +4 contre les civilisations elles aussi en âge sombre ou normal).",
+      "Production +50% pour les unités de siège.\n Puissance de combat +3 pour les unités de siège.\n\nCapturer une ville ne réduit pas son nombre de Citoyens.\n Activités +1 et loyauté +4 par tour pour les villes non fondées par les Ottomans.\n\nAchever un grand bazar octroie un titre de gouverneur.\n\nBias : T3 Rivières / T5 Salpêtre.",
+      "Bâtiment exclusif aux Ottomans, remplaçant la banque.\n\n Activités +1 pour chaque case de ressource de luxe aménagée dans cette ville.\n Or +2 pour les routes commerciales à l'origine de cette ville.\n Or +1 pour les routes commerciales à destination de cette ville.\n\nPermet de créer une route commerciale supplémentaire.\n\nAccumulez une ressource stratégique supplémentaire pour chaque type de ressource stratégique aménagée dans cette ville.",
+      "Unité navale d'assaut en mer de l'ère médiévale exclusive aux Ottomans, remplaçant le Corsaire.\n\nLes assauts côtiers ne coûtent pas de PM.\n\nPeut naviguer sur les cases d'océan sans avoir recherché la Cartographie.\nNe peut être vu que par d'autres unités navales d'assaut en mer à moins de lui être adjacent. Révèle les unités d'assaut en mer dans le champ de vision.\n\nDébloqué par Foires médiévales Dogme"
+    ],
+    "maskWords": [
+      "Corsaire barbaresque",
+      "Grand bazar",
+      "Ottomans",
+      "Soliman",
+      "Suleiman"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_OTTOMAN_NAME",
+      "leaderKey": "LOC_LEADER_SULEIMAN_ALT_NAME"
+    }
+  },
+  {
+    "id": "persia-cyrus",
+    "name": "Cyrus",
+    "aliases": [],
+    "civilization": "Perse",
+    "era": null,
+    "continent": [
+      "Asie",
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Persia and Macedon Civilization & Scenario Pack",
+    "portrait": "img/portraits/persia-cyrus.webp",
+    "silhouetteFocus": [
+      79.3,
+      14.8
+    ],
+    "descriptions": [
+      "Culture +1 pour vos routes commerciales intérieures (passe à +3 aux Foires Médiévales et à +5 à l'Urbanisation).\n\n Puissance de combat +3 en attaque pour toutes les unités militaires perses.\n\nLoyauté +5 par tour dans les villes occupées possédant une unité en garnison.\nDéclarer une guerre surprise compte comme pour une guerre formelle dans le calcul des griefs et du bellicisme.",
+      "Or +2 pour vos routes commerciales intérieures (passe à +4 à Banque et à +6 aux Sciences Économiques).\nCapacité de routes commerciales +1 à la Philosophie Politique.\n\nLes routes construites sur votre territoire sont d'un niveau supérieur.",
+      "Aménagement exclusif à la Perse, débloqué au Premier Empire.\n\n Or +2, Culture +1 et Habitations +1.\n Or +1 pour chaque Centre-ville, Zone industrielle, Port et Plateforme commerciale adjacent.\n Culture +1 pour chaque Centre-ville, Campus, Place du théâtre et Lieu saint adjacent.\n Culture +1 au Service diplomatique.\n\nAttrait +1 pour les cases adjacentes.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nConstruction impossible sur une case de neige et de toundra, ou adjacent à un autre pairidaeza.",
+      "Unité de combat rapproché de l'ère classique exclusive à la Perse, remplaçant le Spadassin.\n\nPossède une attaque à distance (1 de Portée).\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Cyrus",
+      "Immortel",
+      "Pairidaēza",
+      "Persia"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_PERSIA_NAME",
+      "leaderKey": "LOC_LEADER_CYRUS_NAME"
+    }
+  },
+  {
+    "id": "persia-nader-shah",
+    "name": "Nader Shah",
+    "aliases": [],
+    "civilization": "Perse",
+    "era": null,
+    "continent": [
+      "Asie",
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Great Commanders Pack",
+    "portrait": "img/portraits/persia-nader-shah.webp",
+    "silhouetteFocus": [
+      5.9,
+      53.9
+    ],
+    "descriptions": [
+      "Science +1 pour vos routes commerciales intérieures (passe à +3 à l'Éducation et à +5 à la Théorie Scientifique).\n\n Puissance de combat +5 en attaque contre les unités non blessées et les quartiers défendables.",
+      "Or +2 pour vos routes commerciales intérieures (passe à +4 à Banque et à +6 aux Sciences Économiques).\nCapacité de routes commerciales +1 à la Philosophie Politique.\n\nLes routes construites sur votre territoire sont d'un niveau supérieur.",
+      "Aménagement exclusif à la Perse, débloqué au Premier Empire.\n\n Or +2, Culture +1 et Habitations +1.\n Or +1 pour chaque Centre-ville, Zone industrielle, Port et Plateforme commerciale adjacent.\n Culture +1 pour chaque Centre-ville, Campus, Place du théâtre et Lieu saint adjacent.\n Culture +1 au Service diplomatique.\n\nAttrait +1 pour les cases adjacentes.\n\nGénère du Tourisme par le biais de la Culture à l'Aviation.\n\nConstruction impossible sur une case de neige et de toundra, ou adjacent à un autre pairidaeza.",
+      "Unité de combat rapproché de l'ère classique exclusive à la Perse, remplaçant le Spadassin.\n\nPossède une attaque à distance (1 de Portée).\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Immortel",
+      "Nader",
+      "Pairidaēza",
+      "Persia",
+      "Shah"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_PERSIA_NAME",
+      "leaderKey": "LOC_LEADER_NADER_SHAH_NAME"
+    }
+  },
+  {
+    "id": "phoenicia-dido",
+    "name": "Didon",
+    "aliases": [
+      "Dido"
+    ],
+    "civilization": "Phénicie",
+    "era": null,
+    "continent": [
+      "Asie",
+      "Afrique"
+    ],
+    "uniqueDistrict": [
+      "harbor"
+    ],
+    "uniqueUnitClass": [
+      "naval_melee"
+    ],
+    "gender": "Femme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/phoenicia-dido.webp",
+    "silhouetteFocus": [
+      95.7,
+      57.4
+    ],
+    "descriptions": [
+      "Capacité de routes commerciales +1 pour chacun des bâtiments de la Place de la gouvernance.\n Production +50% pour les quartiers de la ville disposant de la Place de la gouvernance.\n\n PM +2 et Champ de vision +2 pour les Colons embarqués.\nL'embarquement et le débarquement des Colons ne demande pas de PM supplémentaire.",
+      "Les villes côtières fondées par la Phénifcie et situées sur le même continent que la Capitale phénicienne sont loyales à 100%.\n\nCommencez la partie avec un Eurêka pour l'Écriture.\n\nBias : T1 Côte.",
+      "Quartier exclusif à la Phénicie, remplaçant le Port.\n\nEn plus des bonus du Port, Production +25% pour les unités navales et les Colons dans la ville.",
+      "Unité navale de combat rapproché de l'ère antique exclusive à la Phénicie, remplaçant la Galère.\n\n Puissance de base +5 et PM +1.\nLes Négociants ne peuvent pas être pillés s'ils se trouvent dans un rayon de 4 cases d'eau autour d'une Birème.\n\nDébloqué par Navigation à voile Technologie"
+    ],
+    "maskWords": [
+      "Birème",
+      "Cothon",
+      "Dido",
+      "Didon",
+      "Phoenicia"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_PHOENICIA_NAME",
+      "leaderKey": "LOC_LEADER_DIDO_NAME"
+    }
+  },
+  {
+    "id": "phoenicia-ahiram",
+    "name": "Ahiram",
+    "aliases": [],
+    "civilization": "Phénicie",
+    "era": null,
+    "continent": [
+      "Asie",
+      "Afrique"
+    ],
+    "uniqueDistrict": [
+      "harbor"
+    ],
+    "uniqueUnitClass": [
+      "naval_melee"
+    ],
+    "gender": null,
+    "extension": "BBG Expanded 7.1",
+    "portrait": "img/portraits/phoenicia-ahiram.webp",
+    "silhouetteFocus": [
+      88.9,
+      80.9
+    ],
+    "descriptions": [
+      "Bâtiment exclusif à Ahiram, remplaçant la bibliothèque.\n\n Science +1 par Amiral illustre recruté après la fondation ou la capture de la ville.\nPas de coût d'entretien.",
+      "Production +0.5 et Or +2 pour les routes commerciales internationales pour chaque ressource de luxe dans la ville d'origine.",
+      "Les villes côtières fondées par la Phénifcie et situées sur le même continent que la Capitale phénicienne sont loyales à 100%.\n\nCommencez la partie avec un Eurêka pour l'Écriture.\n\nBias : T1 Côte.",
+      "Quartier exclusif à la Phénicie, remplaçant le Port.\n\nEn plus des bonus du Port, Production +25% pour les unités navales et les Colons dans la ville.",
+      "Unité navale de combat rapproché de l'ère antique exclusive à la Phénicie, remplaçant la Galère.\n\n Puissance de base +5 et PM +1.\nLes Négociants ne peuvent pas être pillés s'ils se trouvent dans un rayon de 4 cases d'eau autour d'une Birème.\n\nDébloqué par Navigation à voile Technologie"
+    ],
+    "maskWords": [
+      "Ahiram",
+      "Birème",
+      "Cothon",
+      "Phoenicia"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_PHOENICIA_NAME",
+      "leaderKey": "LOC_LEADER_LIME_PHOE_AHIRAM_NAME"
+    }
+  },
+  {
+    "id": "poland-jadwiga",
+    "name": "Hedwige Ière",
+    "aliases": [
+      "Jadwiga"
+    ],
+    "civilization": "Pologne",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Femme",
+    "extension": "Poland Civilization & Scenario Pack",
+    "portrait": "img/portraits/poland-jadwiga.webp",
+    "silhouetteFocus": [
+      22.7,
+      86.3
+    ],
+    "descriptions": [
+      "Créer et achever votre religion vous octroie une relique.\n Or +4, Culture +2 et Foi +2 pour les reliques.\n\nLes Lieux saints bénéficient d'un bonus de proximité standard, plutôt que mineur, de la part des autres quartiers.\n\nVotre religion devient majoritaire dans les villes qui perdent une case suite à une bombe culturelle.",
+      "Au Premier Empire, un emplacement de doctrine Militaire est converti en emplacement de doctrine Joker.\n\nLes Campements et les Forts provoquent une bombe culturelle.",
+      "Bâtiment exclusif à la Pologne, remplaçant le marché.\n\n Production +2 pour les routes commerciales internationales issues de cette ville.\n Or +4 pour les routes commerciales intérieures.",
+      "Unité de cavalerie lourde de la Renaissance exclusive à la Pologne, remplaçant le Cuirassier.\n\n Puissance de base -2.\n\nRepousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts supplémentaires.\n\nDébloqué par Église réformée Dogme"
+    ],
+    "maskWords": [
+      "Halle aux draps",
+      "Hedwige",
+      "Hussard ailé",
+      "Jadwiga",
+      "Poland"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_POLAND_NAME",
+      "leaderKey": "LOC_LEADER_JADWIGA_NAME"
+    }
+  },
+  {
+    "id": "poland-stanislaw-ii",
+    "name": "Stanislas II",
+    "aliases": [
+      "Stanislaw II"
+    ],
+    "civilization": "Pologne",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "light_cavalry",
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "BBG Expanded 7.5",
+    "portrait": "img/portraits/poland-stanislaw-ii.webp",
+    "silhouetteFocus": [
+      80.6,
+      82.5
+    ],
+    "descriptions": [
+      "Les cases de ressources stratégiques et/ou aménagées reçoivent des rendements supplémentaires si elles sont adjacentes à un Campement et ses bâtiments :\n • Campement : Nourriture +1.\n • Caserne/Écurie : Culture +1.\n • Armurerie : Science +1.\n • École militaire : Production +1.",
+      "Au Premier Empire, un emplacement de doctrine Militaire est converti en emplacement de doctrine Joker.\n\nLes Campements et les Forts provoquent une bombe culturelle.",
+      "Bâtiment exclusif à la Pologne, remplaçant le marché.\n\n Production +2 pour les routes commerciales internationales issues de cette ville.\n Or +4 pour les routes commerciales intérieures.",
+      "Unité de cavalerie légère de la Renaissance exclusive à Stanislas II, remplaçant la Cavalerie.\n\nBonus de contournement +50%.\n\nDébloqué par Fonte des métaux Technologie",
+      "Unité de cavalerie lourde de la Renaissance exclusive à la Pologne, remplaçant le Cuirassier.\n\n Puissance de base -2.\n\nRepousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts supplémentaires.\n\nDébloqué par Église réformée Dogme"
+    ],
+    "maskWords": [
+      "Halle aux draps",
+      "Hussard ailé",
+      "Poland",
+      "Stanislas",
+      "Stanislaw",
+      "Uhlan"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_POLAND_NAME",
+      "leaderKey": "LOC_LEADER_JFD_STANISLAW_NAME"
+    }
+  },
+  {
+    "id": "portugal-joao-iii",
+    "name": "Jean III",
+    "aliases": [
+      "João III"
+    ],
+    "civilization": "Portugal",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "naval_melee"
+    ],
+    "gender": "Homme",
+    "extension": "Portugal Pack",
+    "portrait": "img/portraits/portugal-joao-iii.webp",
+    "silhouetteFocus": [
+      4.7,
+      44.1
+    ],
+    "descriptions": [
+      "Champ de vision +1 pour toutes les unités.\n\nCapacité de routes commerciales +1 quand vous entrez dans une nouvelle ère, ère antique incluse.\n\nLibre passage avec toutes les Cités-états.",
+      "Les rendements de ces routes sont augmentés :\n • +50% d'Or à la Cartographie.\n • +50% de Science à l'Éducation.\n • +50% de Culture aux Foires Médiévales.\n\nLes routes commerciales internationales doivent partir d'une ville côtière et ne peuvent être reliées qu'à des villes bâties sur la côte ou possédant un Port.\nLes Négociants bénéficient de +50% de portée sur l'eau, et peuvent embarquer dès qu'ils sont disponibles.\n\nBias : T1 Côte.",
+      "Bâtiment exclusif au Portugal, remplaçant l'université.\n\nEn plus des bonus de l'université, Production +25% pour les unités navales dans cette ville, Science +1 toutes les deux cases de côtes ou de lacs dans cette ville et +1 point d'Amiral illustre.",
+      "Aménagement exclusif au Portugal, débloqué par le Nau.\n\n Production +1 et Or +4.\n Production +1 et Or +2 pour les routes commerciales entre cette ville et le Portugal.\n\nNe peut être construite que sur une case de côte ou de lac, adjacente à une ressource de luxe ou bonus sur le territoire d'une autre civilisation ou d'une Cité-état. Les feitorias ne peuvent ni être adjacentes entre elles, ni supprimées.",
+      "Unité navale de combat rapproché de la Renaissance exclusive au Portugal, remplaçant la Caravelle.\n\nCommence avec une promotion gratuite.\nCoût d'entretien réduit.\n\nPossède 2 charges pour construire des feitorias.\n\nDébloqué par Cartographie Technologie"
+    ],
+    "maskWords": [
+      "Feitoria",
+      "Jean",
+      "João",
+      "Nau",
+      "Portugal",
+      "École navale"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_PORTUGAL_NAME",
+      "leaderKey": "LOC_LEADER_JOAO_III_NAME"
+    }
+  },
+  {
+    "id": "rome-julius-caesar",
+    "name": "Jules César",
+    "aliases": [
+      "Julius Caesar"
+    ],
+    "civilization": "Rome",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "aqueduct"
+    ],
+    "uniqueUnitClass": [
+      "melee",
+      "siege"
+    ],
+    "gender": "Homme",
+    "extension": "Julius Caesar Pack",
+    "portrait": "img/portraits/rome-julius-caesar.webp",
+    "silhouetteFocus": [
+      82.4,
+      85.2
+    ],
+    "descriptions": [
+      "Pour les unités militaires de combat rapproché, de combat à distance, de siège et de cavalerie lourde :\n • Expérience +50% (passe à +100% à l'ère médiévale).\n • Puissance de combat +1 pour chaque niveau.\n\nFonder une ville octroie l'unité de combat rapproché la plus puissante que vous pouvez former. Vous recevez un Guerrier sur votre Capitale au Code Juridique.\n\nSi vous parvenez à conquérir une ville fondée par un autre joueur, et tant que vous en contrôlez au moins une, vous obtenez un emplacement de doctrine Joker supplémentaire.\n Puissance de combat +5 et Expérience reçue complète contre les barbares.",
+      "Les villes que vous fondez ou conquérez sont pourvues immédiatement d'un comptoir commercial, et d'une route jusqu'à la Capitale si elle est à portée.\n Or +1 pour toutes vos routes commerciales traversant vos comptoirs commerciaux.",
+      "Quartier exclusif à Rome, remplaçant l'Aqueduc.\n\nEn plus des bonus de l'Aqueduc, Habitations +2.\n Culture +1 pour chaque quartier adjacent.",
+      "Unité de combat rapproché de l'ère classique exclusive à Rome, remplaçant le Spadassin.\n\n Puissance de base +4.\n\nPossède 1 charge pour construire un fort.\n\nDébloqué par Travail du fer Technologie",
+      "Unité de siège de l'ère classique exclusive à Jules César, remplaçant la Catapulte.\n\nCommence avec une promotion.\n\nDébloqué par Ingénierie Technologie"
+    ],
+    "maskWords": [
+      "Caesar",
+      "César",
+      "Jules",
+      "Julius",
+      "Légion",
+      "Onagre",
+      "Rome",
+      "Thermes"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ROME_NAME",
+      "leaderKey": "LOC_LEADER_JULIUS_CAESAR_NAME"
+    }
+  },
+  {
+    "id": "rome-trajan",
+    "name": "Trajan",
+    "aliases": [],
+    "civilization": "Rome",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [
+      "aqueduct"
+    ],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/rome-trajan.webp",
+    "silhouetteFocus": [
+      53.9,
+      1.2
+    ],
+    "descriptions": [
+      "Au Premier Empire, toutes vos villes existantes et à venir sont dotées du bâtiment au coût de Production le plus bas.",
+      "Les villes que vous fondez ou conquérez sont pourvues immédiatement d'un comptoir commercial, et d'une route jusqu'à la Capitale si elle est à portée.\n Or +1 pour toutes vos routes commerciales traversant vos comptoirs commerciaux.",
+      "Quartier exclusif à Rome, remplaçant l'Aqueduc.\n\nEn plus des bonus de l'Aqueduc, Habitations +2.\n Culture +1 pour chaque quartier adjacent.",
+      "Unité de combat rapproché de l'ère classique exclusive à Rome, remplaçant le Spadassin.\n\n Puissance de base +4.\n\nPossède 1 charge pour construire un fort.\n\nDébloqué par Travail du fer Technologie"
+    ],
+    "maskWords": [
+      "Légion",
+      "Rome",
+      "Thermes",
+      "Trajan"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ROME_NAME",
+      "leaderKey": "LOC_LEADER_TRAJAN_NAME"
+    }
+  },
+  {
+    "id": "russia-peter",
+    "name": "Pierre Ier le Grand",
+    "aliases": [
+      "Peter"
+    ],
+    "civilization": "Russie",
+    "era": null,
+    "continent": [
+      "Europe",
+      "Asie"
+    ],
+    "uniqueDistrict": [
+      "holy_site"
+    ],
+    "uniqueUnitClass": [
+      "light_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/russia-peter.webp",
+    "silhouetteFocus": [
+      84.4,
+      19.5
+    ],
+    "descriptions": [
+      "Les routes commerciales vers les civilisations plus avancées que la Russie fournissent de la Science ou de la Culture (+1 pour 3 technologies ou dogmes d'avance).",
+      "Le territoire des villes nouvellement fondées est plus vaste de 4 cases.\n\n Production +1 pour la Capitale si elle est sur une case de toundra.\n Production +1 pour toutes les cases de toundra.\n Nourriture +1 pour les villes sur les cases de toundra possédant un temple.\n\nLes unités sont insensibles au blizzard. Les unités des civilisations en guerre avec la Russie reçoivent +100% des dégâts infligés par les blizzards sur le territoire russe.\n\nBias : T1 Toundra",
+      "Quartier exclusif à la Russie, remplaçant le Lieu saint.\n\nEn plus des bonus du Lieu saint, les frontières de la ville s'étendent d'une case à chaque Personnage illustre utilisé dans la ville.\nLa Laure génère +1 point d'Écrivain illustre avec un temple et +1 point d'Artiste illustre avec un lieu de culte.",
+      "Unité de cavalerie légère de l'ère industrielle exclusive à la Russie, remplaçant la Cavalerie.\n\n Puissance de combat +5 sur les cases de son territoire ou adjacentes.\nPeut se déplacer après avoir attaqué.\n\nDébloqué par Science militaire Technologie"
+    ],
+    "maskWords": [
+      "Cosaque",
+      "Laure",
+      "Peter",
+      "Pierre",
+      "Russia"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_RUSSIA_NAME",
+      "leaderKey": "LOC_LEADER_PETER_GREAT_NAME"
+    }
+  },
+  {
+    "id": "scotland-robert-the-bruce",
+    "name": "Robert Bruce",
+    "aliases": [
+      "Robert the Bruce"
+    ],
+    "civilization": "Écosse",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "recon"
+    ],
+    "gender": "Homme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/scotland-robert-the-bruce.webp",
+    "silhouetteFocus": [
+      50.8,
+      0.4
+    ],
+    "descriptions": [
+      "Expérience +50% pour toutes les unités de reconnaissance.",
+      "Dans les villes heureuses :\n • Production +5%.\n • Science +5%.\n • Points d'Ingénieur illustre +1 pour la Zone industrielle.\n • Points de Savant illustre +1 pour le Campus.\nCes bonus sont doublés pour les villes en liesse et triplés pour les villes euphoriques.",
+      "Aménagement exclusif à l'Écosse, débloqué aux Loisirs.\n\n Or +2, Culture +1 et Activités +1.\n Or +1 et Culture +1 si adjacent à un Centre-ville.\n Or +1 et Culture +1 aux Lumières.\n Culture +1 et Activités +1 si adjacent à un Complexe de loisirs.\n Activités +1 aux Guildes.\n Habitations +1 à la Mondialisation.\n\nAttrait +1 pour les cases adjacentes.\n\nNe peut pas être construit sur une case de désert. Un par ville. Les cases de terrain de golf ne peuvent pas être attribuées à une autre ville.",
+      "Unité de reconnaissance de l'ère industrielle exclusive à l'Écosse, remplaçant le Ranger.\n\n Puissance de base de combat rapproché +10 et à distance +5.\n Puissance de combat +5 sur les cases de collines et de bois.\n\nDébloqué par Rainurage Technologie"
+    ],
+    "maskWords": [
+      "Bruce",
+      "Highlander",
+      "Robert",
+      "Scotland",
+      "Terrain de golf"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_SCOTLAND_NAME",
+      "leaderKey": "LOC_LEADER_ROBERT_THE_BRUCE_NAME"
+    }
+  },
+  {
+    "id": "scythia-tomyris",
+    "name": "Tomyris",
+    "aliases": [],
+    "civilization": "Scythie",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "ranged_cavalry"
+    ],
+    "gender": "Femme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/scythia-tomyris.webp",
+    "silhouetteFocus": [
+      67.2,
+      92.6
+    ],
+    "descriptions": [
+      "Puissance de combat en attaque +3 contre les unités blessées (passe à +5 à l'entrée en ère médiévale). Vaincre une unité restaure 30 PV.",
+      "Les unités de cavalerie peuvent être achetées avec de la Foi.\n\nBias : T3 Chevaux / T4 Bétail, Moutons / T5 Plaines, Prairies.",
+      "Aménagement exclusif à la Scythie, débloqué à l'Élevage.\n\n Or +3 et Foi +1.\n Production +1 et Foi +1 pour chaque case de pâturage adjacente (passe à Foi +2 aux Étriers).\nGénère du Tourisme par le biais de la Foi à l'Aviation.",
+      "Unité montée d'attaque à distance de l'ère classique exclusive à la Scythie.\n\n Portée d'attaque : 2.\n\nDébloqué par Équitation Technologie"
+    ],
+    "maskWords": [
+      "Archer monté Saka",
+      "Kourgane",
+      "Scythia",
+      "Tomyris"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_SCYTHIA_NAME",
+      "leaderKey": "LOC_LEADER_TOMYRIS_NAME"
+    }
+  },
+  {
+    "id": "spain-philip-ii",
+    "name": "Philippe II",
+    "aliases": [
+      "Philip II"
+    ],
+    "civilization": "Espagne",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "melee"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/spain-philip-ii.webp",
+    "silhouetteFocus": [
+      86.3,
+      78.5
+    ],
+    "descriptions": [
+      "Puissance de combat +3 face aux civilisations suivant une autre religion que la vôtre.\n\nCoût en Foi des Missionnaires réduit de 25%. Les Inquisiteurs ont une charge supplémentaire et suppriment 100% de l'influence des autres religions.",
+      "Les dogmes des Mercenaires et du Nationalisme permettent respectivement de constituer des Flottes et des Armadas dans les villes avec un complexe portuaire.\n\n Production +1, Or +3 et Foi +2 pour vos routes commerciales. Ces rendements sont doublés pour vos routes commerciales internationales lorsqu'elles relient deux continents différents.\n\nLes villes fondées à 8 cases ou plus de votre Capitale reçoivent +25% de Production pour la construction de quartiers.\n\nBias : T1 Côte / T3 Failles géothermiques / Spécial : \"Continent split\".",
+      "Aménagement exclusif à l'Espagne, débloqué à la Théologie.\n\n Foi +2.\n Production +1, Foi +1 et Habitations +1 si construit à 8 cases ou plus de votre Capitale.\n Science +1 pour chaque Campus et Lieu saint adjacent.\n Science +2 aux Lumières.\n\nDeux missions ne peuvent pas être adjacentes.",
+      "Unité de combat rapproché de la Renaissance exclusive à l'Espagne, remplaçant le Mousquetaire.\n\n Puissance de base +3.\n Puissance de combat +5 si une unité religieuse se trouve dans un rayon d'une case.\nCapturer une ville dans un rayon d'une case la convertit à votre religion.\n\nDébloqué par Poudre à canon Technologie"
+    ],
+    "maskWords": [
+      "Conquistador",
+      "Mission",
+      "Philip",
+      "Philippe",
+      "Spain"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_SPAIN_NAME",
+      "leaderKey": "LOC_LEADER_PHILIP_II_NAME"
+    }
+  },
+  {
+    "id": "sumeria-gilgamesh",
+    "name": "Gilgamesh",
+    "aliases": [],
+    "civilization": "Sumer",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "heavy_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Jeu de base",
+    "portrait": "img/portraits/sumeria-gilgamesh.webp",
+    "silhouetteFocus": [
+      18.4,
+      82.8
+    ],
+    "descriptions": [
+      "Votre alliance la plus avancée fournit des bonus :\n • Puissance de combat +1/2/3.\n • Points d'influence par tour +2/4/6.\nEn cas de guerre contre un ennemi commun, les alliés partagent le butin des pillages et l'expérience gagnée au combat dans un rayon de 5 cases. Vos alliances génèrent des points d'alliance supplémentaire en cas de guerre contre un ennemi commun.\n\nLorsque vous rasez un camp barbare, vous recevez également une récompense de village tribal.\n\nLe coût de levée des Cités-états est diminué de moitié.",
+      "Nourriture +1 pour les fermes adjacentes à une rivière.\n Production +1 pour les fermes adjacentes à une ziggurat après avoir découvert le Premier Empire.\n\nNe subit aucun dégât d'inondation.\n\nBias : T3 Rivières / T4 Plaines inondables (de plaine et prairie).",
+      "Aménagement exclusif au Sumer.\n\n Science +2 et Habitations +1.\n Culture +1 si adjacent à une rivière.\n Foi +1 par quartier adjacent et toutes les deux fermes adjacentes au Premier Empire.\n\nConstruction impossible sur une colline ou à côté d'une autre Ziggurat.",
+      "Unité de cavalerie lourde de l'ère antique exclusive au Sumer.\n\nPas de malus de combat contre les unités d'anti-cavalerie.\n Puissance de combat +4 face aux barbares.\n PM +1 si elle commence son tour en terrain dégagé. Ne subit pas de pénalité de mouvement en formation avec des unités civiles."
+    ],
+    "maskWords": [
+      "Char de guerre",
+      "Gilgamesh",
+      "Sumeria",
+      "Ziggurat"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_SUMERIA_NAME",
+      "leaderKey": "LOC_LEADER_GILGAMESH_NAME"
+    }
+  },
+  {
+    "id": "swahili-al-hasan-ibn-sulaiman",
+    "name": "Al-Hasan ibn Sulaiman",
+    "aliases": [],
+    "civilization": "Swahili",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "naval_support"
+    ],
+    "gender": "Homme",
+    "extension": "BBG Expanded 7.1",
+    "portrait": "img/portraits/swahili-al-hasan-ibn-sulaiman.webp",
+    "silhouetteFocus": [
+      22.5,
+      12.2
+    ],
+    "descriptions": [
+      "Capacité de routes commerciales +1 pour chaque Port adjacent à une merveille mondiale.",
+      "Les villes côtières et lacustres gagnent +25% Production pour les quartiers.\n\n Production +1 pour les récifs non aménagés à la Navigation à Voile.\n\nBias : T1 Côte.",
+      "Bâtiment exclusif au Swahili, remplaçant le monument.\n\nLoyauté +1. Si la loyauté est déjà maximale, Culture +1.\n Or +2 et Science +1 pour les routes commerciales internationales sortantes tous les 2 quartiers dans un rayon de 2 cases du Centre-ville (maximum à 4 quartiers).",
+      "Unité navale de soutien de l'ère antique exclusive au Swahili.\n\nPeut aménager un bateau de pêche, qui fournira +2 Or (2 Charges).\n\nLes unités embarquées dans un rayon de 2 cases gagnent 1 PM et ignorent les pénalités de mouvement. Peut être capturée.\n\nDébloqué par Navigation à voile Technologie"
+    ],
+    "maskWords": [
+      "Al-Hasan",
+      "Jahazi",
+      "Sulaiman",
+      "Swahili",
+      "Tombe à colonne"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_SUK_SWAHILI_NAME",
+      "leaderKey": "LOC_LEADER_SUK_AL_HASAN_NAME"
+    }
+  },
+  {
+    "id": "sweden-kristina",
+    "name": "Christine de Suède",
+    "aliases": [
+      "Kristina"
+    ],
+    "civilization": "Suède",
+    "era": null,
+    "continent": [
+      "Europe"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "anti_cavalry"
+    ],
+    "gender": "Femme",
+    "extension": "Gathering Storm",
+    "portrait": "img/portraits/sweden-kristina.webp",
+    "silhouetteFocus": [
+      93.0,
+      66.0
+    ],
+    "descriptions": [
+      "Les bâtiments avec au moins trois emplacements de chef-d'œuvre et les merveilles en disposant d'au moins deux ont automatiquement un thème lorsque tous leurs emplacements sont remplis.\n\nPeut construire la Bibliothèque de la reine dans la Place de la gouvernance.\nChaque tier de bâtiment dans la Place de gouvernance fournit respectivement +2 points d'Ingénieur illustre, Scientifique illustre, d'Écrivain illustre, d'Artiste illustre et de Musicien illustre.",
+      "Production +50% pour la construction des des bâtiments de la Place de gouvernance, du Campus et de la Zone industrielle.\n\nLes bâtiments de la Zone industrielle et du Campus génèrent respectivement 1 point d'Ingénieur illustre supplémentaire et 1 point de Savant illustre supplémentaire.\n Faveurs diplomatiques +10 pour chaque Personnage illustre recruté (vitesse en ligne).\n\nLa présence de la Suède dans une partie ajoute trois compétitions exclusives au Congrès mondial à partir de la Renaissance.\n\nBias : Spécial : \"King in the north\".",
+      "Bâtiment exclusif à la Suède.\n\n6 emplacements de chef-d'oeuvre (n'importe quel type).\nCe bâtiment n'empêche pas la construction des autres bâtiments de la Place de la gouvernance.\nOctroie un Titre de gouverneur.",
+      "Aménagement exclusif à la Suède, débloqué au Service Diplomatique.\n\nLoyauté +2 par tour dans la ville.\n Culture +2 et Tourisme +2 pour chaque type de terrain (prairie/plaine/désert/toundra/neige) sur lequel une ville suédoise est construite.\n\nLimité à un par ville. Les cases contenant un musée en plein air ne peuvent pas être attribuées à une autre ville.",
+      "Unité d'anti-cavalerie de la Renaissance exclusive à la Suède, remplaçant le Pique et tir.\n\n PM +1.\n Puissance de combat +3 pour chaque PM inutilisé.\n\nDébloqué par Fonte des métaux Technologie"
+    ],
+    "maskWords": [
+      "Bibliothèque de la reine",
+      "Caroléen",
+      "Christine",
+      "Kristina",
+      "Musée en plein air",
+      "Suède",
+      "Sweden"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_SWEDEN_NAME",
+      "leaderKey": "LOC_LEADER_KRISTINA_NAME"
+    }
+  },
+  {
+    "id": "thule-kiviuq",
+    "name": "Kiviuq",
+    "aliases": [],
+    "civilization": "Thulé",
+    "era": null,
+    "continent": [
+      "Amérique du Nord"
+    ],
+    "uniqueDistrict": [],
+    "uniqueUnitClass": [
+      "recon"
+    ],
+    "gender": null,
+    "extension": "BBG Expanded 7.1",
+    "portrait": "img/portraits/thule-kiviuq.webp",
+    "silhouetteFocus": [
+      98.8,
+      43.2
+    ],
+    "descriptions": [
+      "Pour les unités de reconnaissance :\n • Puissance de combat +5 lorsque le combat se déroule sur une case de toundra ou de neige.\n • PM +1 lorsqu'elles commencent leur tour sur une case de toundra ou de neige.",
+      "Les cases adjacentes à une case de cabane de chasse fournissent des rendements supplémentaires (à partir de la Navigation à Voile, sauf pour les Centres-villes) :\n • Nourriture +1 pour les cases de toundra.\n • Nourriture +2 pour les cases de neige.\n • Nourriture +1 et Production +1 pour les cases de camps et de bateaux de pêche.\n\nLes Bâtisseurs peuvent consommer une Charge et un Citoyen pour créer une case de Baleines.\n\nBias : T2 Côte / T1 Toundra.",
+      "Aménagement exclusif au Thulé.\n\n Habitations +1.\n Nourriture +1 si construit sur une case de Toundra.\n Nourriture +2 si construit sur une case de Neige.\n Culture +1 et Foi +1 pour chaque case de ressource maritime et de camp adjacente au Commerce avec l'Étranger.\nGénère du Tourisme par le biais de la Foi à l'Aviation.\n\nDoit être construit adjacent à une case de ressource bonus ou de luxe. Peut être aménagé dans une case de bois. Ne peut pas être aménagé adjacent à une case de cabane de chasse.",
+      "Unité de reconnaissance de l'ère antique exclusive au Thulé, remplaçant l'Éclaireur.\n\nPossède 1 Charge pour aménager une cabane de chasse."
+    ],
+    "maskWords": [
+      "Cabane de chasse",
+      "Chasseur à traîneau",
+      "Kiviuq",
+      "Thule"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_LIME_THULE_NAME",
+      "leaderKey": "LOC_LEADER_LIME_THULE_DAVE_NAME"
+    }
+  },
+  {
+    "id": "tibet-trisong-detsen",
+    "name": "Trisong Detsen",
+    "aliases": [],
+    "civilization": "Tibet",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [
+      "holy_site"
+    ],
+    "uniqueUnitClass": [
+      "ranged_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "BBG Expanded 7.1",
+    "portrait": "img/portraits/tibet-trisong-detsen.webp",
+    "silhouetteFocus": [
+      30.5,
+      7.3
+    ],
+    "descriptions": [
+      "Les unités militaires terrestres formées dans une ville possédant un Campement et un bâtiment de culte commencent avec une promotion.",
+      "Les cases de montagne gagnent des rendements supplémentaires pour chaque quartier dans un rayon de 2 cases :\n • Nourriture +2 par Centre-ville.\n • Production +1 par Zone industrielle.\n • Or +1 par Port et Plateforme commerciale.\n • Science +1 par Campus.\n • Culture +1 par Place du théâtre.\n • Foi +1 par Lieu saint.\n\nPeut acheter les bâtiments des quartiers adjacents à une case de montagne avec de la Foi (sauf la Place de la gouvernance).\n\n Foi +5% dans les villes avec un gouverneur pour chaque promotion de ce gouverneur.\n\nBias : T3 Montagnes (de plaine, de prairie et de toundra).",
+      "Quartier exclusif au Tibet, remplaçant le Lieu saint.\n\nEn plus des bonus du Lieu saint, Puissance de combat défensive +5 pour les unités se trouvant dans le quartier.\nLes bâtiments du Dzong sont 10% moins chers à acheter en Or et en Foi.",
+      "Unité montée d'attaque à distance de la Renaissance exclusive au Tibet.\n\n Portée : 1\nPeut se déplacer après avoir attaqué.\n\nDébloqué par Astronomie Technologie"
+    ],
+    "maskWords": [
+      "Detsen",
+      "Dzong",
+      "Rta Pa",
+      "Tibet",
+      "Trisong"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_SUK_TIBET_NAME",
+      "leaderKey": "LOC_LEADER_SUK_TRISONG_DETSEN_NAME"
+    }
+  },
+  {
+    "id": "vietnam-ba-trieu",
+    "name": "Bà Triệu",
+    "aliases": [],
+    "civilization": "Vietnam",
+    "era": null,
+    "continent": [
+      "Asie"
+    ],
+    "uniqueDistrict": [
+      "encampment"
+    ],
+    "uniqueUnitClass": [
+      "ranged"
+    ],
+    "gender": "Femme",
+    "extension": "Vietnam & Kublai Khan Pack",
+    "portrait": "img/portraits/vietnam-ba-trieu.webp",
+    "silhouetteFocus": [
+      7.4,
+      66.8
+    ],
+    "descriptions": [
+      "PM +2 pour les unités qui commencent leur tour dans une case de forêt tropicale, de marais ou de bois dans votre territoire. Puissance de combat +2 lorsque le combat se déroule sur une case de forêt tropicale, de marais ou de bois (passe à +4 dans votre territoire).",
+      "Les quartiers spécialisés terrestres ne peuvent être construits que sur une case de plaines inondables, de marais, de forêts tropicales ou de bois.\nLes bâtiments construits dans ces quartiers octroient un rendement supplémentaire :\n • Production +1 dans les marais.\n • Science +1 dans les forêts tropicales.\n • Culture +1 dans les bois.\n\nLes Foires Médiévales permettent de planter des bois.\n\nBias : T3 marais, forêts tropicales, bois.",
+      "Quartier exclusif au Vietnam, remplaçant le Campement.\n\n Culture +2 pour chaque quartier adjacent. Génère du Tourisme par le biais de la Culture à l'Aviation.\n\nCe quartier n'est pas spécialisé, et ne compte pas dans la limitation de quartiers en fonction du nombre de Citoyens. Ne produit pas de points de Général illustre. Déclenche une bombe culturelle, capturant les cases neutres adjacentes.",
+      "Unité de combat à distance de l'ère médiévale exclusive au Vietnam, remplaçant l'Arbalétrier.\n\n Puissance de base de combat rapproché +5.\nVision +1.\nLe Voi Chiến peut bouger après avoir attaqué.\n\nDébloqué par Mécanique Technologie"
+    ],
+    "maskWords": [
+      "Thành",
+      "Triệu",
+      "Vietnam",
+      "Voi Chiến"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_VIETNAM_NAME",
+      "leaderKey": "LOC_LEADER_LADY_TRIEU_NAME"
+    }
+  },
+  {
+    "id": "zulu-shaka",
+    "name": "Chaka",
+    "aliases": [
+      "Shaka"
+    ],
+    "civilization": "Zoulous",
+    "era": null,
+    "continent": [
+      "Afrique"
+    ],
+    "uniqueDistrict": [
+      "encampment"
+    ],
+    "uniqueUnitClass": [
+      "anti_cavalry"
+    ],
+    "gender": "Homme",
+    "extension": "Rise and Fall",
+    "portrait": "img/portraits/zulu-shaka.webp",
+    "silhouetteFocus": [
+      70.7,
+      91.0
+    ],
+    "descriptions": [
+      "Peut former des Régiments aux Mercenaires et des Armées au Nationalisme.\n\n Puissance de combat +2 pour les Régiments et les Armées à la Mobilisation.",
+      "Une fois les bons dogmes découverts, conquérir une ville avec une unité normale la transforme en Régiment ou en Flotte, et conquérir une ville avec un Régiment ou une Flotte les transforment en Armée ou en Armada.\n\nLes villes avec une unité en garnison gagnent +3 Loyauté (+5 si c'est un Régiment ou une Armée).",
+      "Quartier exclusif aux Zoulous, remplaçant le Campement.\n\n Habitations +1.\n Or +2 et Culture +1 pour les bâtiments.\n\nUne fois les bons dogmes découverts, les Régiments et Armées peuvent être formés sans école militaire. Coût en Production de ces unités -5% (5% supplémentaires aux Mercenaires, au Nationalisme, à la Mobilisation, à l'Idéologie).",
+      "Unité d'anti-cavalerie de l'ère médiévale exclusive aux Zoulous, remplaçant le Piquier.\n\nBonus de contournement doublé.\nExpérience +25%.\n\nCoût d'entretien réduit.\n\nDébloqué par Tactique militaire Technologie"
+    ],
+    "maskWords": [
+      "Chaka",
+      "Ikanda",
+      "Impi",
+      "Shaka",
+      "Zulu"
+    ],
+    "source": {
+      "bbg": "leaders_7.5.html",
+      "civKey": "LOC_CIVILIZATION_ZULU_NAME",
+      "leaderKey": "LOC_LEADER_SHAKA_NAME"
+    }
   }
 ]

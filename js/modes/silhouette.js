@@ -8,8 +8,9 @@
  * In both cases the image MUST have a transparent background, otherwise the
  * whole frame turns black.
  *
- * Zoom point: `leader.silhouetteFocus = [x, y]` in percent of the image
- * (recommended: pick a point that is inside the figure). Without it, a point
+ * Zoom point: `leader.silhouetteFocus = [x, y]` in percent of the image,
+ * shown at the centre of the frame (recommended: a point on the outline of
+ * the figure; tools/bbg/build.py computes one from the image transparency). Without it, a point
  * is drawn pseudo-randomly each day in [FOCUS_MIN, FOCUS_MAX] %, which may
  * land on transparent background and show an empty frame at the first steps.
  *
@@ -19,7 +20,7 @@
 import { defaultGuessRow } from "../core/game.js";
 import { hashString, mulberry32 } from "../core/daily.js";
 
-const ZOOM_START = 6;
+const ZOOM_START = 5;
 const STEPS = 8;
 const FOCUS_MIN = 30;
 const FOCUS_MAX = 70;
@@ -50,14 +51,20 @@ export default {
     const img = ctx.els.clue.querySelector("img");
     img.src = ctx.answer.silhouette || ctx.answer.portrait;
     img.addEventListener("contextmenu", (e) => e.preventDefault());
-    const [fx, fy] = focusFor(ctx.answer, ctx.dateStr);
-    img.style.transformOrigin = `${fx}% ${fy}%`;
+    ctx.silhouetteFocus = focusFor(ctx.answer, ctx.dateStr);
     ctx.silhouetteImg = img;
   },
 
   update(ctx) {
     const img = ctx.silhouetteImg;
-    img.style.transform = `scale(${zoomFor(ctx.state.guesses.length, ctx.state.won)})`;
+    const z = zoomFor(ctx.state.guesses.length, ctx.state.won);
+    // View centred on the focus point, clamped so the view never leaves the
+    // image: the visible window is 100/z % wide, so its centre must stay in
+    // [50/z, 100 - 50/z]. The focus point therefore always stays in view, and
+    // at z = 1 the whole image is shown.
+    const [fx, fy] = ctx.silhouetteFocus;
+    const clamp = (v) => Math.min(100 - 50 / z, Math.max(50 / z, v));
+    img.style.transform = `scale(${z}) translate(${50 - clamp(fx)}%, ${50 - clamp(fy)}%)`;
     // Once solved, show the portrait in colour (if there is one).
     if (ctx.state.won && ctx.answer.portrait) {
       img.src = ctx.answer.portrait;

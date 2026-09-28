@@ -1,12 +1,97 @@
 {
   "districts": {
-    "district_a": { "label": "Quartier A (test)", "icon": "img/icons/test_district_a.svg" },
-    "district_d": { "label": "Quartier D (test)", "icon": "img/icons/test_district_d.svg" },
-    "district_e": { "label": "Quartier E (test)", "icon": "img/icons/test_district_e.svg" }
+    "aqueduct": {
+      "label": "Aqueduc",
+      "icon": "img/icons/districts/aqueduct.png"
+    },
+    "campus": {
+      "label": "Campus",
+      "icon": "img/icons/districts/campus.png"
+    },
+    "commercial_hub": {
+      "label": "Plateforme commerciale",
+      "icon": "img/icons/districts/commercial_hub.png"
+    },
+    "diplomatic_quarter": {
+      "label": "Quartier diplomatique",
+      "icon": "img/icons/districts/diplomatic_quarter.png"
+    },
+    "encampment": {
+      "label": "Campement",
+      "icon": "img/icons/districts/encampment.png"
+    },
+    "entertainment_complex": {
+      "label": "Complexe de loisirs",
+      "icon": "img/icons/districts/entertainment_complex.png"
+    },
+    "harbor": {
+      "label": "Port",
+      "icon": "img/icons/districts/harbor.png"
+    },
+    "holy_site": {
+      "label": "Lieu saint",
+      "icon": "img/icons/districts/holy_site.png"
+    },
+    "industrial_zone": {
+      "label": "Zone industrielle",
+      "icon": "img/icons/districts/industrial_zone.png"
+    },
+    "neighborhood": {
+      "label": "Quartier résidentiel",
+      "icon": "img/icons/districts/neighborhood.png"
+    },
+    "theater": {
+      "label": "Place du théâtre",
+      "icon": "img/icons/districts/theater.png"
+    },
+    "water_entertainment_complex": {
+      "label": "Parc aquatique",
+      "icon": "img/icons/districts/water_entertainment_complex.png"
+    }
   },
   "unitClasses": {
-    "class_1": { "label": "Classe 1 (test)", "icon": "img/icons/test_class_1.svg" },
-    "class_2": { "label": "Classe 2 (test)", "icon": "img/icons/test_class_2.svg" },
-    "class_3": { "label": "Classe 3 (test)", "icon": "img/icons/test_class_3.svg" }
+    "melee": {
+      "label": "Combat rapproché",
+      "icon": "img/icons/units/warrior.png"
+    },
+    "ranged": {
+      "label": "Combat à distance",
+      "icon": "img/icons/units/slinger.png"
+    },
+    "anti_cavalry": {
+      "label": "Anti-cavalerie",
+      "icon": "img/icons/units/spearman.png"
+    },
+    "light_cavalry": {
+      "label": "Cavalerie légère",
+      "icon": "img/icons/units/horseman.png"
+    },
+    "heavy_cavalry": {
+      "label": "Cavalerie lourde"
+    },
+    "ranged_cavalry": {
+      "label": "Unité montée à distance"
+    },
+    "recon": {
+      "label": "Reconnaissance"
+    },
+    "siege": {
+      "label": "Siège"
+    },
+    "naval_melee": {
+      "label": "Naval combat rapproché"
+    },
+    "naval_ranged": {
+      "label": "Naval combat à distance"
+    },
+    "naval_raider": {
+      "label": "Naval assaut en mer"
+    },
+    "naval_support": {
+      "label": "Naval soutien"
+    },
+    "air_fighter": {
+      "label": "Chasseur aérien"
+    }
   }
 }

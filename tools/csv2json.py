@@ -6,11 +6,12 @@ Usage:
 CSV format (UTF-8, comma-separated, first line = header). Recognised columns:
 
     id, name, aliases, civilization, era, continent, uniqueDistrict,
-    uniqueUnitClass, gender, portrait, silhouette, silhouetteFocus, descriptions,
-    maskWords
+    uniqueUnitClass, gender, extension, portrait, silhouette, silhouetteFocus,
+    descriptions, maskWords
 
 Conventions:
-    - Multi-valued columns (``aliases``, ``uniqueUnitClass``, ``descriptions``, ``maskWords``)
+    - Multi-valued columns (``aliases``, ``continent``, ``uniqueDistrict``,
+      ``uniqueUnitClass``, ``descriptions``, ``maskWords``)
       separate values with ``|``.
     - ``silhouetteFocus`` is ``x;y`` in percent of the image (e.g. ``48;30``).
     - An empty cell becomes ``null`` (single value) or ``[]`` (list).
@@ -23,7 +24,7 @@ import csv
 import json
 import sys
 
-LIST_FIELDS = {"aliases", "uniqueUnitClass", "descriptions", "maskWords"}
+LIST_FIELDS = {"aliases", "continent", "uniqueDistrict", "uniqueUnitClass", "descriptions", "maskWords"}
 
 
 def parse_row(row):

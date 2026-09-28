@@ -104,8 +104,9 @@ export default {
 
     const legend = document.createElement("p");
     legend.className = "legend";
+    const hasOrdered = attrs.some((a) => a.type === "ordered");
     legend.innerHTML = `<span class="sw ok"></span>identique <span class="sw partial"></span>partiel
-      <span class="sw ko"></span>différent &nbsp;↑/↓ : la réponse est plus tardive/plus précoce`;
+      <span class="sw ko"></span>différent${hasOrdered ? " &nbsp;↑/↓ : la réponse est plus tardive/plus précoce" : ""}`;
     ctx.els.clue.appendChild(legend);
   },
 
