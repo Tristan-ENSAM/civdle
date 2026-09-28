@@ -107,8 +107,8 @@
     "portrait": "img/portraits/america-teddy-roosevelt-rough-rider.webp",
     "silhouette": "img/silhouettes/america-teddy-roosevelt-rough-rider.png",
     "silhouetteFocus": [
-      87.9,
-      70.7
+      12.9,
+      77.3
     ],
     "descriptions": [
       "Puissance de combat +1 pour chaque ère franchie (dont l'ère antique) dans les arbres technologique ou dogmatique (+5 max à l'ère industrielle).\n\nLes émissaires envoyés dans une Cité-état avec laquelle vous échangez une route commerciale comptent pour deux.",
@@ -154,8 +154,8 @@
     "portrait": "img/portraits/arabia-saladin-vizier.webp",
     "silhouette": "img/silhouettes/arabia-saladin-vizier.png",
     "silhouetteFocus": [
-      52.0,
-      95.3
+      33.4,
+      89.5
     ],
     "descriptions": [
       "Le lieu de culte de votre religion peut être acheté par n'importe quel joueur pour 10% de son coût normal en Foi. Ce bâtiment augmente de 5% la Science, la Culture et la Foi générées par la ville (+5% à l'Église Réformée et +5% quand votre religion est terminée).",
@@ -278,8 +278,8 @@
     "portrait": "img/portraits/aztec-montezuma.webp",
     "silhouette": "img/silhouettes/aztec-montezuma.png",
     "silhouetteFocus": [
-      31.6,
-      91.8
+      25.8,
+      83.8
     ],
     "descriptions": [
       "Chaque ressource de luxe différente aménagée en territoire aztèque octroie de l'Activité à deux villes supplémentaires, ainsi que +1 Puissance de combat en attaque aux unités militaires terrestres et navales. Ces deux bonus fonctionnent avec Colæos.",
@@ -362,8 +362,8 @@
     "portrait": "img/portraits/brazil-pedro-ii.webp",
     "silhouette": "img/silhouettes/brazil-pedro-ii.png",
     "silhouetteFocus": [
-      82.4,
-      78.5
+      43.2,
+      5.7
     ],
     "descriptions": [
       "Après avoir recruté ou financé un Personnage illustre, 20% des points dépensés vous sont restitués.",
@@ -495,8 +495,8 @@
     "portrait": "img/portraits/canada-wilfrid-laurier.webp",
     "silhouette": "img/silhouettes/canada-wilfrid-laurier.png",
     "silhouetteFocus": [
-      27.7,
-      88.7
+      20.5,
+      44.1
     ],
     "descriptions": [
       "Nourriture +1 pour les Centres-villes sur une case de toundra. Peut aménager des fermes sur les cases de toundra.\n\nSur les cases de neige et de toundra :\n • Nourriture +2 pour les camps et les fermes.\n • Nourriture +1 pour les pâturages.\n • Production +2 pour les mines et les scieries.\n • Taux d'accumulation de ressources stratégiques doublé.\n • Coût d'achat de ce type de cases réduit de 50%.",
@@ -582,8 +582,8 @@
     "portrait": "img/portraits/china-qin-mandate-of-heaven.webp",
     "silhouette": "img/silhouettes/china-qin-mandate-of-heaven.png",
     "silhouetteFocus": [
-      78.9,
-      65.2
+      37.3,
+      12.1
     ],
     "descriptions": [
       "Charges +1 pour les Bâtisseurs. Vous pouvez dépenser une charge de Bâtisseur pour compléter 15% du coût de Production d'une merveille des ères antique ou classique.\n\n Nourriture +1 pour les villes pour chaque merveille mondiale construite.\nChaque fois que vous achevez une merveille, vous obtenez un Eurêka et une Inspiration aléatoires de l'ère de la merveille.\n\nLes Canaux sont débloqués à la Maçonnerie.\n\n Or +1 et Foi +1 pour les cases de Grande Muraille adjacentes à une autre case de Grande Muraille.",
@@ -744,8 +744,8 @@
     "portrait": "img/portraits/cree-poundmaker.webp",
     "silhouette": "img/silhouettes/cree-poundmaker.png",
     "silhouetteFocus": [
-      61.3,
-      94.5
+      58.0,
+      18.2
     ],
     "descriptions": [
       "Vos routes commerciales sortantes fournissent +1 Nourriture pour chaque case de camp ou de pâturage appartenant à la ville d'arrivée (dans un rayon de 3 cases). Les routes commerciales entrantes octroient à vos villes +1 Or pour chaque case de camp ou de pâturage appartenant à la ville d'arrivée (dans un rayon de 3 cases).\n\nLes alliances vous offrent une visibilité commune.",
@@ -827,8 +827,8 @@
     "portrait": "img/portraits/egypt-cleopatra-egyptian.webp",
     "silhouette": "img/silhouettes/egypt-cleopatra-egyptian.png",
     "silhouetteFocus": [
-      38.7,
-      3.1
+      35.2,
+      6.4
     ],
     "descriptions": [
       "Production +15% pour la construction de Plateformes commerciales et de Places du théâtre pour les villes fondées sur une rivière.\n\n Or +6 pour vos routes commerciales internationales. Les routes commerciales internationales étrangères menant à vos villes fournissent +1 Nourriture à la ville de départ et +2 Or à la ville d'arrivée.\nÉchanger avec des alliés génère deux fois plus de points d'alliance.",
@@ -959,8 +959,8 @@
     "portrait": "img/portraits/england-eleanor-of-aquitaine-england.webp",
     "silhouette": "img/silhouettes/england-eleanor-of-aquitaine-england.png",
     "silhouetteFocus": [
-      87.9,
-      56.6
+      42.4,
+      31.4
     ],
     "descriptions": [
       "Production +100% pour la construction des bâtiments de la Place du théâtre.\n\nLes chefs-d'œuvre fournissent des rendements supplémentaires en fonction :\n • de leur type :\n - littéraires et reliques : +1.\n - artistiques et artéfacts : +2.\n - musicaux : +4.\n • des quartiers présents dans la ville :\n - Nourriture pour un Quartier résidentiel.\n - Production pour une Zone industrielle.\n - Or pour un Port et/ou une Plateforme commerciale.\n - Science pour un Campus.\n - Culture pour une Place du théâtre.\n - Foi pour un Lieu saint.\n\nLe bonus de suzerain d'Anshan ne peut pas être utilisé par Aliénor.\n\nLoyauté -1 par tour dans les villes étrangères pour chaque chef-d'œuvre présent dans l'une des villes d'Aliénor, dans un rayon de 9 cases. Une ville qui devient libre sous l'influence d'Aliénor rejoint celle-ci directement.\n\nAliénor France uniquement : Production +20% pour les merveilles mondiales des ères antique et classique.",
@@ -1051,8 +1051,11 @@
     "gender": "Femme",
     "extension": "Jeu de base",
     "portrait": "img/portraits/england-victoria-age-of-empire.webp",
-    "silhouette": null,
-    "silhouetteFocus": null,
+    "silhouette": "img/silhouettes/england-victoria-age-of-empire.png",
+    "silhouetteFocus": [
+      42.8,
+      21.9
+    ],
     "descriptions": [
       "Les unités navales de combat rapproché font profiter de leur vitesse de déplacement à leur escorte.\n\nAchever un Port de la Royal Navy octroie l'unité navale la plus puissante débloquée.\nFonder ou annexer une ville à 10 cases ou plus de votre Capitale octroie l'unité de combat rapproché la plus puissante débloquée.\n\nPoints d'Amiral illustre +1 pour les phares.",
       "Les mines de Fer et de Charbon fournissent 2 unités supplémentaires par tour. Stocks de ressources stratégiques +10 grâce aux bâtiments du Port (vitesse en ligne).\n\n Production +100% et charges +2 pour les ingénieurs militaires.\nRendements +3 pour les bâtiments alimentés en électricité.\n\nBias : T1 Côte / T5 Fer, Charbon.",
@@ -1175,8 +1178,8 @@
     "portrait": "img/portraits/france-catherine-de-medici-black-queen.webp",
     "silhouette": "img/silhouettes/france-catherine-de-medici-black-queen.png",
     "silhouetteFocus": [
-      80.9,
-      59.4
+      64.5,
+      72.5
     ],
     "descriptions": [
       "Vous disposez d'un niveau de visibilité diplomatique supplémentaire avec les civilisations rencontrées.",
@@ -1265,8 +1268,8 @@
     "portrait": "img/portraits/france-eleanor-of-aquitaine-france.webp",
     "silhouette": "img/silhouettes/france-eleanor-of-aquitaine-france.png",
     "silhouetteFocus": [
-      15.2,
-      65.6
+      37.7,
+      96.5
     ],
     "descriptions": [
       "Production +100% pour la construction des bâtiments de la Place du théâtre.\n\nLes chefs-d'œuvre fournissent des rendements supplémentaires en fonction :\n • de leur type :\n - littéraires et reliques : +1.\n - artistiques et artéfacts : +2.\n - musicaux : +4.\n • des quartiers présents dans la ville :\n - Nourriture pour un Quartier résidentiel.\n - Production pour une Zone industrielle.\n - Or pour un Port et/ou une Plateforme commerciale.\n - Science pour un Campus.\n - Culture pour une Place du théâtre.\n - Foi pour un Lieu saint.\n\nLe bonus de suzerain d'Anshan ne peut pas être utilisé par Aliénor.\n\nLoyauté -1 par tour dans les villes étrangères pour chaque chef-d'œuvre présent dans l'une des villes d'Aliénor, dans un rayon de 9 cases. Une ville qui devient libre sous l'influence d'Aliénor rejoint celle-ci directement.\n\nAliénor France uniquement : Production +20% pour les merveilles mondiales des ères antique et classique.",
@@ -1392,8 +1395,8 @@
     "portrait": "img/portraits/georgia-tamar.webp",
     "silhouette": "img/silhouettes/georgia-tamar.png",
     "silhouetteFocus": [
-      30.9,
-      90.6
+      54.5,
+      2.1
     ],
     "descriptions": [
       "Si votre religion est majoritaire dans votre Empire, chaque émissaire envoyé dans une Cité-état où votre religion est majoritaire est doublé.\n Foi +1 pour chaque émissaire dans une Cité-état.\n\nTuer une unité rapporte 50% de sa Puissance de combat de base en Foi (vitesse en ligne).",
@@ -1436,8 +1439,8 @@
     "portrait": "img/portraits/germany-frederick-barbarossa.webp",
     "silhouette": "img/silhouettes/germany-frederick-barbarossa.png",
     "silhouetteFocus": [
-      86.3,
-      76.6
+      15.2,
+      87.3
     ],
     "descriptions": [
       "Tous les gouvernements ont un emplacement de doctrine Militaire supplémentaire.\n\n Puissance de combat +7 contre les Cités-états, et les unités uniques.\n\nHanses : Production +2 par Campement adjacent.",
@@ -1571,8 +1574,8 @@
     "portrait": "img/portraits/greece-gorgo.webp",
     "silhouette": "img/silhouettes/greece-gorgo.png",
     "silhouetteFocus": [
-      57.4,
-      94.9
+      55.9,
+      65.0
     ],
     "descriptions": [
       "Puissance de combat +1 pour chaque emplacement de doctrine Militaire du gouvernement.\nTuer une unité rapporte 50% de sa Puissance de combat de base en Culture (vitesse en ligne).",
@@ -1615,8 +1618,8 @@
     "portrait": "img/portraits/greece-pericles.webp",
     "silhouette": "img/silhouettes/greece-pericles.png",
     "silhouetteFocus": [
-      28.1,
-      55.9
+      73.4,
+      53.9
     ],
     "descriptions": [
       "Culture +5% et Tourisme +5% par Cité-état vassale.\nAchever un amphithéâtre octroie un émissaire.\n\nLes Acropoles fournissent +1 Production par merveilles mondiales adjacentes et +0.5 par quartier adjacent.",
@@ -1657,8 +1660,8 @@
     "portrait": "img/portraits/hungary-matthias-corvinus.webp",
     "silhouette": "img/silhouettes/hungary-matthias-corvinus.png",
     "silhouetteFocus": [
-      33.6,
-      82.4
+      25.0,
+      56.6
     ],
     "descriptions": [
       "PM +1 pour les unités levées de Cités-états. Améliorer des unités levées coûte 75% d'Or et de ressources en moins. Si vous levez les troupes d'une Cité-état, vous y recevez 1 émissaire dans cette Cité-état.",
@@ -1700,8 +1703,11 @@
     "gender": "Homme",
     "extension": "Gathering Storm",
     "portrait": "img/portraits/inca-pachacuti.webp",
-    "silhouette": null,
-    "silhouetteFocus": null,
+    "silhouette": "img/silhouettes/inca-pachacuti.png",
+    "silhouetteFocus": [
+      46.7,
+      19.9
+    ],
     "descriptions": [
       "Nourriture +1 pour les routes commerciales intérieures pour chaque case de montagne de la ville d'origine.\n Or +1 pour les routes commerciales internationales pour chaque case de montagne de la ville d'origine.\n\nVous débloquez le Qhapaq Ñan au Commerce avec l'Étranger.",
       "Sur les cases de montagnes :\n • Production +2 (passe à +3 à l'ère industrielle).\n • Nourriture +1 pour chaque case de culture en terrasses adjacente.\n • Coût d'achat de cases réduit de 50%.\n\nLes unités de reconnaissance peuvent construire un Qhapaq Ñan (1 Charge) au Commerce avec l'Étranger.\n\nPas de perte de rendements (non liés à la Nourriture) due à une pénalité d'Activités.\n\nBias : T3 Montagnes (de plaine et de prairie).",
@@ -1741,8 +1747,8 @@
     "portrait": "img/portraits/india-chandragupta.webp",
     "silhouette": "img/silhouettes/india-chandragupta.png",
     "silhouetteFocus": [
-      12.9,
-      54.3
+      22.3,
+      65.6
     ],
     "descriptions": [
       "Les autels et les temples octroient respectivement +1 PM et +1 Vision aux unités militaires formées dans la ville.\n Puissance de combat +1 pour les unités formées pour chaque bâtiment dans le Lieu saint de la ville.",
@@ -1780,8 +1786,8 @@
     "portrait": "img/portraits/india-gandhi.webp",
     "silhouette": "img/silhouettes/india-gandhi.png",
     "silhouetteFocus": [
-      81.2,
-      60.9
+      24.0,
+      93.6
     ],
     "descriptions": [
       "Octroie une croyance supplémentaire à la fondation d'une religion.\n Foi +5 pour chaque civilisation rencontrée (y compris l'Inde) ayant fondé une religion et n'étant pas en guerre.\n PM +1 pour les Bâtisseurs et les Colons formés dans les villes possédant un Lieu saint.\n\nUsure de la guerre +50% pour les civilisations qui combattent Gandhi.",
@@ -1863,8 +1869,8 @@
     "portrait": "img/portraits/japan-hojo-tokimune.webp",
     "silhouette": "img/silhouettes/japan-hojo-tokimune.png",
     "silhouetteFocus": [
-      65.2,
-      93.0
+      31.8,
+      77.5
     ],
     "descriptions": [
       "Production +100% pour les Campements, les Places du théâtre et les Lieux saints.\nLes Plateformes commerciales et Ports bénéficient d'un bonus de proximité standard, plutôt que mineur, de la part des autres quartiers.\n\n Puissance de combat +3 pour les unités militaires terrestres adjacentes à une case de côte et pour les unités militaires navales sur une case de côte.\n\nLes unités ne subissent pas de dégâts des tempêtes. Les civilisations en guerre avec le Japon subissent +100% de dégâts dûs aux tempêtes dans le territoire japonais.",
@@ -1986,8 +1992,8 @@
     "portrait": "img/portraits/kongo-mvemba-a-nzinga.webp",
     "silhouette": "img/silhouettes/kongo-mvemba-a-nzinga.png",
     "silhouetteFocus": [
-      58.2,
-      6.2
+      69.3,
+      78.9
     ],
     "descriptions": [
       "Ne peut ni construire de Lieux saints, ni recruter de Prophète illustre, ni fonder de religion. Reçoit un Apôtre de la religion dominante de la ville lorsqu'il construit un Mbanza ou une Place du théâtre.\n Or +1 et Culture +0.2 par Citoyens dans vos villes converties à n'importe quelle religion.\n\nÀ partir de l'ère classique, les unités militaires et les Généraux illustres se déplacent sans pénalité de PM dans les cases de bois et de forêts tropicales.\n\nPour les cases de bois et de forêt tropicale :\n • Production +1 si adjacentes à un Campement.\n • Nourriture +1 si adjacentes à un Campement si la ville possède un Mbanza.\n\nPoints de Général illustre +1 pour les écuries et les casernes.",
@@ -2115,8 +2121,8 @@
     "portrait": "img/portraits/korea-seondeok.webp",
     "silhouette": "img/silhouettes/korea-seondeok.png",
     "silhouetteFocus": [
-      22.7,
-      83.6
+      37.5,
+      70.5
     ],
     "descriptions": [
       "Activités +1 pour les villes avec un gouverneur.\nRendements +30% pour les bâtiments de la Seowon pour chaque promotion du gouverneur établi dans la ville.\nRendements -10% dans les villes sans gouverneur à la Féodalité. Titre de gouverneur +1 à la Féodalité.",
@@ -2239,8 +2245,8 @@
     "portrait": "img/portraits/mali-mansa-musa.webp",
     "silhouette": "img/silhouettes/mali-mansa-musa.png",
     "silhouetteFocus": [
-      37.5,
-      2.7
+      31.1,
+      33.8
     ],
     "descriptions": [
       "Capacité des routes commerciales +1 aux Banques.\n\n Production +10% pour la construction des Lieux saints et de leurs bâtiments.\nLes Sugubas reçoivent un bonus de proximité majeur des Lieux saints.",
@@ -2326,8 +2332,8 @@
     "portrait": "img/portraits/maori-kupe.webp",
     "silhouette": "img/silhouettes/maori-kupe.png",
     "silhouetteFocus": [
-      72.3,
-      89.5
+      31.6,
+      25.6
     ],
     "descriptions": [
       "Habitations +3 pour la Capitale.\n\nLes Colons peuvent embarquer à la Navigation à Voile.",
@@ -2367,8 +2373,8 @@
     "portrait": "img/portraits/mapuche-lautaro.webp",
     "silhouette": "img/silhouettes/mapuche-lautaro.png",
     "silhouetteFocus": [
-      87.1,
-      44.1
+      61.7,
+      6.2
     ],
     "descriptions": [
       "Puissance de combat +3 contre les villes libres ou les civilisations en âge d'or ou héroïque. Tuer une unité ennemie qui se trouve sur le territoire d'une ville ennemie fait perdre 15 points de loyauté à cette ville, 30 si la civilisation vit un âge d'or ou un héroïque.\n\nAttrait +1 pour les cases des villes possédant un Campement.",
@@ -2573,8 +2579,8 @@
     "portrait": "img/portraits/mongolia-genghis-khan.webp",
     "silhouette": "img/silhouettes/mongolia-genghis-khan.png",
     "silhouetteFocus": [
-      20.7,
-      15.2
+      75.8,
+      63.1
     ],
     "descriptions": [
       "Puissance de combat +3 pour les unités de cavalerie (sauf lourde).\nTuer une unité de cavalerie offre une chance de la capturer.",
@@ -2659,8 +2665,8 @@
     "portrait": "img/portraits/netherlands-wilhelmina.webp",
     "silhouette": "img/silhouettes/netherlands-wilhelmina.png",
     "silhouetteFocus": [
-      86.3,
-      43.4
+      30.5,
+      72.9
     ],
     "descriptions": [
       "Culture +2 pour vos routes commerciales internationales.\nLes routes commerciales internationales étrangères menant à vos villes fournissent +1 Culture à la ville de départ et +2 Culture à la ville d'arrivée.\nLoyauté +2 pour la ville de départ de vos routes commerciales intérieures.\n\n Puissance de combat +3 pour vos unités navales sur une case de polder.\n\nPoints d'Amiral illustre +1 pour les Campus.",
@@ -2749,8 +2755,8 @@
     "portrait": "img/portraits/norway-harald-hardrada-konge.webp",
     "silhouette": "img/silhouettes/norway-harald-hardrada-konge.png",
     "silhouetteFocus": [
-      78.1,
-      46.5
+      30.1,
+      35.9
     ],
     "descriptions": [
       "Production +25% pour la formation d'unités navales de combat rapproché, qui peuvent attaquer les côtes.\nLe pillage et l'assaut côtier des cases de mine octroient de la Science, en plus de l'Or. Le pillage et l'assaut côtier des cases carrière, pâturage, plantation et camp octroient de la Culture, en plus de la Foi.\n\n Puissance de combat +3 pour les unités navales de combat rapproché.\nLes unités hors quadrirèmes peuvent traverser les cases d'océan à la Construction Navale.\nLes Berserkers et les Langskip consomment toujours 1 point de PM pour naviguer sur les cases d'océan.",
@@ -2839,8 +2845,8 @@
     "portrait": "img/portraits/ottomans-suleiman-kanuni.webp",
     "silhouette": "img/silhouettes/ottomans-suleiman-kanuni.png",
     "silhouetteFocus": [
-      92.2,
-      26.2
+      62.7,
+      4.1
     ],
     "descriptions": [
       "Vous avez la possibilité de recruter un gouverneur supplémentaire exclusif disposant de capacités militaires et diplomatiques.\n\nTitre de gouverneur +1 à la Poudre à Canon.",
@@ -3011,8 +3017,8 @@
     "portrait": "img/portraits/phoenicia-dido.webp",
     "silhouette": "img/silhouettes/phoenicia-dido.png",
     "silhouetteFocus": [
-      40.6,
-      88.7
+      41.6,
+      30.7
     ],
     "descriptions": [
       "Capacité de routes commerciales +1 pour chacun des bâtiments de la Place de la gouvernance.\n Production +50% pour les quartiers de la ville disposant de la Place de la gouvernance.\n\n PM +2 et Champ de vision +2 pour les Colons embarqués.\nL'embarquement et le débarquement des Colons ne demande pas de PM supplémentaire.",
@@ -3096,8 +3102,8 @@
     "portrait": "img/portraits/poland-jadwiga.webp",
     "silhouette": "img/silhouettes/poland-jadwiga.png",
     "silhouetteFocus": [
-      83.6,
-      43.0
+      46.7,
+      6.2
     ],
     "descriptions": [
       "Créer et achever votre religion vous octroie une relique.\n Or +4, Culture +2 et Foi +2 pour les reliques.\n\nLes Lieux saints bénéficient d'un bonus de proximité standard, plutôt que mineur, de la part des autres quartiers.\n\nVotre religion devient majoritaire dans les villes qui perdent une case suite à une bombe culturelle.",
@@ -3276,8 +3282,8 @@
     "portrait": "img/portraits/rome-trajan.webp",
     "silhouette": "img/silhouettes/rome-trajan.png",
     "silhouetteFocus": [
-      71.9,
-      52.7
+      36.5,
+      8.4
     ],
     "descriptions": [
       "Au Premier Empire, toutes vos villes existantes et à venir sont dotées du bâtiment au coût de Production le plus bas.",
@@ -3320,8 +3326,8 @@
     "portrait": "img/portraits/russia-peter.webp",
     "silhouette": "img/silhouettes/russia-peter.png",
     "silhouetteFocus": [
-      54.7,
-      94.9
+      79.5,
+      47.5
     ],
     "descriptions": [
       "Les routes commerciales vers les civilisations plus avancées que la Russie fournissent de la Science ou de la Culture (+1 pour 3 technologies ou dogmes d'avance).",
@@ -3362,8 +3368,8 @@
     "portrait": "img/portraits/scotland-robert-the-bruce.webp",
     "silhouette": "img/silhouettes/scotland-robert-the-bruce.png",
     "silhouetteFocus": [
-      14.1,
-      64.1
+      76.8,
+      56.2
     ],
     "descriptions": [
       "Expérience +50% pour toutes les unités de reconnaissance.",
@@ -3402,8 +3408,8 @@
     "portrait": "img/portraits/scythia-tomyris.webp",
     "silhouette": "img/silhouettes/scythia-tomyris.png",
     "silhouetteFocus": [
-      24.2,
-      53.1
+      35.5,
+      57.2
     ],
     "descriptions": [
       "Puissance de combat en attaque +3 contre les unités blessées (passe à +5 à l'entrée en ère médiévale). Vaincre une unité restaure 30 PV.",
@@ -3443,8 +3449,8 @@
     "portrait": "img/portraits/spain-philip-ii.webp",
     "silhouette": "img/silhouettes/spain-philip-ii.png",
     "silhouetteFocus": [
-      25.8,
-      68.4
+      73.6,
+      49.6
     ],
     "descriptions": [
       "Puissance de combat +3 face aux civilisations suivant une autre religion que la vôtre.\n\nCoût en Foi des Missionnaires réduit de 25%. Les Inquisiteurs ont une charge supplémentaire et suppriment 100% de l'influence des autres religions.",
@@ -3483,8 +3489,8 @@
     "portrait": "img/portraits/sumeria-gilgamesh.webp",
     "silhouette": "img/silhouettes/sumeria-gilgamesh.png",
     "silhouetteFocus": [
-      57.4,
-      1.6
+      77.1,
+      88.9
     ],
     "descriptions": [
       "Votre alliance la plus avancée fournit des bonus :\n • Puissance de combat +1/2/3.\n • Points d'influence par tour +2/4/6.\nEn cas de guerre contre un ennemi commun, les alliés partagent le butin des pillages et l'expérience gagnée au combat dans un rayon de 5 cases. Vos alliances génèrent des points d'alliance supplémentaire en cas de guerre contre un ennemi commun.\n\nLorsque vous rasez un camp barbare, vous recevez également une récompense de village tribal.\n\nLe coût de levée des Cités-états est diminué de moitié.",
@@ -3562,8 +3568,11 @@
     "gender": "Femme",
     "extension": "Gathering Storm",
     "portrait": "img/portraits/sweden-kristina.webp",
-    "silhouette": null,
-    "silhouetteFocus": null,
+    "silhouette": "img/silhouettes/sweden-kristina.png",
+    "silhouetteFocus": [
+      79.5,
+      61.5
+    ],
     "descriptions": [
       "Les bâtiments avec au moins trois emplacements de chef-d'œuvre et les merveilles en disposant d'au moins deux ont automatiquement un thème lorsque tous leurs emplacements sont remplis.\n\nPeut construire la Bibliothèque de la reine dans la Place de la gouvernance.\nChaque tier de bâtiment dans la Place de gouvernance fournit respectivement +2 points d'Ingénieur illustre, Scientifique illustre, d'Écrivain illustre, d'Artiste illustre et de Musicien illustre.",
       "Production +50% pour la construction des des bâtiments de la Place de gouvernance, du Campus et de la Zone industrielle.\n\nLes bâtiments de la Zone industrielle et du Campus génèrent respectivement 1 point d'Ingénieur illustre supplémentaire et 1 point de Savant illustre supplémentaire.\n Faveurs diplomatiques +10 pour chaque Personnage illustre recruté (vitesse en ligne).\n\nLa présence de la Suède dans une partie ajoute trois compétitions exclusives au Congrès mondial à partir de la Renaissance.\n\nBias : Spécial : \"King in the north\".",
@@ -3727,8 +3736,8 @@
     "portrait": "img/portraits/zulu-shaka.webp",
     "silhouette": "img/silhouettes/zulu-shaka.png",
     "silhouetteFocus": [
-      74.2,
-      7.0
+      27.9,
+      65.0
     ],
     "descriptions": [
       "Peut former des Régiments aux Mercenaires et des Armées au Nationalisme.\n\n Puissance de combat +2 pour les Régiments et les Armées à la Mobilisation.",

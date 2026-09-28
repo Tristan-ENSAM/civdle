@@ -226,7 +226,11 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     report = json.loads(REPORT.read_text(encoding="utf-8")) if REPORT.exists() and not force else {}
     tmp = OUT / "_candidate.png"
-    todo = [l for l in leaders if l.get("portrait") and (force or l["id"] not in report)]
+    # Leaders with a silhouette from the official game textures are skipped
+    # (see tools/game/import_textures.py): those are exact, not estimated.
+    game_ids = set(json.loads((ROOT / "tools" / "game" / "mapping.json").read_text(encoding="utf-8"))["textures"].values())
+    todo = [l for l in leaders
+            if l.get("portrait") and l["id"] not in game_ids and (force or l["id"] not in report)]
     for i, l in enumerate(todo, 1):
         report[l["id"]] = process(l, tmp)
         REPORT.write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
