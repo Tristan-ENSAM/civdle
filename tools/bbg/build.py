@@ -224,7 +224,8 @@ def main(bbg_dir, version):
     src = json.loads((Path(__file__).parent / "sources.json").read_text(encoding="utf-8"))
 
     rejected = json.loads((Path(__file__).parent / "silhouettes_rejected.json").read_text(encoding="utf-8"))
-    game_ids = set(json.loads((ROOT / "tools" / "game" / "mapping.json").read_text(encoding="utf-8"))["textures"].values())
+    game_map = json.loads((ROOT / "tools" / "game" / "mapping.json").read_text(encoding="utf-8"))
+    game_ids = set(game_map["textures"].values()) | {e["id"] for e in game_map["fallback"]}
     out_dir = ROOT / "img" / "portraits"
     out_dir.mkdir(parents=True, exist_ok=True)
     leaders, used_ids = [], set()

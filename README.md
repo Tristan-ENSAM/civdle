@@ -28,7 +28,7 @@ data/config.json        réglages + colonnes du mode Classique
 data/leaders.json       88 leaders (généré, voir « Données »)
 data/catalogs.json      catalogues identifiant -> libellé + icône (quartiers, types d'unités)
 img/portraits/          portraits (générés depuis le site BBG)
-img/silhouettes/        silhouettes détourées (générées, contrôlées)
+img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
 js/main.js              chargement, onglets, routage (#classic, #portrait…)
 js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage)
@@ -52,7 +52,8 @@ tools/leaders_template.csv
 | `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader |
 | `gender` | Wikidata, propriété P21 |
 | `continent` | champ « Location » des pages civilisation du wiki (Wikidata/Wikipédia pour les civs BBG Expanded) ; le texte source est conservé dans `tools/bbg/sources.json` |
-| `silhouette` | personnage détouré du médaillon BBG par `tools/bbg/make_silhouettes.py` (modèles BiRefNet / ISNet via rembg, contrôle qualité automatique + relecture visuelle, rejets listés dans `tools/bbg/silhouettes_rejected.json`, détail par leader dans `tools/bbg/silhouettes_report.json`). Leaders sans silhouette validée : exclus du mode Silhouette |
+| `silhouette` | 77 leaders : contour exact tiré des fichiers du jeu par `tools/game/import_textures.py` (textures `LEADER_<NOM>_NEUTRAL.dds` du dépôt Steam « Civilization VI SDK Assets », et images `FALLBACK_NEUTRAL_*` des paquets `LeaderFallbackImages.blp` de chaque DLC, lus par `tools/game/blp.py` ; association image → leader dans `tools/game/mapping.json`, vérifiée visuellement). Les autres : détourage estimé du médaillon BBG par `tools/bbg/make_silhouettes.py` (BiRefNet / ISNet via rembg, rejets dans `tools/bbg/silhouettes_rejected.json`) |
+| `silhouetteSource` | `"game"` (fichiers du jeu), `"cutout"` (détourage estimé) ou `null`. Le mode Silhouette n'utilise que les sources listées dans `SOURCES` de `js/modes/silhouette.js` (actuellement `["game"]`) |
 | `silhouetteFocus` | calculé : point du contour de la silhouette |
 | `era` | **non renseigné** : aucune source ; colonne retirée du mode Classique tant qu'elle est vide |
 
@@ -65,7 +66,8 @@ git clone --depth 1 --filter=blob:none --sparse https://github.com/civ6bbg/civ6b
 git -C bbg sparse-checkout set --no-cone '/fr_FR/leaders_7.5.html' '/en_US/leaders_7.5.html' '/images/leaders/'
 pip install pillow numpy "rembg[cpu]"
 python tools/bbg/build.py bbg 7.5              # portraits + données
-python tools/bbg/make_silhouettes.py            # silhouettes (long : ~20 s par portrait, ~6 Go de RAM)
+python tools/game/import_textures.py "<SDK Assets>/Civ6" "<jeu>"   # silhouettes exactes (77 leaders)
+python tools/bbg/make_silhouettes.py            # silhouettes estimées des autres (long : ~20 s par portrait, ~6 Go de RAM)
 python tools/bbg/build.py bbg 7.5              # relancer pour intégrer les silhouettes
 ```
 

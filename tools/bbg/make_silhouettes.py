@@ -228,7 +228,8 @@ def main():
     tmp = OUT / "_candidate.png"
     # Leaders with a silhouette from the official game textures are skipped
     # (see tools/game/import_textures.py): those are exact, not estimated.
-    game_ids = set(json.loads((ROOT / "tools" / "game" / "mapping.json").read_text(encoding="utf-8"))["textures"].values())
+    game_map = json.loads((ROOT / "tools" / "game" / "mapping.json").read_text(encoding="utf-8"))
+    game_ids = set(game_map["textures"].values()) | {e["id"] for e in game_map["fallback"]}
     todo = [l for l in leaders
             if l.get("portrait") and l["id"] not in game_ids and (force or l["id"] not in report)]
     for i, l in enumerate(todo, 1):

@@ -1,4 +1,3 @@
 {
-  "_about": "Silhouettes that passed the automatic check but were rejected after visual review (pieces missing). Their leaders are left out of the Silhouette mode. Replace the file in img/silhouettes/ by a hand-made cut-out and remove the id from this list to bring them back.",
-  "byzantium-basil-ii": "crown and beard partly missing"
+  "_about": "Silhouettes that passed the automatic check but were rejected after visual review (pieces missing). Their leaders are left out of the Silhouette mode. Replace the file in img/silhouettes/ by a hand-made cut-out and remove the id from this list to bring them back."
 }

@@ -1,5 +1,5 @@
 {
-  "_about": "Civ VI SDK Assets texture name (LEADER_<NAME>_NEUTRAL.dds) -> Civdle leader id. Original personas only. T_ROOSEVELT is mapped to the Rough Rider persona because leaders.json lists Rough Rider as the base-game persona.",
+  "_about": "SDK Assets texture name (LEADER_<NAME>_NEUTRAL.dds) -> Civdle leader id, original personas only. 'fallback': images read from <game>/<package>/Platforms/Windows/BLPs/LeaderFallbackImages.blp; 'index' is the position of the texture record in the package (tools/game/blp.py), the name is the FALLBACK_NEUTRAL_* string at the same position. Each index -> leader association was checked visually (2026-09-29) because blp.py does not decode the record -> name link.",
   "textures": {
     "BARBAROSSA": "germany-frederick-barbarossa",
     "CATHERINE": "france-catherine-de-medici-black-queen",
@@ -38,8 +38,232 @@
     "TAMAR": "georgia-tamar",
     "TOMYRIS": "scythia-tomyris",
     "TRAJAN": "rome-trajan",
-    "T_ROOSEVELT": "america-teddy-roosevelt-rough-rider",
+    "T_ROOSEVELT": "america-teddy-roosevelt-bull-moose",
     "VICTORIA": "england-victoria-age-of-empire",
     "WILHELMINA": "netherlands-wilhelmina"
-  }
+  },
+  "fallback": [
+    {
+      "package": "DLC/Australia",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_CURTAIN",
+      "id": "australia-john-curtin"
+    },
+    {
+      "package": "DLC/Babylon",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_HAMMURABI",
+      "id": "babylon-hammurabi"
+    },
+    {
+      "package": "DLC/Byzantium_Gaul",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_AMBIORIX",
+      "id": "gaul-ambiorix"
+    },
+    {
+      "package": "DLC/Byzantium_Gaul",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_BASIL",
+      "id": "byzantium-basil-ii"
+    },
+    {
+      "package": "DLC/CatherineDeMedici",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_CATHERINE_M",
+      "id": "france-catherine-de-medici-magnificence"
+    },
+    {
+      "package": "DLC/Ethiopia",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_MENELIK_II",
+      "id": "ethiopia-menelik-ii"
+    },
+    {
+      "package": "DLC/GranColombia_Maya",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_BOLIVAR",
+      "id": "gran-colombia-simon-bolivar"
+    },
+    {
+      "package": "DLC/GranColombia_Maya",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_LADY_SIX_SKY",
+      "id": "maya-lady-six-sky"
+    },
+    {
+      "package": "DLC/GreatBuilders",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_LUDWIG",
+      "id": "germany-ludwig-ii"
+    },
+    {
+      "package": "DLC/GreatBuilders",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_SEJONG",
+      "id": "korea-sejong"
+    },
+    {
+      "package": "DLC/GreatBuilders",
+      "index": 2,
+      "name": "FALLBACK_NEUTRAL_THEODORA",
+      "id": "byzantium-theodora"
+    },
+    {
+      "package": "DLC/GreatNegotiators",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_LINCOLN",
+      "id": "america-abraham-lincoln"
+    },
+    {
+      "package": "DLC/GreatNegotiators",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_MBANDE",
+      "id": "kongo-nzinga-mbande"
+    },
+    {
+      "package": "DLC/GreatNegotiators",
+      "index": 2,
+      "name": "FALLBACK_NEUTRAL_SALADIN_ALT",
+      "id": "arabia-saladin-sultan"
+    },
+    {
+      "package": "DLC/GreatWarlords",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_NADERSHAH",
+      "id": "persia-nader-shah"
+    },
+    {
+      "package": "DLC/GreatWarlords",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_SULEIMANALT",
+      "id": "ottomans-suleiman-muhtesem"
+    },
+    {
+      "package": "DLC/GreatWarlords",
+      "index": 2,
+      "name": "FALLBACK_NEUTRAL_TOKUGAWA",
+      "id": "japan-tokugawa"
+    },
+    {
+      "package": "DLC/Indonesia_Khmer",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_GITARJA",
+      "id": "indonesia-gitarja"
+    },
+    {
+      "package": "DLC/Indonesia_Khmer",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_JAYAVARMAN",
+      "id": "khmer-jayavarman-vii"
+    },
+    {
+      "package": "DLC/JuliusCaesar",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_JULIUS",
+      "id": "rome-julius-caesar"
+    },
+    {
+      "package": "DLC/KublaiKhan_Vietnam",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_KUBLAI_KHAN_CHINA",
+      "id": "china-kublai-khan-china"
+    },
+    {
+      "package": "DLC/KublaiKhan_Vietnam",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_KUBLAI_KHAN_MONGOLIA",
+      "id": "mongolia-kublai-khan-mongolia"
+    },
+    {
+      "package": "DLC/KublaiKhan_Vietnam",
+      "index": 2,
+      "name": "FALLBACK_NEUTRAL_LADY_TRIEU",
+      "id": "vietnam-ba-trieu"
+    },
+    {
+      "package": "DLC/Macedonia_Persia",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_ALEXANDER",
+      "id": "macedon-alexander"
+    },
+    {
+      "package": "DLC/Macedonia_Persia",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_CYRUS",
+      "id": "persia-cyrus"
+    },
+    {
+      "package": "DLC/Nubia_Amanitore",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_AMANITORE",
+      "id": "nubia-amanitore"
+    },
+    {
+      "package": "DLC/Portugal",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_JOAO_III",
+      "id": "portugal-joao-iii"
+    },
+    {
+      "package": "DLC/RulersOfChina",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_QINALT",
+      "id": "china-qin-unifier"
+    },
+    {
+      "package": "DLC/RulersOfChina",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_WUZETIAN",
+      "id": "china-wu-zetian"
+    },
+    {
+      "package": "DLC/RulersOfChina",
+      "index": 2,
+      "name": "FALLBACK_NEUTRAL_YONGLE",
+      "id": "china-yongle"
+    },
+    {
+      "package": "DLC/RulersOfEngland",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_ELIZABETH",
+      "id": "england-elizabeth-i"
+    },
+    {
+      "package": "DLC/RulersOfEngland",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_HARALD_ALT",
+      "id": "norway-harald-hardrada-varangian"
+    },
+    {
+      "package": "DLC/RulersOfEngland",
+      "index": 2,
+      "name": "FALLBACK_NEUTRAL_VICTORIAALT",
+      "id": "england-victoria-age-of-steam"
+    },
+    {
+      "package": "DLC/RulersOfTheSahara",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_CLEOPATRA_ALT",
+      "id": "egypt-cleopatra-ptolemaic"
+    },
+    {
+      "package": "DLC/RulersOfTheSahara",
+      "index": 1,
+      "name": "FALLBACK_NEUTRAL_RAMSES",
+      "id": "egypt-ramses-ii"
+    },
+    {
+      "package": "DLC/RulersOfTheSahara",
+      "index": 2,
+      "name": "FALLBACK_NEUTRAL_SUNDIATA_KEITA",
+      "id": "mali-sundiata-keita"
+    },
+    {
+      "package": "DLC/TeddyRoosevelt",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_ROOSEVELT_RR",
+      "id": "america-teddy-roosevelt-rough-rider"
+    }
+  ]
 }

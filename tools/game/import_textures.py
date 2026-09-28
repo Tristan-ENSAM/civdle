@@ -30,9 +30,17 @@ Then ``silhouette``, ``silhouetteFocus`` and ``silhouetteSource`` ("game") are u
 
 Usage (from the repository root):
 
-    python tools/game/import_textures.py "<SDK Assets>/Civ6"
+    python tools/game/import_textures.py "<SDK Assets>/Civ6" ["<game>"]
 
-where ``<SDK Assets>/Civ6`` is searched recursively for the .dds files.
+where ``<SDK Assets>/Civ6`` is searched recursively for the .dds files and
+``<game>`` is the game install folder ("Sid Meier's Civilization VI").
+
+Second source (optional ``<game>`` argument): DLC leaders are not in the SDK
+depot, but each DLC package of the game ships ``LeaderFallbackImages.blp``
+with the 2D fallback image of its leaders (figure alone, with alpha), read by
+``blp.py``. Entries are listed in ``mapping.json`` under ``fallback`` by
+package and record index, each checked visually. Leaders of BBG Expanded
+(a mod) are in neither source.
 Requires Pillow (DXT/BC decoding of .dds is built in).
 """
 import json
@@ -46,16 +54,17 @@ HERE = Path(__file__).resolve().parent
 SIZE = 512  # output side in px (arbitrary: enough for the 5x zoom at ~400 px frame)
 
 sys.path.insert(0, str(ROOT / "tools" / "bbg"))
+sys.path.insert(0, str(HERE))
 from build import silhouette_focus  # noqa: E402
+import blp  # noqa: E402
 
 
-def make_silhouette(dds_path, out_path):
-    """Write the black/alpha square silhouette of one NEUTRAL texture."""
-    im = Image.open(dds_path).convert("RGBA")
-    alpha = im.getchannel("A")
+def make_silhouette(im, out_path):
+    """Write the black/alpha square silhouette of one leader image (PIL RGBA)."""
+    alpha = im.convert("RGBA").getchannel("A")
     bbox = alpha.getbbox()
     if bbox is None:
-        raise ValueError(f"{dds_path}: fully transparent")
+        raise ValueError(f"{out_path}: source image fully transparent")
     alpha = alpha.crop(bbox)
     w, h = alpha.size
     scale = SIZE / max(w, h)
@@ -68,33 +77,59 @@ def make_silhouette(dds_path, out_path):
     out.save(out_path, optimize=True)
 
 
-def main(src_dir):
-    mapping = json.loads((HERE / "mapping.json").read_text(encoding="utf-8"))["textures"]
-    found = {p.stem: p for p in Path(src_dir).rglob("LEADER_*_NEUTRAL.dds")}
+def _write(by_id, lid, im):
+    if lid not in by_id:
+        raise KeyError(f"mapping.json: unknown leader id {lid}")
+    rel = f"img/silhouettes/{lid}.png"
+    make_silhouette(im, ROOT / rel)
+    by_id[lid]["silhouette"] = rel
+    by_id[lid]["silhouetteFocus"] = silhouette_focus(ROOT / rel, lid)
+    by_id[lid]["silhouetteSource"] = "game"
+
+
+def main(sdk_dir, game_dir=None):
+    mapping = json.loads((HERE / "mapping.json").read_text(encoding="utf-8"))
     leaders_path = ROOT / "data" / "leaders.json"
     leaders = json.loads(leaders_path.read_text(encoding="utf-8"))
     by_id = {l["id"]: l for l in leaders}
     done, missing = [], []
-    for tex, lid in mapping.items():
+
+    # 1. SDK Assets: LEADER_<NAME>_NEUTRAL.dds
+    found = {p.stem: p for p in Path(sdk_dir).rglob("LEADER_*_NEUTRAL.dds")}
+    for tex, lid in mapping["textures"].items():
         key = f"LEADER_{tex}_NEUTRAL"
         if key not in found:
             missing.append(key)
             continue
-        if lid not in by_id:
-            raise KeyError(f"mapping.json: unknown leader id {lid}")
-        rel = f"img/silhouettes/{lid}.png"
-        make_silhouette(found[key], ROOT / rel)
-        by_id[lid]["silhouette"] = rel
-        by_id[lid]["silhouetteFocus"] = silhouette_focus(ROOT / rel, lid)
-        by_id[lid]["silhouetteSource"] = "game"
+        _write(by_id, lid, Image.open(found[key]))
         done.append(lid)
+
+    # 2. Game install: LeaderFallbackImages.blp of each DLC package
+    if game_dir:
+        cache = {}
+        for e in mapping["fallback"]:
+            path = Path(game_dir) / e["package"] / "Platforms" / "Windows" / "BLPs" / "LeaderFallbackImages.blp"
+            if not path.exists():
+                missing.append(str(path))
+                continue
+            if path not in cache:
+                data = path.read_bytes()
+                cache[path] = (data, blp.find_textures(data), blp.list_names(data))
+            data, recs, names = cache[path]
+            # Guard against a changed package: the expected name must still be
+            # in it, and the record index must exist.
+            if e["name"] not in names or e["index"] >= len(recs):
+                raise ValueError(f"{path}: {e['name']} / index {e['index']} not found, re-check mapping.json")
+            _write(by_id, e["id"], blp.decode(data, recs[e["index"]]))
+            done.append(e["id"])
+
     leaders_path.write_text(json.dumps(leaders, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(done)} silhouettes written from game textures")
     if missing:
-        print("textures not found:", ", ".join(missing))
+        print("not found:", ", ".join(missing))
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) not in (2, 3):
         sys.exit(__doc__)
-    main(sys.argv[1])
+    main(*sys.argv[1:])
