@@ -76,22 +76,27 @@
       "label": "Reconnaissance"
     },
     "siege": {
-      "label": "Siège"
+      "label": "Siège",
+      "icon": "img/icons/units/catapult.png"
     },
     "naval_melee": {
-      "label": "Naval combat rapproché"
+      "label": "Naval combat rapproché",
+      "icon": "img/icons/units/galley.png"
     },
     "naval_ranged": {
-      "label": "Naval combat à distance"
+      "label": "Naval combat à distance",
+      "icon": "img/icons/units/quadrireme.png"
     },
     "naval_raider": {
-      "label": "Naval assaut en mer"
+      "label": "Naval assaut en mer",
+      "icon": "img/icons/units/privateer.png"
     },
     "naval_support": {
       "label": "Naval soutien"
     },
     "air_fighter": {
-      "label": "Chasseur aérien"
+      "label": "Chasseur aérien",
+      "icon": "img/icons/units/biplane.png"
     }
   }
 }

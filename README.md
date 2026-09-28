@@ -28,6 +28,7 @@ data/config.json        réglages + colonnes du mode Classique
 data/leaders.json       88 leaders (généré, voir « Données »)
 data/catalogs.json      catalogues identifiant -> libellé + icône (quartiers, types d'unités)
 img/portraits/          portraits (générés depuis le site BBG)
+img/silhouettes/        silhouettes détourées (générées)
 img/icons/              icônes des quartiers et types d'unités
 js/main.js              chargement, onglets, routage (#classic, #portrait…)
 js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage)
@@ -51,7 +52,8 @@ tools/leaders_template.csv
 | `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader |
 | `gender` | Wikidata, propriété P21 |
 | `continent` | champ « Location » des pages civilisation du wiki (Wikidata/Wikipédia pour les civs BBG Expanded) ; le texte source est conservé dans `tools/bbg/sources.json` |
-| `silhouetteFocus` | calculé : point du contour de la silhouette (transparence du portrait) |
+| `silhouette` | calculé : personnage détouré du médaillon BBG par GrabCut (`tools/bbg/silhouette_cut.py`, automatique, bords parfois imparfaits) |
+| `silhouetteFocus` | calculé : point du contour de la silhouette |
 | `era` | **non renseigné** : aucune source ; colonne retirée du mode Classique tant qu'elle est vide |
 
 Le détail (règles, cas interprétés marqués `"interpretation": true`) est dans `tools/bbg/sources.json`.
@@ -61,7 +63,7 @@ Le détail (règles, cas interprétés marqués `"interpretation": true`) est da
 ```
 git clone --depth 1 --filter=blob:none --sparse https://github.com/civ6bbg/civ6bbg.github.io bbg
 git -C bbg sparse-checkout set --no-cone '/fr_FR/leaders_7.5.html' '/en_US/leaders_7.5.html' '/images/leaders/'
-pip install pillow
+pip install pillow numpy opencv-python-headless
 python tools/bbg/build.py bbg 7.5
 ```
 

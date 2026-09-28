@@ -22,6 +22,8 @@ Outputs
 - ``data/leaders.json`` (overwritten)
 - ``data/catalogs.json`` (overwritten)
 - ``img/portraits/<id>.webp``
+- ``img/silhouettes/<id>.png`` (figure cut out of the medallion, needs
+  ``opencv-python-headless`` and ``numpy``; see ``silhouette_cut.py``)
 
 Derived fields
 --------------
@@ -77,12 +79,12 @@ UNIT_CLASSES = {
     "heavy_cavalry":  {"label": "Cavalerie lourde"},
     "ranged_cavalry": {"label": "Unité montée à distance"},
     "recon":          {"label": "Reconnaissance"},
-    "siege":          {"label": "Siège"},
-    "naval_melee":    {"label": "Naval combat rapproché"},
-    "naval_ranged":   {"label": "Naval combat à distance"},
-    "naval_raider":   {"label": "Naval assaut en mer"},
+    "siege":          {"label": "Siège", "icon": "img/icons/units/catapult.png"},
+    "naval_melee":    {"label": "Naval combat rapproché", "icon": "img/icons/units/galley.png"},
+    "naval_ranged":   {"label": "Naval combat à distance", "icon": "img/icons/units/quadrireme.png"},
+    "naval_raider":   {"label": "Naval assaut en mer", "icon": "img/icons/units/privateer.png"},
     "naval_support":  {"label": "Naval soutien"},
-    "air_fighter":    {"label": "Chasseur aérien"},
+    "air_fighter":    {"label": "Chasseur aérien", "icon": "img/icons/units/biplane.png"},
 }
 
 # French base-district name (as written after "remplaçant") -> catalog id.
@@ -254,6 +256,22 @@ def main(bbg_dir, version):
         else:
             warn(f"{f['heading']}: portrait not found ({p.name})")
 
+        # Silhouette: figure cut out of the medallion (see silhouette_cut.py).
+        sil = None
+        if portrait:
+            try:
+                from silhouette_cut import cut
+                from PIL import Image
+                mask = Image.fromarray(cut(out_dir / f"{lid}.webp"))
+                black = Image.new("RGBA", mask.size, (0, 0, 0, 0))
+                black.paste((0, 0, 0, 255), (0, 0, *mask.size), mask)
+                sil_dir = ROOT / "img" / "silhouettes"
+                sil_dir.mkdir(parents=True, exist_ok=True)
+                black.save(sil_dir / f"{lid}.png", optimize=True)
+                sil = f"img/silhouettes/{lid}.png"
+            except ImportError as exc:
+                warn(f"silhouettes not generated ({exc}); the site falls back to the portrait disc")
+
         ext = src["extension"].get(f["leaderKey"])
         if ext is None:
             warn(f"{f['heading']}: no extension in sources.json")
@@ -281,7 +299,8 @@ def main(bbg_dir, version):
             "gender": gender,
             "extension": ext,
             "portrait": portrait,
-            "silhouetteFocus": silhouette_focus(out_dir / f"{lid}.webp", lid) if portrait else None,
+            "silhouette": sil,
+            "silhouetteFocus": silhouette_focus(ROOT / sil if sil else out_dir / f"{lid}.webp", lid) if portrait else None,
             "descriptions": texts,
             "maskWords": sorted(set(mask_words([name_fr, name_en]) + [civ_en]
                                     + [it["name"] for it in f["items"]])),
