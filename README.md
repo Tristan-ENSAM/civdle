@@ -28,7 +28,7 @@ data/config.json        réglages + colonnes du mode Classique
 data/leaders.json       88 leaders (généré, voir « Données »)
 data/catalogs.json      catalogues identifiant -> libellé + icône (quartiers, types d'unités)
 img/portraits/          portraits (générés depuis le site BBG)
-img/silhouettes/        silhouettes détourées (générées)
+img/silhouettes/        silhouettes détourées (générées, contrôlées)
 img/icons/              icônes des quartiers et types d'unités
 js/main.js              chargement, onglets, routage (#classic, #portrait…)
 js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage)
@@ -52,7 +52,7 @@ tools/leaders_template.csv
 | `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader |
 | `gender` | Wikidata, propriété P21 |
 | `continent` | champ « Location » des pages civilisation du wiki (Wikidata/Wikipédia pour les civs BBG Expanded) ; le texte source est conservé dans `tools/bbg/sources.json` |
-| `silhouette` | calculé : personnage détouré du médaillon BBG par GrabCut (`tools/bbg/silhouette_cut.py`, automatique, bords parfois imparfaits) |
+| `silhouette` | personnage détouré du médaillon BBG par `tools/bbg/make_silhouettes.py` (modèles BiRefNet / ISNet via rembg, contrôle qualité automatique + relecture visuelle, rejets listés dans `tools/bbg/silhouettes_rejected.json`, détail par leader dans `tools/bbg/silhouettes_report.json`). Leaders sans silhouette validée : exclus du mode Silhouette |
 | `silhouetteFocus` | calculé : point du contour de la silhouette |
 | `era` | **non renseigné** : aucune source ; colonne retirée du mode Classique tant qu'elle est vide |
 
@@ -63,8 +63,10 @@ Le détail (règles, cas interprétés marqués `"interpretation": true`) est da
 ```
 git clone --depth 1 --filter=blob:none --sparse https://github.com/civ6bbg/civ6bbg.github.io bbg
 git -C bbg sparse-checkout set --no-cone '/fr_FR/leaders_7.5.html' '/en_US/leaders_7.5.html' '/images/leaders/'
-pip install pillow numpy opencv-python-headless
-python tools/bbg/build.py bbg 7.5
+pip install pillow numpy "rembg[cpu]"
+python tools/bbg/build.py bbg 7.5              # portraits + données
+python tools/bbg/make_silhouettes.py            # silhouettes (long : ~20 s par portrait, ~6 Go de RAM)
+python tools/bbg/build.py bbg 7.5              # relancer pour intégrer les silhouettes
 ```
 
 Pour une nouvelle version BBG : remplacer `7.5`, puis compléter `tools/bbg/sources.json` pour les nouveaux leaders (le script signale sur la sortie d'erreur toute valeur manquante ou toute unité/quartier non classé ; il ne devine rien).

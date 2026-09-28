@@ -1,0 +1,1152 @@
+{
+ "america-abraham-lincoln": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "america-teddy-roosevelt-bull-moose": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "arabia-saladin-vizier": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "arabia-saladin-sultan": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "australia-john-curtin": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "babylon-hammurabi": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "brazil-pedro-ii": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "byzantium-theodora": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "canada-wilfrid-laurier": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.001,
+    "face": 1.0
+   }
+  ]
+ },
+ "china-kublai-khan-china": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "china-qin-mandate-of-heaven": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "china-qin-unifier": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "china-wu-zetian": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.092,
+    "face": 1.0
+   }
+  ]
+ },
+ "china-yongle": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "cree-poundmaker": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.002,
+    "face": 1.0
+   }
+  ]
+ },
+ "egypt-cleopatra-egyptian": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.039,
+    "face": 1.0
+   }
+  ]
+ },
+ "england-eleanor-of-aquitaine-england": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.109,
+    "face": 1.0
+   }
+  ]
+ },
+ "england-elizabeth-i": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "england-victoria-age-of-empire": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "france-catherine-de-medici-black-queen": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.024,
+    "face": 1.0
+   }
+  ]
+ },
+ "france-catherine-de-medici-magnificence": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.182,
+    "face": 1.0
+   }
+  ]
+ },
+ "france-eleanor-of-aquitaine-france": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "gaul-vercingetorix": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "georgia-tamar": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.001,
+    "face": 1.0
+   }
+  ]
+ },
+ "germany-frederick-barbarossa": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "germany-ludwig-ii": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "greece-gorgo": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "greece-pericles": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.001,
+    "face": 1.0
+   }
+  ]
+ },
+ "hungary-matthias-corvinus": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "india-chandragupta": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.004,
+    "face": 1.0
+   }
+  ]
+ },
+ "india-gandhi": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.085,
+    "face": 1.0
+   }
+  ]
+ },
+ "indonesia-gitarja": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.028,
+    "face": 1.0
+   }
+  ]
+ },
+ "japan-hojo-tokimune": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "japan-tokugawa": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "khmer-jayavarman-vii": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.001,
+    "face": 1.0
+   }
+  ]
+ },
+ "kongo-mvemba-a-nzinga": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "kongo-nzinga-mbande": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.007,
+    "face": 1.0
+   }
+  ]
+ },
+ "korea-sejong": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "korea-seondeok": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.023,
+    "face": 1.0
+   }
+  ]
+ },
+ "mali-mansa-musa": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "mali-sundiata-keita": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.12,
+    "face": 1.0
+   }
+  ]
+ },
+ "maori-kupe": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "mapuche-lautaro": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.018,
+    "face": 1.0
+   }
+  ]
+ },
+ "mongolia-genghis-khan": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "mongolia-kublai-khan-mongolia": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.024,
+    "face": 1.0
+   }
+  ]
+ },
+ "netherlands-wilhelmina": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.263,
+    "face": 1.0
+   }
+  ]
+ },
+ "norway-harald-hardrada-varangian": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "norway-harald-hardrada-konge": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "nubia-amanitore": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "ottomans-suleiman-kanuni": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.091,
+    "face": 1.0
+   }
+  ]
+ },
+ "ottomans-suleiman-muhtesem": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.003,
+    "face": 1.0
+   }
+  ]
+ },
+ "persia-nader-shah": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "phoenicia-dido": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "poland-jadwiga": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "portugal-joao-iii": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.077,
+    "face": 1.0
+   }
+  ]
+ },
+ "rome-julius-caesar": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "rome-trajan": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "russia-peter": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "scotland-robert-the-bruce": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "scythia-tomyris": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "spain-philip-ii": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "sumeria-gilgamesh": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "swahili-al-hasan-ibn-sulaiman": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.164,
+    "face": 1.0
+   }
+  ]
+ },
+ "vietnam-ba-trieu": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.126,
+    "face": 1.0
+   }
+  ]
+ },
+ "zulu-shaka": {
+  "accepted": "birefnet-general-lite/black",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "america-teddy-roosevelt-rough-rider": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.711,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.177,
+    "face": 1.0
+   }
+  ]
+ },
+ "aztec-montezuma": {
+  "accepted": "isnet-general-use/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.976,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.044,
+    "face": 1.0
+   }
+  ]
+ },
+ "byzantium-basil-ii": {
+  "accepted": "isnet-general-use/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.87,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "taino-anacaona": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.72,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.725,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 1.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "egypt-cleopatra-ptolemaic": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.041,
+    "face": 1.0
+   }
+  ]
+ },
+ "egypt-ramses-ii": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "error": "worker failed"
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "england-victoria-age-of-steam": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.546,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.577,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 0.584,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 0.916,
+    "face": 1.0
+   }
+  ]
+ },
+ "ethiopia-menelik-ii": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.777,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.108,
+    "face": 1.0
+   }
+  ]
+ },
+ "gaul-ambiorix": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "gran-colombia-simon-bolivar": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.986,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "inca-pachacuti": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.5,
+    "face": 0.998
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.507,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 0.506,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 0.497,
+    "face": 1.0
+   }
+  ]
+ },
+ "macedon-alexander": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 1.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "macedon-olympias": {
+  "accepted": "isnet-general-use/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.007,
+    "face": 1.0
+   }
+  ]
+ },
+ "maya-lady-six-sky": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "error": "worker failed"
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 1.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "maya-te-k-inich-ii": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "error": "worker failed"
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.97,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 0.997,
+    "face": 1.0
+   }
+  ]
+ },
+ "austria-maria-theresa": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 0.504,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 0.553,
+    "face": 1.0
+   }
+  ]
+ },
+ "goths-theodoric": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.797,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.202,
+    "face": 1.0
+   }
+  ]
+ },
+ "persia-cyrus": {
+  "accepted": "isnet-general-use/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "error": "worker failed"
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.001,
+    "face": 1.0
+   }
+  ]
+ },
+ "phoenicia-ahiram": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "poland-stanislaw-ii": {
+  "accepted": "birefnet-general-lite/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.223,
+    "face": 1.0
+   }
+  ]
+ },
+ "sweden-kristina": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 0.54,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "error": "worker failed"
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.543,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 1.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "thule-kiviuq": {
+  "accepted": null,
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "u2net/disc",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "silueta/disc",
+    "side": 1.0,
+    "face": 1.0
+   }
+  ]
+ },
+ "tibet-trisong-detsen": {
+  "accepted": "isnet-general-use/disc",
+  "tried": [
+   {
+    "method": "birefnet-general-lite/black",
+    "side": 1.0,
+    "face": 1.0
+   },
+   {
+    "method": "birefnet-general-lite/disc",
+    "side": 0.5,
+    "face": 1.0
+   },
+   {
+    "method": "isnet-general-use/disc",
+    "side": 0.0,
+    "face": 1.0
+   }
+  ]
+ }
+}

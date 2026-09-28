@@ -2,11 +2,9 @@
  * Mode "Silhouette": a black silhouette of the answer, zoomed on one spot;
  * each wrong guess zooms out.
  *
- * Image source, in order of preference:
- *   1. `leader.silhouette` — a dedicated image (used as is, turned black by CSS);
- *   2. `leader.portrait`   — turned black with `filter: brightness(0)`.
- * In both cases the image MUST have a transparent background, otherwise the
- * whole frame turns black.
+ * Image source: `leader.silhouette`, a cut-out figure on a transparent
+ * background (turned black by CSS). Leaders without one are not drawn in this
+ * mode: the raw portraits are round medallions and would all look like discs.
  *
  * Zoom point: `leader.silhouetteFocus = [x, y]` in percent of the image,
  * shown at the centre of the frame (recommended: a point on the outline of
@@ -44,12 +42,13 @@ export default {
   label: "Silhouette",
   hint: "Reconnais la silhouette : la vue se dézoome à chaque essai.",
 
-  eligible: (l) => !!(l.silhouette || l.portrait),
+  // Only leaders with a validated cut-out silhouette (see tools/bbg/make_silhouettes.py).
+  eligible: (l) => !!l.silhouette,
 
   setup(ctx) {
     ctx.els.clue.innerHTML = `<div class="frame silhouette-frame"><img alt="Silhouette mystère" draggable="false"></div>`;
     const img = ctx.els.clue.querySelector("img");
-    img.src = ctx.answer.silhouette || ctx.answer.portrait;
+    img.src = ctx.answer.silhouette;
     img.addEventListener("contextmenu", (e) => e.preventDefault());
     ctx.silhouetteFocus = focusFor(ctx.answer, ctx.dateStr);
     ctx.silhouetteImg = img;

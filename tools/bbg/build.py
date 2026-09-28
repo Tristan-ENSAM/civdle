@@ -22,8 +22,8 @@ Outputs
 - ``data/leaders.json`` (overwritten)
 - ``data/catalogs.json`` (overwritten)
 - ``img/portraits/<id>.webp``
-- ``img/silhouettes/<id>.png`` (figure cut out of the medallion, needs
-  ``opencv-python-headless`` and ``numpy``; see ``silhouette_cut.py``)
+- ``silhouette`` field: ``img/silhouettes/<id>.png`` when it exists (made by
+  ``make_silhouettes.py``) and is not listed in ``silhouettes_rejected.json``
 
 Derived fields
 --------------
@@ -221,6 +221,7 @@ def main(bbg_dir, version):
         sys.exit("FR and EN pages do not list the same leaders in the same order")
     src = json.loads((Path(__file__).parent / "sources.json").read_text(encoding="utf-8"))
 
+    rejected = json.loads((Path(__file__).parent / "silhouettes_rejected.json").read_text(encoding="utf-8"))
     out_dir = ROOT / "img" / "portraits"
     out_dir.mkdir(parents=True, exist_ok=True)
     leaders, used_ids = [], set()
@@ -256,21 +257,11 @@ def main(bbg_dir, version):
         else:
             warn(f"{f['heading']}: portrait not found ({p.name})")
 
-        # Silhouette: figure cut out of the medallion (see silhouette_cut.py).
+        # Silhouette: produced by make_silhouettes.py (quality-checked); none
+        # if missing or rejected after visual review -> not in Silhouette mode.
         sil = None
-        if portrait:
-            try:
-                from silhouette_cut import cut
-                from PIL import Image
-                mask = Image.fromarray(cut(out_dir / f"{lid}.webp"))
-                black = Image.new("RGBA", mask.size, (0, 0, 0, 0))
-                black.paste((0, 0, 0, 255), (0, 0, *mask.size), mask)
-                sil_dir = ROOT / "img" / "silhouettes"
-                sil_dir.mkdir(parents=True, exist_ok=True)
-                black.save(sil_dir / f"{lid}.png", optimize=True)
-                sil = f"img/silhouettes/{lid}.png"
-            except ImportError as exc:
-                warn(f"silhouettes not generated ({exc}); the site falls back to the portrait disc")
+        if (ROOT / "img" / "silhouettes" / f"{lid}.png").exists() and lid not in rejected:
+            sil = f"img/silhouettes/{lid}.png"
 
         ext = src["extension"].get(f["leaderKey"])
         if ext is None:
@@ -300,7 +291,7 @@ def main(bbg_dir, version):
             "extension": ext,
             "portrait": portrait,
             "silhouette": sil,
-            "silhouetteFocus": silhouette_focus(ROOT / sil if sil else out_dir / f"{lid}.webp", lid) if portrait else None,
+            "silhouetteFocus": silhouette_focus(ROOT / sil, lid) if sil else None,
             "descriptions": texts,
             "maskWords": sorted(set(mask_words([name_fr, name_en]) + [civ_en]
                                     + [it["name"] for it in f["items"]])),
