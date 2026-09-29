@@ -78,14 +78,14 @@ UNIT_CLASSES = {
     "ranged":         {"label": "Combat à distance",         "icon": "img/icons/units/slinger.png"},
     "anti_cavalry":   {"label": "Anti-cavalerie",            "icon": "img/icons/units/spearman.png"},
     "light_cavalry":  {"label": "Cavalerie légère",          "icon": "img/icons/units/horseman.png"},
-    "heavy_cavalry":  {"label": "Cavalerie lourde"},
+    "heavy_cavalry":  {"label": "Cavalerie lourde", "icon": "img/icons/units/heavy_chariot.png"},
     "ranged_cavalry": {"label": "Unité montée à distance", "icon": "img/icons/units/barbarian_horse_archer.png"},
     "recon":          {"label": "Reconnaissance", "icon": "img/icons/units/scout.png"},
     "siege":          {"label": "Siège", "icon": "img/icons/units/catapult.png"},
     "naval_melee":    {"label": "Naval combat rapproché", "icon": "img/icons/units/galley.png"},
     "naval_ranged":   {"label": "Naval combat à distance", "icon": "img/icons/units/quadrireme.png"},
     "naval_raider":   {"label": "Naval assaut en mer", "icon": "img/icons/units/privateer.png"},
-    "support":        {"label": "Soutien"},
+    "support":        {"label": "Soutien", "icon": "img/icons/units/battering_ram.png"},
     "air_fighter":    {"label": "Chasseur aérien", "icon": "img/icons/units/biplane.png"},
 }
 
@@ -176,10 +176,12 @@ def replaced_district(desc):
 
 
 def silhouette_focus(image_path, seed):
-    """Pick a zoom point on the outline of a transparent portrait.
+    """Pick a zoom point on the upper outline of a transparent silhouette.
 
     Outline pixels are opaque pixels (alpha >= 128) with at least one
-    transparent 4-neighbour. One of them is chosen deterministically from
+    transparent 4-neighbour. Only those in the top quarter of the figure's
+    height are kept (top of the head, hair, headgear: the most recognisable
+    part of a silhouette). One of them is chosen deterministically from
     ``seed``. Returns [x%, y%] or None if Pillow is missing or no outline is
     found (the site then falls back to a random point).
     """
@@ -199,6 +201,10 @@ def silhouette_focus(image_path, seed):
                 edge.append((x, y))
     if not edge:
         return None
+    top = min(y for _, y in edge)
+    bottom = max(y for _, y in edge)
+    upper = [(x, y) for x, y in edge if y <= top + 0.25 * (bottom - top)]
+    edge = upper or edge
     idx = int(hashlib.sha1(seed.encode()).hexdigest(), 16) % len(edge)
     x, y = edge[idx]
     return [round(100 * x / w, 1), round(100 * y / h, 1)]
@@ -301,6 +307,8 @@ def main(bbg_dir, version):
             "extension": ext,
             "portrait": portrait,
             "silhouette": sil,
+            # Colour figure behind the silhouette (tools/game/import_textures.py).
+            "reveal": f"img/reveal/{lid}.webp" if sil and (ROOT / "img" / "reveal" / f"{lid}.webp").exists() else None,
             "silhouetteFocus": silhouette_focus(ROOT / sil, lid) if sil else None,
             "silhouetteSource": sil_source,
             "descriptions": texts,

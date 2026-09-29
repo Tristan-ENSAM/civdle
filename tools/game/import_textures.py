@@ -14,11 +14,13 @@ Only the original persona of each leader is mapped: alternate personas
 (e.g. Qin Unifier, Saladin Sultan) have different artwork that is not in the
 depot, so the texture of the original persona is never reused for them.
 
-Output, for each mapped leader: ``img/silhouettes/<id>.png``, a square RGBA
-image (``SIZE`` px) whose colour is pure black and whose alpha is the texture
-alpha. Only the shape is published, not the painted texture. The figure is
-scaled to the full height and centred horizontally; the bottom of the figure
-(cut by the texture frame) stays on the bottom edge.
+Output, for each mapped leader:
+- ``img/silhouettes/<id>.png``, a square RGBA image (``SIZE`` px) whose colour
+  is pure black and whose alpha is the texture alpha;
+- ``img/reveal/<id>.webp``, the same figure in colour with the same framing,
+  shown when the player finds the silhouette (``leader.reveal``).
+The figure is scaled to the full height and centred horizontally; the bottom
+of the figure (cut by the texture frame) stays on the bottom edge.
 
 These silhouettes take precedence over the ones computed from the BBG
 portraits by ``tools/bbg/make_silhouettes.py``: the ids listed in
@@ -65,30 +67,41 @@ from build import silhouette_focus  # noqa: E402
 import blp  # noqa: E402
 
 
-def make_silhouette(im, out_path):
-    """Write the black/alpha square silhouette of one leader image (PIL RGBA)."""
-    alpha = im.convert("RGBA").getchannel("A")
-    bbox = alpha.getbbox()
+def frame(im):
+    """Crop to the figure, scale to SIZE px high/wide, centre, bottom-align."""
+    im = im.convert("RGBA")
+    bbox = im.getchannel("A").getbbox()
     if bbox is None:
-        raise ValueError(f"{out_path}: source image fully transparent")
-    alpha = alpha.crop(bbox)
-    w, h = alpha.size
+        raise ValueError("source image fully transparent")
+    im = im.crop(bbox)
+    w, h = im.size
     scale = SIZE / max(w, h)
-    alpha = alpha.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.LANCZOS)
-    canvas = Image.new("L", (SIZE, SIZE), 0)
+    im = im.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.LANCZOS)
+    canvas = Image.new("RGBA", (SIZE, SIZE), (0, 0, 0, 0))
     # Centred horizontally, bottom-aligned (the texture cuts the figure at the bottom).
-    canvas.paste(alpha, ((SIZE - alpha.width) // 2, SIZE - alpha.height))
+    canvas.paste(im, ((SIZE - im.width) // 2, SIZE - im.height))
+    return canvas
+
+
+def make_silhouette(im, out_path, reveal_path=None):
+    """Write the black/alpha silhouette (and optionally the colour figure)."""
+    framed = frame(im)
     out = Image.new("RGBA", (SIZE, SIZE), (0, 0, 0, 0))
-    out.putalpha(canvas)
+    out.putalpha(framed.getchannel("A"))
     out.save(out_path, optimize=True)
+    if reveal_path is not None:
+        framed.save(reveal_path, quality=88)
 
 
 def _write(by_id, lid, im, source="game"):
     if lid not in by_id:
         raise KeyError(f"mapping.json: unknown leader id {lid}")
     rel = f"img/silhouettes/{lid}.png"
-    make_silhouette(im, ROOT / rel)
+    rev = f"img/reveal/{lid}.webp"
+    (ROOT / "img" / "reveal").mkdir(parents=True, exist_ok=True)
+    make_silhouette(im, ROOT / rel, ROOT / rev)
     by_id[lid]["silhouette"] = rel
+    by_id[lid]["reveal"] = rev
     by_id[lid]["silhouetteFocus"] = silhouette_focus(ROOT / rel, lid)
     by_id[lid]["silhouetteSource"] = source
 

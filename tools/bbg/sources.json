@@ -2,7 +2,8 @@
   "_about": {
     "extension": "Official leaders: civilization.fandom.com/wiki/Leaders_(Civ6), read on 2026-09-28. A leader with no pack footnote and no R&F/GS icon in the main table is taken as base game. Persona pairs: the persona whose leader ability matches the main-table ability keeps the original leader's extension; the other persona gets the pack given in the 'Alternate personas' table (this pairing rule is an interpretation). BBG Expanded leaders: first BBG version whose bbg_expanded_X.html page lists them (github.com/civ6bbg/civ6bbg.github.io, commit d7119de).",
     "gender": "Wikidata property P21 (sex or gender) of the item linked from the leader's English Wikipedia article, the article itself being the first Wikipedia link on the leader's fandom page (official leaders) or chosen by name (BBG Expanded leaders). null = no P21 found.",
-    "continent": "Official civs: 'Location' field of the civ infobox on civilization.fandom.com (text kept in 'location'). BBG Expanded civs: Wikidata P30 or Wikidata/Wikipedia description (text kept in 'location'). Mapping from the location text to continent labels is manual; entries marked interpretation=true are not a direct reading of the text."
+    "continent": "Official civs: 'Location' field of the civ infobox on civilization.fandom.com (text kept in 'location'). BBG Expanded civs: Wikidata P30 or Wikidata/Wikipedia description (text kept in 'location'). Mapping from the location text to continent labels is manual; entries marked interpretation=true are not a direct reading of the text.",
+    "extensionOrder": "data/config.json extensionOrder (chronological order of the Extension column): PC release dates from civilization.fandom.com/wiki/DLC_(Civ6) (packs) and the infoboxes of Civilization_VI (2016-10-21), Civilization_VI:_Rise_and_Fall (2018-02-08), Civilization_VI:_Gathering_Storm (2019-02-14), read on 2026-09-29. Same-day releases share a rank (Ethiopia + both Persona Packs 2020-07-23; Great Negotiators + Julius Caesar 2022-11-21). BBG Expanded 7.1 and 7.5 are placed after all official packs (assumption, no date source) and 7.1 before 7.5 (version order)."
   },
   "extension": {
     "LOC_LEADER_ABRAHAM_LINCOLN_NAME": "Great Negotiators Pack",
@@ -95,151 +96,711 @@
     "LOC_LEADER_SHAKA_NAME": "Rise and Fall"
   },
   "gender": {
-    "LOC_LEADER_ABRAHAM_LINCOLN_NAME": ["Q91", "Homme"],
-    "LOC_LEADER_T_ROOSEVELT_ORIGINAL_NAME": ["Q33866", "Homme"],
-    "LOC_LEADER_T_ROOSEVELT_ROUGHRIDER_NAME": ["Q33866", "Homme"],
-    "LOC_LEADER_SALADIN_ORIGINAL_NAME": ["Q8581", "Homme"],
-    "LOC_LEADER_SALADIN_ALT_NAME": ["Q8581", "Homme"],
-    "LOC_LEADER_JOHN_CURTIN_NAME": ["Q23375", "Homme"],
-    "LOC_LEADER_MONTEZUMA_NAME": ["Q13702", "Homme"],
-    "LOC_LEADER_HAMMURABI_NAME": ["Q36359", "Homme"],
-    "LOC_LEADER_PEDRO_NAME": ["Q156774", "Homme"],
-    "LOC_LEADER_BASIL_NAME": ["Q41833", "Homme"],
-    "LOC_LEADER_THEODORA_NAME": ["Q204843", "Femme"],
-    "LOC_LEADER_LAURIER_NAME": ["Q128664", "Homme"],
-    "LOC_LEADER_KUBLAI_KHAN_C_NAME": ["Q7523", "Homme"],
-    "LOC_LEADER_QIN_ORIGINAL_NAME": ["Q7192", "Homme"],
-    "LOC_LEADER_QIN_ALT_NAME": ["Q7192", "Homme"],
-    "LOC_LEADER_WU_ZETIAN_NAME": ["Q9738", "Femme"],
-    "LOC_LEADER_YONGLE_NAME": ["Q9965", "Homme"],
-    "LOC_LEADER_POUNDMAKER_NAME": ["Q974731", "Homme"],
-    "LOC_LEADER_CVS_ANACAONA_NAME": ["Q456259", "Femme"],
-    "LOC_LEADER_CLEOPATRA_ORIGINAL_NAME": ["Q635", "Femme"],
-    "LOC_LEADER_CLEOPATRA_ALT_NAME": ["Q635", "Femme"],
-    "LOC_LEADER_RAMSES_NAME": ["Q1523", "Homme"],
-    "LOC_LEADER_ELEANOR_NAME": ["Q178525", "Femme"],
-    "LOC_LEADER_ELIZABETH_NAME": ["Q7207", "Femme"],
-    "LOC_LEADER_VICTORIA_ORIGINAL_NAME": ["Q9439", "Femme"],
-    "LOC_LEADER_VICTORIA_ALT_NAME": ["Q9439", "Femme"],
-    "LOC_LEADER_MENELIK_NAME": ["Q244748", "Homme"],
-    "LOC_LEADER_CATHERINE_DE_MEDICI_EXPANDED_NAME": ["Q131552", "Femme"],
-    "LOC_LEADER_CATHERINE_DE_MEDICI_ALT_NAME": ["Q131552", "Femme"],
-    "LOC_LEADER_ELEANOR_FRANCE_NAME": ["Q178525", "Femme"],
-    "LOC_LEADER_AMBIORIX_NAME": ["Q12847", "Homme"],
-    "LOC_LEADER_SUK_VERCINGETORIX_NAME": ["Q178953", "Homme"],
-    "LOC_LEADER_TAMAR_NAME": ["Q244007", "Femme"],
-    "LOC_LEADER_BARBAROSSA_NAME": ["Q79789", "Homme"],
-    "LOC_LEADER_LUDWIG_NAME": ["Q44039", "Homme"],
-    "LOC_LEADER_SIMON_BOLIVAR_NAME": ["Q8605", "Homme"],
-    "LOC_LEADER_GORGO_NAME": ["Q236557", "Femme"],
-    "LOC_LEADER_PERICLES_NAME": ["Q80398", "Homme"],
-    "LOC_LEADER_MATTHIAS_CORVINUS_NAME": ["Q188634", "Homme"],
-    "LOC_LEADER_PACHACUTI_NAME": ["Q213758", "Homme"],
-    "LOC_LEADER_CHANDRAGUPTA_NAME": ["Q188541", "Homme"],
-    "LOC_LEADER_GANDHI_NAME": ["Q1001", "Homme"],
-    "LOC_LEADER_GITARJA_NAME": ["Q3631722", "Femme"],
-    "LOC_LEADER_HOJO_NAME": ["Q430964", "Homme"],
-    "LOC_LEADER_TOKUGAWA_NAME": ["Q171977", "Homme"],
-    "LOC_LEADER_JAYAVARMAN_NAME": ["Q335273", "Homme"],
-    "LOC_LEADER_MVEMBA_NAME": ["Q383455", "Homme"],
-    "LOC_LEADER_NZINGA_MBANDE_NAME": ["Q467650", "Femme"],
-    "LOC_LEADER_SEJONG_NAME": ["Q37682", "Homme"],
-    "LOC_LEADER_SEONDEOK_NAME": ["Q485131", "Femme"],
-    "LOC_LEADER_ALEXANDER_NAME": ["Q8409", "Homme"],
-    "LOC_LEADER_JFD_OLYMPIAS_NAME": ["Q223134", "Femme"],
-    "LOC_LEADER_MANSA_MUSA_NAME": ["Q309333", "Homme"],
-    "LOC_LEADER_SUNDIATA_KEITA_NAME": ["Q175772", "Homme"],
-    "LOC_LEADER_KUPE_NAME": ["Q1792784", "Homme"],
-    "LOC_LEADER_LAUTARO_NAME": ["Q453156", "Homme"],
-    "LOC_LEADER_LADY_SIX_SKY_NAME": ["Q7960729", "Femme"],
-    "LOC_LEADER_LL_TEKINICH_II_NAME": ["Q8046995", "Homme"],
-    "LOC_LEADER_MER_MARIA_THERESA_NAME": ["Q131706", "Femme"],
-    "LOC_LEADER_MER_THEODORIC_NAME": ["Q105105", "Homme"],
-    "LOC_LEADER_GENGHIS_KHAN_NAME": ["Q720", "Homme"],
-    "LOC_LEADER_KUBLAI_KHAN_NAME": ["Q7523", "Homme"],
-    "LOC_LEADER_WILHELMINA_NAME": ["Q150747", "Femme"],
-    "LOC_LEADER_HARALD_ALT_NAME": ["Q203647", "Homme"],
-    "LOC_LEADER_HARDRADA_ORIGINAL_NAME": ["Q203647", "Homme"],
-    "LOC_LEADER_AMANITORE_NAME": ["Q257004", "Femme"],
-    "LOC_LEADER_SULEIMAN_ORIGINAL_NAME": ["Q8474", "Homme"],
-    "LOC_LEADER_SULEIMAN_ALT_NAME": ["Q8474", "Homme"],
-    "LOC_LEADER_CYRUS_NAME": ["Q8423", "Homme"],
-    "LOC_LEADER_NADER_SHAH_NAME": ["Q192868", "Homme"],
-    "LOC_LEADER_DIDO_NAME": ["Q905162", "Femme"],
-    "LOC_LEADER_LIME_PHOE_AHIRAM_NAME": ["Q1972397", null],
-    "LOC_LEADER_JADWIGA_NAME": ["Q53449", "Femme"],
-    "LOC_LEADER_JFD_STANISLAW_NAME": ["Q54019", "Homme"],
-    "LOC_LEADER_JOAO_III_NAME": ["Q216789", "Homme"],
-    "LOC_LEADER_JULIUS_CAESAR_NAME": ["Q1048", "Homme"],
-    "LOC_LEADER_TRAJAN_NAME": ["Q1425", "Homme"],
-    "LOC_LEADER_PETER_GREAT_NAME": ["Q8479", "Homme"],
-    "LOC_LEADER_ROBERT_THE_BRUCE_NAME": ["Q187312", "Homme"],
-    "LOC_LEADER_TOMYRIS_NAME": ["Q464777", "Femme"],
-    "LOC_LEADER_PHILIP_II_NAME": ["Q34417", "Homme"],
-    "LOC_LEADER_GILGAMESH_NAME": ["Q159709", "Homme"],
-    "LOC_LEADER_SUK_AL_HASAN_NAME": ["Q428770", "Homme"],
-    "LOC_LEADER_KRISTINA_NAME": ["Q52937", "Femme"],
-    "LOC_LEADER_LIME_THULE_DAVE_NAME": ["Q1743986", null],
-    "LOC_LEADER_SUK_TRISONG_DETSEN_NAME": ["Q366661", "Homme"],
-    "LOC_LEADER_LADY_TRIEU_NAME": ["Q269989", "Femme"],
-    "LOC_LEADER_SHAKA_NAME": ["Q27695", "Homme"]
+    "LOC_LEADER_ABRAHAM_LINCOLN_NAME": [
+      "Q91",
+      "Homme"
+    ],
+    "LOC_LEADER_T_ROOSEVELT_ORIGINAL_NAME": [
+      "Q33866",
+      "Homme"
+    ],
+    "LOC_LEADER_T_ROOSEVELT_ROUGHRIDER_NAME": [
+      "Q33866",
+      "Homme"
+    ],
+    "LOC_LEADER_SALADIN_ORIGINAL_NAME": [
+      "Q8581",
+      "Homme"
+    ],
+    "LOC_LEADER_SALADIN_ALT_NAME": [
+      "Q8581",
+      "Homme"
+    ],
+    "LOC_LEADER_JOHN_CURTIN_NAME": [
+      "Q23375",
+      "Homme"
+    ],
+    "LOC_LEADER_MONTEZUMA_NAME": [
+      "Q13702",
+      "Homme"
+    ],
+    "LOC_LEADER_HAMMURABI_NAME": [
+      "Q36359",
+      "Homme"
+    ],
+    "LOC_LEADER_PEDRO_NAME": [
+      "Q156774",
+      "Homme"
+    ],
+    "LOC_LEADER_BASIL_NAME": [
+      "Q41833",
+      "Homme"
+    ],
+    "LOC_LEADER_THEODORA_NAME": [
+      "Q204843",
+      "Femme"
+    ],
+    "LOC_LEADER_LAURIER_NAME": [
+      "Q128664",
+      "Homme"
+    ],
+    "LOC_LEADER_KUBLAI_KHAN_C_NAME": [
+      "Q7523",
+      "Homme"
+    ],
+    "LOC_LEADER_QIN_ORIGINAL_NAME": [
+      "Q7192",
+      "Homme"
+    ],
+    "LOC_LEADER_QIN_ALT_NAME": [
+      "Q7192",
+      "Homme"
+    ],
+    "LOC_LEADER_WU_ZETIAN_NAME": [
+      "Q9738",
+      "Femme"
+    ],
+    "LOC_LEADER_YONGLE_NAME": [
+      "Q9965",
+      "Homme"
+    ],
+    "LOC_LEADER_POUNDMAKER_NAME": [
+      "Q974731",
+      "Homme"
+    ],
+    "LOC_LEADER_CVS_ANACAONA_NAME": [
+      "Q456259",
+      "Femme"
+    ],
+    "LOC_LEADER_CLEOPATRA_ORIGINAL_NAME": [
+      "Q635",
+      "Femme"
+    ],
+    "LOC_LEADER_CLEOPATRA_ALT_NAME": [
+      "Q635",
+      "Femme"
+    ],
+    "LOC_LEADER_RAMSES_NAME": [
+      "Q1523",
+      "Homme"
+    ],
+    "LOC_LEADER_ELEANOR_NAME": [
+      "Q178525",
+      "Femme"
+    ],
+    "LOC_LEADER_ELIZABETH_NAME": [
+      "Q7207",
+      "Femme"
+    ],
+    "LOC_LEADER_VICTORIA_ORIGINAL_NAME": [
+      "Q9439",
+      "Femme"
+    ],
+    "LOC_LEADER_VICTORIA_ALT_NAME": [
+      "Q9439",
+      "Femme"
+    ],
+    "LOC_LEADER_MENELIK_NAME": [
+      "Q244748",
+      "Homme"
+    ],
+    "LOC_LEADER_CATHERINE_DE_MEDICI_EXPANDED_NAME": [
+      "Q131552",
+      "Femme"
+    ],
+    "LOC_LEADER_CATHERINE_DE_MEDICI_ALT_NAME": [
+      "Q131552",
+      "Femme"
+    ],
+    "LOC_LEADER_ELEANOR_FRANCE_NAME": [
+      "Q178525",
+      "Femme"
+    ],
+    "LOC_LEADER_AMBIORIX_NAME": [
+      "Q12847",
+      "Homme"
+    ],
+    "LOC_LEADER_SUK_VERCINGETORIX_NAME": [
+      "Q178953",
+      "Homme"
+    ],
+    "LOC_LEADER_TAMAR_NAME": [
+      "Q244007",
+      "Femme"
+    ],
+    "LOC_LEADER_BARBAROSSA_NAME": [
+      "Q79789",
+      "Homme"
+    ],
+    "LOC_LEADER_LUDWIG_NAME": [
+      "Q44039",
+      "Homme"
+    ],
+    "LOC_LEADER_SIMON_BOLIVAR_NAME": [
+      "Q8605",
+      "Homme"
+    ],
+    "LOC_LEADER_GORGO_NAME": [
+      "Q236557",
+      "Femme"
+    ],
+    "LOC_LEADER_PERICLES_NAME": [
+      "Q80398",
+      "Homme"
+    ],
+    "LOC_LEADER_MATTHIAS_CORVINUS_NAME": [
+      "Q188634",
+      "Homme"
+    ],
+    "LOC_LEADER_PACHACUTI_NAME": [
+      "Q213758",
+      "Homme"
+    ],
+    "LOC_LEADER_CHANDRAGUPTA_NAME": [
+      "Q188541",
+      "Homme"
+    ],
+    "LOC_LEADER_GANDHI_NAME": [
+      "Q1001",
+      "Homme"
+    ],
+    "LOC_LEADER_GITARJA_NAME": [
+      "Q3631722",
+      "Femme"
+    ],
+    "LOC_LEADER_HOJO_NAME": [
+      "Q430964",
+      "Homme"
+    ],
+    "LOC_LEADER_TOKUGAWA_NAME": [
+      "Q171977",
+      "Homme"
+    ],
+    "LOC_LEADER_JAYAVARMAN_NAME": [
+      "Q335273",
+      "Homme"
+    ],
+    "LOC_LEADER_MVEMBA_NAME": [
+      "Q383455",
+      "Homme"
+    ],
+    "LOC_LEADER_NZINGA_MBANDE_NAME": [
+      "Q467650",
+      "Femme"
+    ],
+    "LOC_LEADER_SEJONG_NAME": [
+      "Q37682",
+      "Homme"
+    ],
+    "LOC_LEADER_SEONDEOK_NAME": [
+      "Q485131",
+      "Femme"
+    ],
+    "LOC_LEADER_ALEXANDER_NAME": [
+      "Q8409",
+      "Homme"
+    ],
+    "LOC_LEADER_JFD_OLYMPIAS_NAME": [
+      "Q223134",
+      "Femme"
+    ],
+    "LOC_LEADER_MANSA_MUSA_NAME": [
+      "Q309333",
+      "Homme"
+    ],
+    "LOC_LEADER_SUNDIATA_KEITA_NAME": [
+      "Q175772",
+      "Homme"
+    ],
+    "LOC_LEADER_KUPE_NAME": [
+      "Q1792784",
+      "Homme"
+    ],
+    "LOC_LEADER_LAUTARO_NAME": [
+      "Q453156",
+      "Homme"
+    ],
+    "LOC_LEADER_LADY_SIX_SKY_NAME": [
+      "Q7960729",
+      "Femme"
+    ],
+    "LOC_LEADER_LL_TEKINICH_II_NAME": [
+      "Q8046995",
+      "Homme"
+    ],
+    "LOC_LEADER_MER_MARIA_THERESA_NAME": [
+      "Q131706",
+      "Femme"
+    ],
+    "LOC_LEADER_MER_THEODORIC_NAME": [
+      "Q105105",
+      "Homme"
+    ],
+    "LOC_LEADER_GENGHIS_KHAN_NAME": [
+      "Q720",
+      "Homme"
+    ],
+    "LOC_LEADER_KUBLAI_KHAN_NAME": [
+      "Q7523",
+      "Homme"
+    ],
+    "LOC_LEADER_WILHELMINA_NAME": [
+      "Q150747",
+      "Femme"
+    ],
+    "LOC_LEADER_HARALD_ALT_NAME": [
+      "Q203647",
+      "Homme"
+    ],
+    "LOC_LEADER_HARDRADA_ORIGINAL_NAME": [
+      "Q203647",
+      "Homme"
+    ],
+    "LOC_LEADER_AMANITORE_NAME": [
+      "Q257004",
+      "Femme"
+    ],
+    "LOC_LEADER_SULEIMAN_ORIGINAL_NAME": [
+      "Q8474",
+      "Homme"
+    ],
+    "LOC_LEADER_SULEIMAN_ALT_NAME": [
+      "Q8474",
+      "Homme"
+    ],
+    "LOC_LEADER_CYRUS_NAME": [
+      "Q8423",
+      "Homme"
+    ],
+    "LOC_LEADER_NADER_SHAH_NAME": [
+      "Q192868",
+      "Homme"
+    ],
+    "LOC_LEADER_DIDO_NAME": [
+      "Q905162",
+      "Femme"
+    ],
+    "LOC_LEADER_LIME_PHOE_AHIRAM_NAME": [
+      "Q1972397",
+      null
+    ],
+    "LOC_LEADER_JADWIGA_NAME": [
+      "Q53449",
+      "Femme"
+    ],
+    "LOC_LEADER_JFD_STANISLAW_NAME": [
+      "Q54019",
+      "Homme"
+    ],
+    "LOC_LEADER_JOAO_III_NAME": [
+      "Q216789",
+      "Homme"
+    ],
+    "LOC_LEADER_JULIUS_CAESAR_NAME": [
+      "Q1048",
+      "Homme"
+    ],
+    "LOC_LEADER_TRAJAN_NAME": [
+      "Q1425",
+      "Homme"
+    ],
+    "LOC_LEADER_PETER_GREAT_NAME": [
+      "Q8479",
+      "Homme"
+    ],
+    "LOC_LEADER_ROBERT_THE_BRUCE_NAME": [
+      "Q187312",
+      "Homme"
+    ],
+    "LOC_LEADER_TOMYRIS_NAME": [
+      "Q464777",
+      "Femme"
+    ],
+    "LOC_LEADER_PHILIP_II_NAME": [
+      "Q34417",
+      "Homme"
+    ],
+    "LOC_LEADER_GILGAMESH_NAME": [
+      "Q159709",
+      "Homme"
+    ],
+    "LOC_LEADER_SUK_AL_HASAN_NAME": [
+      "Q428770",
+      "Homme"
+    ],
+    "LOC_LEADER_KRISTINA_NAME": [
+      "Q52937",
+      "Femme"
+    ],
+    "LOC_LEADER_LIME_THULE_DAVE_NAME": [
+      "Q1743986",
+      null
+    ],
+    "LOC_LEADER_SUK_TRISONG_DETSEN_NAME": [
+      "Q366661",
+      "Homme"
+    ],
+    "LOC_LEADER_LADY_TRIEU_NAME": [
+      "Q269989",
+      "Femme"
+    ],
+    "LOC_LEADER_SHAKA_NAME": [
+      "Q27695",
+      "Homme"
+    ]
   },
   "continent": {
-    "LOC_CIVILIZATION_AMERICA_NAME":       {"location": "North America", "continent": ["Amérique du Nord"]},
-    "LOC_CIVILIZATION_ARABIA_NAME":        {"location": "Asia-Africa", "continent": ["Asie", "Afrique"]},
-    "LOC_CIVILIZATION_AUSTRALIA_NAME":     {"location": "The Australian Continent", "continent": ["Océanie"], "interpretation": true},
-    "LOC_CIVILIZATION_AZTEC_NAME":         {"location": "North America", "continent": ["Amérique du Nord"]},
-    "LOC_CIVILIZATION_BABYLON_STK_NAME":   {"location": "Mesopotamia, modern-day Iraq", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_BRAZIL_NAME":        {"location": "South America", "continent": ["Amérique du Sud"]},
-    "LOC_CIVILIZATION_BYZANTIUM_NAME":     {"location": "Eastern Mediterranean (modern-day Turkey, Greece)", "continent": ["Europe", "Asie"], "interpretation": true},
-    "LOC_CIVILIZATION_CANADA_NAME":        {"location": "North America", "continent": ["Amérique du Nord"]},
-    "LOC_CIVILIZATION_CHINA_NAME":         {"location": "Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_CREE_NAME":          {"location": "North America", "continent": ["Amérique du Nord"]},
-    "LOC_CIVILIZATION_CVS_TAINO_NAME":     {"location": "Wikidata Q210623: indigenous people of the Caribbean and Florida", "continent": ["Amérique du Nord"], "interpretation": true},
-    "LOC_CIVILIZATION_EGYPT_NAME":         {"location": "Africa", "continent": ["Afrique"]},
-    "LOC_CIVILIZATION_ENGLAND_NAME":       {"location": "Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_ETHIOPIA_NAME":      {"location": "East Africa", "continent": ["Afrique"]},
-    "LOC_CIVILIZATION_FRANCE_NAME":        {"location": "Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_GAUL_NAME":          {"location": "Western Europe (around modern-day France)", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_GEORGIA_NAME":       {"location": "Caucasus", "continent": ["Europe", "Asie"], "interpretation": true},
-    "LOC_CIVILIZATION_GERMANY_NAME":       {"location": "Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_GRAN_COLOMBIA_NAME": {"location": "South and Central America", "continent": ["Amérique du Sud", "Amérique du Nord"], "interpretation": true},
-    "LOC_CIVILIZATION_GREECE_NAME":        {"location": "Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_HUNGARY_NAME":       {"location": "Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_INCA_NAME":          {"location": "South America", "continent": ["Amérique du Sud"]},
-    "LOC_CIVILIZATION_INDIA_NAME":         {"location": "Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_INDONESIA_NAME":     {"location": "Southeast Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_JAPAN_NAME":         {"location": "Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_KHMER_NAME":         {"location": "Southeast Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_KONGO_NAME":         {"location": "Africa", "continent": ["Afrique"]},
-    "LOC_CIVILIZATION_KOREA_NAME":         {"location": "East Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_MACEDON_NAME":       {"location": "Europe (and briefly parts of Asia and Africa)", "continent": ["Europe"], "interpretation": true},
-    "LOC_CIVILIZATION_MALI_NAME":          {"location": "Africa", "continent": ["Afrique"]},
-    "LOC_CIVILIZATION_MAORI_NAME":         {"location": "Maori", "continent": ["Océanie"], "interpretation": true},
-    "LOC_CIVILIZATION_MAPUCHE_NAME":       {"location": "Western South America, in the modern states of Chile, as well as portions of Argentina and the Patagonia region", "continent": ["Amérique du Sud"]},
-    "LOC_CIVILIZATION_MAYA_NAME":          {"location": "Central America, including parts of present-day Mexico, Guatemala, Honduras, Belize, and El Salvador", "continent": ["Amérique du Nord"], "interpretation": true},
-    "LOC_CIVILIZATION_MER_AUSTRIA_NAME":   {"location": "Wikidata Q153136 (Habsburg monarchy) P30: Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_MER_GOTHS_NAME":     {"location": "Wikidata Q583038 (Ostrogothic Kingdom) P30: Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_MONGOLIA_NAME":      {"location": "Central Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_NETHERLANDS_NAME":   {"location": "Western Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_NORWAY_NAME":        {"location": "Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_NUBIA_NAME":         {"location": "Africa", "continent": ["Afrique"]},
-    "LOC_CIVILIZATION_OTTOMAN_NAME":       {"location": "Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_PERSIA_NAME":        {"location": "Asia and Africa", "continent": ["Asie", "Afrique"]},
-    "LOC_CIVILIZATION_PHOENICIA_NAME":     {"location": "Asia and Africa", "continent": ["Asie", "Afrique"]},
-    "LOC_CIVILIZATION_POLAND_NAME":        {"location": "Central Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_PORTUGAL_NAME":      {"location": "Southwestern Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_ROME_NAME":          {"location": "Europe (and Asia Minor, Africa, Middle East and other bits)", "continent": ["Europe"], "interpretation": true},
-    "LOC_CIVILIZATION_RUSSIA_NAME":        {"location": "Europe-Asia (and briefly a piece of North America)", "continent": ["Europe", "Asie"]},
-    "LOC_CIVILIZATION_SCOTLAND_NAME":      {"location": "Northwest Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_SCYTHIA_NAME":       {"location": "Central Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_SPAIN_NAME":         {"location": "Europe", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_SUMERIA_NAME":       {"location": "Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_SUK_SWAHILI_NAME":   {"location": "Wikidata Q2739014 (Swahili coast): coast of Kenya, Tanzania, and northern Mozambique, located in southeastern Africa", "continent": ["Afrique"]},
-    "LOC_CIVILIZATION_SWEDEN_NAME":        {"location": "Sweden", "continent": ["Europe"]},
-    "LOC_CIVILIZATION_LIME_THULE_NAME":    {"location": "Wikipedia 'Thule people': coastal Alaska, northern Canada, Greenland", "continent": ["Amérique du Nord"]},
-    "LOC_CIVILIZATION_SUK_TIBET_NAME":     {"location": "Wikidata Q2431480 (Tibetan Empire): centered on the Tibetan Plateau", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_VIETNAM_NAME":       {"location": "Southeast Asia", "continent": ["Asie"]},
-    "LOC_CIVILIZATION_ZULU_NAME":          {"location": "Southern Africa", "continent": ["Afrique"]}
+    "LOC_CIVILIZATION_AMERICA_NAME": {
+      "location": "North America",
+      "continent": [
+        "Amérique du Nord"
+      ]
+    },
+    "LOC_CIVILIZATION_ARABIA_NAME": {
+      "location": "Asia-Africa",
+      "continent": [
+        "Asie",
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_AUSTRALIA_NAME": {
+      "location": "The Australian Continent",
+      "continent": [
+        "Océanie"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_AZTEC_NAME": {
+      "location": "North America",
+      "continent": [
+        "Amérique du Nord"
+      ]
+    },
+    "LOC_CIVILIZATION_BABYLON_STK_NAME": {
+      "location": "Mesopotamia, modern-day Iraq",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_BRAZIL_NAME": {
+      "location": "South America",
+      "continent": [
+        "Amérique du Sud"
+      ]
+    },
+    "LOC_CIVILIZATION_BYZANTIUM_NAME": {
+      "location": "Eastern Mediterranean (modern-day Turkey, Greece)",
+      "continent": [
+        "Europe",
+        "Asie"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_CANADA_NAME": {
+      "location": "North America",
+      "continent": [
+        "Amérique du Nord"
+      ]
+    },
+    "LOC_CIVILIZATION_CHINA_NAME": {
+      "location": "Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_CREE_NAME": {
+      "location": "North America",
+      "continent": [
+        "Amérique du Nord"
+      ]
+    },
+    "LOC_CIVILIZATION_CVS_TAINO_NAME": {
+      "location": "Wikidata Q210623: indigenous people of the Caribbean and Florida",
+      "continent": [
+        "Amérique du Nord"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_EGYPT_NAME": {
+      "location": "Africa",
+      "continent": [
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_ENGLAND_NAME": {
+      "location": "Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_ETHIOPIA_NAME": {
+      "location": "East Africa",
+      "continent": [
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_FRANCE_NAME": {
+      "location": "Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_GAUL_NAME": {
+      "location": "Western Europe (around modern-day France)",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_GEORGIA_NAME": {
+      "location": "Caucasus",
+      "continent": [
+        "Europe",
+        "Asie"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_GERMANY_NAME": {
+      "location": "Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_GRAN_COLOMBIA_NAME": {
+      "location": "South and Central America",
+      "continent": [
+        "Amérique du Sud",
+        "Amérique du Nord"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_GREECE_NAME": {
+      "location": "Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_HUNGARY_NAME": {
+      "location": "Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_INCA_NAME": {
+      "location": "South America",
+      "continent": [
+        "Amérique du Sud"
+      ]
+    },
+    "LOC_CIVILIZATION_INDIA_NAME": {
+      "location": "Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_INDONESIA_NAME": {
+      "location": "Southeast Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_JAPAN_NAME": {
+      "location": "Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_KHMER_NAME": {
+      "location": "Southeast Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_KONGO_NAME": {
+      "location": "Africa",
+      "continent": [
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_KOREA_NAME": {
+      "location": "East Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_MACEDON_NAME": {
+      "location": "Europe (and briefly parts of Asia and Africa)",
+      "continent": [
+        "Europe"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_MALI_NAME": {
+      "location": "Africa",
+      "continent": [
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_MAORI_NAME": {
+      "location": "Maori",
+      "continent": [
+        "Océanie"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_MAPUCHE_NAME": {
+      "location": "Western South America, in the modern states of Chile, as well as portions of Argentina and the Patagonia region",
+      "continent": [
+        "Amérique du Sud"
+      ]
+    },
+    "LOC_CIVILIZATION_MAYA_NAME": {
+      "location": "Central America, including parts of present-day Mexico, Guatemala, Honduras, Belize, and El Salvador",
+      "continent": [
+        "Amérique du Nord"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_MER_AUSTRIA_NAME": {
+      "location": "Wikidata Q153136 (Habsburg monarchy) P30: Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_MER_GOTHS_NAME": {
+      "location": "Wikidata Q583038 (Ostrogothic Kingdom) P30: Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_MONGOLIA_NAME": {
+      "location": "Central Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_NETHERLANDS_NAME": {
+      "location": "Western Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_NORWAY_NAME": {
+      "location": "Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_NUBIA_NAME": {
+      "location": "Africa",
+      "continent": [
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_OTTOMAN_NAME": {
+      "location": "Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_PERSIA_NAME": {
+      "location": "Asia and Africa",
+      "continent": [
+        "Asie",
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_PHOENICIA_NAME": {
+      "location": "Asia and Africa",
+      "continent": [
+        "Asie",
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_POLAND_NAME": {
+      "location": "Central Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_PORTUGAL_NAME": {
+      "location": "Southwestern Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_ROME_NAME": {
+      "location": "Europe (and Asia Minor, Africa, Middle East and other bits)",
+      "continent": [
+        "Europe"
+      ],
+      "interpretation": true
+    },
+    "LOC_CIVILIZATION_RUSSIA_NAME": {
+      "location": "Europe-Asia (and briefly a piece of North America)",
+      "continent": [
+        "Europe",
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_SCOTLAND_NAME": {
+      "location": "Northwest Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_SCYTHIA_NAME": {
+      "location": "Central Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_SPAIN_NAME": {
+      "location": "Europe",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_SUMERIA_NAME": {
+      "location": "Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_SUK_SWAHILI_NAME": {
+      "location": "Wikidata Q2739014 (Swahili coast): coast of Kenya, Tanzania, and northern Mozambique, located in southeastern Africa",
+      "continent": [
+        "Afrique"
+      ]
+    },
+    "LOC_CIVILIZATION_SWEDEN_NAME": {
+      "location": "Sweden",
+      "continent": [
+        "Europe"
+      ]
+    },
+    "LOC_CIVILIZATION_LIME_THULE_NAME": {
+      "location": "Wikipedia 'Thule people': coastal Alaska, northern Canada, Greenland",
+      "continent": [
+        "Amérique du Nord"
+      ]
+    },
+    "LOC_CIVILIZATION_SUK_TIBET_NAME": {
+      "location": "Wikidata Q2431480 (Tibetan Empire): centered on the Tibetan Plateau",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_VIETNAM_NAME": {
+      "location": "Southeast Asia",
+      "continent": [
+        "Asie"
+      ]
+    },
+    "LOC_CIVILIZATION_ZULU_NAME": {
+      "location": "Southern Africa",
+      "continent": [
+        "Afrique"
+      ]
+    }
   }
 }

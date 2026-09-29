@@ -49,12 +49,13 @@ tools/leaders_template.csv
 | leaders, civilisation, textes des descriptions, portraits | Site BBG (dépôt `civ6bbg/civ6bbg.github.io`), `fr_FR/leaders_7.5.html`, `en_US/leaders_7.5.html`, `images/leaders/` |
 | `uniqueUnitClass` | 1re phrase de la description BBG de chaque unité unique (« Unité de cavalerie lourde… »), règles dans `UNIT_CLASS_RULES` |
 | `uniqueDistrict` | quartier de base remplacé, lu dans « remplaçant le … » de la description BBG |
-| `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader |
+| `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader. Ordre chronologique (flèches ↑/↓) : `extensionOrder` dans `config.json`, dates de sortie PC du wiki (détail dans `tools/bbg/sources.json`) |
 | `gender` | Wikidata, propriété P21 |
 | `continent` | champ « Location » des pages civilisation du wiki (Wikidata/Wikipédia pour les civs BBG Expanded) ; le texte source est conservé dans `tools/bbg/sources.json` |
 | `silhouette` | Les 88 leaders : contour exact tiré des fichiers du jeu par `tools/game/import_textures.py` (textures `LEADER_<NOM>_NEUTRAL.dds` du dépôt Steam « Civilization VI SDK Assets », et images `FALLBACK_NEUTRAL_*` des paquets `LeaderFallbackImages.blp` de chaque DLC, lus par `tools/game/blp.py` ; association image → leader dans `tools/game/mapping.json`, vérifiée visuellement), et pour les 11 leaders BBG Expanded, des paquets `LeaderFallback*.blp` du mod (Workshop 289070/3533091092). Ancienne méthode, conservée : détourage estimé du médaillon BBG par `tools/bbg/make_silhouettes.py` (BiRefNet / ISNet via rembg, rejets dans `tools/bbg/silhouettes_rejected.json`) |
 | `silhouetteSource` | `"game"` (fichiers du jeu), `"mod"` (fichiers du mod BBG Expanded), `"cutout"` (détourage estimé) ou `null`. Le mode Silhouette n'utilise que les sources listées dans `SOURCES` de `js/modes/silhouette.js` (actuellement `["game", "mod"]`) |
-| `silhouetteFocus` | calculé : point du contour de la silhouette |
+| `silhouetteFocus` | calculé : point du contour, dans le quart supérieur de la figure (tête, coiffe) |
+| `reveal` | image en couleur du personnage qui a servi à la silhouette, affichée à la victoire en mode Silhouette (écrite par `tools/game/import_textures.py` dans `img/reveal/`, même cadrage que la silhouette) ; sans elle, le portrait BBG est affiché |
 | `era` | **non renseigné** : aucune source ; colonne retirée du mode Classique tant qu'elle est vide |
 
 Le détail (règles, cas interprétés marqués `"interpretation": true`) est dans `tools/bbg/sources.json`.
@@ -87,7 +88,7 @@ Types de comparaison disponibles pour `classicAttributes` :
 
 - `exact` : vert si identique, rouge sinon (`null` = `null` compte comme identique, affiché « Aucun »).
 - `set` : liste de valeurs ; vert si mêmes éléments, orange si au moins un en commun, rouge sinon.
-- `ordered` : la valeur doit figurer dans la liste nommée par `order` (ex. `"order": "eras"`) ; rouge + flèche vers la réponse si différent.
+- `ordered` : la valeur doit figurer dans la liste nommée par `order` (ex. `"order": "extensionOrder"`) ; rouge + flèche vers la réponse si différent. Un élément de la liste peut être un tableau de valeurs ex æquo (même rang : rouge sans flèche).
 
 Option `catalog` : les valeurs sont des identifiants, comparés tels quels, affichés par l'icône correspondante de `catalogs.json` (libellé en infobulle ; sans icône, le libellé s'affiche en texte).
 
@@ -165,8 +166,9 @@ Le moteur (`js/core/game.js`) gère le reste : leader du jour, saisie, historiqu
 
 Valeurs par défaut arbitraires, en tête de fichier :
 
-- `js/modes/portrait.js` : `BLUR_START = 24` (px), `STEPS = 8` (flou nul après 8 essais).
-- `js/modes/silhouette.js` : `ZOOM_START = 5`, `STEPS = 8` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
+- `js/modes/portrait.js` : `BLUR_START = 24` (px), `STEPS = 8` (flou nul après 8 essais) ; variante « Flou challenger » (`portraitChallenge`) : nuances de gris + rotation du jour entre `ROTATE_MIN = 60` et `ROTATE_MAX = 300` degrés, jusqu'à la victoire.
+- `css/style.css` : apparition des cases du mode Classique, 350 ms entre deux cases (`--reveal-step`), 550 ms par case.
+- `js/modes/silhouette.js` : `ZOOM_START = 3.5`, `STEPS = 12` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues
 

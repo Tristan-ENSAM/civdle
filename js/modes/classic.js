@@ -8,7 +8,10 @@
  *   - "set":     value is an array (or a single value); green if same set,
  *                orange if they share at least one element, red otherwise.
  *   - "ordered": value must appear in the list `config[attr.order]`; green if
- *                equal, red with an arrow pointing toward the answer otherwise.
+ *                equal, red with an arrow pointing toward the answer otherwise
+ *                (up = the answer is later in the list). A list entry can be
+ *                an array of values that share the same rank (ties): two
+ *                different values of the same rank are red without arrow.
  *
  * Optional `catalog` on an attribute: values are ids compared as such, and
  * displayed as icons from `data/catalogs.json` (see fillValue).
@@ -36,9 +39,10 @@ export function compareAttribute(attr, guessVal, answerVal, config) {
   if (attr.type === "ordered") {
     if (guessVal === answerVal) return { status: "ok" };
     const order = config[attr.order] ?? [];
-    const gi = order.indexOf(guessVal);
-    const ai = order.indexOf(answerVal);
-    if (gi < 0 || ai < 0) return { status: "ko" }; // unknown position: no arrow
+    const rank = (v) => order.findIndex((e) => (Array.isArray(e) ? e.includes(v) : e === v));
+    const gi = rank(guessVal);
+    const ai = rank(answerVal);
+    if (gi < 0 || ai < 0 || gi === ai) return { status: "ko" }; // unknown or tied rank: no arrow
     return { status: "ko", arrow: gi < ai ? "up" : "down" };
   }
   // "exact" (default)
@@ -106,7 +110,7 @@ export default {
     legend.className = "legend";
     const hasOrdered = attrs.some((a) => a.type === "ordered");
     legend.innerHTML = `<span class="sw ok"></span>identique <span class="sw partial"></span>partiel
-      <span class="sw ko"></span>différent${hasOrdered ? " &nbsp;↑/↓ : la réponse est plus tardive/plus précoce" : ""}`;
+      <span class="sw ko"></span>différent${hasOrdered ? " &nbsp;↑ : la réponse est sortie plus tard &nbsp;↓ : plus tôt" : ""}`;
     ctx.els.clue.appendChild(legend);
   },
 
@@ -139,6 +143,11 @@ export default {
       row.appendChild(cell);
     });
     return row;
+  },
+
+  // Cells appear one after the other (CSS --reveal-step = 350 ms, 550 ms flip).
+  revealMs(ctx) {
+    return (ctx.config.classicAttributes ?? []).length * 350 + 550;
   },
 
   shareGrid(ctx) {

@@ -19,8 +19,8 @@
 import { defaultGuessRow } from "../core/game.js";
 import { hashString, mulberry32 } from "../core/daily.js";
 
-const ZOOM_START = 5;
-const STEPS = 8;
+const ZOOM_START = 3.5;
+const STEPS = 12;
 const FOCUS_MIN = 30;
 const FOCUS_MAX = 70;
 // Accepted values of `leader.silhouetteSource`: "game" = exact outline from
@@ -71,9 +71,11 @@ export default {
     const [fx, fy] = ctx.silhouetteFocus;
     const clamp = (v) => Math.min(100 - 50 / z, Math.max(50 / z, v));
     img.style.transform = `scale(${z}) translate(${50 - clamp(fx)}%, ${50 - clamp(fy)}%)`;
-    // Once solved, show the portrait in colour (if there is one).
-    if (ctx.state.won && ctx.answer.portrait) {
-      img.src = ctx.answer.portrait;
+    // Once solved, show the figure the silhouette was made from, in colour
+    // (`leader.reveal`, same framing as the silhouette, written by
+    // tools/game/import_textures.py), falling back to the BBG portrait.
+    if (ctx.state.won && (ctx.answer.reveal || ctx.answer.portrait)) {
+      img.src = ctx.answer.reveal || ctx.answer.portrait;
       img.classList.add("revealed");
     }
   },

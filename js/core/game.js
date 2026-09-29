@@ -12,6 +12,7 @@
  *     update(ctx),                   // optional: redraw the clue after each guess
  *     renderGuess(ctx, leader),      // optional: element added to the history
  *     shareGrid(ctx),                // optional: extra lines for the share text
+ *     revealMs(ctx),                 // optional: ms to wait before the win panel
  *   }
  *
  * The engine owns: daily answer, input, history list, win detection,
@@ -96,8 +97,11 @@ export function mountMode(mode, env) {
     if (leader.id === answer.id) state.won = true;
     saveState(mode.id, dateStr, state);
     addHistory(leader, true);
-    refresh();
-    if (state.won) env.onSolved?.(mode.id);
+    // Let the reveal animation of the new row finish before showing the win
+    // panel (mode.revealMs, optional).
+    const delay = state.won ? (mode.revealMs?.(ctx) ?? 0) : 0;
+    const finish = () => { refresh(); if (state.won) env.onSolved?.(mode.id); };
+    if (delay > 0) { input.disable(); setTimeout(finish, delay); } else finish();
   }
 
   function showWin() {
