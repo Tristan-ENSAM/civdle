@@ -2,12 +2,12 @@
  * Mode "Portrait": the answer's portrait starts heavily blurred and gets
  * sharper after each wrong guess.
  *
- * `makePortraitMode(options)` builds the mode; two variants are exported:
- *   - default export "portrait": colour, upright;
- *   - `portraitChallenge` ("Flou challenger"): same blur schedule, plus the
- *     image is in shades of grey and rotated by an angle drawn each day
- *     (deterministic from the date, ROTATE_MIN..ROTATE_MAX degrees, either
- *     direction). Grey and rotation stay until the leader is found.
+ * "Mode challenger" checkbox: the portrait is also shown in shades of grey
+ * and rotated by an angle drawn each day (deterministic from the date and the
+ * leader, ROTATE_MIN..ROTATE_MAX degrees). It only changes the display: the
+ * daily leader and the progress are the same with or without it. Grey and
+ * rotation are removed once the leader is found. The checkbox state is kept
+ * in localStorage (per browser; the game works without it).
  *
  * Tuning: BLUR_START (px) is the initial blur; the blur reaches 0 after
  * STEPS wrong guesses (linear). Arbitrary defaults, to adjust.
@@ -22,6 +22,7 @@ const BLUR_START = 24;
 const STEPS = 8;
 const ROTATE_MIN = 60;
 const ROTATE_MAX = 300;
+const CHALLENGE_KEY = "civdle:portrait:challenge";
 
 export function blurFor(nGuesses, won) {
   if (won) return 0;
@@ -34,53 +35,48 @@ export function rotationFor(dateStr, leaderId) {
   return Math.round(ROTATE_MIN + rng() * (ROTATE_MAX - ROTATE_MIN));
 }
 
-/**
- * Build a portrait-blur mode.
- * @param {object} o
- * @param {string} o.id
- * @param {string} o.label
- * @param {string} o.hint
- * @param {boolean} [o.grayscale]  Show the portrait in shades of grey until found.
- * @param {boolean} [o.rotate]     Rotate the portrait by a daily angle until found.
- */
-export function makePortraitMode({ id, label, hint, grayscale = false, rotate = false }) {
-  return {
-    id,
-    label,
-    hint,
-    eligible: (l) => !!l.portrait,
-
-    setup(ctx) {
-      ctx.els.clue.innerHTML = `<div class="frame portrait-frame"><img alt="Portrait mystère" draggable="false"></div>`;
-      ctx.portraitImg = ctx.els.clue.querySelector("img");
-      ctx.portraitImg.src = ctx.answer.portrait;
-      ctx.portraitImg.addEventListener("contextmenu", (e) => e.preventDefault());
-      ctx.portraitAngle = rotate ? rotationFor(ctx.dateStr, ctx.answer.id) : 0;
-    },
-
-    update(ctx) {
-      const won = ctx.state.won;
-      const filters = [`blur(${blurFor(ctx.state.guesses.length, won)}px)`];
-      if (grayscale && !won) filters.push("grayscale(1)");
-      ctx.portraitImg.style.filter = filters.join(" ");
-      const angle = won ? 0 : ctx.portraitAngle;
-      ctx.portraitImg.style.transform = `scale(1.08) rotate(${angle}deg)`;
-    },
-
-    renderGuess: (ctx, leader) => defaultGuessRow(leader, ctx.answer),
-  };
+function loadChallenge() {
+  try { return localStorage.getItem(CHALLENGE_KEY) === "1"; } catch (_) { return false; }
 }
 
-export const portraitChallenge = makePortraitMode({
-  id: "portrait-challenge",
-  label: "Flou challenger",
-  hint: "Portrait flouté, en nuances de gris et pivoté : il se précise à chaque essai.",
-  grayscale: true,
-  rotate: true,
-});
+function saveChallenge(on) {
+  try { localStorage.setItem(CHALLENGE_KEY, on ? "1" : "0"); } catch (_) { /* ignore */ }
+}
 
-export default makePortraitMode({
+export default {
   id: "portrait",
   label: "Portrait",
   hint: "Retrouve le leader à partir de son portrait flouté : il se précise à chaque essai.",
-});
+  eligible: (l) => !!l.portrait,
+
+  setup(ctx) {
+    ctx.els.clue.innerHTML = `
+      <label class="toggle"><input type="checkbox"> Mode challenger <span class="toggle-hint">(nuances de gris + rotation)</span></label>
+      <div class="frame portrait-frame"><img alt="Portrait mystère" draggable="false"></div>`;
+    ctx.portraitImg = ctx.els.clue.querySelector("img");
+    ctx.portraitImg.src = ctx.answer.portrait;
+    ctx.portraitImg.addEventListener("contextmenu", (e) => e.preventDefault());
+    ctx.portraitAngle = rotationFor(ctx.dateStr, ctx.answer.id);
+    const box = ctx.els.clue.querySelector(".toggle input");
+    box.checked = loadChallenge();
+    ctx.challenge = box.checked;
+    box.addEventListener("change", () => {
+      ctx.challenge = box.checked;
+      saveChallenge(box.checked);
+      this.update(ctx);
+    });
+  },
+
+  update(ctx) {
+    const won = ctx.state.won;
+    const hard = ctx.challenge && !won;
+    const filters = [`blur(${blurFor(ctx.state.guesses.length, won)}px)`];
+    if (hard) filters.push("grayscale(1)");
+    ctx.portraitImg.style.filter = filters.join(" ");
+    ctx.portraitImg.style.transform = `scale(1.08) rotate(${hard ? ctx.portraitAngle : 0}deg)`;
+  },
+
+  renderGuess: (ctx, leader) => defaultGuessRow(leader, ctx.answer),
+
+  shareGrid: (ctx) => (ctx.challenge ? "Mode challenger" : ""),
+};

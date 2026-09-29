@@ -89,6 +89,10 @@ main { max-width: 760px; margin: 0 auto; padding: 12px 16px 40px; }
 .silhouette-frame img { filter: brightness(0); transition: transform .5s ease; }
 .silhouette-frame img.revealed { filter: none; }
 
+.toggle { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 0 12px; cursor: pointer; user-select: none; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--gold); cursor: pointer; }
+.toggle-hint { color: var(--muted); font-size: .85rem; }
+
 /* Description */
 .quotes blockquote {
   margin: 0 0 10px; padding: 12px 16px;
