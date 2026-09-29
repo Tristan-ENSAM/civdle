@@ -95,7 +95,8 @@
       "icon": "img/icons/units/privateer.png"
     },
     "support": {
-      "label": "Soutien"
+      "label": "Soutien",
+      "icon": "img/icons/units/battering_ram.png"
     },
     "air_fighter": {
       "label": "Chasseur aérien",
