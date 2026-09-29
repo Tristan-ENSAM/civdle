@@ -22,7 +22,7 @@ Outputs
 - ``data/leaders.json`` (overwritten)
 - ``data/catalogs.json`` (overwritten)
 - ``img/portraits/<id>.webp``
-- ``silhouetteSource``: "game" (tools/game/import_textures.py) or "cutout"
+- ``silhouetteSource``: "game" / "mod" (tools/game/import_textures.py) or "cutout"
   (make_silhouettes.py), None without silhouette.
 - ``silhouette`` field: ``img/silhouettes/<id>.png`` when it exists (made by
   ``make_silhouettes.py``) and is not listed in ``silhouettes_rejected.json``
@@ -225,7 +225,9 @@ def main(bbg_dir, version):
 
     rejected = json.loads((Path(__file__).parent / "silhouettes_rejected.json").read_text(encoding="utf-8"))
     game_map = json.loads((ROOT / "tools" / "game" / "mapping.json").read_text(encoding="utf-8"))
-    game_ids = set(game_map["textures"].values()) | {e["id"] for e in game_map["fallback"]}
+    game_ids = (set(game_map["textures"].values()) | {e["id"] for e in game_map["fallback"]}
+                | {e["id"] for e in game_map["mod"]})
+    mod_ids = {e["id"] for e in game_map["mod"]}
     out_dir = ROOT / "img" / "portraits"
     out_dir.mkdir(parents=True, exist_ok=True)
     leaders, used_ids = [], set()
@@ -268,7 +270,8 @@ def main(bbg_dir, version):
             sil = f"img/silhouettes/{lid}.png"
         # "game": exact outline from the official textures (tools/game);
         # "cutout": estimated by background removal (make_silhouettes.py).
-        sil_source = None if sil is None else ("game" if lid in game_ids else "cutout")
+        sil_source = (None if sil is None else "mod" if lid in mod_ids
+                      else "game" if lid in game_ids else "cutout")
 
         ext = src["extension"].get(f["leaderKey"])
         if ext is None:

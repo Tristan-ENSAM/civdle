@@ -1,5 +1,5 @@
 {
-  "_about": "SDK Assets texture name (LEADER_<NAME>_NEUTRAL.dds) -> Civdle leader id, original personas only. 'fallback': images read from <game>/<package>/Platforms/Windows/BLPs/LeaderFallbackImages.blp; 'index' is the position of the texture record in the package (tools/game/blp.py), the name is the FALLBACK_NEUTRAL_* string at the same position. Each index -> leader association was checked visually (2026-09-29) because blp.py does not decode the record -> name link.",
+  "_about": "SDK Assets texture name (LEADER_<NAME>_NEUTRAL.dds) -> Civdle leader id, original personas only. 'fallback': images read from <game>/<package>/Platforms/Windows/BLPs/LeaderFallbackImages.blp; 'index' is the position of the texture record in the package (tools/game/blp.py), the name is the FALLBACK_NEUTRAL_* string at the same position. Each index -> leader association was checked visually (2026-09-29) because blp.py does not decode the record -> name link. 'mod': fallback packages of the BBG Expanded mod (Workshop 289070/3533091092), paths relative to the mod folder, one image each (index 0), checked visually; Ahiram's package has no FALLBACK_NEUTRAL name (name null).",
   "textures": {
     "BARBAROSSA": "germany-frederick-barbarossa",
     "CATHERINE": "france-catherine-de-medici-black-queen",
@@ -264,6 +264,74 @@
       "index": 0,
       "name": "FALLBACK_NEUTRAL_ROOSEVELT_RR",
       "id": "america-teddy-roosevelt-rough-rider"
+    }
+  ],
+  "mod": [
+    {
+      "path": "Africa/SwahiliAlHasanibn/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_SUK_AL_HASAN",
+      "id": "swahili-al-hasan-ibn-sulaiman"
+    },
+    {
+      "path": "Asia/TibetTrisongDetsen/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_SUK_TRISONG_DETSEN",
+      "id": "tibet-trisong-detsen"
+    },
+    {
+      "path": "Europe/Austria/Platforms/Windows/BLPs/LeaderFallback.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_MER_MARIA_THERESA",
+      "id": "austria-maria-theresa"
+    },
+    {
+      "path": "Europe/GaulVercingetorix/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_SUK_VERCINGETORIX",
+      "id": "gaul-vercingetorix"
+    },
+    {
+      "path": "Europe/Goths/Platforms/Windows/BLPs/LeaderFallback.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_MER_THEODORIC",
+      "id": "goths-theodoric"
+    },
+    {
+      "path": "Europe/PolandStanislaw/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_JFD_STANISLAW",
+      "id": "poland-stanislaw-ii"
+    },
+    {
+      "path": "Mediterranean/MacedonOlympias/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_JFD_OLYMPIAS",
+      "id": "macedon-olympias"
+    },
+    {
+      "path": "Mediterranean/PhoeniciaAhiram/Platforms/Windows/BLPs/LeaderFallbackImages.blp",
+      "index": 0,
+      "name": null,
+      "id": "phoenicia-ahiram"
+    },
+    {
+      "path": "Meso/MayaTeKinichII/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_LL_TEKINICH_II",
+      "id": "maya-te-k-inich-ii"
+    },
+    {
+      "path": "Meso/TainoAnacaona/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_ANACAONA",
+      "id": "taino-anacaona"
+    },
+    {
+      "path": "NorthAmerica/ThuleKiviuq/Platforms/Windows/BLPs/LeaderFallbacks.blp",
+      "index": 0,
+      "name": "FALLBACK_NEUTRAL_LIME_THULEDAVE",
+      "id": "thule-kiviuq"
     }
   ]
 }

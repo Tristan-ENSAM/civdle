@@ -58,7 +58,7 @@
       "air_fighter"
     ],
     "gender": "Homme",
-    "extension": "Teddy Roosevelt Persona Pack",
+    "extension": "Jeu de base",
     "portrait": "img/portraits/america-teddy-roosevelt-bull-moose.webp",
     "silhouette": "img/silhouettes/america-teddy-roosevelt-bull-moose.png",
     "silhouetteFocus": [
@@ -105,7 +105,7 @@
       "heavy_cavalry"
     ],
     "gender": "Homme",
-    "extension": "Jeu de base",
+    "extension": "Teddy Roosevelt Persona Pack",
     "portrait": "img/portraits/america-teddy-roosevelt-rough-rider.webp",
     "silhouette": "img/silhouettes/america-teddy-roosevelt-rough-rider.png",
     "silhouetteFocus": [
@@ -804,9 +804,12 @@
     "gender": "Femme",
     "extension": "BBG Expanded 7.5",
     "portrait": "img/portraits/taino-anacaona.webp",
-    "silhouette": null,
-    "silhouetteFocus": null,
-    "silhouetteSource": null,
+    "silhouette": "img/silhouettes/taino-anacaona.png",
+    "silhouetteFocus": [
+      28.9,
+      95.7
+    ],
+    "silhouetteSource": "mod",
     "descriptions": [
       "À la Philosophie Politique, chaque engagement d'ère choisi octroie un emplacement de doctrine différent :\n • doctrine Militaire :\n -Tambours de guerre\n -Aux armes !\n -Guerre automatisée\n\n • doctrine Économique :\n -Libre pensée\n -Réforme de la monnaie\n -Le ciel et les étoiles\n\n • doctrine Diplomatique :\n -Le stylo, le pinceau et la voix\n -Hic Sunt Dracones\n -Gardien des mensonges\n\n • doctrine Joker :\n -Monumentalité\n -Le cœur de la vapeur\n -Vacances de rêve\n\n Or +5% pour les villes heureuses (passe à +10% pour les villes en liesse et +15% pour les villes euphoriques).",
       "Les doctrines qui octroient des points de Personnage illustre fournissent +2 Nourriture aux villes possédant le quartier correspondant et +1 Nourriture par bâtiment dans ce quartier.\n\n Activités +1 dans les villes possédant un Batey par doctrine Diplomatique dans le gouvernement.",
@@ -1391,10 +1394,10 @@
     "portrait": "img/portraits/gaul-vercingetorix.webp",
     "silhouette": "img/silhouettes/gaul-vercingetorix.png",
     "silhouetteFocus": [
-      59.4,
-      1.6
+      56.2,
+      22.3
     ],
-    "silhouetteSource": "cutout",
+    "silhouetteSource": "mod",
     "descriptions": [
       "Culture +1 pour les mines au Travail du Bronze.\n\n Influence +1 par atelier.",
       "Pour les quartiers spécialisés :\n • Bonus de proximité +1 des cases de carrière.\n • Bonus de proximité +0.5 des mines.\n • Pas de bonus de proximité habituel des autres quartiers.\n • Ne peuvent pas être placés adjacents à un Centre-ville.\n\nBias : T3 Fer / T5 Ressources bonus et de luxe à mine et à carrière.",
@@ -2262,10 +2265,10 @@
     "portrait": "img/portraits/macedon-olympias.webp",
     "silhouette": "img/silhouettes/macedon-olympias.png",
     "silhouetteFocus": [
-      65.5,
-      79.9
+      23.4,
+      80.5
     ],
-    "silhouetteSource": "cutout",
+    "silhouetteSource": "mod",
     "descriptions": [
       "Science +0.5 par Citoyen dans les villes possédant un Lieu saint et un Campement doté d'un basilikoi paides.\nAchever un Lieu saint et un basilikoi paides dans la même ville octroie un émissaire\n\n Puissance de combat en attaque +2 pour les unités de combat rapproché et de cavalerie lourde pour chaque Cité-état vassale.",
       "Lorsque vous capturez une ville, octroie :\n • Production +20% dans vos villes pendant 10 tours.\n • un Eurêka pour chaque Campement ou Campus dans la ville.\n • Inspiration pour chaque Place du théâtre ou Lieu saint dans la ville.",
@@ -2523,9 +2526,12 @@
     "gender": "Homme",
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/maya-te-k-inich-ii.webp",
-    "silhouette": null,
-    "silhouetteFocus": null,
-    "silhouetteSource": null,
+    "silhouette": "img/silhouettes/maya-te-k-inich-ii.png",
+    "silhouetteFocus": [
+      77.9,
+      23.2
+    ],
+    "silhouetteSource": "mod",
     "descriptions": [
       "À partir de l'ère classique, Puissance de combat -2 pour les unités dans un rayon de 6 cases autour de la Capitale.\n Puissance de combat +4 pour les unités à 7 cases ou plus de la Capitale.\n\nLes unités se soignent de 5 PV et gagnent 2 XP quand vous recevez un Eurêka.",
       "Les villes n'obtiennent pas d'Habitations de l'eau douce et des cases côtières. Habitations +1 pour la Capitale. Les Centres-villes gagnent +1 Activités pour chaque ressource de luxe adjacente.\n\nLes fermes fournissent +1 Or et +1 Habitations, ainsi que +1 Production par Observatoire adjacent.\nScience +1 pour les plantations par Observatoire adjacent (passe à +2 à l'Éducation).\n\nBias : T3 Ressources de luxe à plantation / T4 Bananes.",
@@ -2561,9 +2567,12 @@
     "gender": "Femme",
     "extension": "BBG Expanded 7.5",
     "portrait": "img/portraits/austria-maria-theresa.webp",
-    "silhouette": null,
-    "silhouetteFocus": null,
-    "silhouetteSource": null,
+    "silhouette": "img/silhouettes/austria-maria-theresa.png",
+    "silhouetteFocus": [
+      81.6,
+      66.0
+    ],
+    "silhouetteSource": "mod",
     "descriptions": [
       "Les gouverneurs établis octroient les bonus suivants :\n • Points d'influence par tour +1.\n • Production +15% pour les quartiers.\n • Production +15% pour les unités.\n\nLes quartiers spécialisés (sauf dans la Capitale) fournissent +1 d'Habitations si un exemplaire est construit dans la Capitale.",
       "À la complétion d'un bâtiment de la Place de la gouvernance, vous recevez un Diplomate illustre, qui peut absorber une Cité-état vassale.",
@@ -2606,10 +2615,10 @@
     "portrait": "img/portraits/goths-theodoric.webp",
     "silhouette": "img/silhouettes/goths-theodoric.png",
     "silhouetteFocus": [
-      62.8,
-      14.2
+      79.3,
+      78.1
     ],
-    "silhouetteSource": "cutout",
+    "silhouetteSource": "mod",
     "descriptions": [
       "PM +1 pour les unités militaire terrestres hors cavalerie dans un rayon de 6 cases d'un Hlaiw.",
       "Au Premier Empire, fonder ou conquérir une ville pour la première fois octroie +1 Citoyens dans toutes vos villes dans un rayon de 6 cases avec au moins 2 Habitations libres.",
@@ -3143,10 +3152,10 @@
     "portrait": "img/portraits/phoenicia-ahiram.webp",
     "silhouette": "img/silhouettes/phoenicia-ahiram.png",
     "silhouetteFocus": [
-      16.9,
-      57.4
+      71.7,
+      33.8
     ],
-    "silhouetteSource": "cutout",
+    "silhouetteSource": "mod",
     "descriptions": [
       "Bâtiment exclusif à Ahiram, remplaçant la bibliothèque.\n\n Science +1 par Amiral illustre recruté après la fondation ou la capture de la ville.\nPas de coût d'entretien.",
       "Production +0.5 et Or +2 pour les routes commerciales internationales pour chaque ressource de luxe dans la ville d'origine.",
@@ -3230,10 +3239,10 @@
     "portrait": "img/portraits/poland-stanislaw-ii.webp",
     "silhouette": "img/silhouettes/poland-stanislaw-ii.png",
     "silhouetteFocus": [
-      63.8,
-      91.8
+      26.0,
+      56.2
     ],
-    "silhouetteSource": "cutout",
+    "silhouetteSource": "mod",
     "descriptions": [
       "Les cases de ressources stratégiques et/ou aménagées reçoivent des rendements supplémentaires si elles sont adjacentes à un Campement et ses bâtiments :\n • Campement : Nourriture +1.\n • Caserne/Écurie : Culture +1.\n • Armurerie : Science +1.\n • École militaire : Production +1.",
       "Au Premier Empire, un emplacement de doctrine Militaire est converti en emplacement de doctrine Joker.\n\nLes Campements et les Forts provoquent une bombe culturelle.",
@@ -3622,10 +3631,10 @@
     "portrait": "img/portraits/swahili-al-hasan-ibn-sulaiman.webp",
     "silhouette": "img/silhouettes/swahili-al-hasan-ibn-sulaiman.png",
     "silhouetteFocus": [
-      60.6,
-      0.8
+      36.9,
+      29.7
     ],
-    "silhouetteSource": "cutout",
+    "silhouetteSource": "mod",
     "descriptions": [
       "Capacité de routes commerciales +1 pour chaque Port adjacent à une merveille mondiale.",
       "Les villes côtières et lacustres gagnent +25% Production pour les quartiers.\n\n Production +1 pour les récifs non aménagés à la Navigation à Voile.\n\nBias : T1 Côte.",
@@ -3707,9 +3716,12 @@
     "gender": null,
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/thule-kiviuq.webp",
-    "silhouette": null,
-    "silhouetteFocus": null,
-    "silhouetteSource": null,
+    "silhouette": "img/silhouettes/thule-kiviuq.png",
+    "silhouetteFocus": [
+      70.5,
+      45.7
+    ],
+    "silhouetteSource": "mod",
     "descriptions": [
       "Pour les unités de reconnaissance :\n • Puissance de combat +5 lorsque le combat se déroule sur une case de toundra ou de neige.\n • PM +1 lorsqu'elles commencent leur tour sur une case de toundra ou de neige.",
       "Les cases adjacentes à une case de cabane de chasse fournissent des rendements supplémentaires (à partir de la Navigation à Voile, sauf pour les Centres-villes) :\n • Nourriture +1 pour les cases de toundra.\n • Nourriture +2 pour les cases de neige.\n • Nourriture +1 et Production +1 pour les cases de camps et de bateaux de pêche.\n\nLes Bâtisseurs peuvent consommer une Charge et un Citoyen pour créer une case de Baleines.\n\nBias : T2 Côte / T1 Toundra.",
@@ -3748,10 +3760,10 @@
     "portrait": "img/portraits/tibet-trisong-detsen.webp",
     "silhouette": "img/silhouettes/tibet-trisong-detsen.png",
     "silhouetteFocus": [
-      71.5,
-      94.3
+      38.1,
+      11.5
     ],
-    "silhouetteSource": "cutout",
+    "silhouetteSource": "mod",
     "descriptions": [
       "Les unités militaires terrestres formées dans une ville possédant un Campement et un bâtiment de culte commencent avec une promotion.",
       "Les cases de montagne gagnent des rendements supplémentaires pour chaque quartier dans un rayon de 2 cases :\n • Nourriture +2 par Centre-ville.\n • Production +1 par Zone industrielle.\n • Or +1 par Port et Plateforme commerciale.\n • Science +1 par Campus.\n • Culture +1 par Place du théâtre.\n • Foi +1 par Lieu saint.\n\nPeut acheter les bâtiments des quartiers adjacents à une case de montagne avec de la Foi (sauf la Place de la gouvernance).\n\n Foi +5% dans les villes avec un gouverneur pour chaque promotion de ce gouverneur.\n\nBias : T3 Montagnes (de plaine, de prairie et de toundra).",

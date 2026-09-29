@@ -24,10 +24,11 @@ const STEPS = 8;
 const FOCUS_MIN = 30;
 const FOCUS_MAX = 70;
 // Accepted values of `leader.silhouetteSource`: "game" = exact outline from
-// the official textures (tools/game/import_textures.py); "cutout" = estimated
+// the official textures (tools/game/import_textures.py); "mod" = exact outline
+// from the BBG Expanded mod's own leader images (same script); "cutout" = estimated
 // by background removal from the BBG medallion (tools/bbg/make_silhouettes.py),
 // which has visible errors on some leaders. Add "cutout" to re-enable them.
-const SOURCES = ["game"];
+const SOURCES = ["game", "mod"];
 
 export function zoomFor(nGuesses, won) {
   if (won) return 1;

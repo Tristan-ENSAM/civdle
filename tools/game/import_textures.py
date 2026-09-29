@@ -24,23 +24,29 @@ These silhouettes take precedence over the ones computed from the BBG
 portraits by ``tools/bbg/make_silhouettes.py``: the ids listed in
 ``mapping.json`` are skipped by that script.
 
-Then ``silhouette``, ``silhouetteFocus`` and ``silhouetteSource`` ("game") are updated in
+Then ``silhouette``, ``silhouetteFocus`` and ``silhouetteSource`` ("game", or
+"mod" for the third source) are updated in
 ``data/leaders.json`` for the imported ids (same focus rule as
 ``tools/bbg/build.py``: a deterministic point on the outline).
 
 Usage (from the repository root):
 
-    python tools/game/import_textures.py "<SDK Assets>/Civ6" ["<game>"]
+    python tools/game/import_textures.py "<SDK Assets>/Civ6" ["<game>" ["<mod>"]]
 
 where ``<SDK Assets>/Civ6`` is searched recursively for the .dds files and
-``<game>`` is the game install folder ("Sid Meier's Civilization VI").
+``<game>`` is the game install folder ("Sid Meier's Civilization VI") and
+``<mod>`` the BBG Expanded folder (steamapps/workshop/content/289070/3533091092).
 
 Second source (optional ``<game>`` argument): DLC leaders are not in the SDK
 depot, but each DLC package of the game ships ``LeaderFallbackImages.blp``
 with the 2D fallback image of its leaders (figure alone, with alpha), read by
 ``blp.py``. Entries are listed in ``mapping.json`` under ``fallback`` by
-package and record index, each checked visually. Leaders of BBG Expanded
-(a mod) are in neither source.
+package and record index, each checked visually.
+
+Third source (optional ``<mod>`` argument): the BBG Expanded mod ships its own
+fallback package for each of its leaders (``LeaderFallbacks.blp`` or similar,
+same CIVBLP format), listed in ``mapping.json`` under ``mod``, also checked
+visually. These are the mod authors' images, not Firaxis'.
 Requires Pillow (DXT/BC decoding of .dds is built in).
 """
 import json
@@ -77,17 +83,17 @@ def make_silhouette(im, out_path):
     out.save(out_path, optimize=True)
 
 
-def _write(by_id, lid, im):
+def _write(by_id, lid, im, source="game"):
     if lid not in by_id:
         raise KeyError(f"mapping.json: unknown leader id {lid}")
     rel = f"img/silhouettes/{lid}.png"
     make_silhouette(im, ROOT / rel)
     by_id[lid]["silhouette"] = rel
     by_id[lid]["silhouetteFocus"] = silhouette_focus(ROOT / rel, lid)
-    by_id[lid]["silhouetteSource"] = "game"
+    by_id[lid]["silhouetteSource"] = source
 
 
-def main(sdk_dir, game_dir=None):
+def main(sdk_dir, game_dir=None, mod_dir=None):
     mapping = json.loads((HERE / "mapping.json").read_text(encoding="utf-8"))
     leaders_path = ROOT / "data" / "leaders.json"
     leaders = json.loads(leaders_path.read_text(encoding="utf-8"))
@@ -105,23 +111,31 @@ def main(sdk_dir, game_dir=None):
         done.append(lid)
 
     # 2. Game install: LeaderFallbackImages.blp of each DLC package
+    # 3. BBG Expanded mod (Steam Workshop 289070/3533091092): one fallback
+    #    package per leader, path given in full in mapping.json
+    cache = {}
+
+    def from_blp(path, e, source):
+        if not path.exists():
+            missing.append(str(path))
+            return
+        if path not in cache:
+            data = path.read_bytes()
+            cache[path] = (data, blp.find_textures(data), blp.list_names(data))
+        data, recs, names = cache[path]
+        # Guard against a changed package: the expected name (when the
+        # package has one) must still be in it, and the record must exist.
+        if (e.get("name") and e["name"] not in names) or e["index"] >= len(recs):
+            raise ValueError(f"{path}: {e.get('name')} / index {e['index']} not found, re-check mapping.json")
+        _write(by_id, e["id"], blp.decode(data, recs[e["index"]]), source)
+        done.append(e["id"])
+
     if game_dir:
-        cache = {}
         for e in mapping["fallback"]:
-            path = Path(game_dir) / e["package"] / "Platforms" / "Windows" / "BLPs" / "LeaderFallbackImages.blp"
-            if not path.exists():
-                missing.append(str(path))
-                continue
-            if path not in cache:
-                data = path.read_bytes()
-                cache[path] = (data, blp.find_textures(data), blp.list_names(data))
-            data, recs, names = cache[path]
-            # Guard against a changed package: the expected name must still be
-            # in it, and the record index must exist.
-            if e["name"] not in names or e["index"] >= len(recs):
-                raise ValueError(f"{path}: {e['name']} / index {e['index']} not found, re-check mapping.json")
-            _write(by_id, e["id"], blp.decode(data, recs[e["index"]]))
-            done.append(e["id"])
+            from_blp(Path(game_dir) / e["package"] / "Platforms" / "Windows" / "BLPs" / "LeaderFallbackImages.blp", e, "game")
+    if mod_dir:
+        for e in mapping["mod"]:
+            from_blp(Path(mod_dir) / e["path"], e, "mod")
 
     leaders_path.write_text(json.dumps(leaders, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(done)} silhouettes written from game textures")
@@ -130,6 +144,6 @@ def main(sdk_dir, game_dir=None):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) not in (2, 3):
+    if len(sys.argv) not in (2, 3, 4):
         sys.exit(__doc__)
     main(*sys.argv[1:])
