@@ -16,7 +16,7 @@
     "extension": "Great Negotiators Pack",
     "portrait": "img/portraits/america-abraham-lincoln.webp",
     "silhouette": "img/silhouettes/america-abraham-lincoln.png",
-    "reveal": null,
+    "reveal": "img/reveal/america-abraham-lincoln.webp",
     "silhouetteFocus": [
       45.1,
       8.2
@@ -62,7 +62,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/america-teddy-roosevelt-bull-moose.webp",
     "silhouette": "img/silhouettes/america-teddy-roosevelt-bull-moose.png",
-    "reveal": null,
+    "reveal": "img/reveal/america-teddy-roosevelt-bull-moose.webp",
     "silhouetteFocus": [
       29.3,
       8.6
@@ -110,7 +110,7 @@
     "extension": "Teddy Roosevelt Persona Pack",
     "portrait": "img/portraits/america-teddy-roosevelt-rough-rider.webp",
     "silhouette": "img/silhouettes/america-teddy-roosevelt-rough-rider.png",
-    "reveal": null,
+    "reveal": "img/reveal/america-teddy-roosevelt-rough-rider.webp",
     "silhouetteFocus": [
       44.3,
       5.7
@@ -159,7 +159,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/arabia-saladin-vizier.webp",
     "silhouette": "img/silhouettes/arabia-saladin-vizier.png",
-    "reveal": null,
+    "reveal": "img/reveal/arabia-saladin-vizier.webp",
     "silhouetteFocus": [
       45.3,
       4.1
@@ -204,7 +204,7 @@
     "extension": "Great Negotiators Pack",
     "portrait": "img/portraits/arabia-saladin-sultan.webp",
     "silhouette": "img/silhouettes/arabia-saladin-sultan.png",
-    "reveal": null,
+    "reveal": "img/reveal/arabia-saladin-sultan.webp",
     "silhouetteFocus": [
       49.6,
       8.2
@@ -245,7 +245,7 @@
     "extension": "Australia Civilization & Scenario Pack",
     "portrait": "img/portraits/australia-john-curtin.webp",
     "silhouette": "img/silhouettes/australia-john-curtin.png",
-    "reveal": null,
+    "reveal": "img/reveal/australia-john-curtin.webp",
     "silhouetteFocus": [
       53.3,
       20.5
@@ -289,7 +289,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/aztec-montezuma.webp",
     "silhouette": "img/silhouettes/aztec-montezuma.png",
-    "reveal": null,
+    "reveal": "img/reveal/aztec-montezuma.webp",
     "silhouetteFocus": [
       70.1,
       11.3
@@ -331,7 +331,7 @@
     "extension": "Babylon Pack",
     "portrait": "img/portraits/babylon-hammurabi.webp",
     "silhouette": "img/silhouettes/babylon-hammurabi.png",
-    "reveal": null,
+    "reveal": "img/reveal/babylon-hammurabi.webp",
     "silhouetteFocus": [
       40.0,
       24.2
@@ -377,7 +377,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/brazil-pedro-ii.webp",
     "silhouette": "img/silhouettes/brazil-pedro-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/brazil-pedro-ii.webp",
     "silhouetteFocus": [
       43.4,
       18.4
@@ -428,7 +428,7 @@
     "extension": "Byzantium & Gaul Pack",
     "portrait": "img/portraits/byzantium-basil-ii.webp",
     "silhouette": "img/silhouettes/byzantium-basil-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/byzantium-basil-ii.webp",
     "silhouetteFocus": [
       65.2,
       20.3
@@ -477,7 +477,7 @@
     "extension": "Great Builders Pack",
     "portrait": "img/portraits/byzantium-theodora.webp",
     "silhouette": "img/silhouettes/byzantium-theodora.png",
-    "reveal": null,
+    "reveal": "img/reveal/byzantium-theodora.webp",
     "silhouetteFocus": [
       61.5,
       16.0
@@ -519,7 +519,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/canada-wilfrid-laurier.webp",
     "silhouette": "img/silhouettes/canada-wilfrid-laurier.png",
-    "reveal": null,
+    "reveal": "img/reveal/canada-wilfrid-laurier.webp",
     "silhouetteFocus": [
       56.1,
       8.4
@@ -565,7 +565,7 @@
     "extension": "Vietnam & Kublai Khan Pack",
     "portrait": "img/portraits/china-kublai-khan-china.webp",
     "silhouette": "img/silhouettes/china-kublai-khan-china.png",
-    "reveal": null,
+    "reveal": "img/reveal/china-kublai-khan-china.webp",
     "silhouetteFocus": [
       41.0,
       1.6
@@ -610,7 +610,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/china-qin-mandate-of-heaven.webp",
     "silhouette": "img/silhouettes/china-qin-mandate-of-heaven.png",
-    "reveal": null,
+    "reveal": "img/reveal/china-qin-mandate-of-heaven.webp",
     "silhouetteFocus": [
       53.5,
       4.7
@@ -654,7 +654,7 @@
     "extension": "Rulers of China Pack",
     "portrait": "img/portraits/china-qin-unifier.webp",
     "silhouette": "img/silhouettes/china-qin-unifier.png",
-    "reveal": null,
+    "reveal": "img/reveal/china-qin-unifier.webp",
     "silhouetteFocus": [
       44.1,
       10.5
@@ -695,7 +695,7 @@
     "extension": "Rulers of China Pack",
     "portrait": "img/portraits/china-wu-zetian.webp",
     "silhouette": "img/silhouettes/china-wu-zetian.png",
-    "reveal": null,
+    "reveal": "img/reveal/china-wu-zetian.webp",
     "silhouetteFocus": [
       36.9,
       15.8
@@ -738,7 +738,7 @@
     "extension": "Rulers of China Pack",
     "portrait": "img/portraits/china-yongle.webp",
     "silhouette": "img/silhouettes/china-yongle.png",
-    "reveal": null,
+    "reveal": "img/reveal/china-yongle.webp",
     "silhouetteFocus": [
       56.8,
       12.3
@@ -780,7 +780,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/cree-poundmaker.webp",
     "silhouette": "img/silhouettes/cree-poundmaker.png",
-    "reveal": null,
+    "reveal": "img/reveal/cree-poundmaker.webp",
     "silhouetteFocus": [
       40.6,
       5.7
@@ -823,7 +823,7 @@
     "extension": "BBG Expanded 7.5",
     "portrait": "img/portraits/taino-anacaona.webp",
     "silhouette": "img/silhouettes/taino-anacaona.png",
-    "reveal": null,
+    "reveal": "img/reveal/taino-anacaona.webp",
     "silhouetteFocus": [
       42.2,
       11.1
@@ -870,7 +870,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/egypt-cleopatra-egyptian.webp",
     "silhouette": "img/silhouettes/egypt-cleopatra-egyptian.png",
-    "reveal": null,
+    "reveal": "img/reveal/egypt-cleopatra-egyptian.webp",
     "silhouetteFocus": [
       31.6,
       18.0
@@ -916,7 +916,7 @@
     "extension": "Rulers of the Sahara Pack",
     "portrait": "img/portraits/egypt-cleopatra-ptolemaic.webp",
     "silhouette": "img/silhouettes/egypt-cleopatra-ptolemaic.png",
-    "reveal": null,
+    "reveal": "img/reveal/egypt-cleopatra-ptolemaic.webp",
     "silhouetteFocus": [
       48.0,
       0.6
@@ -960,7 +960,7 @@
     "extension": "Rulers of the Sahara Pack",
     "portrait": "img/portraits/egypt-ramses-ii.webp",
     "silhouette": "img/silhouettes/egypt-ramses-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/egypt-ramses-ii.webp",
     "silhouetteFocus": [
       35.0,
       14.3
@@ -1008,7 +1008,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/england-eleanor-of-aquitaine-england.webp",
     "silhouette": "img/silhouettes/england-eleanor-of-aquitaine-england.png",
-    "reveal": null,
+    "reveal": "img/reveal/england-eleanor-of-aquitaine-england.webp",
     "silhouetteFocus": [
       39.3,
       4.1
@@ -1056,7 +1056,7 @@
     "extension": "Rulers of England Pack",
     "portrait": "img/portraits/england-elizabeth-i.webp",
     "silhouette": "img/silhouettes/england-elizabeth-i.png",
-    "reveal": null,
+    "reveal": "img/reveal/england-elizabeth-i.webp",
     "silhouetteFocus": [
       55.1,
       3.1
@@ -1106,7 +1106,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/england-victoria-age-of-empire.webp",
     "silhouette": "img/silhouettes/england-victoria-age-of-empire.png",
-    "reveal": null,
+    "reveal": "img/reveal/england-victoria-age-of-empire.webp",
     "silhouetteFocus": [
       44.9,
       4.9
@@ -1154,7 +1154,7 @@
     "extension": "Rulers of England Pack",
     "portrait": "img/portraits/england-victoria-age-of-steam.webp",
     "silhouette": "img/silhouettes/england-victoria-age-of-steam.png",
-    "reveal": null,
+    "reveal": "img/reveal/england-victoria-age-of-steam.webp",
     "silhouetteFocus": [
       68.9,
       15.4
@@ -1195,7 +1195,7 @@
     "extension": "Ethiopia Pack",
     "portrait": "img/portraits/ethiopia-menelik-ii.webp",
     "silhouette": "img/silhouettes/ethiopia-menelik-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/ethiopia-menelik-ii.webp",
     "silhouetteFocus": [
       53.7,
       4.7
@@ -1240,7 +1240,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/france-catherine-de-medici-black-queen.webp",
     "silhouette": "img/silhouettes/france-catherine-de-medici-black-queen.png",
-    "reveal": null,
+    "reveal": "img/reveal/france-catherine-de-medici-black-queen.webp",
     "silhouetteFocus": [
       32.2,
       17.2
@@ -1287,7 +1287,7 @@
     "extension": "Catherine de Medici Persona Pack",
     "portrait": "img/portraits/france-catherine-de-medici-magnificence.webp",
     "silhouette": "img/silhouettes/france-catherine-de-medici-magnificence.png",
-    "reveal": null,
+    "reveal": "img/reveal/france-catherine-de-medici-magnificence.webp",
     "silhouetteFocus": [
       42.6,
       8.8
@@ -1334,7 +1334,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/france-eleanor-of-aquitaine-france.webp",
     "silhouette": "img/silhouettes/france-eleanor-of-aquitaine-france.png",
-    "reveal": null,
+    "reveal": "img/reveal/france-eleanor-of-aquitaine-france.webp",
     "silhouetteFocus": [
       44.7,
       6.6
@@ -1379,7 +1379,7 @@
     "extension": "Byzantium & Gaul Pack",
     "portrait": "img/portraits/gaul-ambiorix.webp",
     "silhouette": "img/silhouettes/gaul-ambiorix.png",
-    "reveal": null,
+    "reveal": "img/reveal/gaul-ambiorix.webp",
     "silhouetteFocus": [
       14.6,
       8.2
@@ -1424,7 +1424,7 @@
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/gaul-vercingetorix.webp",
     "silhouette": "img/silhouettes/gaul-vercingetorix.png",
-    "reveal": null,
+    "reveal": "img/reveal/gaul-vercingetorix.webp",
     "silhouetteFocus": [
       47.3,
       7.2
@@ -1467,7 +1467,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/georgia-tamar.webp",
     "silhouette": "img/silhouettes/georgia-tamar.png",
-    "reveal": null,
+    "reveal": "img/reveal/georgia-tamar.webp",
     "silhouetteFocus": [
       43.4,
       16.4
@@ -1513,7 +1513,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/germany-frederick-barbarossa.webp",
     "silhouette": "img/silhouettes/germany-frederick-barbarossa.png",
-    "reveal": null,
+    "reveal": "img/reveal/germany-frederick-barbarossa.webp",
     "silhouetteFocus": [
       48.2,
       0.4
@@ -1563,7 +1563,7 @@
     "extension": "Great Builders Pack",
     "portrait": "img/portraits/germany-ludwig-ii.webp",
     "silhouette": "img/silhouettes/germany-ludwig-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/germany-ludwig-ii.webp",
     "silhouetteFocus": [
       57.8,
       2.9
@@ -1606,7 +1606,7 @@
     "extension": "Maya & Gran Colombia Pack",
     "portrait": "img/portraits/gran-colombia-simon-bolivar.webp",
     "silhouette": "img/silhouettes/gran-colombia-simon-bolivar.png",
-    "reveal": null,
+    "reveal": "img/reveal/gran-colombia-simon-bolivar.webp",
     "silhouetteFocus": [
       57.2,
       10.4
@@ -1654,7 +1654,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/greece-gorgo.webp",
     "silhouette": "img/silhouettes/greece-gorgo.png",
-    "reveal": null,
+    "reveal": "img/reveal/greece-gorgo.webp",
     "silhouetteFocus": [
       40.2,
       2.7
@@ -1700,7 +1700,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/greece-pericles.webp",
     "silhouette": "img/silhouettes/greece-pericles.png",
-    "reveal": null,
+    "reveal": "img/reveal/greece-pericles.webp",
     "silhouetteFocus": [
       60.5,
       22.7
@@ -1744,7 +1744,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/hungary-matthias-corvinus.webp",
     "silhouette": "img/silhouettes/hungary-matthias-corvinus.png",
-    "reveal": null,
+    "reveal": "img/reveal/hungary-matthias-corvinus.webp",
     "silhouetteFocus": [
       37.9,
       1.2
@@ -1791,7 +1791,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/inca-pachacuti.webp",
     "silhouette": "img/silhouettes/inca-pachacuti.png",
-    "reveal": null,
+    "reveal": "img/reveal/inca-pachacuti.webp",
     "silhouetteFocus": [
       48.8,
       8.8
@@ -1835,7 +1835,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/india-chandragupta.webp",
     "silhouette": "img/silhouettes/india-chandragupta.png",
-    "reveal": null,
+    "reveal": "img/reveal/india-chandragupta.webp",
     "silhouetteFocus": [
       58.2,
       18.4
@@ -1876,7 +1876,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/india-gandhi.webp",
     "silhouette": "img/silhouettes/india-gandhi.png",
-    "reveal": null,
+    "reveal": "img/reveal/india-gandhi.webp",
     "silhouetteFocus": [
       67.4,
       17.8
@@ -1919,7 +1919,7 @@
     "extension": "Khmer and Indonesia Civilization & Scenario Pack",
     "portrait": "img/portraits/indonesia-gitarja.webp",
     "silhouette": "img/silhouettes/indonesia-gitarja.png",
-    "reveal": null,
+    "reveal": "img/reveal/indonesia-gitarja.webp",
     "silhouetteFocus": [
       43.4,
       13.7
@@ -1963,7 +1963,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/japan-hojo-tokimune.webp",
     "silhouette": "img/silhouettes/japan-hojo-tokimune.png",
-    "reveal": null,
+    "reveal": "img/reveal/japan-hojo-tokimune.webp",
     "silhouetteFocus": [
       56.4,
       8.4
@@ -2006,7 +2006,7 @@
     "extension": "Great Commanders Pack",
     "portrait": "img/portraits/japan-tokugawa.webp",
     "silhouette": "img/silhouettes/japan-tokugawa.png",
-    "reveal": null,
+    "reveal": "img/reveal/japan-tokugawa.webp",
     "silhouetteFocus": [
       49.0,
       1.4
@@ -2049,7 +2049,7 @@
     "extension": "Khmer and Indonesia Civilization & Scenario Pack",
     "portrait": "img/portraits/khmer-jayavarman-vii.webp",
     "silhouette": "img/silhouettes/khmer-jayavarman-vii.png",
-    "reveal": null,
+    "reveal": "img/reveal/khmer-jayavarman-vii.webp",
     "silhouetteFocus": [
       58.0,
       24.8
@@ -2092,7 +2092,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/kongo-mvemba-a-nzinga.webp",
     "silhouette": "img/silhouettes/kongo-mvemba-a-nzinga.png",
-    "reveal": null,
+    "reveal": "img/reveal/kongo-mvemba-a-nzinga.webp",
     "silhouetteFocus": [
       58.4,
       11.1
@@ -2138,7 +2138,7 @@
     "extension": "Great Negotiators Pack",
     "portrait": "img/portraits/kongo-nzinga-mbande.webp",
     "silhouette": "img/silhouettes/kongo-nzinga-mbande.png",
-    "reveal": null,
+    "reveal": "img/reveal/kongo-nzinga-mbande.webp",
     "silhouetteFocus": [
       46.9,
       3.7
@@ -2184,7 +2184,7 @@
     "extension": "Great Builders Pack",
     "portrait": "img/portraits/korea-sejong.webp",
     "silhouette": "img/silhouettes/korea-sejong.png",
-    "reveal": null,
+    "reveal": "img/reveal/korea-sejong.webp",
     "silhouetteFocus": [
       41.4,
       3.1
@@ -2227,7 +2227,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/korea-seondeok.webp",
     "silhouette": "img/silhouettes/korea-seondeok.png",
-    "reveal": null,
+    "reveal": "img/reveal/korea-seondeok.webp",
     "silhouetteFocus": [
       34.4,
       10.9
@@ -2271,7 +2271,7 @@
     "extension": "Persia and Macedon Civilization & Scenario Pack",
     "portrait": "img/portraits/macedon-alexander.webp",
     "silhouette": "img/silhouettes/macedon-alexander.png",
-    "reveal": null,
+    "reveal": "img/reveal/macedon-alexander.webp",
     "silhouetteFocus": [
       48.8,
       10.7
@@ -2315,7 +2315,7 @@
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/macedon-olympias.webp",
     "silhouette": "img/silhouettes/macedon-olympias.png",
-    "reveal": null,
+    "reveal": "img/reveal/macedon-olympias.webp",
     "silhouetteFocus": [
       36.1,
       17.2
@@ -2360,7 +2360,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/mali-mansa-musa.webp",
     "silhouette": "img/silhouettes/mali-mansa-musa.png",
-    "reveal": null,
+    "reveal": "img/reveal/mali-mansa-musa.webp",
     "silhouetteFocus": [
       47.3,
       6.8
@@ -2407,7 +2407,7 @@
     "extension": "Rulers of the Sahara Pack",
     "portrait": "img/portraits/mali-sundiata-keita.webp",
     "silhouette": "img/silhouettes/mali-sundiata-keita.png",
-    "reveal": null,
+    "reveal": "img/reveal/mali-sundiata-keita.webp",
     "silhouetteFocus": [
       28.3,
       18.4
@@ -2451,7 +2451,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/maori-kupe.webp",
     "silhouette": "img/silhouettes/maori-kupe.png",
-    "reveal": null,
+    "reveal": "img/reveal/maori-kupe.webp",
     "silhouetteFocus": [
       47.5,
       0.4
@@ -2494,7 +2494,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/mapuche-lautaro.webp",
     "silhouette": "img/silhouettes/mapuche-lautaro.png",
-    "reveal": null,
+    "reveal": "img/reveal/mapuche-lautaro.webp",
     "silhouetteFocus": [
       64.5,
       17.4
@@ -2539,7 +2539,7 @@
     "extension": "Maya & Gran Colombia Pack",
     "portrait": "img/portraits/maya-lady-six-sky.webp",
     "silhouette": "img/silhouettes/maya-lady-six-sky.png",
-    "reveal": null,
+    "reveal": "img/reveal/maya-lady-six-sky.webp",
     "silhouetteFocus": [
       73.6,
       12.3
@@ -2584,7 +2584,7 @@
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/maya-te-k-inich-ii.webp",
     "silhouette": "img/silhouettes/maya-te-k-inich-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/maya-te-k-inich-ii.webp",
     "silhouetteFocus": [
       66.6,
       5.3
@@ -2626,7 +2626,7 @@
     "extension": "BBG Expanded 7.5",
     "portrait": "img/portraits/austria-maria-theresa.webp",
     "silhouette": "img/silhouettes/austria-maria-theresa.png",
-    "reveal": null,
+    "reveal": "img/reveal/austria-maria-theresa.webp",
     "silhouetteFocus": [
       62.7,
       13.7
@@ -2673,7 +2673,7 @@
     "extension": "BBG Expanded 7.5",
     "portrait": "img/portraits/goths-theodoric.webp",
     "silhouette": "img/silhouettes/goths-theodoric.png",
-    "reveal": null,
+    "reveal": "img/reveal/goths-theodoric.webp",
     "silhouetteFocus": [
       60.4,
       13.3
@@ -2719,7 +2719,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/mongolia-genghis-khan.webp",
     "silhouette": "img/silhouettes/mongolia-genghis-khan.png",
-    "reveal": null,
+    "reveal": "img/reveal/mongolia-genghis-khan.webp",
     "silhouetteFocus": [
       52.9,
       0.4
@@ -2765,7 +2765,7 @@
     "extension": "Vietnam & Kublai Khan Pack",
     "portrait": "img/portraits/mongolia-kublai-khan-mongolia.webp",
     "silhouette": "img/silhouettes/mongolia-kublai-khan-mongolia.png",
-    "reveal": null,
+    "reveal": "img/reveal/mongolia-kublai-khan-mongolia.webp",
     "silhouetteFocus": [
       53.5,
       2.1
@@ -2809,7 +2809,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/netherlands-wilhelmina.webp",
     "silhouette": "img/silhouettes/netherlands-wilhelmina.png",
-    "reveal": null,
+    "reveal": "img/reveal/netherlands-wilhelmina.webp",
     "silhouetteFocus": [
       48.8,
       3.3
@@ -2855,7 +2855,7 @@
     "extension": "Rulers of England Pack",
     "portrait": "img/portraits/norway-harald-hardrada-varangian.webp",
     "silhouette": "img/silhouettes/norway-harald-hardrada-varangian.png",
-    "reveal": null,
+    "reveal": "img/reveal/norway-harald-hardrada-varangian.webp",
     "silhouetteFocus": [
       62.5,
       17.4
@@ -2903,7 +2903,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/norway-harald-hardrada-konge.webp",
     "silhouette": "img/silhouettes/norway-harald-hardrada-konge.png",
-    "reveal": null,
+    "reveal": "img/reveal/norway-harald-hardrada-konge.webp",
     "silhouetteFocus": [
       63.5,
       2.9
@@ -2950,7 +2950,7 @@
     "extension": "Nubia Civilization & Scenario Pack",
     "portrait": "img/portraits/nubia-amanitore.webp",
     "silhouette": "img/silhouettes/nubia-amanitore.png",
-    "reveal": null,
+    "reveal": "img/reveal/nubia-amanitore.webp",
     "silhouetteFocus": [
       18.2,
       8.4
@@ -2997,7 +2997,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/ottomans-suleiman-kanuni.webp",
     "silhouette": "img/silhouettes/ottomans-suleiman-kanuni.png",
-    "reveal": null,
+    "reveal": "img/reveal/ottomans-suleiman-kanuni.webp",
     "silhouetteFocus": [
       47.5,
       17.8
@@ -3045,7 +3045,7 @@
     "extension": "Great Commanders Pack",
     "portrait": "img/portraits/ottomans-suleiman-muhtesem.webp",
     "silhouette": "img/silhouettes/ottomans-suleiman-muhtesem.png",
-    "reveal": null,
+    "reveal": "img/reveal/ottomans-suleiman-muhtesem.webp",
     "silhouetteFocus": [
       63.7,
       16.2
@@ -3088,7 +3088,7 @@
     "extension": "Persia and Macedon Civilization & Scenario Pack",
     "portrait": "img/portraits/persia-cyrus.webp",
     "silhouette": "img/silhouettes/persia-cyrus.png",
-    "reveal": null,
+    "reveal": "img/reveal/persia-cyrus.webp",
     "silhouetteFocus": [
       55.9,
       25.2
@@ -3130,7 +3130,7 @@
     "extension": "Great Commanders Pack",
     "portrait": "img/portraits/persia-nader-shah.webp",
     "silhouette": "img/silhouettes/persia-nader-shah.png",
-    "reveal": null,
+    "reveal": "img/reveal/persia-nader-shah.webp",
     "silhouetteFocus": [
       44.1,
       9.4
@@ -3177,7 +3177,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/phoenicia-dido.webp",
     "silhouette": "img/silhouettes/phoenicia-dido.png",
-    "reveal": null,
+    "reveal": "img/reveal/phoenicia-dido.webp",
     "silhouetteFocus": [
       43.6,
       3.9
@@ -3222,7 +3222,7 @@
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/phoenicia-ahiram.webp",
     "silhouette": "img/silhouettes/phoenicia-ahiram.png",
-    "reveal": null,
+    "reveal": "img/reveal/phoenicia-ahiram.webp",
     "silhouetteFocus": [
       56.4,
       13.1
@@ -3266,7 +3266,7 @@
     "extension": "Poland Civilization & Scenario Pack",
     "portrait": "img/portraits/poland-jadwiga.webp",
     "silhouette": "img/silhouettes/poland-jadwiga.png",
-    "reveal": null,
+    "reveal": "img/reveal/poland-jadwiga.webp",
     "silhouetteFocus": [
       43.4,
       2.1
@@ -3311,7 +3311,7 @@
     "extension": "BBG Expanded 7.5",
     "portrait": "img/portraits/poland-stanislaw-ii.webp",
     "silhouette": "img/silhouettes/poland-stanislaw-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/poland-stanislaw-ii.webp",
     "silhouetteFocus": [
       51.2,
       1.0
@@ -3357,7 +3357,7 @@
     "extension": "Portugal Pack",
     "portrait": "img/portraits/portugal-joao-iii.webp",
     "silhouette": "img/silhouettes/portugal-joao-iii.png",
-    "reveal": null,
+    "reveal": "img/reveal/portugal-joao-iii.webp",
     "silhouetteFocus": [
       57.2,
       6.8
@@ -3406,7 +3406,7 @@
     "extension": "Julius Caesar Pack",
     "portrait": "img/portraits/rome-julius-caesar.webp",
     "silhouette": "img/silhouettes/rome-julius-caesar.png",
-    "reveal": null,
+    "reveal": "img/reveal/rome-julius-caesar.webp",
     "silhouetteFocus": [
       45.7,
       3.3
@@ -3454,7 +3454,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/rome-trajan.webp",
     "silhouette": "img/silhouettes/rome-trajan.png",
-    "reveal": null,
+    "reveal": "img/reveal/rome-trajan.webp",
     "silhouetteFocus": [
       41.4,
       1.0
@@ -3500,7 +3500,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/russia-peter.webp",
     "silhouette": "img/silhouettes/russia-peter.png",
-    "reveal": null,
+    "reveal": "img/reveal/russia-peter.webp",
     "silhouetteFocus": [
       31.6,
       7.6
@@ -3544,7 +3544,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/scotland-robert-the-bruce.webp",
     "silhouette": "img/silhouettes/scotland-robert-the-bruce.png",
-    "reveal": null,
+    "reveal": "img/reveal/scotland-robert-the-bruce.webp",
     "silhouetteFocus": [
       47.3,
       0.8
@@ -3586,7 +3586,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/scythia-tomyris.webp",
     "silhouette": "img/silhouettes/scythia-tomyris.png",
-    "reveal": null,
+    "reveal": "img/reveal/scythia-tomyris.webp",
     "silhouetteFocus": [
       46.1,
       5.5
@@ -3629,7 +3629,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/spain-philip-ii.webp",
     "silhouette": "img/silhouettes/spain-philip-ii.png",
-    "reveal": null,
+    "reveal": "img/reveal/spain-philip-ii.webp",
     "silhouetteFocus": [
       42.8,
       15.0
@@ -3671,7 +3671,7 @@
     "extension": "Jeu de base",
     "portrait": "img/portraits/sumeria-gilgamesh.webp",
     "silhouette": "img/silhouettes/sumeria-gilgamesh.png",
-    "reveal": null,
+    "reveal": "img/reveal/sumeria-gilgamesh.webp",
     "silhouetteFocus": [
       59.8,
       11.7
@@ -3712,7 +3712,7 @@
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/swahili-al-hasan-ibn-sulaiman.webp",
     "silhouette": "img/silhouettes/swahili-al-hasan-ibn-sulaiman.png",
-    "reveal": null,
+    "reveal": "img/reveal/swahili-al-hasan-ibn-sulaiman.webp",
     "silhouetteFocus": [
       55.9,
       23.2
@@ -3756,7 +3756,7 @@
     "extension": "Gathering Storm",
     "portrait": "img/portraits/sweden-kristina.webp",
     "silhouette": "img/silhouettes/sweden-kristina.png",
-    "reveal": null,
+    "reveal": "img/reveal/sweden-kristina.webp",
     "silhouetteFocus": [
       27.0,
       14.5
@@ -3801,7 +3801,7 @@
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/thule-kiviuq.webp",
     "silhouette": "img/silhouettes/thule-kiviuq.png",
-    "reveal": null,
+    "reveal": "img/reveal/thule-kiviuq.webp",
     "silhouetteFocus": [
       30.3,
       10.7
@@ -3844,7 +3844,7 @@
     "extension": "BBG Expanded 7.1",
     "portrait": "img/portraits/tibet-trisong-detsen.webp",
     "silhouette": "img/silhouettes/tibet-trisong-detsen.png",
-    "reveal": null,
+    "reveal": "img/reveal/tibet-trisong-detsen.webp",
     "silhouetteFocus": [
       38.3,
       10.7
@@ -3888,7 +3888,7 @@
     "extension": "Vietnam & Kublai Khan Pack",
     "portrait": "img/portraits/vietnam-ba-trieu.webp",
     "silhouette": "img/silhouettes/vietnam-ba-trieu.png",
-    "reveal": null,
+    "reveal": "img/reveal/vietnam-ba-trieu.webp",
     "silhouetteFocus": [
       20.9,
       18.8
@@ -3933,7 +3933,7 @@
     "extension": "Rise and Fall",
     "portrait": "img/portraits/zulu-shaka.webp",
     "silhouette": "img/silhouettes/zulu-shaka.png",
-    "reveal": null,
+    "reveal": "img/reveal/zulu-shaka.webp",
     "silhouetteFocus": [
       47.9,
       4.5
