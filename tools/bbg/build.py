@@ -282,6 +282,8 @@ def main(bbg_dir, version):
         ext = src["extension"].get(f["leaderKey"])
         if ext is None:
             warn(f"{f['heading']}: no extension in sources.json")
+        elif ext not in src["releaseYear"]:
+            warn(f"{f['heading']}: no releaseYear for extension {ext!r} in sources.json")
         gender = src["gender"].get(f["leaderKey"], [None, None])[1]
         if gender is None:
             warn(f"{f['heading']}: no gender in sources.json")
@@ -305,6 +307,7 @@ def main(bbg_dir, version):
             "uniqueUnitClass": classes,
             "gender": gender,
             "extension": ext,
+            "releaseYear": src["releaseYear"].get(ext),
             "portrait": portrait,
             "silhouette": sil,
             # Colour figure behind the silhouette (tools/game/import_textures.py).

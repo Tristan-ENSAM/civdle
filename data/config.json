@@ -33,41 +33,11 @@
       "type": "exact"
     },
     {
-      "key": "extension",
-      "label": "Extension",
+      "key": "releaseYear",
+      "label": "Sortie",
       "type": "ordered",
-      "order": "extensionOrder"
+      "order": "yearOrder"
     }
   ],
-  "extensionOrder": [
-    "Jeu de base",
-    "Poland Civilization & Scenario Pack",
-    "Australia Civilization & Scenario Pack",
-    "Persia and Macedon Civilization & Scenario Pack",
-    "Nubia Civilization & Scenario Pack",
-    "Khmer and Indonesia Civilization & Scenario Pack",
-    "Rise and Fall",
-    "Gathering Storm",
-    "Maya & Gran Colombia Pack",
-    [
-      "Ethiopia Pack",
-      "Catherine de Medici Persona Pack",
-      "Teddy Roosevelt Persona Pack"
-    ],
-    "Byzantium & Gaul Pack",
-    "Babylon Pack",
-    "Vietnam & Kublai Khan Pack",
-    "Portugal Pack",
-    [
-      "Great Negotiators Pack",
-      "Julius Caesar Pack"
-    ],
-    "Great Commanders Pack",
-    "Rulers of China Pack",
-    "Rulers of the Sahara Pack",
-    "Great Builders Pack",
-    "Rulers of England Pack",
-    "BBG Expanded 7.1",
-    "BBG Expanded 7.5"
-  ]
+  "yearOrder": ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"]
 }

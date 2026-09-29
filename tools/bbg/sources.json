@@ -3,7 +3,8 @@
     "extension": "Official leaders: civilization.fandom.com/wiki/Leaders_(Civ6), read on 2026-09-28. A leader with no pack footnote and no R&F/GS icon in the main table is taken as base game. Persona pairs: the persona whose leader ability matches the main-table ability keeps the original leader's extension; the other persona gets the pack given in the 'Alternate personas' table (this pairing rule is an interpretation). BBG Expanded leaders: first BBG version whose bbg_expanded_X.html page lists them (github.com/civ6bbg/civ6bbg.github.io, commit d7119de).",
     "gender": "Wikidata property P21 (sex or gender) of the item linked from the leader's English Wikipedia article, the article itself being the first Wikipedia link on the leader's fandom page (official leaders) or chosen by name (BBG Expanded leaders). null = no P21 found.",
     "continent": "Official civs: 'Location' field of the civ infobox on civilization.fandom.com (text kept in 'location'). BBG Expanded civs: Wikidata P30 or Wikidata/Wikipedia description (text kept in 'location'). Mapping from the location text to continent labels is manual; entries marked interpretation=true are not a direct reading of the text.",
-    "extensionOrder": "data/config.json extensionOrder (chronological order of the Extension column): PC release dates from civilization.fandom.com/wiki/DLC_(Civ6) (packs) and the infoboxes of Civilization_VI (2016-10-21), Civilization_VI:_Rise_and_Fall (2018-02-08), Civilization_VI:_Gathering_Storm (2019-02-14), read on 2026-09-29. Same-day releases share a rank (Ethiopia + both Persona Packs 2020-07-23; Great Negotiators + Julius Caesar 2022-11-21). BBG Expanded 7.1 and 7.5 are placed after all official packs (assumption, no date source) and 7.1 before 7.5 (version order)."
+    "extensionOrder": "(No longer used by the site: data/config.json now orders the Classic column by releaseYear / yearOrder.) data/config.json extensionOrder (chronological order of the Extension column): PC release dates from civilization.fandom.com/wiki/DLC_(Civ6) (packs) and the infoboxes of Civilization_VI (2016-10-21), Civilization_VI:_Rise_and_Fall (2018-02-08), Civilization_VI:_Gathering_Storm (2019-02-14), read on 2026-09-29. Same-day releases share a rank (Ethiopia + both Persona Packs 2020-07-23; Great Negotiators + Julius Caesar 2022-11-21). BBG Expanded 7.1 and 7.5 are placed after all official packs (assumption, no date source) and 7.1 before 7.5 (version order).",
+    "releaseYear": "Year of first release of each extension (Extension -> year). PC dates: Steam DLC page store.steampowered.com/dlc/289070 (Poland 2016-12-20, Australia 2017-02-23, Persia/Macedon 2017-03-28, Nubia 2017-07-27, Khmer/Indonesia 2017-10-19, Rise and Fall 2018-02-07, Maya/Gran Colombia 2020-05-20, Ethiopia + both Persona Packs 2020-07-23, Byzantium/Gaul 2020-09-24, Babylon 2020-11-19, Vietnam/Kublai 2021-01-28, Portugal 2021-03-25, Leader Pass 2022-11-21), read on 2026-09-29; base game and Gathering Storm: see extensionOrder. Leader Pass packs: Great Negotiators and Julius Caesar 2022-11-21, Great Commanders 2022-12-15 (well-of-souls.com/civ/civ6_leader_pass.html), Rulers of China 2023-01-19 (pcgamesn.com), Rulers of the Sahara 2023-02-16 (techraptor.net); Great Builders and Rulers of England: released after Sahara within a schedule ending March 2023 (support.aspyr.com Leader Pass FAQ), hence 2023 (deduction). BBG Expanded: no release date of the mod itself; year the bbg_expanded_X.html page was first committed to github.com/civ6bbg/civ6bbg.github.io (7.1: 2025-08-20, 7.5: 2026-05-23), an approximation chosen by the site owner."
   },
   "extension": {
     "LOC_LEADER_ABRAHAM_LINCOLN_NAME": "Great Negotiators Pack",
@@ -802,5 +803,32 @@
         "Afrique"
       ]
     }
+  },
+  "releaseYear": {
+    "Jeu de base": "2016",
+    "Poland Civilization & Scenario Pack": "2016",
+    "Australia Civilization & Scenario Pack": "2017",
+    "Persia and Macedon Civilization & Scenario Pack": "2017",
+    "Nubia Civilization & Scenario Pack": "2017",
+    "Khmer and Indonesia Civilization & Scenario Pack": "2017",
+    "Rise and Fall": "2018",
+    "Gathering Storm": "2019",
+    "Maya & Gran Colombia Pack": "2020",
+    "Ethiopia Pack": "2020",
+    "Catherine de Medici Persona Pack": "2020",
+    "Teddy Roosevelt Persona Pack": "2020",
+    "Byzantium & Gaul Pack": "2020",
+    "Babylon Pack": "2020",
+    "Vietnam & Kublai Khan Pack": "2021",
+    "Portugal Pack": "2021",
+    "Great Negotiators Pack": "2022",
+    "Julius Caesar Pack": "2022",
+    "Great Commanders Pack": "2022",
+    "Rulers of China Pack": "2023",
+    "Rulers of the Sahara Pack": "2023",
+    "Great Builders Pack": "2023",
+    "Rulers of England Pack": "2023",
+    "BBG Expanded 7.1": "2025",
+    "BBG Expanded 7.5": "2026"
   }
 }

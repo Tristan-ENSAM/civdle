@@ -49,7 +49,8 @@ tools/leaders_template.csv
 | leaders, civilisation, textes des descriptions, portraits | Site BBG (dépôt `civ6bbg/civ6bbg.github.io`), `fr_FR/leaders_7.5.html`, `en_US/leaders_7.5.html`, `images/leaders/` |
 | `uniqueUnitClass` | 1re phrase de la description BBG de chaque unité unique (« Unité de cavalerie lourde… »), règles dans `UNIT_CLASS_RULES` |
 | `uniqueDistrict` | quartier de base remplacé, lu dans « remplaçant le … » de la description BBG |
-| `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader. Ordre chronologique (flèches ↑/↓) : `extensionOrder` dans `config.json`, dates de sortie PC du wiki (détail dans `tools/bbg/sources.json`) |
+| `extension` | wiki Civilization (fandom) pour les leaders officiels ; pour BBG Expanded, 1re version BBG dont la page `bbg_expanded_X.html` liste le leader. Plus affiché dans le mode Classique (remplacé par `releaseYear`) |
+| `releaseYear` | année de sortie de l'extension (colonne « Sortie » du mode Classique, flèches ↑/↓ via `yearOrder` dans `config.json`) : table `releaseYear` de `tools/bbg/sources.json`, dates PC Steam / presse (détail et sources dans `_about`). BBG Expanded : année du premier commit de la page `bbg_expanded_X.html` du site BBG (7.1 → 2025, 7.5 → 2026), approximation faute de date de sortie du mod |
 | `gender` | Wikidata, propriété P21 |
 | `continent` | champ « Location » des pages civilisation du wiki (Wikidata/Wikipédia pour les civs BBG Expanded) ; le texte source est conservé dans `tools/bbg/sources.json` |
 | `silhouette` | Les 88 leaders : contour exact tiré des fichiers du jeu par `tools/game/import_textures.py` (textures `LEADER_<NOM>_NEUTRAL.dds` du dépôt Steam « Civilization VI SDK Assets », et images `FALLBACK_NEUTRAL_*` des paquets `LeaderFallbackImages.blp` de chaque DLC, lus par `tools/game/blp.py` ; association image → leader dans `tools/game/mapping.json`, vérifiée visuellement), et pour les 11 leaders BBG Expanded, des paquets `LeaderFallback*.blp` du mod (Workshop 289070/3533091092). Ancienne méthode, conservée : détourage estimé du médaillon BBG par `tools/bbg/make_silhouettes.py` (BiRefNet / ISNet via rembg, rejets dans `tools/bbg/silhouettes_rejected.json`) |
@@ -88,7 +89,7 @@ Types de comparaison disponibles pour `classicAttributes` :
 
 - `exact` : vert si identique, rouge sinon (`null` = `null` compte comme identique, affiché « Aucun »).
 - `set` : liste de valeurs ; vert si mêmes éléments, orange si au moins un en commun, rouge sinon.
-- `ordered` : la valeur doit figurer dans la liste nommée par `order` (ex. `"order": "extensionOrder"`) ; rouge + flèche vers la réponse si différent. Un élément de la liste peut être un tableau de valeurs ex æquo (même rang : rouge sans flèche).
+- `ordered` : la valeur doit figurer dans la liste nommée par `order` (ex. `"order": "yearOrder"`) ; rouge + flèche vers la réponse si différent. Un élément de la liste peut être un tableau de valeurs ex æquo (même rang : rouge sans flèche).
 
 Option `catalog` : les valeurs sont des identifiants, comparés tels quels, affichés par l'icône correspondante de `catalogs.json` (libellé en infobulle ; sans icône, le libellé s'affiche en texte).
 
@@ -112,6 +113,7 @@ Option `catalog` : les valeurs sont des identifiants, comparés tels quels, affi
   "uniqueUnitClass": ["air_fighter", "heavy_cavalry"],
   "gender": "Homme",
   "extension": "Jeu de base",
+  "releaseYear": "2016",
   "portrait": "img/portraits/….webp",
   "silhouetteFocus": [26.6, 89.8],
   "descriptions": ["capacité du leader", "capacité de la civ", "éléments uniques…"],
