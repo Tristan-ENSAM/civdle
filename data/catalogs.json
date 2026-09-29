@@ -67,7 +67,8 @@
       "icon": "img/icons/units/horseman.png"
     },
     "heavy_cavalry": {
-      "label": "Cavalerie lourde"
+      "label": "Cavalerie lourde",
+      "icon": "img/icons/units/heavy_chariot.png"
     },
     "ranged_cavalry": {
       "label": "Unité montée à distance",
