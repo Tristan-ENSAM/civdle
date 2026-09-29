@@ -6,8 +6,9 @@
  * and rotated by an angle drawn each day (deterministic from the date and the
  * leader, ROTATE_MIN..ROTATE_MAX degrees). It only changes the display: the
  * daily leader and the progress are the same with or without it. Grey and
- * rotation are removed once the leader is found. The checkbox state is kept
- * in localStorage (per browser; the game works without it).
+ * rotation are removed once the leader is found. Ticked by default; the
+ * checkbox state is kept in localStorage (per browser; without storage the
+ * box starts ticked on every load).
  *
  * Tuning: BLUR_START (px) is the initial blur; the blur reaches 0 after
  * STEPS wrong guesses (linear). Arbitrary defaults, to adjust.
@@ -35,8 +36,9 @@ export function rotationFor(dateStr, leaderId) {
   return Math.round(ROTATE_MIN + rng() * (ROTATE_MAX - ROTATE_MIN));
 }
 
+// On by default: only an explicit "0" (the player unticked the box) turns it off.
 function loadChallenge() {
-  try { return localStorage.getItem(CHALLENGE_KEY) === "1"; } catch (_) { return false; }
+  try { return localStorage.getItem(CHALLENGE_KEY) !== "0"; } catch (_) { return true; }
 }
 
 function saveChallenge(on) {
