@@ -10,6 +10,9 @@
  * upscaling invents plausible detail). Eye positions come from
  * tools/bbg/detect_eyes.py (`leader.eyes`). Leaders without both images are
  * not drawn. Only the eye crop is loaded before the win, not the portrait.
+ * The crop is drawn on a canvas (js/core/clue.js), so the inspector shows
+ * only the visible circle, not the whole crop; the Network panel still gives
+ * the file (a static site cannot prevent this).
  *
  * Which eye: EYE_SIDE = "right" / "left", or "daily" for a side drawn each
  * day from the date and the leader (deterministic, same for every player).
@@ -23,6 +26,7 @@
  */
 import { defaultGuessRow } from "../core/game.js";
 import { hashString, mulberry32 } from "../core/daily.js";
+import { createClue } from "../core/clue.js";
 
 const EYE_SIDE = "daily";
 const VIEW_START = 1.6;
@@ -49,24 +53,19 @@ export default {
 
   setup(ctx) {
     ctx.els.clue.innerHTML = `<div class="frame regard-frame"><img alt="Œil mystère" draggable="false"></div>`;
-    const img = ctx.els.clue.querySelector("img");
-    img.src = ctx.answer.eyeImages[sideFor(ctx.dateStr, ctx.answer.id)];
-    img.addEventListener("contextmenu", (e) => e.preventDefault());
     ctx.regardFrame = ctx.els.clue.querySelector(".regard-frame");
-    ctx.regardImg = img;
+    ctx.regardClue = createClue(ctx.regardFrame, ctx.answer.eyeImages[sideFor(ctx.dateStr, ctx.answer.id)], { round: true });
   },
 
   update(ctx) {
-    const img = ctx.regardImg;
     if (ctx.state.won) {
       ctx.regardFrame.classList.add("revealed");
-      img.src = ctx.answer.portrait;
-      img.style.width = "";
+      ctx.regardClue.reveal(ctx.answer.portrait);
       return;
     }
-    // The image spans VIEW_END eye widths and is centred on the eye (CSS);
+    // The image spans VIEW_END eye widths and is centred on the eye;
     // showing `v` eye widths means the image is VIEW_END / v frames wide.
-    img.style.width = `${(100 * VIEW_END) / viewFor(ctx.state.guesses.length)}%`;
+    ctx.regardClue.set({ scale: VIEW_END / viewFor(ctx.state.guesses.length) });
   },
 
   renderGuess: (ctx, leader) => defaultGuessRow(leader, ctx.answer),

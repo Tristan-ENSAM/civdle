@@ -13,11 +13,14 @@
  * Tuning: BLUR_START (px) is the initial blur; the blur reaches 0 after
  * STEPS wrong guesses (linear). Arbitrary defaults, to adjust.
  *
- * Note: the effects are CSS filters/transforms, so a player can remove them
- * with the browser dev tools. A static site cannot prevent this.
+ * The clue is drawn on a canvas (js/core/clue.js), so the dev tools' inspector
+ * shows neither the sharp image nor a CSS filter to remove. The image file is
+ * still downloaded, so the Network panel gives it: a static site cannot
+ * prevent this.
  */
 import { defaultGuessRow } from "../core/game.js";
 import { hashString, mulberry32 } from "../core/daily.js";
+import { createClue } from "../core/clue.js";
 
 const BLUR_START = 24;
 const STEPS = 8;
@@ -55,9 +58,7 @@ export default {
     ctx.els.clue.innerHTML = `
       <label class="toggle"><input type="checkbox"> Mode challenger <span class="toggle-hint">(nuances de gris + rotation)</span></label>
       <div class="frame portrait-frame"><img alt="Portrait mystère" draggable="false"></div>`;
-    ctx.portraitImg = ctx.els.clue.querySelector("img");
-    ctx.portraitImg.src = ctx.answer.portrait;
-    ctx.portraitImg.addEventListener("contextmenu", (e) => e.preventDefault());
+    ctx.portraitClue = createClue(ctx.els.clue.querySelector(".frame"), ctx.answer.portrait, { round: true });
     ctx.portraitAngle = rotationFor(ctx.dateStr, ctx.answer.id);
     const box = ctx.els.clue.querySelector(".toggle input");
     box.checked = loadChallenge();
@@ -70,12 +71,17 @@ export default {
   },
 
   update(ctx) {
-    const won = ctx.state.won;
-    const hard = ctx.challenge && !won;
-    const filters = [`blur(${blurFor(ctx.state.guesses.length, won)}px)`];
-    if (hard) filters.push("grayscale(1)");
-    ctx.portraitImg.style.filter = filters.join(" ");
-    ctx.portraitImg.style.transform = `scale(1.08) rotate(${hard ? ctx.portraitAngle : 0}deg)`;
+    if (ctx.state.won) {
+      ctx.portraitClue.reveal(ctx.answer.portrait);
+      return;
+    }
+    const hard = ctx.challenge;
+    ctx.portraitClue.set({
+      blur: blurFor(ctx.state.guesses.length, false),
+      grey: hard,
+      scale: 1.08,
+      rotate: hard ? ctx.portraitAngle : 0,
+    });
   },
 
   renderGuess: (ctx, leader) => defaultGuessRow(leader, ctx.answer),

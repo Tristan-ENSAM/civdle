@@ -15,9 +15,15 @@
  *
  * Tuning: ZOOM_START is the initial magnification; the zoom reaches 1 after
  * STEPS wrong guesses (linear). Arbitrary defaults, to adjust.
+ *
+ * The clue is drawn on a canvas (js/core/clue.js): the inspector shows only
+ * the zoomed black view, not the whole image. The image file is still
+ * downloaded, so the Network panel gives it: a static site cannot prevent
+ * this.
  */
 import { defaultGuessRow } from "../core/game.js";
 import { hashString, mulberry32 } from "../core/daily.js";
+import { createClue } from "../core/clue.js";
 
 const ZOOM_START = 3.5;
 const STEPS = 12;
@@ -54,15 +60,19 @@ export default {
 
   setup(ctx) {
     ctx.els.clue.innerHTML = `<div class="frame silhouette-frame"><img alt="Silhouette mystère" draggable="false"></div>`;
-    const img = ctx.els.clue.querySelector("img");
-    img.src = ctx.answer.silhouette;
-    img.addEventListener("contextmenu", (e) => e.preventDefault());
+    ctx.silhouetteClue = createClue(ctx.els.clue.querySelector(".frame"), ctx.answer.silhouette, { black: true });
     ctx.silhouetteFocus = focusFor(ctx.answer, ctx.dateStr);
-    ctx.silhouetteImg = img;
   },
 
   update(ctx) {
-    const img = ctx.silhouetteImg;
+    // Once solved, show the figure the silhouette was made from, in colour
+    // (`leader.reveal`, same framing as the silhouette, written by
+    // tools/game/import_textures.py), falling back to the BBG portrait.
+    if (ctx.state.won) {
+      const img = ctx.silhouetteClue.reveal(ctx.answer.reveal || ctx.answer.portrait || ctx.answer.silhouette);
+      img?.classList.toggle("revealed", !!(ctx.answer.reveal || ctx.answer.portrait));
+      return;
+    }
     const z = zoomFor(ctx.state.guesses.length, ctx.state.won);
     // View centred on the focus point, clamped so the view never leaves the
     // image: the visible window is 100/z % wide, so its centre must stay in
@@ -70,14 +80,7 @@ export default {
     // at z = 1 the whole image is shown.
     const [fx, fy] = ctx.silhouetteFocus;
     const clamp = (v) => Math.min(100 - 50 / z, Math.max(50 / z, v));
-    img.style.transform = `scale(${z}) translate(${50 - clamp(fx)}%, ${50 - clamp(fy)}%)`;
-    // Once solved, show the figure the silhouette was made from, in colour
-    // (`leader.reveal`, same framing as the silhouette, written by
-    // tools/game/import_textures.py), falling back to the BBG portrait.
-    if (ctx.state.won && (ctx.answer.reveal || ctx.answer.portrait)) {
-      img.src = ctx.answer.reveal || ctx.answer.portrait;
-      img.classList.add("revealed");
-    }
+    ctx.silhouetteClue.set({ scale: z, tx: (50 - clamp(fx)) / 100, ty: (50 - clamp(fy)) / 100 });
   },
 
   renderGuess: (ctx, leader) => defaultGuessRow(leader, ctx.answer),

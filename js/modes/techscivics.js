@@ -16,10 +16,13 @@
  * wrong guesses (linear). Same defaults as the Portrait mode, arbitrary, to
  * adjust (the icons are 160 px, shown larger in the frame).
  *
- * Note: the blur is a CSS filter, so a player can remove it with the browser
- * dev tools. A static site cannot prevent this.
+ * The clue is drawn on a canvas (js/core/clue.js), so the dev tools' inspector
+ * shows neither the sharp image nor a CSS filter to remove. The image file is
+ * still downloaded, so the Network panel gives it: a static site cannot
+ * prevent this.
  */
 import { defaultGuessRow } from "../core/game.js";
+import { createClue } from "../core/clue.js";
 
 const BLUR_START = 24;
 const STEPS = 8;
@@ -47,13 +50,13 @@ export default {
 
   setup(ctx) {
     ctx.els.clue.innerHTML = `<div class="frame techcivic-frame"><img alt="Icône mystère" draggable="false"></div>`;
-    ctx.tcImg = ctx.els.clue.querySelector("img");
-    ctx.tcImg.src = ctx.answer.icon;
-    ctx.tcImg.addEventListener("contextmenu", (e) => e.preventDefault());
+    // Padding as in css/style.css (keeps the blur inside the frame).
+    ctx.tcClue = createClue(ctx.els.clue.querySelector(".frame"), ctx.answer.icon, { padding: 0.14 });
   },
 
   update(ctx) {
-    ctx.tcImg.style.filter = `blur(${blurFor(ctx.state.guesses.length, ctx.state.won)}px)`;
+    if (ctx.state.won) ctx.tcClue.reveal(ctx.answer.icon);
+    else ctx.tcClue.set({ blur: blurFor(ctx.state.guesses.length, false) });
   },
 
   renderGuess: (ctx, item) => defaultGuessRow(item, ctx.answer),
