@@ -39,7 +39,7 @@ img/icons/              icônes des quartiers et types d'unités
 js/main.js              chargement, onglets, routage (#classic, #portrait…, #accueil)
 js/home.js              sommaire des modes (#accueil, lien sur le titre « Civdle »)
 js/modes/icons.js       icônes des modes pour le sommaire (SVG dessinées pour le site)
-js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage)
+js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage, réglages)
 js/modes/               un fichier par mode + index.js (registre)
 tools/bbg/               génération des données depuis BBG + sources.json
 tools/csv2json.py       conversion CSV -> leaders.json
