@@ -1,0 +1,1916 @@
+[
+  {
+    "id": "tech-pottery",
+    "name": "Poterie",
+    "aliases": [
+      "Pottery"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-pottery.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_POTTERY"
+    }
+  },
+  {
+    "id": "tech-animal-husbandry",
+    "name": "Élevage",
+    "aliases": [
+      "Animal Husbandry"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-animal-husbandry.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ANIMAL_HUSBANDRY"
+    }
+  },
+  {
+    "id": "tech-mining",
+    "name": "Exploitation minière",
+    "aliases": [
+      "Mining"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-mining.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MINING"
+    }
+  },
+  {
+    "id": "tech-sailing",
+    "name": "Navigation à voile",
+    "aliases": [
+      "Sailing"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-sailing.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SAILING"
+    }
+  },
+  {
+    "id": "tech-astrology",
+    "name": "Astrologie",
+    "aliases": [
+      "Astrology"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-astrology.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ASTROLOGY"
+    }
+  },
+  {
+    "id": "tech-irrigation",
+    "name": "Irrigation",
+    "aliases": [],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-irrigation.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_IRRIGATION"
+    }
+  },
+  {
+    "id": "tech-archery",
+    "name": "Tir à l'arc",
+    "aliases": [
+      "Archery"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-archery.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ARCHERY"
+    }
+  },
+  {
+    "id": "tech-writing",
+    "name": "Écriture",
+    "aliases": [
+      "Writing"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-writing.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_WRITING"
+    }
+  },
+  {
+    "id": "tech-masonry",
+    "name": "Maçonnerie",
+    "aliases": [
+      "Masonry"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-masonry.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MASONRY"
+    }
+  },
+  {
+    "id": "tech-bronze-working",
+    "name": "Travail du bronze",
+    "aliases": [
+      "Bronze Working"
+    ],
+    "kind": "tech",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/tech-bronze-working.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_BRONZE_WORKING"
+    }
+  },
+  {
+    "id": "tech-wheel",
+    "name": "Roue",
+    "aliases": [
+      "Wheel"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-wheel.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_THE_WHEEL"
+    }
+  },
+  {
+    "id": "tech-celestial-navigation",
+    "name": "Navigation astronomique",
+    "aliases": [
+      "Celestial Navigation"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-celestial-navigation.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_CELESTIAL_NAVIGATION"
+    }
+  },
+  {
+    "id": "tech-currency",
+    "name": "Monnaie",
+    "aliases": [
+      "Currency"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-currency.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_CURRENCY"
+    }
+  },
+  {
+    "id": "tech-horseback-riding",
+    "name": "Équitation",
+    "aliases": [
+      "Horseback Riding"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-horseback-riding.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_HORSEBACK_RIDING"
+    }
+  },
+  {
+    "id": "tech-iron-working",
+    "name": "Travail du fer",
+    "aliases": [
+      "Iron Working"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-iron-working.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_IRON_WORKING"
+    }
+  },
+  {
+    "id": "tech-shipbuilding",
+    "name": "Construction navale",
+    "aliases": [
+      "Shipbuilding"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-shipbuilding.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SHIPBUILDING"
+    }
+  },
+  {
+    "id": "tech-mathematics",
+    "name": "Mathématiques",
+    "aliases": [
+      "Mathematics"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-mathematics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MATHEMATICS"
+    }
+  },
+  {
+    "id": "tech-construction",
+    "name": "Construction",
+    "aliases": [],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-construction.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_CONSTRUCTION"
+    }
+  },
+  {
+    "id": "tech-engineering",
+    "name": "Ingénierie",
+    "aliases": [
+      "Engineering"
+    ],
+    "kind": "tech",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/tech-engineering.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ENGINEERING"
+    }
+  },
+  {
+    "id": "tech-military-tactics",
+    "name": "Tactique militaire",
+    "aliases": [
+      "Military Tactics"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-military-tactics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MILITARY_TACTICS"
+    }
+  },
+  {
+    "id": "tech-apprenticeship",
+    "name": "Apprentissage",
+    "aliases": [
+      "Apprenticeship"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-apprenticeship.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_APPRENTICESHIP"
+    }
+  },
+  {
+    "id": "tech-machinery",
+    "name": "Mécanique",
+    "aliases": [
+      "Machinery"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-machinery.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MACHINERY"
+    }
+  },
+  {
+    "id": "tech-buttress",
+    "name": "Contrefort",
+    "aliases": [
+      "Buttress"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-buttress.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_BUTTRESS"
+    }
+  },
+  {
+    "id": "tech-education",
+    "name": "Éducation",
+    "aliases": [
+      "Education"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-education.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_EDUCATION"
+    }
+  },
+  {
+    "id": "tech-stirrups",
+    "name": "Étriers",
+    "aliases": [
+      "Stirrups"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-stirrups.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_STIRRUPS"
+    }
+  },
+  {
+    "id": "tech-military-engineering",
+    "name": "Ingénierie militaire",
+    "aliases": [
+      "Military Engineering"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-military-engineering.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MILITARY_ENGINEERING"
+    }
+  },
+  {
+    "id": "tech-castles",
+    "name": "Châteaux",
+    "aliases": [
+      "Castles"
+    ],
+    "kind": "tech",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/tech-castles.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_CASTLES"
+    }
+  },
+  {
+    "id": "tech-cartography",
+    "name": "Cartographie",
+    "aliases": [
+      "Cartography"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-cartography.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_CARTOGRAPHY"
+    }
+  },
+  {
+    "id": "tech-mass-production",
+    "name": "Production en série",
+    "aliases": [
+      "Mass Production"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-mass-production.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MASS_PRODUCTION"
+    }
+  },
+  {
+    "id": "tech-banking",
+    "name": "Banque",
+    "aliases": [
+      "Banking"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-banking.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_BANKING"
+    }
+  },
+  {
+    "id": "tech-gunpowder",
+    "name": "Poudre à canon",
+    "aliases": [
+      "Gunpowder"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-gunpowder.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_GUNPOWDER"
+    }
+  },
+  {
+    "id": "tech-printing",
+    "name": "Imprimerie",
+    "aliases": [
+      "Printing"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-printing.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_PRINTING"
+    }
+  },
+  {
+    "id": "tech-square-rigging",
+    "name": "Voiles carrées",
+    "aliases": [
+      "Square Rigging"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-square-rigging.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SQUARE_RIGGING"
+    }
+  },
+  {
+    "id": "tech-astronomy",
+    "name": "Astronomie",
+    "aliases": [
+      "Astronomy"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-astronomy.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ASTRONOMY"
+    }
+  },
+  {
+    "id": "tech-metal-casting",
+    "name": "Fonte des métaux",
+    "aliases": [
+      "Metal Casting"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-metal-casting.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_METAL_CASTING"
+    }
+  },
+  {
+    "id": "tech-siege-tactics",
+    "name": "Tactiques obsidionales",
+    "aliases": [
+      "Siege Tactics"
+    ],
+    "kind": "tech",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/tech-siege-tactics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SIEGE_TACTICS"
+    }
+  },
+  {
+    "id": "tech-industrialization",
+    "name": "Industrialisation",
+    "aliases": [
+      "Industrialization"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-industrialization.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_INDUSTRIALIZATION"
+    }
+  },
+  {
+    "id": "tech-scientific-theory",
+    "name": "Théorie scientifique",
+    "aliases": [
+      "Scientific Theory"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-scientific-theory.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SCIENTIFIC_THEORY"
+    }
+  },
+  {
+    "id": "tech-ballistics",
+    "name": "Balistique",
+    "aliases": [
+      "Ballistics"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-ballistics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_BALLISTICS"
+    }
+  },
+  {
+    "id": "tech-military-science",
+    "name": "Science militaire",
+    "aliases": [
+      "Military Science"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-military-science.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_MILITARY_SCIENCE"
+    }
+  },
+  {
+    "id": "tech-steam-power",
+    "name": "Moteur à vapeur",
+    "aliases": [
+      "Steam Power"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-steam-power.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_STEAM_POWER"
+    }
+  },
+  {
+    "id": "tech-sanitation",
+    "name": "Assainissement",
+    "aliases": [
+      "Sanitation"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-sanitation.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SANITATION"
+    }
+  },
+  {
+    "id": "tech-economics",
+    "name": "Sciences économiques",
+    "aliases": [
+      "Economics"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-economics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ECONOMICS"
+    }
+  },
+  {
+    "id": "tech-rifling",
+    "name": "Rainurage",
+    "aliases": [
+      "Rifling"
+    ],
+    "kind": "tech",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/tech-rifling.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_RIFLING"
+    }
+  },
+  {
+    "id": "tech-flight",
+    "name": "Aviation",
+    "aliases": [
+      "Flight"
+    ],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-flight.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_FLIGHT"
+    }
+  },
+  {
+    "id": "tech-replaceable-parts",
+    "name": "Pièces de rechange",
+    "aliases": [
+      "Replaceable Parts"
+    ],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-replaceable-parts.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_REPLACEABLE_PARTS"
+    }
+  },
+  {
+    "id": "tech-steel",
+    "name": "Acier",
+    "aliases": [
+      "Steel"
+    ],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-steel.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_STEEL"
+    }
+  },
+  {
+    "id": "tech-refining",
+    "name": "Raffinage",
+    "aliases": [
+      "Refining"
+    ],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-refining.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_REFINING"
+    }
+  },
+  {
+    "id": "tech-electricity",
+    "name": "Électricité",
+    "aliases": [
+      "Electricity"
+    ],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-electricity.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ELECTRICITY"
+    }
+  },
+  {
+    "id": "tech-radio",
+    "name": "Radio",
+    "aliases": [],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-radio.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_RADIO"
+    }
+  },
+  {
+    "id": "tech-chemistry",
+    "name": "Chimie",
+    "aliases": [
+      "Chemistry"
+    ],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-chemistry.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_CHEMISTRY"
+    }
+  },
+  {
+    "id": "tech-combustion",
+    "name": "Combustion",
+    "aliases": [],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-combustion.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_COMBUSTION"
+    }
+  },
+  {
+    "id": "tech-advanced-ballistics",
+    "name": "Balistique avancée",
+    "aliases": [
+      "Advanced Ballistics"
+    ],
+    "kind": "tech",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/tech-advanced-ballistics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ADVANCED_BALLISTICS"
+    }
+  },
+  {
+    "id": "tech-advanced-flight",
+    "name": "Vol avancé",
+    "aliases": [
+      "Advanced Flight"
+    ],
+    "kind": "tech",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/tech-advanced-flight.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ADVANCED_FLIGHT"
+    }
+  },
+  {
+    "id": "tech-rocketry",
+    "name": "Fusées",
+    "aliases": [
+      "Rocketry"
+    ],
+    "kind": "tech",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/tech-rocketry.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ROCKETRY"
+    }
+  },
+  {
+    "id": "tech-combined-arms",
+    "name": "Corps interarmées",
+    "aliases": [
+      "Combined Arms"
+    ],
+    "kind": "tech",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/tech-combined-arms.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_COMBINED_ARMS"
+    }
+  },
+  {
+    "id": "tech-plastics",
+    "name": "Matières plastiques",
+    "aliases": [
+      "Plastics"
+    ],
+    "kind": "tech",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/tech-plastics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_PLASTICS"
+    }
+  },
+  {
+    "id": "tech-computers",
+    "name": "Informatique",
+    "aliases": [
+      "Computers"
+    ],
+    "kind": "tech",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/tech-computers.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_COMPUTERS"
+    }
+  },
+  {
+    "id": "tech-nuclear-fission",
+    "name": "Fission nucléaire",
+    "aliases": [
+      "Nuclear Fission"
+    ],
+    "kind": "tech",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/tech-nuclear-fission.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_NUCLEAR_FISSION"
+    }
+  },
+  {
+    "id": "tech-synthetic-materials",
+    "name": "Matériaux synthétiques",
+    "aliases": [
+      "Synthetic Materials"
+    ],
+    "kind": "tech",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/tech-synthetic-materials.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SYNTHETIC_MATERIALS"
+    }
+  },
+  {
+    "id": "tech-telecommunications",
+    "name": "Télécommunications",
+    "aliases": [
+      "Telecommunications"
+    ],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-telecommunications.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_TELECOMMUNICATIONS"
+    }
+  },
+  {
+    "id": "tech-satellites",
+    "name": "Satellites",
+    "aliases": [],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-satellites.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SATELLITES"
+    }
+  },
+  {
+    "id": "tech-guidance-systems",
+    "name": "Systèmes de guidage",
+    "aliases": [
+      "Guidance Systems"
+    ],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-guidance-systems.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_GUIDANCE_SYSTEMS"
+    }
+  },
+  {
+    "id": "tech-lasers",
+    "name": "Lasers",
+    "aliases": [],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-lasers.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_LASERS"
+    }
+  },
+  {
+    "id": "tech-composites",
+    "name": "Matériaux composites",
+    "aliases": [
+      "Composites"
+    ],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-composites.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_COMPOSITES"
+    }
+  },
+  {
+    "id": "tech-stealth-technology",
+    "name": "Furtivité",
+    "aliases": [
+      "Stealth Technology"
+    ],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-stealth-technology.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_STEALTH_TECHNOLOGY"
+    }
+  },
+  {
+    "id": "tech-robotics",
+    "name": "Robotique",
+    "aliases": [
+      "Robotics"
+    ],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-robotics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ROBOTICS"
+    }
+  },
+  {
+    "id": "tech-nanotechnology",
+    "name": "Nanotechnologie",
+    "aliases": [
+      "Nanotechnology"
+    ],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-nanotechnology.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_NANOTECHNOLOGY"
+    }
+  },
+  {
+    "id": "tech-nuclear-fusion",
+    "name": "Fusion nucléaire",
+    "aliases": [
+      "Nuclear Fusion"
+    ],
+    "kind": "tech",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/tech-nuclear-fusion.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_NUCLEAR_FUSION"
+    }
+  },
+  {
+    "id": "tech-seasteads",
+    "name": "Villes flottantes",
+    "aliases": [
+      "Seasteads"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-seasteads.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SEASTEADS"
+    }
+  },
+  {
+    "id": "tech-advanced-ai",
+    "name": "IA avancée",
+    "aliases": [
+      "Advanced AI"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-advanced-ai.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ADVANCED_AI"
+    }
+  },
+  {
+    "id": "tech-advanced-power-cells",
+    "name": "Batteries avancées",
+    "aliases": [
+      "Advanced Power Cells"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-advanced-power-cells.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_ADVANCED_POWER_CELLS"
+    }
+  },
+  {
+    "id": "tech-cybernetics",
+    "name": "Cybernétique",
+    "aliases": [
+      "Cybernetics"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-cybernetics.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_CYBERNETICS"
+    }
+  },
+  {
+    "id": "tech-smart-materials",
+    "name": "Matériaux intelligents",
+    "aliases": [
+      "Smart Materials"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-smart-materials.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_SMART_MATERIALS"
+    }
+  },
+  {
+    "id": "tech-predictive-systems",
+    "name": "Systèmes prédictifs",
+    "aliases": [
+      "Predictive Systems"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-predictive-systems.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_PREDICTIVE_SYSTEMS"
+    }
+  },
+  {
+    "id": "tech-offworld-mission",
+    "name": "Mission extraterrestre",
+    "aliases": [
+      "Offworld Mission"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-offworld-mission.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_OFFWORLD_MISSION"
+    }
+  },
+  {
+    "id": "tech-future-tech",
+    "name": "Technologie future",
+    "aliases": [
+      "Future Tech"
+    ],
+    "kind": "tech",
+    "era": "Ère future",
+    "icon": "img/techs-civics/tech-future-tech.webp",
+    "source": {
+      "bbg": "tech_tree_7.5.html",
+      "locKey": "LOC_TECH_FUTURE_TECH"
+    }
+  },
+  {
+    "id": "civic-code-of-laws",
+    "name": "Code juridique",
+    "aliases": [
+      "Code of Laws"
+    ],
+    "kind": "civic",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/civic-code-of-laws.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CODE_OF_LAWS"
+    }
+  },
+  {
+    "id": "civic-craftsmanship",
+    "name": "Artisanat",
+    "aliases": [
+      "Craftsmanship"
+    ],
+    "kind": "civic",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/civic-craftsmanship.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CRAFTSMANSHIP"
+    }
+  },
+  {
+    "id": "civic-foreign-trade",
+    "name": "Commerce avec l'étranger",
+    "aliases": [
+      "Foreign Trade"
+    ],
+    "kind": "civic",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/civic-foreign-trade.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_FOREIGN_TRADE"
+    }
+  },
+  {
+    "id": "civic-military-tradition",
+    "name": "Tradition militaire",
+    "aliases": [
+      "Military Tradition"
+    ],
+    "kind": "civic",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/civic-military-tradition.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MILITARY_TRADITION"
+    }
+  },
+  {
+    "id": "civic-mysticism",
+    "name": "Mysticisme",
+    "aliases": [
+      "Mysticism"
+    ],
+    "kind": "civic",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/civic-mysticism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MYSTICISM"
+    }
+  },
+  {
+    "id": "civic-state-workforce",
+    "name": "Main-d'œuvre nationale",
+    "aliases": [
+      "State Workforce"
+    ],
+    "kind": "civic",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/civic-state-workforce.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_STATE_WORKFORCE"
+    }
+  },
+  {
+    "id": "civic-early-empire",
+    "name": "Premier Empire",
+    "aliases": [
+      "Early Empire"
+    ],
+    "kind": "civic",
+    "era": "Ère antique",
+    "icon": "img/techs-civics/civic-early-empire.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_EARLY_EMPIRE"
+    }
+  },
+  {
+    "id": "civic-games-and-recreation",
+    "name": "Loisirs",
+    "aliases": [
+      "Games and Recreation"
+    ],
+    "kind": "civic",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/civic-games-and-recreation.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_GAMES_RECREATION"
+    }
+  },
+  {
+    "id": "civic-political-philosophy",
+    "name": "Philosophie politique",
+    "aliases": [
+      "Political Philosophy"
+    ],
+    "kind": "civic",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/civic-political-philosophy.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_POLITICAL_PHILOSOPHY"
+    }
+  },
+  {
+    "id": "civic-drama-and-poetry",
+    "name": "Dramaturgie et poésie",
+    "aliases": [
+      "Drama and Poetry"
+    ],
+    "kind": "civic",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/civic-drama-and-poetry.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_DRAMA_POETRY"
+    }
+  },
+  {
+    "id": "civic-military-training",
+    "name": "Formation militaire",
+    "aliases": [
+      "Military Training"
+    ],
+    "kind": "civic",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/civic-military-training.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MILITARY_TRAINING"
+    }
+  },
+  {
+    "id": "civic-theology",
+    "name": "Théologie",
+    "aliases": [
+      "Theology"
+    ],
+    "kind": "civic",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/civic-theology.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_THEOLOGY"
+    }
+  },
+  {
+    "id": "civic-defensive-tactics",
+    "name": "Stratégie défensive",
+    "aliases": [
+      "Defensive Tactics"
+    ],
+    "kind": "civic",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/civic-defensive-tactics.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_DEFENSIVE_TACTICS"
+    }
+  },
+  {
+    "id": "civic-recorded-history",
+    "name": "Histoire écrite",
+    "aliases": [
+      "Recorded History"
+    ],
+    "kind": "civic",
+    "era": "Ère classique",
+    "icon": "img/techs-civics/civic-recorded-history.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_RECORDED_HISTORY"
+    }
+  },
+  {
+    "id": "civic-naval-tradition",
+    "name": "Tradition navale",
+    "aliases": [
+      "Naval Tradition"
+    ],
+    "kind": "civic",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/civic-naval-tradition.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_NAVAL_TRADITION"
+    }
+  },
+  {
+    "id": "civic-feudalism",
+    "name": "Féodalité",
+    "aliases": [
+      "Feudalism"
+    ],
+    "kind": "civic",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/civic-feudalism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_FEUDALISM"
+    }
+  },
+  {
+    "id": "civic-civil-service",
+    "name": "Fonction publique",
+    "aliases": [
+      "Civil Service"
+    ],
+    "kind": "civic",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/civic-civil-service.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CIVIL_SERVICE"
+    }
+  },
+  {
+    "id": "civic-mercenaries",
+    "name": "Mercenaires",
+    "aliases": [
+      "Mercenaries"
+    ],
+    "kind": "civic",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/civic-mercenaries.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MERCENARIES"
+    }
+  },
+  {
+    "id": "civic-divine-right",
+    "name": "Droit divin",
+    "aliases": [
+      "Divine Right"
+    ],
+    "kind": "civic",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/civic-divine-right.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_DIVINE_RIGHT"
+    }
+  },
+  {
+    "id": "civic-medieval-faires",
+    "name": "Foires médiévales",
+    "aliases": [
+      "Medieval Faires"
+    ],
+    "kind": "civic",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/civic-medieval-faires.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MEDIEVAL_FAIRES"
+    }
+  },
+  {
+    "id": "civic-guilds",
+    "name": "Guildes",
+    "aliases": [
+      "Guilds"
+    ],
+    "kind": "civic",
+    "era": "Ère médiévale",
+    "icon": "img/techs-civics/civic-guilds.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_GUILDS"
+    }
+  },
+  {
+    "id": "civic-exploration",
+    "name": "Exploration",
+    "aliases": [],
+    "kind": "civic",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/civic-exploration.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_EXPLORATION"
+    }
+  },
+  {
+    "id": "civic-reformed-church",
+    "name": "Église réformée",
+    "aliases": [
+      "Reformed Church"
+    ],
+    "kind": "civic",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/civic-reformed-church.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_REFORMED_CHURCH"
+    }
+  },
+  {
+    "id": "civic-humanism",
+    "name": "Humanisme",
+    "aliases": [
+      "Humanism"
+    ],
+    "kind": "civic",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/civic-humanism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_HUMANISM"
+    }
+  },
+  {
+    "id": "civic-diplomatic-service",
+    "name": "Service diplomatique",
+    "aliases": [
+      "Diplomatic Service"
+    ],
+    "kind": "civic",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/civic-diplomatic-service.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_DIPLOMATIC_SERVICE"
+    }
+  },
+  {
+    "id": "civic-mercantilism",
+    "name": "Mercantilisme",
+    "aliases": [
+      "Mercantilism"
+    ],
+    "kind": "civic",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/civic-mercantilism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MERCANTILISM"
+    }
+  },
+  {
+    "id": "civic-the-enlightenment",
+    "name": "Lumières",
+    "aliases": [
+      "The Enlightenment"
+    ],
+    "kind": "civic",
+    "era": "Ère de la Renaissance",
+    "icon": "img/techs-civics/civic-the-enlightenment.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_THE_ENLIGHTENMENT"
+    }
+  },
+  {
+    "id": "civic-colonialism",
+    "name": "Colonialisme",
+    "aliases": [
+      "Colonialism"
+    ],
+    "kind": "civic",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/civic-colonialism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_COLONIALISM"
+    }
+  },
+  {
+    "id": "civic-opera-and-ballet",
+    "name": "Opéra et ballet",
+    "aliases": [
+      "Opera and Ballet"
+    ],
+    "kind": "civic",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/civic-opera-and-ballet.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_OPERA_BALLET"
+    }
+  },
+  {
+    "id": "civic-civil-engineering",
+    "name": "Génie civil",
+    "aliases": [
+      "Civil Engineering"
+    ],
+    "kind": "civic",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/civic-civil-engineering.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CIVIL_ENGINEERING"
+    }
+  },
+  {
+    "id": "civic-nationalism",
+    "name": "Nationalisme",
+    "aliases": [
+      "Nationalism"
+    ],
+    "kind": "civic",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/civic-nationalism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_NATIONALISM"
+    }
+  },
+  {
+    "id": "civic-natural-history",
+    "name": "Histoire naturelle",
+    "aliases": [
+      "Natural History"
+    ],
+    "kind": "civic",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/civic-natural-history.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_NATURAL_HISTORY"
+    }
+  },
+  {
+    "id": "civic-scorched-earth",
+    "name": "Terre brûlée",
+    "aliases": [
+      "Scorched Earth"
+    ],
+    "kind": "civic",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/civic-scorched-earth.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_SCORCHED_EARTH"
+    }
+  },
+  {
+    "id": "civic-urbanization",
+    "name": "Urbanisation",
+    "aliases": [
+      "Urbanization"
+    ],
+    "kind": "civic",
+    "era": "Ère industrielle",
+    "icon": "img/techs-civics/civic-urbanization.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_URBANIZATION"
+    }
+  },
+  {
+    "id": "civic-conservation",
+    "name": "Conservation",
+    "aliases": [],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-conservation.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CONSERVATION"
+    }
+  },
+  {
+    "id": "civic-mass-media",
+    "name": "Mass-médias",
+    "aliases": [
+      "Mass Media"
+    ],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-mass-media.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MASS_MEDIA"
+    }
+  },
+  {
+    "id": "civic-mobilization",
+    "name": "Mobilisation",
+    "aliases": [
+      "Mobilization"
+    ],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-mobilization.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_MOBILIZATION"
+    }
+  },
+  {
+    "id": "civic-capitalism",
+    "name": "Capitalisme",
+    "aliases": [
+      "Capitalism"
+    ],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-capitalism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CAPITALISM"
+    }
+  },
+  {
+    "id": "civic-ideology",
+    "name": "Idéologie",
+    "aliases": [
+      "Ideology"
+    ],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-ideology.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_IDEOLOGY"
+    }
+  },
+  {
+    "id": "civic-suffrage",
+    "name": "Suffrage",
+    "aliases": [],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-suffrage.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_SUFFRAGE"
+    }
+  },
+  {
+    "id": "civic-totalitarianism",
+    "name": "Totalitarisme",
+    "aliases": [
+      "Totalitarianism"
+    ],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-totalitarianism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_TOTALITARIANISM"
+    }
+  },
+  {
+    "id": "civic-class-struggle",
+    "name": "Lutte des classes",
+    "aliases": [
+      "Class Struggle"
+    ],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-class-struggle.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CLASS_STRUGGLE"
+    }
+  },
+  {
+    "id": "civic-nuclear-program",
+    "name": "Programme nucléaire",
+    "aliases": [
+      "Nuclear Program"
+    ],
+    "kind": "civic",
+    "era": "Ère moderne",
+    "icon": "img/techs-civics/civic-nuclear-program.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_NUCLEAR_PROGRAM"
+    }
+  },
+  {
+    "id": "civic-cultural-heritage",
+    "name": "Patrimoine culturel",
+    "aliases": [
+      "Cultural Heritage"
+    ],
+    "kind": "civic",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/civic-cultural-heritage.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CULTURAL_HERITAGE"
+    }
+  },
+  {
+    "id": "civic-cold-war",
+    "name": "Guerre froide",
+    "aliases": [
+      "Cold War"
+    ],
+    "kind": "civic",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/civic-cold-war.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_COLD_WAR"
+    }
+  },
+  {
+    "id": "civic-professional-sports",
+    "name": "Sport professionnel",
+    "aliases": [
+      "Professional Sports"
+    ],
+    "kind": "civic",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/civic-professional-sports.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_PROFESSIONAL_SPORTS"
+    }
+  },
+  {
+    "id": "civic-rapid-deployment",
+    "name": "Déploiement rapide",
+    "aliases": [
+      "Rapid Deployment"
+    ],
+    "kind": "civic",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/civic-rapid-deployment.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_RAPID_DEPLOYMENT"
+    }
+  },
+  {
+    "id": "civic-space-race",
+    "name": "Course à l'espace",
+    "aliases": [
+      "Space Race"
+    ],
+    "kind": "civic",
+    "era": "Ère atomique",
+    "icon": "img/techs-civics/civic-space-race.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_SPACE_RACE"
+    }
+  },
+  {
+    "id": "civic-globalization",
+    "name": "Mondialisation",
+    "aliases": [
+      "Globalization"
+    ],
+    "kind": "civic",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/civic-globalization.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_GLOBALIZATION"
+    }
+  },
+  {
+    "id": "civic-social-media",
+    "name": "Réseaux sociaux",
+    "aliases": [
+      "Social Media"
+    ],
+    "kind": "civic",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/civic-social-media.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_SOCIAL_MEDIA"
+    }
+  },
+  {
+    "id": "civic-environmentalism",
+    "name": "Écologisme",
+    "aliases": [
+      "Environmentalism"
+    ],
+    "kind": "civic",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/civic-environmentalism.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_ENVIRONMENTALISM"
+    }
+  },
+  {
+    "id": "civic-venture-politics",
+    "name": "Politique à risque",
+    "aliases": [
+      "Venture Politics"
+    ],
+    "kind": "civic",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/civic-venture-politics.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CORPORATE_LIBERTARIANISM"
+    }
+  },
+  {
+    "id": "civic-distributed-sovereignty",
+    "name": "Souveraineté décentralisée",
+    "aliases": [
+      "Distributed Sovereignty"
+    ],
+    "kind": "civic",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/civic-distributed-sovereignty.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_DIGITAL_DEMOCRACY"
+    }
+  },
+  {
+    "id": "civic-optimization-imperative",
+    "name": "Impératif d'optimisation",
+    "aliases": [
+      "Optimization Imperative"
+    ],
+    "kind": "civic",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/civic-optimization-imperative.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_SYNTHETIC_TECHNOCRACY"
+    }
+  },
+  {
+    "id": "civic-near-future-governance",
+    "name": "Gouvernance néo-moderne",
+    "aliases": [
+      "Near Future Governance"
+    ],
+    "kind": "civic",
+    "era": "Ère de l'information",
+    "icon": "img/techs-civics/civic-near-future-governance.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_NEAR_FUTURE_GOVERNANCE"
+    }
+  },
+  {
+    "id": "civic-global-warming-mitigation",
+    "name": "Baisse du réchauffement",
+    "aliases": [
+      "Global Warming Mitigation"
+    ],
+    "kind": "civic",
+    "era": "Ère future",
+    "icon": "img/techs-civics/civic-global-warming-mitigation.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_GLOBAL_WARMING_MITIGATION"
+    }
+  },
+  {
+    "id": "civic-smart-power-doctrine",
+    "name": "Smart power",
+    "aliases": [
+      "Smart Power Doctrine"
+    ],
+    "kind": "civic",
+    "era": "Ère future",
+    "icon": "img/techs-civics/civic-smart-power-doctrine.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_SMART_POWER_DOCTRINE"
+    }
+  },
+  {
+    "id": "civic-information-warfare",
+    "name": "Guerre de l'information",
+    "aliases": [
+      "Information Warfare"
+    ],
+    "kind": "civic",
+    "era": "Ère future",
+    "icon": "img/techs-civics/civic-information-warfare.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_INFORMATION_WARFARE"
+    }
+  },
+  {
+    "id": "civic-exodus-imperative",
+    "name": "Impératif d'exode",
+    "aliases": [
+      "Exodus Imperative"
+    ],
+    "kind": "civic",
+    "era": "Ère future",
+    "icon": "img/techs-civics/civic-exodus-imperative.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_EXODUS_IMPERATIVE"
+    }
+  },
+  {
+    "id": "civic-cultural-hegemony",
+    "name": "Hégémonie culturelle",
+    "aliases": [
+      "Cultural Hegemony"
+    ],
+    "kind": "civic",
+    "era": "Ère future",
+    "icon": "img/techs-civics/civic-cultural-hegemony.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_CULTURAL_HEGEMONY"
+    }
+  },
+  {
+    "id": "civic-future-civic",
+    "name": "Dogme futur",
+    "aliases": [
+      "Future Civic"
+    ],
+    "kind": "civic",
+    "era": "Ère future",
+    "icon": "img/techs-civics/civic-future-civic.webp",
+    "source": {
+      "bbg": "civic_tree_7.5.html",
+      "locKey": "LOC_CIVIC_FUTURE_CIVIC"
+    }
+  }
+]

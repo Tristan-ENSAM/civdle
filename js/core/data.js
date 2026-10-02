@@ -61,39 +61,53 @@ export function validateLeaders(leaders, config) {
 }
 
 /**
- * Load config, catalogs, leaders and the other answer pools from the data
- * folder.
+ * Answer pools other than the leaders: pool name (value of `mode.pool`) ->
+ * file in the data folder and label used in console warnings. Each file is a
+ * list of records with at least `id` and `name` (`aliases` optional). These
+ * files are optional: if one is missing, its pool is empty and the mode
+ * shows a notice.
+ */
+const EXTRA_POOLS = {
+  cityStates: { file: "city_states.json", label: "Cité-État" },     // tools/bbg/build_city_states.py
+  techsCivics: { file: "techs_civics.json", label: "Tech/dogme" },  // tools/bbg/build_techs_civics.py
+};
+
+/**
+ * Load config, catalogs, leaders and the other answer pools (EXTRA_POOLS)
+ * from the data folder.
  *
  * `catalogs.json` maps catalog name -> { id: { label, icon } } and is exposed
  * as `config.catalogs`. It is optional: if the file is missing, attributes
  * are displayed as plain text.
  *
- * `city_states.json` (mode "Cités-État", written by
- * tools/bbg/build_city_states.py) is optional too: if it is missing, the pool
- * is empty and the mode shows a notice.
- *
- * @returns {Promise<{config: object, leaders: object[], cityStates: object[]}>}
+ * @returns {Promise<object>} `{ config, leaders, <pool name>: object[], ... }`
  */
 export async function loadData(base = "data") {
   const optional = (url, fallback) =>
     fetchJson(url).catch((e) => { console.warn("[données]", e.message); return fallback; });
-  const [config, leaders, catalogs, cityStates] = await Promise.all([
+  const poolNames = Object.keys(EXTRA_POOLS);
+  const [config, leaders, catalogs, ...pools] = await Promise.all([
     fetchJson(`${base}/config.json`),
     fetchJson(`${base}/leaders.json`),
     optional(`${base}/catalogs.json`, {}),
-    optional(`${base}/city_states.json`, []),
+    ...poolNames.map((n) => optional(`${base}/${EXTRA_POOLS[n].file}`, [])),
   ]);
   config.catalogs = catalogs;
-  for (const item of [...leaders, ...cityStates]) {
+  const warnings = validateLeaders(leaders, config);
+  const out = { config, leaders };
+  poolNames.forEach((n, i) => {
+    out[n] = pools[i];
+    const ids = new Set();
+    for (const r of pools[i]) {
+      const what = EXTRA_POOLS[n].label;
+      if (!r.id || !r.name) warnings.push(`${what} sans "id" ou "name" : ${JSON.stringify(r).slice(0, 60)}`);
+      else if (ids.has(r.id)) warnings.push(`${what} : id en double : ${r.id}`);
+      ids.add(r.id);
+    }
+  });
+  for (const item of [...leaders, ...pools.flat()]) {
     item._search = [item.name, ...(item.aliases ?? [])].map(normalize);
   }
-  const warnings = validateLeaders(leaders, config);
-  const csIds = new Set();
-  for (const c of cityStates) {
-    if (!c.id || !c.name) warnings.push(`Cité-État sans "id" ou "name" : ${JSON.stringify(c).slice(0, 60)}`);
-    else if (csIds.has(c.id)) warnings.push(`Cité-État : id en double : ${c.id}`);
-    csIds.add(c.id);
-  }
   warnings.forEach((w) => console.warn("[données]", w));
-  return { config, leaders, cityStates };
+  return out;
 }

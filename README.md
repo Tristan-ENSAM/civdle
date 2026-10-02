@@ -29,6 +29,8 @@ data/leaders.json       88 leaders (généré, voir « Données »)
 data/catalogs.json      catalogues identifiant -> libellé + icône (quartiers, types d'unités)
 data/city_states.json   48 cités-États du mode Cités-État (généré, voir « Cités-État »)
 img/city-states/        emblèmes des cités-États : couleur (<id>.webp) et gris (<id>-grey.webp)
+data/techs_civics.json  77 technologies + 61 dogmes du mode Technologies & Dogmes (généré)
+img/techs-civics/       icônes des technologies et dogmes
 img/portraits/          portraits (générés depuis le site BBG)
 img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
@@ -147,6 +149,25 @@ python tools/bbg/build_city_states.py bbg 7.5
 | `icon` | `images/city_states/*.webp` du site BBG, copiée telle quelle |
 | `iconGrey` | calculée : sur les icônes BBG, fond uniforme (24, 24, 24) et une seule couleur de glyphe, qui correspond au type (vérifié sur les 48 icônes de la 7.5 ; le script s'arrête si une icône ne suit pas ce schéma). Une simple conversion en niveaux de gris laisserait deviner le type (glyphe rouge → gris foncé, blanc → blanc) ; chaque pixel est donc projeté sur l'axe fond → couleur du glyphe et redessiné dans un gris unique (`GREY = 190`, arbitraire), anticrénelage conservé |
 
+### Technologies & Dogmes
+
+`data/techs_civics.json` et `img/techs-civics/` sont **générés** par `tools/bbg/build_techs_civics.py` :
+
+```
+git -C bbg sparse-checkout add '/fr_FR/tech_tree_7.5.html' '/en_US/tech_tree_7.5.html' '/fr_FR/civic_tree_7.5.html' '/en_US/civic_tree_7.5.html' '/images/techs/' '/images/civic/'
+python tools/bbg/build_techs_civics.py bbg 7.5
+```
+
+| Champ | Source |
+|---|---|
+| `name`, `era` | `fr_FR/tech_tree_7.5.html` et `fr_FR/civic_tree_7.5.html` (nom affiché, rubrique d'ère) |
+| `aliases` | nom anglais des pages `en_US` s'il diffère |
+| `kind` | `"tech"` ou `"civic"` selon la page |
+| `id` | `tech-` / `civic-` + nom du fichier d'icône BBG, ex. `tech-bronze-working` |
+| `icon` | `images/techs/*.webp`, `images/civic/*.webp` du site BBG (160 px, fond transparent), copiées telles quelles |
+
+Le script s'arrête si un nom français apparaît deux fois (la saisie se fait sur les noms) : ce n'est pas le cas en 7.5.
+
 ## Fonctionnement du tirage quotidien
 
 Pour chaque mode, les `id` éligibles sont triés puis mélangés par un générateur pseudo-aléatoire initialisé avec `salt` + id du mode. Le jour N (compté depuis `epoch` dans `timezone`) prend l'élément `N mod nombre_de_leaders`.
@@ -181,7 +202,7 @@ export default {
 
 2. L'ajouter dans `js/modes/index.js` (l'ordre du tableau = ordre des onglets).
 
-Pour un mode dont la réponse n'est pas un leader, ajouter `pool: "cityStates"` (clé renvoyée par `loadData` dans `js/core/data.js`), `texts` (libellés : `none`, `placeholder`, `label`, `next`, `yesterday`, voir `TEXTS` dans `js/core/game.js`) et, si les vignettes trahissent la réponse, `suggestionImages: false`. Les autres modes ne sont pas affectés : chaque mode a sa propre séquence.
+Pour un mode dont la réponse n'est pas un leader, ajouter `pool: "cityStates"` (nom d'un pool déclaré dans `EXTRA_POOLS` de `js/core/data.js`, avec son fichier JSON), `texts` (libellés : `none`, `placeholder`, `label`, `next`, `yesterday`, voir `TEXTS` dans `js/core/game.js`) et, si les vignettes trahissent la réponse, `suggestionImages: false`. Les autres modes ne sont pas affectés : chaque mode a sa propre séquence.
 
 Le moteur (`js/core/game.js`) gère le reste : leader du jour, saisie, historique, détection de victoire, sauvegarde, panneau de fin, compte à rebours, leader de la veille.
 
@@ -195,6 +216,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - `css/style.css` : apparition des cases du mode Classique, 350 ms entre deux cases (`--reveal-step`), 550 ms par case.
 - `js/modes/regard.js` : `EYE_SIDE = "daily"` (œil droit ou gauche tiré chaque jour ; `"right"`/`"left"` pour le fixer), cadre rond, diamètre visible de `VIEW_START = 1.6` à `VIEW_END = 3` fois la largeur de l'œil en `STEPS = 10` essais. `VIEW_END` doit être identique dans `tools/bbg/make_eye_images.py` (l'image contient exactement cette vue) ; au-delà de ~3, l'autre œil entre dans le cadre. Source : portraits BBG de 256 px, où un œil mesure environ 15 à 25 px.
 - `js/modes/citystates.js` : aucun indice supplémentaire après un essai raté. Case « Mode challenger » cochée par défaut (état mémorisé dans le navigateur) : emblème en gris uniforme (`iconGrey`), couleurs affichées à la victoire. Suggestions de saisie sans icône (sinon la liste permettrait de comparer les formes).
+- `js/modes/techscivics.js` : `BLUR_START = 24` (px), `STEPS = 8` (mêmes valeurs que Portrait) ; réponse tirée parmi les technologies et les dogmes réunis. Suggestions de saisie sans icône.
 - `js/modes/silhouette.js` : `ZOOM_START = 3.5`, `STEPS = 12` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues
