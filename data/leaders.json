@@ -53,6 +53,10 @@
         8.51
       ],
       "angle": -3.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/america-abraham-lincoln-right.webp",
+      "left": "img/eyes/america-abraham-lincoln-left.webp"
     }
   },
   {
@@ -114,6 +118,10 @@
         8.72
       ],
       "angle": -7.6
+    },
+    "eyeImages": {
+      "right": "img/eyes/america-teddy-roosevelt-bull-moose-right.webp",
+      "left": "img/eyes/america-teddy-roosevelt-bull-moose-left.webp"
     }
   },
   {
@@ -178,6 +186,10 @@
         8.66
       ],
       "angle": -8.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/america-teddy-roosevelt-rough-rider-right.webp",
+      "left": "img/eyes/america-teddy-roosevelt-rough-rider-left.webp"
     }
   },
   {
@@ -237,6 +249,10 @@
         8.96
       ],
       "angle": -19.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/arabia-saladin-vizier-right.webp",
+      "left": "img/eyes/arabia-saladin-vizier-left.webp"
     }
   },
   {
@@ -296,6 +312,10 @@
         9.0
       ],
       "angle": 7.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/arabia-saladin-sultan-right.webp",
+      "left": "img/eyes/arabia-saladin-sultan-left.webp"
     }
   },
   {
@@ -352,6 +372,10 @@
         9.32
       ],
       "angle": -9.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/australia-john-curtin-right.webp",
+      "left": "img/eyes/australia-john-curtin-left.webp"
     }
   },
   {
@@ -410,6 +434,10 @@
         8.32
       ],
       "angle": -1.3
+    },
+    "eyeImages": {
+      "right": "img/eyes/aztec-montezuma-right.webp",
+      "left": "img/eyes/aztec-montezuma-left.webp"
     }
   },
   {
@@ -465,6 +493,10 @@
         6.86
       ],
       "angle": 3.3
+    },
+    "eyeImages": {
+      "right": "img/eyes/babylon-hammurabi-right.webp",
+      "left": "img/eyes/babylon-hammurabi-left.webp"
     }
   },
   {
@@ -529,6 +561,10 @@
         5.23
       ],
       "angle": -9.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/brazil-pedro-ii-right.webp",
+      "left": "img/eyes/brazil-pedro-ii-left.webp"
     }
   },
   {
@@ -593,6 +629,10 @@
         6.11
       ],
       "angle": -2.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/byzantium-basil-ii-right.webp",
+      "left": "img/eyes/byzantium-basil-ii-left.webp"
     }
   },
   {
@@ -654,6 +694,10 @@
         9.37
       ],
       "angle": -6.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/byzantium-theodora-right.webp",
+      "left": "img/eyes/byzantium-theodora-left.webp"
     }
   },
   {
@@ -710,6 +754,10 @@
         10.2
       ],
       "angle": -4.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/canada-wilfrid-laurier-right.webp",
+      "left": "img/eyes/canada-wilfrid-laurier-left.webp"
     }
   },
   {
@@ -770,6 +818,10 @@
         7.37
       ],
       "angle": -3.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/china-kublai-khan-china-right.webp",
+      "left": "img/eyes/china-kublai-khan-china-left.webp"
     }
   },
   {
@@ -828,6 +880,10 @@
         7.15
       ],
       "angle": 1.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/china-qin-mandate-of-heaven-right.webp",
+      "left": "img/eyes/china-qin-mandate-of-heaven-left.webp"
     }
   },
   {
@@ -886,6 +942,10 @@
         7.62
       ],
       "angle": -1.6
+    },
+    "eyeImages": {
+      "right": "img/eyes/china-qin-unifier-right.webp",
+      "left": "img/eyes/china-qin-unifier-left.webp"
     }
   },
   {
@@ -941,6 +1001,10 @@
         6.63
       ],
       "angle": 7.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/china-wu-zetian-right.webp",
+      "left": "img/eyes/china-wu-zetian-left.webp"
     }
   },
   {
@@ -999,6 +1063,10 @@
         6.44
       ],
       "angle": 0.6
+    },
+    "eyeImages": {
+      "right": "img/eyes/china-yongle-right.webp",
+      "left": "img/eyes/china-yongle-left.webp"
     }
   },
   {
@@ -1054,6 +1122,10 @@
         8.75
       ],
       "angle": 2.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/cree-poundmaker-right.webp",
+      "left": "img/eyes/cree-poundmaker-left.webp"
     }
   },
   {
@@ -1113,6 +1185,10 @@
         9.92
       ],
       "angle": 9.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/taino-anacaona-right.webp",
+      "left": "img/eyes/taino-anacaona-left.webp"
     }
   },
   {
@@ -1173,6 +1249,10 @@
         8.76
       ],
       "angle": -5.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/egypt-cleopatra-egyptian-right.webp",
+      "left": "img/eyes/egypt-cleopatra-egyptian-left.webp"
     }
   },
   {
@@ -1233,6 +1313,10 @@
         9.12
       ],
       "angle": -3.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/egypt-cleopatra-ptolemaic-right.webp",
+      "left": "img/eyes/egypt-cleopatra-ptolemaic-left.webp"
     }
   },
   {
@@ -1291,6 +1375,10 @@
         7.51
       ],
       "angle": -1.5
+    },
+    "eyeImages": {
+      "right": "img/eyes/egypt-ramses-ii-right.webp",
+      "left": "img/eyes/egypt-ramses-ii-left.webp"
     }
   },
   {
@@ -1354,6 +1442,10 @@
         9.4
       ],
       "angle": 2.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/england-eleanor-of-aquitaine-england-right.webp",
+      "left": "img/eyes/england-eleanor-of-aquitaine-england-left.webp"
     }
   },
   {
@@ -1417,6 +1509,10 @@
         8.51
       ],
       "angle": -0.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/england-elizabeth-i-right.webp",
+      "left": "img/eyes/england-elizabeth-i-left.webp"
     }
   },
   {
@@ -1480,6 +1576,10 @@
         9.5
       ],
       "angle": 13.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/england-victoria-age-of-empire-right.webp",
+      "left": "img/eyes/england-victoria-age-of-empire-left.webp"
     }
   },
   {
@@ -1540,6 +1640,10 @@
         7.26
       ],
       "angle": -3.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/england-victoria-age-of-steam-right.webp",
+      "left": "img/eyes/england-victoria-age-of-steam-left.webp"
     }
   },
   {
@@ -1595,6 +1699,10 @@
         7.77
       ],
       "angle": -16.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/ethiopia-menelik-ii-right.webp",
+      "left": "img/eyes/ethiopia-menelik-ii-left.webp"
     }
   },
   {
@@ -1656,6 +1764,10 @@
         8.21
       ],
       "angle": -14.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/france-catherine-de-medici-black-queen-right.webp",
+      "left": "img/eyes/france-catherine-de-medici-black-queen-left.webp"
     }
   },
   {
@@ -1717,6 +1829,10 @@
         9.32
       ],
       "angle": -8.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/france-catherine-de-medici-magnificence-right.webp",
+      "left": "img/eyes/france-catherine-de-medici-magnificence-left.webp"
     }
   },
   {
@@ -1778,6 +1894,10 @@
         8.47
       ],
       "angle": -10.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/france-eleanor-of-aquitaine-france-right.webp",
+      "left": "img/eyes/france-eleanor-of-aquitaine-france-left.webp"
     }
   },
   {
@@ -1835,6 +1955,10 @@
         8.32
       ],
       "angle": -5.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/gaul-ambiorix-right.webp",
+      "left": "img/eyes/gaul-ambiorix-left.webp"
     }
   },
   {
@@ -1895,6 +2019,10 @@
         9.39
       ],
       "angle": 9.3
+    },
+    "eyeImages": {
+      "right": "img/eyes/gaul-vercingetorix-right.webp",
+      "left": "img/eyes/gaul-vercingetorix-left.webp"
     }
   },
   {
@@ -1951,6 +2079,10 @@
         9.82
       ],
       "angle": 1.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/georgia-tamar-right.webp",
+      "left": "img/eyes/georgia-tamar-left.webp"
     }
   },
   {
@@ -2016,6 +2148,10 @@
         8.21
       ],
       "angle": -5.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/germany-frederick-barbarossa-right.webp",
+      "left": "img/eyes/germany-frederick-barbarossa-left.webp"
     }
   },
   {
@@ -2076,6 +2212,10 @@
         7.89
       ],
       "angle": -1.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/germany-ludwig-ii-right.webp",
+      "left": "img/eyes/germany-ludwig-ii-left.webp"
     }
   },
   {
@@ -2135,6 +2275,10 @@
         9.98
       ],
       "angle": -8.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/gran-colombia-simon-bolivar-right.webp",
+      "left": "img/eyes/gran-colombia-simon-bolivar-left.webp"
     }
   },
   {
@@ -2195,6 +2339,10 @@
         9.67
       ],
       "angle": 2.6
+    },
+    "eyeImages": {
+      "right": "img/eyes/greece-gorgo-right.webp",
+      "left": "img/eyes/greece-gorgo-left.webp"
     }
   },
   {
@@ -2255,6 +2403,10 @@
         9.13
       ],
       "angle": 7.7
+    },
+    "eyeImages": {
+      "right": "img/eyes/greece-pericles-right.webp",
+      "left": "img/eyes/greece-pericles-left.webp"
     }
   },
   {
@@ -2316,6 +2468,10 @@
         10.31
       ],
       "angle": -1.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/hungary-matthias-corvinus-right.webp",
+      "left": "img/eyes/hungary-matthias-corvinus-left.webp"
     }
   },
   {
@@ -2376,6 +2532,10 @@
         9.36
       ],
       "angle": -0.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/inca-pachacuti-right.webp",
+      "left": "img/eyes/inca-pachacuti-left.webp"
     }
   },
   {
@@ -2431,6 +2591,10 @@
         7.32
       ],
       "angle": -5.5
+    },
+    "eyeImages": {
+      "right": "img/eyes/india-chandragupta-right.webp",
+      "left": "img/eyes/india-chandragupta-left.webp"
     }
   },
   {
@@ -2486,6 +2650,10 @@
         10.61
       ],
       "angle": -6.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/india-gandhi-right.webp",
+      "left": "img/eyes/india-gandhi-left.webp"
     }
   },
   {
@@ -2544,6 +2712,10 @@
         9.62
       ],
       "angle": 3.7
+    },
+    "eyeImages": {
+      "right": "img/eyes/indonesia-gitarja-right.webp",
+      "left": "img/eyes/indonesia-gitarja-left.webp"
     }
   },
   {
@@ -2603,6 +2775,10 @@
         7.09
       ],
       "angle": 10.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/japan-hojo-tokimune-right.webp",
+      "left": "img/eyes/japan-hojo-tokimune-left.webp"
     }
   },
   {
@@ -2658,6 +2834,10 @@
         8.3
       ],
       "angle": -3.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/japan-tokugawa-right.webp",
+      "left": "img/eyes/japan-tokugawa-left.webp"
     }
   },
   {
@@ -2715,6 +2895,10 @@
         7.56
       ],
       "angle": 1.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/khmer-jayavarman-vii-right.webp",
+      "left": "img/eyes/khmer-jayavarman-vii-left.webp"
     }
   },
   {
@@ -2773,6 +2957,10 @@
         8.69
       ],
       "angle": 3.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/kongo-mvemba-a-nzinga-right.webp",
+      "left": "img/eyes/kongo-mvemba-a-nzinga-left.webp"
     }
   },
   {
@@ -2835,6 +3023,10 @@
         8.43
       ],
       "angle": -9.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/kongo-nzinga-mbande-right.webp",
+      "left": "img/eyes/kongo-nzinga-mbande-left.webp"
     }
   },
   {
@@ -2892,6 +3084,10 @@
         8.36
       ],
       "angle": 0.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/korea-sejong-right.webp",
+      "left": "img/eyes/korea-sejong-left.webp"
     }
   },
   {
@@ -2949,6 +3145,10 @@
         8.73
       ],
       "angle": -6.5
+    },
+    "eyeImages": {
+      "right": "img/eyes/korea-seondeok-right.webp",
+      "left": "img/eyes/korea-seondeok-left.webp"
     }
   },
   {
@@ -3010,6 +3210,10 @@
         10.45
       ],
       "angle": 5.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/macedon-alexander-right.webp",
+      "left": "img/eyes/macedon-alexander-left.webp"
     }
   },
   {
@@ -3065,6 +3269,10 @@
         8.28
       ],
       "angle": -2.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/macedon-olympias-right.webp",
+      "left": "img/eyes/macedon-olympias-left.webp"
     }
   },
   {
@@ -3126,6 +3334,10 @@
         10.79
       ],
       "angle": 0.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/mali-mansa-musa-right.webp",
+      "left": "img/eyes/mali-mansa-musa-left.webp"
     }
   },
   {
@@ -3188,6 +3400,10 @@
         7.75
       ],
       "angle": -6.7
+    },
+    "eyeImages": {
+      "right": "img/eyes/mali-sundiata-keita-right.webp",
+      "left": "img/eyes/mali-sundiata-keita-left.webp"
     }
   },
   {
@@ -3245,6 +3461,10 @@
         10.3
       ],
       "angle": -1.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/maori-kupe-right.webp",
+      "left": "img/eyes/maori-kupe-left.webp"
     }
   },
   {
@@ -3300,6 +3520,10 @@
         10.34
       ],
       "angle": 3.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/mapuche-lautaro-right.webp",
+      "left": "img/eyes/mapuche-lautaro-left.webp"
     }
   },
   {
@@ -3361,6 +3585,10 @@
         10.3
       ],
       "angle": 1.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/maya-lady-six-sky-right.webp",
+      "left": "img/eyes/maya-lady-six-sky-left.webp"
     }
   },
   {
@@ -3419,6 +3647,10 @@
         8.74
       ],
       "angle": -5.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/maya-te-k-inich-ii-right.webp",
+      "left": "img/eyes/maya-te-k-inich-ii-left.webp"
     }
   },
   {
@@ -3477,6 +3709,10 @@
         8.66
       ],
       "angle": -1.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/austria-maria-theresa-right.webp",
+      "left": "img/eyes/austria-maria-theresa-left.webp"
     }
   },
   {
@@ -3538,6 +3774,10 @@
         6.54
       ],
       "angle": -6.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/goths-theodoric-right.webp",
+      "left": "img/eyes/goths-theodoric-left.webp"
     }
   },
   {
@@ -3596,6 +3836,10 @@
         9.05
       ],
       "angle": 7.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/mongolia-genghis-khan-right.webp",
+      "left": "img/eyes/mongolia-genghis-khan-left.webp"
     }
   },
   {
@@ -3656,6 +3900,10 @@
         7.68
       ],
       "angle": -4.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/mongolia-kublai-khan-mongolia-right.webp",
+      "left": "img/eyes/mongolia-kublai-khan-mongolia-left.webp"
     }
   },
   {
@@ -3714,6 +3962,10 @@
         8.34
       ],
       "angle": -2.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/netherlands-wilhelmina-right.webp",
+      "left": "img/eyes/netherlands-wilhelmina-left.webp"
     }
   },
   {
@@ -3775,6 +4027,10 @@
         6.93
       ],
       "angle": 5.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/norway-harald-hardrada-varangian-right.webp",
+      "left": "img/eyes/norway-harald-hardrada-varangian-left.webp"
     }
   },
   {
@@ -3839,6 +4095,10 @@
         8.77
       ],
       "angle": 3.5
+    },
+    "eyeImages": {
+      "right": "img/eyes/norway-harald-hardrada-konge-right.webp",
+      "left": "img/eyes/norway-harald-hardrada-konge-left.webp"
     }
   },
   {
@@ -3897,6 +4157,10 @@
         8.52
       ],
       "angle": -7.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/nubia-amanitore-right.webp",
+      "left": "img/eyes/nubia-amanitore-left.webp"
     }
   },
   {
@@ -3960,6 +4224,10 @@
         11.38
       ],
       "angle": 8.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/ottomans-suleiman-kanuni-right.webp",
+      "left": "img/eyes/ottomans-suleiman-kanuni-left.webp"
     }
   },
   {
@@ -4020,6 +4288,10 @@
         8.87
       ],
       "angle": -1.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/ottomans-suleiman-muhtesem-right.webp",
+      "left": "img/eyes/ottomans-suleiman-muhtesem-left.webp"
     }
   },
   {
@@ -4076,6 +4348,10 @@
         9.55
       ],
       "angle": -2.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/persia-cyrus-right.webp",
+      "left": "img/eyes/persia-cyrus-left.webp"
     }
   },
   {
@@ -4133,6 +4409,10 @@
         6.74
       ],
       "angle": 0.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/persia-nader-shah-right.webp",
+      "left": "img/eyes/persia-nader-shah-left.webp"
     }
   },
   {
@@ -4194,6 +4474,10 @@
         11.02
       ],
       "angle": -6.2
+    },
+    "eyeImages": {
+      "right": "img/eyes/phoenicia-dido-right.webp",
+      "left": "img/eyes/phoenicia-dido-left.webp"
     }
   },
   {
@@ -4253,6 +4537,10 @@
         11.14
       ],
       "angle": -0.9
+    },
+    "eyeImages": {
+      "right": "img/eyes/phoenicia-ahiram-right.webp",
+      "left": "img/eyes/phoenicia-ahiram-left.webp"
     }
   },
   {
@@ -4311,6 +4599,10 @@
         9.58
       ],
       "angle": -11.6
+    },
+    "eyeImages": {
+      "right": "img/eyes/poland-jadwiga-right.webp",
+      "left": "img/eyes/poland-jadwiga-left.webp"
     }
   },
   {
@@ -4372,6 +4664,10 @@
         9.17
       ],
       "angle": -0.5
+    },
+    "eyeImages": {
+      "right": "img/eyes/poland-stanislaw-ii-right.webp",
+      "left": "img/eyes/poland-stanislaw-ii-left.webp"
     }
   },
   {
@@ -4432,6 +4728,10 @@
         7.6
       ],
       "angle": 0.3
+    },
+    "eyeImages": {
+      "right": "img/eyes/portugal-joao-iii-right.webp",
+      "left": "img/eyes/portugal-joao-iii-left.webp"
     }
   },
   {
@@ -4497,6 +4797,10 @@
         8.81
       ],
       "angle": -2.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/rome-julius-caesar-right.webp",
+      "left": "img/eyes/rome-julius-caesar-left.webp"
     }
   },
   {
@@ -4554,6 +4858,10 @@
         7.42
       ],
       "angle": 8.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/rome-trajan-right.webp",
+      "left": "img/eyes/rome-trajan-left.webp"
     }
   },
   {
@@ -4615,6 +4923,10 @@
         8.66
       ],
       "angle": 0.8
+    },
+    "eyeImages": {
+      "right": "img/eyes/russia-peter-right.webp",
+      "left": "img/eyes/russia-peter-left.webp"
     }
   },
   {
@@ -4673,6 +4985,10 @@
         8.57
       ],
       "angle": 7.7
+    },
+    "eyeImages": {
+      "right": "img/eyes/scotland-robert-the-bruce-right.webp",
+      "left": "img/eyes/scotland-robert-the-bruce-left.webp"
     }
   },
   {
@@ -4728,6 +5044,10 @@
         8.28
       ],
       "angle": 8.5
+    },
+    "eyeImages": {
+      "right": "img/eyes/scythia-tomyris-right.webp",
+      "left": "img/eyes/scythia-tomyris-left.webp"
     }
   },
   {
@@ -4786,6 +5106,10 @@
         8.46
       ],
       "angle": -5.3
+    },
+    "eyeImages": {
+      "right": "img/eyes/spain-philip-ii-right.webp",
+      "left": "img/eyes/spain-philip-ii-left.webp"
     }
   },
   {
@@ -4841,6 +5165,10 @@
         10.23
       ],
       "angle": -2.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/sumeria-gilgamesh-right.webp",
+      "left": "img/eyes/sumeria-gilgamesh-left.webp"
     }
   },
   {
@@ -4897,6 +5225,10 @@
         8.33
       ],
       "angle": 0.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/swahili-al-hasan-ibn-sulaiman-right.webp",
+      "left": "img/eyes/swahili-al-hasan-ibn-sulaiman-left.webp"
     }
   },
   {
@@ -4958,6 +5290,10 @@
         8.98
       ],
       "angle": -3.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/sweden-kristina-right.webp",
+      "left": "img/eyes/sweden-kristina-left.webp"
     }
   },
   {
@@ -5013,6 +5349,10 @@
         10.27
       ],
       "angle": -2.1
+    },
+    "eyeImages": {
+      "right": "img/eyes/thule-kiviuq-right.webp",
+      "left": "img/eyes/thule-kiviuq-left.webp"
     }
   },
   {
@@ -5071,6 +5411,10 @@
         9.16
       ],
       "angle": -0.0
+    },
+    "eyeImages": {
+      "right": "img/eyes/tibet-trisong-detsen-right.webp",
+      "left": "img/eyes/tibet-trisong-detsen-left.webp"
     }
   },
   {
@@ -5128,6 +5472,10 @@
         7.7
       ],
       "angle": 10.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/vietnam-ba-trieu-right.webp",
+      "left": "img/eyes/vietnam-ba-trieu-left.webp"
     }
   },
   {
@@ -5188,6 +5536,10 @@
         8.24
       ],
       "angle": 6.4
+    },
+    "eyeImages": {
+      "right": "img/eyes/zulu-shaka-right.webp",
+      "left": "img/eyes/zulu-shaka-left.webp"
     }
   }
 ]

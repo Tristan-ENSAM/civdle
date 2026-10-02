@@ -48,9 +48,9 @@ RIGHT_EYE = (33, 133)    # outer, inner corner of the subject's right eye
 LEFT_EYE = (263, 362)    # outer, inner corner of the subject's left eye
 
 # Contact sheet only: view drawn around each eye, relative to the eye width
-# (VIEW_START in js/modes/regard.js, ASPECT = aspect-ratio of .regard-frame).
-VIEW_START = 1.8
-ASPECT = 1.5
+# (VIEW_START in js/modes/regard.js; the frame is round, ASPECT 1 = its square).
+VIEW_START = 1.6
+ASPECT = 1.0
 UPSCALE = 2              # detection works better on larger faces
 
 
