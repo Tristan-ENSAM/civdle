@@ -43,6 +43,7 @@ js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, par
 js/modes/               un fichier par mode + index.js (registre)
 tools/bbg/               génération des données depuis BBG + sources.json
 tools/csv2json.py       conversion CSV -> leaders.json
+tools/hash_assets.py    noms opaques des images indices (voir « Noms des images »)
 tools/leaders_template.csv
 ```
 
@@ -82,6 +83,8 @@ python tools/game/import_textures.py "<SDK Assets>/Civ6" "<jeu>" "<mod BBG Expan
 python tools/bbg/make_silhouettes.py            # silhouettes estimées des autres (long : ~20 s par portrait, ~6 Go de RAM)
 python tools/bbg/build.py bbg 7.5              # relancer pour intégrer les silhouettes
 ```
+
+Les générateurs écrivent et cherchent les images sous leur nom lisible (`img/silhouettes/<id>.png`…). Avant de lancer l'un d'eux (ici ou dans les sections suivantes), remettre ces noms avec `python tools/hash_assets.py --restore`, puis relancer `python tools/hash_assets.py` une fois la génération finie (voir « Noms des images »).
 
 Pour une nouvelle version BBG : remplacer `7.5`, puis compléter `tools/bbg/sources.json` pour les nouveaux leaders (le script signale sur la sortie d'erreur toute valeur manquante ou toute unité/quartier non classé ; il ne devine rien).
 
@@ -183,6 +186,10 @@ python tools/bbg/build_improvements.py bbg 7.5
 
 `name` vient de `fr_FR/improvements_7.5.html`, `aliases` du nom anglais (`en_US`) s'il diffère, `icon` de `images/improvements/` (fond transparent, copiée telle quelle), `id` du nom du fichier d'icône sans accents (`Pā.webp` → `pa`). Les 3 icônes du dossier BBG que la page n'utilise pas sont ignorées.
 
+### Noms des images
+
+Dans le dépôt, les images indices (portraits, silhouettes, `reveal`, yeux, emblèmes des cités-États, aménagements, technologies et dogmes) portent un nom tiré d'un hash de leur contenu (`img/silhouettes/3f9c0d….png`), et non l'id de la réponse : sinon l'outil d'inspection du navigateur montrerait la réponse dans le `src` de l'image indice. `tools/hash_assets.py` fait le renommage et réécrit les chemins dans `data/*.json` ; `--restore` remet les noms lisibles, déduits de l'`id` et du champ de chaque enregistrement (tableau dans l'en-tête du script). Les deux sens sont idempotents. Les sections ci-dessus décrivent les noms lisibles, ceux que les générateurs produisent.
+
 ## Fonctionnement du tirage quotidien
 
 Pour chaque mode, les `id` éligibles sont triés puis mélangés par un générateur pseudo-aléatoire initialisé avec `salt` + id du mode. Le jour N (compté depuis `epoch` dans `timezone`) prend l'élément `N mod nombre_de_leaders`.
@@ -237,7 +244,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 
 ## Limites connues
 
-- **Triche** : la réponse est calculée dans le navigateur ; les outils de développement permettent de la retrouver (ou de retirer le flou). Inhérent à un site statique.
+- **Triche** : la réponse est calculée dans le navigateur ; les outils de développement permettent de la retrouver (ou de retirer le flou). Inhérent à un site statique. Les noms opaques des images (« Noms des images ») et le hash de la réponse dans le `localStorage` (`answerKey`) évitent seulement qu'elle se lise d'un coup d'œil dans l'inspecteur : le code du tirage et les données restent publics.
 - **Silhouette** : l'image doit avoir un fond transparent, sinon tout le cadre devient noir. Sans `silhouetteFocus`, le point de zoom aléatoire peut tomber dans le vide au début.
 - **Masquage des descriptions** : insensible à la casse mais pas aux accents (« Zeta » ne masque pas « Zêta ») ; ajouter les variantes dans `aliases` ou `maskWords`.
 - **Progression** : stockée dans le `localStorage` du navigateur, donc propre à chaque appareil.
