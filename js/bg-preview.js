@@ -1,10 +1,10 @@
 /**
  * TEMPORAIRE (PR d'aperçu) : sélecteur des fonds proposés dans
- * css/bg-preview.css. Le choix vient de ?bg=a|b|c, sinon du dernier choix
+ * css/bg-preview.css. Le choix vient de ?bg=a|b|c|d, sinon du dernier choix
  * (localStorage "civdle:bg-preview"), sinon "a". "0" = fond uni actuel.
  */
 const KEY = "civdle:bg-preview";
-const OPTIONS = [["0", "Actuel"], ["a", "A"], ["b", "B"], ["c", "C"]];
+const OPTIONS = [["0", "Actuel"], ["a", "A"], ["b", "B"], ["c", "C"], ["d", "D"]];
 
 let choice = new URLSearchParams(location.search).get("bg");
 if (!OPTIONS.some(([v]) => v === choice)) {

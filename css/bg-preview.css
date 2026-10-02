@@ -46,3 +46,20 @@ html[data-bg="c"] body {
   border: 1px solid var(--panel-2); border-radius: var(--radius); padding: 2px 8px;
 }
 #bg-preview button[aria-pressed="true"] { color: #1A1408; background: var(--gold); border-color: var(--gold); }
+
+/* D. Image du menu principal (statue portant le globe), fournie par Tristan,
+   assombrie et teintée bleu nuit pour garder le texte lisible. */
+html[data-bg="d"] body {
+  background:
+    linear-gradient(180deg, rgba(7, 15, 23, .55) 0%, rgba(7, 15, 23, .7) 45%, rgba(7, 15, 23, .95) 85%, var(--bg) 100%),
+    radial-gradient(ellipse 90% 80% at 50% 35%, transparent 30%, rgba(5, 29, 51, .7) 100%),
+    url("../img/bg/atlas.webp") center 15% / cover no-repeat,
+    var(--bg);
+  background-attachment: fixed;
+}
+@media (max-width: 960px) {
+  html[data-bg="d"] body { background-image:
+    linear-gradient(180deg, rgba(7, 15, 23, .55) 0%, rgba(7, 15, 23, .7) 45%, rgba(7, 15, 23, .95) 85%, var(--bg) 100%),
+    radial-gradient(ellipse 90% 80% at 50% 35%, transparent 30%, rgba(5, 29, 51, .7) 100%),
+    url("../img/bg/atlas-960.webp"); }
+}
