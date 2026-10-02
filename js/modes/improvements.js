@@ -14,10 +14,13 @@
  * wrong guesses (linear). Lighter than the Portrait and Technologies modes
  * (24 px over 8 guesses), as asked ("pas trop"); arbitrary values, to adjust.
  *
- * Note: the blur is a CSS filter, so a player can remove it with the browser
- * dev tools. A static site cannot prevent this.
+ * The clue is drawn on a canvas (js/core/clue.js), so the dev tools' inspector
+ * shows neither the sharp image nor a CSS filter to remove. The image file is
+ * still downloaded, so the Network panel gives it: a static site cannot
+ * prevent this.
  */
 import { defaultGuessRow } from "../core/game.js";
+import { createClue } from "../core/clue.js";
 
 const BLUR_START = 10;
 const STEPS = 6;
@@ -45,13 +48,13 @@ export default {
 
   setup(ctx) {
     ctx.els.clue.innerHTML = `<div class="frame improvement-frame"><img alt="Aménagement mystère" draggable="false"></div>`;
-    ctx.impImg = ctx.els.clue.querySelector("img");
-    ctx.impImg.src = ctx.answer.icon;
-    ctx.impImg.addEventListener("contextmenu", (e) => e.preventDefault());
+    // Padding as in css/style.css (keeps the blur inside the frame).
+    ctx.impClue = createClue(ctx.els.clue.querySelector(".frame"), ctx.answer.icon, { padding: 0.12 });
   },
 
   update(ctx) {
-    ctx.impImg.style.filter = `blur(${blurFor(ctx.state.guesses.length, ctx.state.won)}px)`;
+    if (ctx.state.won) ctx.impClue.reveal(ctx.answer.icon);
+    else ctx.impClue.set({ blur: blurFor(ctx.state.guesses.length, false) });
   },
 
   renderGuess: (ctx, item) => defaultGuessRow(item, ctx.answer),

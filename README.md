@@ -244,7 +244,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 
 ## Limites connues
 
-- **Triche** : la réponse est calculée dans le navigateur ; les outils de développement permettent de la retrouver (ou de retirer le flou). Inhérent à un site statique. Les noms opaques des images (« Noms des images ») et le hash de la réponse dans le `localStorage` (`answerKey`) évitent seulement qu'elle se lise d'un coup d'œil dans l'inspecteur : le code du tirage et les données restent publics.
+- **Triche** : la réponse est calculée dans le navigateur ; les outils de développement permettent de la retrouver. Inhérent à un site statique. Les noms opaques des images (« Noms des images ») et le hash de la réponse dans le `localStorage` (`answerKey`) évitent seulement qu'elle se lise d'un coup d'œil dans l'inspecteur : le code du tirage et les données restent publics. Les indices en image (flou, gris, rotation, zoom, recadrage de l'œil) sont dessinés sur un `<canvas>` par `js/core/clue.js`, donc l'inspecteur ne montre ni l'image nette ni un filtre CSS à retirer ; mais le fichier d'origine reste téléchargé et visible dans l'onglet Réseau.
 - **Silhouette** : l'image doit avoir un fond transparent, sinon tout le cadre devient noir. Sans `silhouetteFocus`, le point de zoom aléatoire peut tomber dans le vide au début.
 - **Masquage des descriptions** : insensible à la casse mais pas aux accents (« Zeta » ne masque pas « Zêta ») ; ajouter les variantes dans `aliases` ou `maskWords`.
 - **Progression** : stockée dans le `localStorage` du navigateur, donc propre à chaque appareil.
