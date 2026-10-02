@@ -24,7 +24,7 @@
  * persistence, win panel (share, countdown, yesterday's answer).
  */
 import { pickDaily, shiftDate, msUntilNextDay } from "./daily.js";
-import { loadState, saveState } from "./storage.js";
+import { loadState, saveState, answerKeyOf, stateMatches } from "./storage.js";
 import { createGuessInput } from "./input.js";
 
 /** Default wording (leader pool); a mode can override any key with `mode.texts`. */
@@ -66,7 +66,14 @@ export function mountMode(mode, env) {
   let state = loadState(mode.id, dateStr);
   // A stored state only applies to the answer it was played against: if the
   // daily answer changed (new salt, data update), start over.
-  if (state.answerId !== answer.id) state = { guesses: [], won: false, answerId: answer.id };
+  const answerKey = answerKeyOf(mode.id, dateStr, answer.id, config.salt);
+  if (!stateMatches(state, mode.id, dateStr, answer.id, config.salt)) state = { guesses: [], won: false, answerKey };
+  state.answerKey = answerKey;
+  // Rewrite a state saved with the answer id in clear (before answerKey).
+  if (state.answerId != null) {
+    delete state.answerId;
+    if (state.guesses.length) saveState(mode.id, dateStr, state);
+  }
   // Drop stored ids that no longer exist in the data.
   state.guesses = state.guesses.filter((id) => byId.has(id));
 

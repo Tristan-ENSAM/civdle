@@ -7,7 +7,7 @@
  */
 import { loadData } from "./core/data.js";
 import { dateInTimezone, pickDaily } from "./core/daily.js";
-import { loadState } from "./core/storage.js";
+import { loadState, stateMatches } from "./core/storage.js";
 import { mountMode } from "./core/game.js";
 import modes from "./modes/index.js";
 import { renderHome, HOME_ID } from "./home.js";
@@ -37,7 +37,7 @@ async function main() {
   function isSolved(m) {
     const st = loadState(m.id, dateStr);
     const ans = pickDaily(poolOf(m), m.id, dateStr, config, (l) => (m.eligible ? m.eligible(l, config) : true));
-    return !!(st.won && ans && st.answerId === ans.id);
+    return !!(st.won && ans && stateMatches(st, m.id, dateStr, ans.id, config.salt));
   }
 
   function renderTabs(currentId) {
