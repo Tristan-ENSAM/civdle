@@ -23,6 +23,8 @@ const ICONS = {
   // Flask.
   techscivics: svg('<path d="M9.5 3.5h5M10.5 3.5v5.5L5 19a1.5 1.5 0 0 0 1.3 2h11.4A1.5 1.5 0 0 0 19 19l-5.5-10V3.5"/><path d="M7.5 15h9"/>'),
   // Hexagonal tile with ploughed rows.
+  // Loudspeaker with sound waves.
+  son: svg('<path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>'),
   improvements: svg('<path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M7.5 10.5l9 0M6.5 14l11 0M8.5 17.5l7 0"/>'),
 };
 

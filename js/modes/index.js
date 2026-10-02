@@ -11,5 +11,6 @@ import regard from "./regard.js";
 import citystates from "./citystates.js";
 import techscivics from "./techscivics.js";
 import improvements from "./improvements.js";
+import son from "./son.js";
 
-export default [classic, portrait, silhouette, regard, description, citystates, techscivics, improvements];
+export default [classic, portrait, silhouette, regard, description, citystates, techscivics, improvements, son];
