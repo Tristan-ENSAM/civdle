@@ -31,6 +31,8 @@ data/city_states.json   48 cités-États du mode Cités-État (généré, voir �
 img/city-states/        emblèmes des cités-États : couleur (<id>.webp) et gris (<id>-grey.webp)
 data/techs_civics.json  77 technologies + 61 dogmes du mode Technologies & Dogmes (généré)
 img/techs-civics/       icônes des technologies et dogmes
+data/improvements.json  58 aménagements du mode Aménagement (généré)
+img/improvements/       icônes des aménagements
 img/portraits/          portraits (générés depuis le site BBG)
 img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
@@ -168,6 +170,17 @@ python tools/bbg/build_techs_civics.py bbg 7.5
 
 Le script s'arrête si un nom français apparaît deux fois (la saisie se fait sur les noms) : ce n'est pas le cas en 7.5.
 
+### Aménagement
+
+`data/improvements.json` et `img/improvements/` sont **générés** par `tools/bbg/build_improvements.py` :
+
+```
+git -C bbg sparse-checkout add '/fr_FR/improvements_7.5.html' '/en_US/improvements_7.5.html' '/images/improvements/'
+python tools/bbg/build_improvements.py bbg 7.5
+```
+
+`name` vient de `fr_FR/improvements_7.5.html`, `aliases` du nom anglais (`en_US`) s'il diffère, `icon` de `images/improvements/` (fond transparent, copiée telle quelle), `id` du nom du fichier d'icône sans accents (`Pā.webp` → `pa`). Les 3 icônes du dossier BBG que la page n'utilise pas sont ignorées.
+
 ## Fonctionnement du tirage quotidien
 
 Pour chaque mode, les `id` éligibles sont triés puis mélangés par un générateur pseudo-aléatoire initialisé avec `salt` + id du mode. Le jour N (compté depuis `epoch` dans `timezone`) prend l'élément `N mod nombre_de_leaders`.
@@ -217,6 +230,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - `js/modes/regard.js` : `EYE_SIDE = "daily"` (œil droit ou gauche tiré chaque jour ; `"right"`/`"left"` pour le fixer), cadre rond, diamètre visible de `VIEW_START = 1.6` à `VIEW_END = 3` fois la largeur de l'œil en `STEPS = 10` essais. `VIEW_END` doit être identique dans `tools/bbg/make_eye_images.py` (l'image contient exactement cette vue) ; au-delà de ~3, l'autre œil entre dans le cadre. Source : portraits BBG de 256 px, où un œil mesure environ 15 à 25 px.
 - `js/modes/citystates.js` : aucun indice supplémentaire après un essai raté. Case « Mode challenger » cochée par défaut (état mémorisé dans le navigateur) : emblème en gris uniforme (`iconGrey`), couleurs affichées à la victoire. Suggestions de saisie sans icône (sinon la liste permettrait de comparer les formes).
 - `js/modes/techscivics.js` : `BLUR_START = 24` (px), `STEPS = 8` (mêmes valeurs que Portrait) ; réponse tirée parmi les technologies et les dogmes réunis. Suggestions de saisie sans icône.
+- `js/modes/improvements.js` : `BLUR_START = 10` (px), `STEPS = 6`, flou plus léger que Portrait et Technologies. Suggestions de saisie sans icône.
 - `js/modes/silhouette.js` : `ZOOM_START = 3.5`, `STEPS = 12` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues

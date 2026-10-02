@@ -10,5 +10,6 @@ import description from "./description.js";
 import regard from "./regard.js";
 import citystates from "./citystates.js";
 import techscivics from "./techscivics.js";
+import improvements from "./improvements.js";
 
-export default [classic, portrait, silhouette, regard, description, citystates, techscivics];
+export default [classic, portrait, silhouette, regard, description, citystates, techscivics, improvements];

@@ -1,0 +1,662 @@
+[
+  {
+    "id": "airstrip",
+    "name": "Piste d'atterrissage",
+    "aliases": [
+      "Airstrip"
+    ],
+    "icon": "img/improvements/airstrip.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_AIRSTRIP"
+    }
+  },
+  {
+    "id": "alcazar",
+    "name": "Alcázar",
+    "aliases": [],
+    "icon": "img/improvements/alcazar.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_ALCAZAR"
+    }
+  },
+  {
+    "id": "batey",
+    "name": "Batey",
+    "aliases": [],
+    "icon": "img/improvements/batey.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_BATEY"
+    }
+  },
+  {
+    "id": "cahokia-mounds",
+    "name": "Monts de Cahokia",
+    "aliases": [
+      "Cahokia Mounds"
+    ],
+    "icon": "img/improvements/cahokia-mounds.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MOUND"
+    }
+  },
+  {
+    "id": "camp",
+    "name": "Camp",
+    "aliases": [],
+    "icon": "img/improvements/camp.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_CAMP"
+    }
+  },
+  {
+    "id": "chateau",
+    "name": "Castel",
+    "aliases": [
+      "Château"
+    ],
+    "icon": "img/improvements/chateau.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_CHATEAU"
+    }
+  },
+  {
+    "id": "chemamull",
+    "name": "Chemamull",
+    "aliases": [],
+    "icon": "img/improvements/chemamull.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_CHEMAMULL"
+    }
+  },
+  {
+    "id": "city-park",
+    "name": "Parc urbain",
+    "aliases": [
+      "City Park"
+    ],
+    "icon": "img/improvements/city-park.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_CITY_PARK"
+    }
+  },
+  {
+    "id": "colossal-head",
+    "name": "Tête colossale",
+    "aliases": [
+      "Colossal Head"
+    ],
+    "icon": "img/improvements/colossal-head.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_COLOSSAL_HEAD"
+    }
+  },
+  {
+    "id": "conuco",
+    "name": "Conuco",
+    "aliases": [],
+    "icon": "img/improvements/conuco.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_CVS_ANACAONA_UI"
+    }
+  },
+  {
+    "id": "farm",
+    "name": "Ferme",
+    "aliases": [
+      "Farm"
+    ],
+    "icon": "img/improvements/farm.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_FARM"
+    }
+  },
+  {
+    "id": "feitoria",
+    "name": "Feitoria",
+    "aliases": [],
+    "icon": "img/improvements/feitoria.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_FEITORIA"
+    }
+  },
+  {
+    "id": "fishery",
+    "name": "Aquaculture",
+    "aliases": [
+      "Fishery"
+    ],
+    "icon": "img/improvements/fishery.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_FISHERY"
+    }
+  },
+  {
+    "id": "fishing-boats",
+    "name": "Bateaux de pêche",
+    "aliases": [
+      "Fishing Boats"
+    ],
+    "icon": "img/improvements/fishing-boats.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_FISHING_BOATS"
+    }
+  },
+  {
+    "id": "fort",
+    "name": "Fort",
+    "aliases": [],
+    "icon": "img/improvements/fort.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_FORT"
+    }
+  },
+  {
+    "id": "geothermal-plant",
+    "name": "Centrale géothermique",
+    "aliases": [
+      "Geothermal Plant"
+    ],
+    "icon": "img/improvements/geothermal-plant.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_GEOTHERMAL_PLANT"
+    }
+  },
+  {
+    "id": "golf-course",
+    "name": "Terrain de golf",
+    "aliases": [
+      "Golf Course"
+    ],
+    "icon": "img/improvements/golf-course.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_GOLF_COURSE"
+    }
+  },
+  {
+    "id": "great-wall",
+    "name": "Grande Muraille",
+    "aliases": [
+      "Great Wall"
+    ],
+    "icon": "img/improvements/great-wall.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_GREAT_WALL"
+    }
+  },
+  {
+    "id": "hacienda",
+    "name": "Hacienda",
+    "aliases": [],
+    "icon": "img/improvements/hacienda.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_HACIENDA"
+    }
+  },
+  {
+    "id": "hunter-s-house",
+    "name": "Cabane de chasse",
+    "aliases": [
+      "Hunter's House"
+    ],
+    "icon": "img/improvements/hunter-s-house.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_LIME_THULE_WBH"
+    }
+  },
+  {
+    "id": "ice-hockey-rink",
+    "name": "Patinoire",
+    "aliases": [
+      "Ice Hockey Rink"
+    ],
+    "icon": "img/improvements/ice-hockey-rink.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_ICE_HOCKEY_RINK"
+    }
+  },
+  {
+    "id": "kampung",
+    "name": "Kampung",
+    "aliases": [],
+    "icon": "img/improvements/kampung.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_KAMPUNG"
+    }
+  },
+  {
+    "id": "kurgan",
+    "name": "Kourgane",
+    "aliases": [
+      "Kurgan"
+    ],
+    "icon": "img/improvements/kurgan.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_KURGAN"
+    }
+  },
+  {
+    "id": "lumber-mill",
+    "name": "Scierie",
+    "aliases": [
+      "Lumber Mill"
+    ],
+    "icon": "img/improvements/lumber-mill.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_LUMBER_MILL"
+    }
+  },
+  {
+    "id": "mahavihara",
+    "name": "Mahavihara",
+    "aliases": [],
+    "icon": "img/improvements/mahavihara.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MAHAVIHARA"
+    }
+  },
+  {
+    "id": "mekewap",
+    "name": "Mekewāp",
+    "aliases": [
+      "Mekewap"
+    ],
+    "icon": "img/improvements/mekewap.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MEKEWAP"
+    }
+  },
+  {
+    "id": "mine",
+    "name": "Mine",
+    "aliases": [],
+    "icon": "img/improvements/mine.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MINE"
+    }
+  },
+  {
+    "id": "missile-silo",
+    "name": "Silo à missiles",
+    "aliases": [
+      "Missile Silo"
+    ],
+    "icon": "img/improvements/missile-silo.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MISSILE_SILO"
+    }
+  },
+  {
+    "id": "mission",
+    "name": "Mission",
+    "aliases": [],
+    "icon": "img/improvements/mission.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MISSION"
+    }
+  },
+  {
+    "id": "moai",
+    "name": "Moaï",
+    "aliases": [
+      "Moai"
+    ],
+    "icon": "img/improvements/moai.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MOAI"
+    }
+  },
+  {
+    "id": "monastery",
+    "name": "Monastère",
+    "aliases": [
+      "Monastery"
+    ],
+    "icon": "img/improvements/monastery.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MONASTERY"
+    }
+  },
+  {
+    "id": "mountain-tunnel",
+    "name": "Tunnel de montagne",
+    "aliases": [
+      "Mountain Tunnel"
+    ],
+    "icon": "img/improvements/mountain-tunnel.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MOUNTAIN_TUNNEL"
+    }
+  },
+  {
+    "id": "nazca-line",
+    "name": "Lignes de Nazca",
+    "aliases": [
+      "Nazca Line"
+    ],
+    "icon": "img/improvements/nazca-line.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_NAZCA_LINE"
+    }
+  },
+  {
+    "id": "nubian-pyramid",
+    "name": "Pyramide nubienne",
+    "aliases": [
+      "Nubian Pyramid"
+    ],
+    "icon": "img/improvements/nubian-pyramid.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_PYRAMID"
+    }
+  },
+  {
+    "id": "offshore-oil-rig",
+    "name": "Plateforme pétrolière",
+    "aliases": [
+      "Offshore Oil Rig"
+    ],
+    "icon": "img/improvements/offshore-oil-rig.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_OFFSHORE_OIL_RIG"
+    }
+  },
+  {
+    "id": "offshore-wind-farm",
+    "name": "Parc éolien en mer",
+    "aliases": [
+      "Offshore Wind Farm"
+    ],
+    "icon": "img/improvements/offshore-wind-farm.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_OFFSHORE_WIND_FARM"
+    }
+  },
+  {
+    "id": "oil-well",
+    "name": "Puits de pétrole",
+    "aliases": [
+      "Oil Well"
+    ],
+    "icon": "img/improvements/oil-well.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_OIL_WELL"
+    }
+  },
+  {
+    "id": "open-air-museum",
+    "name": "Musée en plein air",
+    "aliases": [
+      "Open-Air Museum"
+    ],
+    "icon": "img/improvements/open-air-museum.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_OPEN_AIR_MUSEUM"
+    }
+  },
+  {
+    "id": "outback-station",
+    "name": "Élevage de l'Outback",
+    "aliases": [
+      "Outback Station"
+    ],
+    "icon": "img/improvements/outback-station.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_OUTBACK_STATION"
+    }
+  },
+  {
+    "id": "pa",
+    "name": "Pā",
+    "aliases": [],
+    "icon": "img/improvements/pa.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MAORI_PA"
+    }
+  },
+  {
+    "id": "pairidaeza",
+    "name": "Pairidaēza",
+    "aliases": [
+      "Pairidaeza"
+    ],
+    "icon": "img/improvements/pairidaeza.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_PAIRIDAEZA"
+    }
+  },
+  {
+    "id": "pasture",
+    "name": "Pâturage",
+    "aliases": [
+      "Pasture"
+    ],
+    "icon": "img/improvements/pasture.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_PASTURE"
+    }
+  },
+  {
+    "id": "plantation",
+    "name": "Plantation",
+    "aliases": [],
+    "icon": "img/improvements/plantation.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_PLANTATION"
+    }
+  },
+  {
+    "id": "polder",
+    "name": "Polder",
+    "aliases": [],
+    "icon": "img/improvements/polder.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_POLDER"
+    }
+  },
+  {
+    "id": "qhapaq-nan",
+    "name": "Qhapaq Ñan",
+    "aliases": [],
+    "icon": "img/improvements/qhapaq-nan.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_MOUNTAIN_ROAD"
+    }
+  },
+  {
+    "id": "quarry",
+    "name": "Carrière",
+    "aliases": [
+      "Quarry"
+    ],
+    "icon": "img/improvements/quarry.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_QUARRY"
+    }
+  },
+  {
+    "id": "rock-hewn-church",
+    "name": "Église rupestre",
+    "aliases": [
+      "Rock-Hewn Church"
+    ],
+    "icon": "img/improvements/rock-hewn-church.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_ROCK_HEWN_CHURCH"
+    }
+  },
+  {
+    "id": "roman-fort",
+    "name": "Fort romain",
+    "aliases": [
+      "Roman Fort"
+    ],
+    "icon": "img/improvements/roman-fort.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_ROMAN_FORT"
+    }
+  },
+  {
+    "id": "seaside-resort",
+    "name": "Station balnéaire",
+    "aliases": [
+      "Seaside Resort"
+    ],
+    "icon": "img/improvements/seaside-resort.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_BEACH_RESORT"
+    }
+  },
+  {
+    "id": "seastead",
+    "name": "Ville flottante",
+    "aliases": [
+      "Seastead"
+    ],
+    "icon": "img/improvements/seastead.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_SEASTEAD"
+    }
+  },
+  {
+    "id": "ski-resort",
+    "name": "Station de sports d'hiver",
+    "aliases": [
+      "Ski Resort"
+    ],
+    "icon": "img/improvements/ski-resort.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_SKI_RESORT"
+    }
+  },
+  {
+    "id": "solar-farm",
+    "name": "Centrale solaire",
+    "aliases": [
+      "Solar Farm"
+    ],
+    "icon": "img/improvements/solar-farm.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_SOLAR_FARM"
+    }
+  },
+  {
+    "id": "sphinx",
+    "name": "Sphinx",
+    "aliases": [],
+    "icon": "img/improvements/sphinx.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_SPHINX"
+    }
+  },
+  {
+    "id": "stepwell",
+    "name": "Puits à degrés",
+    "aliases": [
+      "Stepwell"
+    ],
+    "icon": "img/improvements/stepwell.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_STEPWELL"
+    }
+  },
+  {
+    "id": "terrace-farm",
+    "name": "Culture en terrasses",
+    "aliases": [
+      "Terrace Farm"
+    ],
+    "icon": "img/improvements/terrace-farm.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_TERRACE_FARM"
+    }
+  },
+  {
+    "id": "trading-dome",
+    "name": "Dôme commercial",
+    "aliases": [
+      "Trading Dome"
+    ],
+    "icon": "img/improvements/trading-dome.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_TRADING_DOME"
+    }
+  },
+  {
+    "id": "wind-farm",
+    "name": "Parc éolien",
+    "aliases": [
+      "Wind Farm"
+    ],
+    "icon": "img/improvements/wind-farm.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_WIND_FARM"
+    }
+  },
+  {
+    "id": "ziggurat",
+    "name": "Ziggurat",
+    "aliases": [],
+    "icon": "img/improvements/ziggurat.webp",
+    "source": {
+      "bbg": "improvements_7.5.html",
+      "locKey": "LOC_IMPROVEMENT_ZIGGURAT"
+    }
+  }
+]
