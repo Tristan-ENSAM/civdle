@@ -36,7 +36,9 @@ img/improvements/       icônes des aménagements
 img/portraits/          portraits (générés depuis le site BBG)
 img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
-js/main.js              chargement, onglets, routage (#classic, #portrait…)
+js/main.js              chargement, onglets, routage (#classic, #portrait…, #accueil)
+js/home.js              sommaire des modes (#accueil, lien sur le titre « Civdle »)
+js/modes/icons.js       icônes des modes pour le sommaire (SVG dessinées pour le site)
 js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage)
 js/modes/               un fichier par mode + index.js (registre)
 tools/bbg/               génération des données depuis BBG + sources.json
