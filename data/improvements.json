@@ -5,7 +5,7 @@
     "aliases": [
       "Airstrip"
     ],
-    "icon": "img/improvements/airstrip.webp",
+    "icon": "img/improvements/55a857dedc6d35a1.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_AIRSTRIP"
@@ -15,7 +15,7 @@
     "id": "alcazar",
     "name": "Alcázar",
     "aliases": [],
-    "icon": "img/improvements/alcazar.webp",
+    "icon": "img/improvements/01df71e87659d2cc.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_ALCAZAR"
@@ -25,7 +25,7 @@
     "id": "batey",
     "name": "Batey",
     "aliases": [],
-    "icon": "img/improvements/batey.webp",
+    "icon": "img/improvements/0277e49988fcc9ce.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_BATEY"
@@ -37,7 +37,7 @@
     "aliases": [
       "Cahokia Mounds"
     ],
-    "icon": "img/improvements/cahokia-mounds.webp",
+    "icon": "img/improvements/8f3cb79a726af877.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MOUND"
@@ -47,7 +47,7 @@
     "id": "camp",
     "name": "Camp",
     "aliases": [],
-    "icon": "img/improvements/camp.webp",
+    "icon": "img/improvements/30b6ac4a26780678.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_CAMP"
@@ -59,7 +59,7 @@
     "aliases": [
       "Château"
     ],
-    "icon": "img/improvements/chateau.webp",
+    "icon": "img/improvements/54eb45e2e055ce09.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_CHATEAU"
@@ -69,7 +69,7 @@
     "id": "chemamull",
     "name": "Chemamull",
     "aliases": [],
-    "icon": "img/improvements/chemamull.webp",
+    "icon": "img/improvements/72e0bb2b0a4208a9.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_CHEMAMULL"
@@ -81,7 +81,7 @@
     "aliases": [
       "City Park"
     ],
-    "icon": "img/improvements/city-park.webp",
+    "icon": "img/improvements/59dab43cebacb1d8.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_CITY_PARK"
@@ -93,7 +93,7 @@
     "aliases": [
       "Colossal Head"
     ],
-    "icon": "img/improvements/colossal-head.webp",
+    "icon": "img/improvements/ee61ded9bd0066ba.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_COLOSSAL_HEAD"
@@ -103,7 +103,7 @@
     "id": "conuco",
     "name": "Conuco",
     "aliases": [],
-    "icon": "img/improvements/conuco.webp",
+    "icon": "img/improvements/1b919ff9b3193852.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_CVS_ANACAONA_UI"
@@ -115,7 +115,7 @@
     "aliases": [
       "Farm"
     ],
-    "icon": "img/improvements/farm.webp",
+    "icon": "img/improvements/b8ac7b7fda0df3b9.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_FARM"
@@ -125,7 +125,7 @@
     "id": "feitoria",
     "name": "Feitoria",
     "aliases": [],
-    "icon": "img/improvements/feitoria.webp",
+    "icon": "img/improvements/ab871af24ef8ea61.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_FEITORIA"
@@ -137,7 +137,7 @@
     "aliases": [
       "Fishery"
     ],
-    "icon": "img/improvements/fishery.webp",
+    "icon": "img/improvements/46f790ef99c613cc.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_FISHERY"
@@ -149,7 +149,7 @@
     "aliases": [
       "Fishing Boats"
     ],
-    "icon": "img/improvements/fishing-boats.webp",
+    "icon": "img/improvements/a1bfcca8b50af697.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_FISHING_BOATS"
@@ -159,7 +159,7 @@
     "id": "fort",
     "name": "Fort",
     "aliases": [],
-    "icon": "img/improvements/fort.webp",
+    "icon": "img/improvements/65d2c4c83221c7fe.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_FORT"
@@ -171,7 +171,7 @@
     "aliases": [
       "Geothermal Plant"
     ],
-    "icon": "img/improvements/geothermal-plant.webp",
+    "icon": "img/improvements/d213d00ab26d1a07.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_GEOTHERMAL_PLANT"
@@ -183,7 +183,7 @@
     "aliases": [
       "Golf Course"
     ],
-    "icon": "img/improvements/golf-course.webp",
+    "icon": "img/improvements/95ded5dd9e697a9a.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_GOLF_COURSE"
@@ -195,7 +195,7 @@
     "aliases": [
       "Great Wall"
     ],
-    "icon": "img/improvements/great-wall.webp",
+    "icon": "img/improvements/873432e485e03dc4.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_GREAT_WALL"
@@ -205,7 +205,7 @@
     "id": "hacienda",
     "name": "Hacienda",
     "aliases": [],
-    "icon": "img/improvements/hacienda.webp",
+    "icon": "img/improvements/e170646deee751fd.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_HACIENDA"
@@ -217,7 +217,7 @@
     "aliases": [
       "Hunter's House"
     ],
-    "icon": "img/improvements/hunter-s-house.webp",
+    "icon": "img/improvements/ff0864fac29f8e4a.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_LIME_THULE_WBH"
@@ -229,7 +229,7 @@
     "aliases": [
       "Ice Hockey Rink"
     ],
-    "icon": "img/improvements/ice-hockey-rink.webp",
+    "icon": "img/improvements/a2334767395aba44.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_ICE_HOCKEY_RINK"
@@ -239,7 +239,7 @@
     "id": "kampung",
     "name": "Kampung",
     "aliases": [],
-    "icon": "img/improvements/kampung.webp",
+    "icon": "img/improvements/818a03f1e759889f.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_KAMPUNG"
@@ -251,7 +251,7 @@
     "aliases": [
       "Kurgan"
     ],
-    "icon": "img/improvements/kurgan.webp",
+    "icon": "img/improvements/408c4d5007f67774.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_KURGAN"
@@ -263,7 +263,7 @@
     "aliases": [
       "Lumber Mill"
     ],
-    "icon": "img/improvements/lumber-mill.webp",
+    "icon": "img/improvements/7fff1a9a3468538d.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_LUMBER_MILL"
@@ -273,7 +273,7 @@
     "id": "mahavihara",
     "name": "Mahavihara",
     "aliases": [],
-    "icon": "img/improvements/mahavihara.webp",
+    "icon": "img/improvements/8c83a21d13b43f45.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MAHAVIHARA"
@@ -285,7 +285,7 @@
     "aliases": [
       "Mekewap"
     ],
-    "icon": "img/improvements/mekewap.webp",
+    "icon": "img/improvements/29991d42c55e28c3.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MEKEWAP"
@@ -295,7 +295,7 @@
     "id": "mine",
     "name": "Mine",
     "aliases": [],
-    "icon": "img/improvements/mine.webp",
+    "icon": "img/improvements/bd302f1e9cce7b32.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MINE"
@@ -307,7 +307,7 @@
     "aliases": [
       "Missile Silo"
     ],
-    "icon": "img/improvements/missile-silo.webp",
+    "icon": "img/improvements/efab92ed5a6860f6.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MISSILE_SILO"
@@ -317,7 +317,7 @@
     "id": "mission",
     "name": "Mission",
     "aliases": [],
-    "icon": "img/improvements/mission.webp",
+    "icon": "img/improvements/5c50000d3def391e.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MISSION"
@@ -329,7 +329,7 @@
     "aliases": [
       "Moai"
     ],
-    "icon": "img/improvements/moai.webp",
+    "icon": "img/improvements/b934ded417b5000e.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MOAI"
@@ -341,7 +341,7 @@
     "aliases": [
       "Monastery"
     ],
-    "icon": "img/improvements/monastery.webp",
+    "icon": "img/improvements/adb9d9f566b1df69.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MONASTERY"
@@ -353,7 +353,7 @@
     "aliases": [
       "Mountain Tunnel"
     ],
-    "icon": "img/improvements/mountain-tunnel.webp",
+    "icon": "img/improvements/dcb457ab3eba2edd.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MOUNTAIN_TUNNEL"
@@ -365,7 +365,7 @@
     "aliases": [
       "Nazca Line"
     ],
-    "icon": "img/improvements/nazca-line.webp",
+    "icon": "img/improvements/8bf0c08c9ee7b1a0.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_NAZCA_LINE"
@@ -377,7 +377,7 @@
     "aliases": [
       "Nubian Pyramid"
     ],
-    "icon": "img/improvements/nubian-pyramid.webp",
+    "icon": "img/improvements/17d10d78d91546cf.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_PYRAMID"
@@ -389,7 +389,7 @@
     "aliases": [
       "Offshore Oil Rig"
     ],
-    "icon": "img/improvements/offshore-oil-rig.webp",
+    "icon": "img/improvements/4db3b0b169ecd1bc.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_OFFSHORE_OIL_RIG"
@@ -401,7 +401,7 @@
     "aliases": [
       "Offshore Wind Farm"
     ],
-    "icon": "img/improvements/offshore-wind-farm.webp",
+    "icon": "img/improvements/10abeee7ead69a25.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_OFFSHORE_WIND_FARM"
@@ -413,7 +413,7 @@
     "aliases": [
       "Oil Well"
     ],
-    "icon": "img/improvements/oil-well.webp",
+    "icon": "img/improvements/793e265a9856e907.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_OIL_WELL"
@@ -425,7 +425,7 @@
     "aliases": [
       "Open-Air Museum"
     ],
-    "icon": "img/improvements/open-air-museum.webp",
+    "icon": "img/improvements/72c78653c04f0180.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_OPEN_AIR_MUSEUM"
@@ -437,7 +437,7 @@
     "aliases": [
       "Outback Station"
     ],
-    "icon": "img/improvements/outback-station.webp",
+    "icon": "img/improvements/8eee2e7232b1e5be.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_OUTBACK_STATION"
@@ -447,7 +447,7 @@
     "id": "pa",
     "name": "Pā",
     "aliases": [],
-    "icon": "img/improvements/pa.webp",
+    "icon": "img/improvements/a81a5770faa689b5.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MAORI_PA"
@@ -459,7 +459,7 @@
     "aliases": [
       "Pairidaeza"
     ],
-    "icon": "img/improvements/pairidaeza.webp",
+    "icon": "img/improvements/f8cb4a18ba25b9cc.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_PAIRIDAEZA"
@@ -471,7 +471,7 @@
     "aliases": [
       "Pasture"
     ],
-    "icon": "img/improvements/pasture.webp",
+    "icon": "img/improvements/4b200551de63b08f.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_PASTURE"
@@ -481,7 +481,7 @@
     "id": "plantation",
     "name": "Plantation",
     "aliases": [],
-    "icon": "img/improvements/plantation.webp",
+    "icon": "img/improvements/27b73462932333d7.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_PLANTATION"
@@ -491,7 +491,7 @@
     "id": "polder",
     "name": "Polder",
     "aliases": [],
-    "icon": "img/improvements/polder.webp",
+    "icon": "img/improvements/f97c21d84aafc4e4.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_POLDER"
@@ -501,7 +501,7 @@
     "id": "qhapaq-nan",
     "name": "Qhapaq Ñan",
     "aliases": [],
-    "icon": "img/improvements/qhapaq-nan.webp",
+    "icon": "img/improvements/dbea729744b44cfc.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_MOUNTAIN_ROAD"
@@ -513,7 +513,7 @@
     "aliases": [
       "Quarry"
     ],
-    "icon": "img/improvements/quarry.webp",
+    "icon": "img/improvements/6e564164669b1136.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_QUARRY"
@@ -525,7 +525,7 @@
     "aliases": [
       "Rock-Hewn Church"
     ],
-    "icon": "img/improvements/rock-hewn-church.webp",
+    "icon": "img/improvements/08a4cde53c1c119f.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_ROCK_HEWN_CHURCH"
@@ -537,7 +537,7 @@
     "aliases": [
       "Roman Fort"
     ],
-    "icon": "img/improvements/roman-fort.webp",
+    "icon": "img/improvements/b12146070b331cca.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_ROMAN_FORT"
@@ -549,7 +549,7 @@
     "aliases": [
       "Seaside Resort"
     ],
-    "icon": "img/improvements/seaside-resort.webp",
+    "icon": "img/improvements/2d0f2b65f4526de6.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_BEACH_RESORT"
@@ -561,7 +561,7 @@
     "aliases": [
       "Seastead"
     ],
-    "icon": "img/improvements/seastead.webp",
+    "icon": "img/improvements/1f0a16ea8c4000f3.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_SEASTEAD"
@@ -573,7 +573,7 @@
     "aliases": [
       "Ski Resort"
     ],
-    "icon": "img/improvements/ski-resort.webp",
+    "icon": "img/improvements/60f5aea76d07fba2.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_SKI_RESORT"
@@ -585,7 +585,7 @@
     "aliases": [
       "Solar Farm"
     ],
-    "icon": "img/improvements/solar-farm.webp",
+    "icon": "img/improvements/2b52bb7786355fa7.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_SOLAR_FARM"
@@ -595,7 +595,7 @@
     "id": "sphinx",
     "name": "Sphinx",
     "aliases": [],
-    "icon": "img/improvements/sphinx.webp",
+    "icon": "img/improvements/5512310985370d71.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_SPHINX"
@@ -607,7 +607,7 @@
     "aliases": [
       "Stepwell"
     ],
-    "icon": "img/improvements/stepwell.webp",
+    "icon": "img/improvements/9b9165996326b9c2.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_STEPWELL"
@@ -619,7 +619,7 @@
     "aliases": [
       "Terrace Farm"
     ],
-    "icon": "img/improvements/terrace-farm.webp",
+    "icon": "img/improvements/987ef5d81dce7ee0.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_TERRACE_FARM"
@@ -631,7 +631,7 @@
     "aliases": [
       "Trading Dome"
     ],
-    "icon": "img/improvements/trading-dome.webp",
+    "icon": "img/improvements/1a396974bd4deb92.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_TRADING_DOME"
@@ -643,7 +643,7 @@
     "aliases": [
       "Wind Farm"
     ],
-    "icon": "img/improvements/wind-farm.webp",
+    "icon": "img/improvements/bb7ee3b896393808.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_WIND_FARM"
@@ -653,7 +653,7 @@
     "id": "ziggurat",
     "name": "Ziggurat",
     "aliases": [],
-    "icon": "img/improvements/ziggurat.webp",
+    "icon": "img/improvements/f9b06f9cec0af124.webp",
     "source": {
       "bbg": "improvements_7.5.html",
       "locKey": "LOC_IMPROVEMENT_ZIGGURAT"
