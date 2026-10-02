@@ -1,14 +1,35 @@
+/*
+ * Art direction "Interface en jeu": colours and fonts taken from the Civ VI
+ * base-game UI files (Base/Assets/UI):
+ * - Civ6_Styles.xml, most used colours: #070F17, #051D33, #102B43 (16,43,67),
+ *   #294A6C (41,74,108), text #D0D4D9 (208,212,217);
+ * - Civ6_ColorAtlas.xml: GoldMetal #CBAD73, GoldMetalDark #826F4B,
+ *   Science #44B3EA, Civ6DarkRed #981E1E, COLOR_MEDIUM_GREEN #076E27,
+ *   Emergency_Bronze #CE7C33.
+ * Not from the game: --muted, --panel-hi, and --partial (Emergency_Bronze
+ * darkened so that white text stays readable), chosen here.
+ * Fonts: the game uses Minion Pro (titles) and Myriad Pro (text), Adobe
+ * commercial fonts; the site uses the free Crimson Pro and Source Sans 3
+ * (Google Fonts, index.html) as look-alikes, not equivalents.
+ */
 :root {
-  --bg: #14161c;
-  --panel: #1f232c;
-  --panel-2: #2a2f3a;
-  --text: #ece6d6;
-  --muted: #a39d8f;
-  --gold: #d4a94a;
-  --ok: #3f8f4f;
-  --partial: #c2842b;
-  --ko: #9b3a33;
-  --radius: 8px;
+  --bg: #070F17;
+  --bar: #051D33;
+  --panel: #0D2438;
+  --panel-hi: #102B43;
+  --panel-2: #294A6C;
+  --text: #D0D4D9;
+  --muted: #A9B4BF;
+  --gold: #CBAD73;
+  --gold-dk: #826F4B;
+  --gold-lt: #E8D4A6;
+  --accent: #44B3EA;
+  --ok: #076E27;
+  --partial: #A8601F;
+  --ko: #981E1E;
+  --radius: 4px;
+  --serif: "Crimson Pro", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -18,36 +39,49 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 16px/1.45 var(--sans);
 }
 
-header { text-align: center; padding: 20px 16px 8px; }
+/* Top bar */
+header { background: var(--bar); border-bottom: 2px solid var(--gold-dk); }
+header .bar {
+  max-width: 1100px; margin: 0 auto; padding: 10px 24px;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 28px;
+}
 h1 {
-  margin: 0 0 12px;
-  font-family: Georgia, "Times New Roman", serif;
-  letter-spacing: .08em;
+  margin: 0;
+  font-family: var(--serif); font-weight: 600;
+  letter-spacing: .04em;
   color: var(--gold);
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 2px; }
 nav a {
-  color: var(--text);
+  color: var(--muted);
   text-decoration: none;
-  padding: 7px 14px;
-  border: 1px solid var(--panel-2);
-  border-radius: 999px;
-  background: var(--panel);
-  font-size: .95rem;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  font-size: .9rem; font-weight: 600;
 }
-nav a:hover { border-color: var(--gold); }
-nav a.active { background: var(--gold); color: #1a1a1a; border-color: var(--gold); }
-nav a.solved::after { content: " ✓"; }
+nav a:hover { color: #fff; background: rgba(41, 74, 108, .45); }
+nav a.active { color: #fff; background: var(--panel-hi); box-shadow: inset 0 -2px 0 var(--accent); }
+nav a.solved::after { content: " ✓"; color: var(--gold); }
 
-main { max-width: 760px; margin: 0 auto; padding: 12px 16px 40px; }
-.hint { text-align: center; color: var(--muted); margin: 8px 0 16px; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 40px; }
+
+/* Panel holding the rule, the clue and the input (js/core/game.js) */
+.board {
+  max-width: 560px; margin: 0 auto; padding: 24px 28px 28px;
+  background: linear-gradient(180deg, var(--panel-hi) 0%, #0A1C2C 100%);
+  border: 1px solid var(--panel-2); border-radius: 6px;
+  box-shadow: 0 0 0 1px var(--bg), 0 20px 40px rgba(0, 0, 0, .5);
+}
+@media (max-width: 480px) { .board { padding: 18px 14px 20px; } }
+
+.hint { text-align: center; color: var(--muted); margin: 0 0 18px; }
 .notice { text-align: center; color: var(--muted); }
-.counter { text-align: center; color: var(--muted); font-size: .9rem; min-height: 1.2em; margin: 6px 0; }
+.counter { text-align: center; color: var(--muted); font-size: .9rem; min-height: 1.2em; margin: 14px 0 6px; }
 .yesterday { text-align: center; color: var(--muted); font-size: .9rem; margin-top: 24px; }
 .legend { text-align: center; font-size: .85rem; color: var(--muted); margin: 0 0 12px; }
 .sw { display: inline-block; width: .9em; height: .9em; border-radius: 3px; vertical-align: -1px; margin: 0 4px 0 8px; }
@@ -57,58 +91,70 @@ main { max-width: 760px; margin: 0 auto; padding: 12px 16px 40px; }
 .guess { position: relative; max-width: 420px; margin: 0 auto; }
 .guess input {
   width: 100%;
-  padding: 12px 14px;
-  font-size: 1rem;
-  color: var(--text);
-  background: var(--panel);
-  border: 1px solid var(--panel-2);
+  padding: 12px 16px;
+  font: inherit; font-size: 1rem;
+  color: #fff;
+  background: var(--bar);
+  border: 1px solid var(--gold-dk);
   border-radius: var(--radius);
   outline: none;
 }
-.guess input:focus { border-color: var(--gold); }
+.guess input::placeholder { color: var(--muted); }
+.guess input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(68, 179, 234, .35); }
 .guess input:disabled { opacity: .6; }
 .suggestions {
   position: absolute; z-index: 10; left: 0; right: 0; top: 100%;
   list-style: none; margin: 4px 0 0; padding: 4px;
-  background: var(--panel); border: 1px solid var(--panel-2); border-radius: var(--radius);
-  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  background: var(--bar); border: 1px solid var(--gold-dk); border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
 }
 .suggestions li { display: flex; align-items: center; gap: 10px; padding: 6px 8px; border-radius: 6px; cursor: pointer; }
-.suggestions li.active, .suggestions li:hover { background: var(--panel-2); }
+.suggestions li.active, .suggestions li:hover { background: var(--panel-hi); color: #fff; }
 .suggestions img { width: 32px; height: 32px; object-fit: cover; border-radius: 50%; background: var(--panel-2); }
 
-/* Clue frames (portrait / silhouette) */
+/* Clue frames: brass ring (border-box gradient) around a fill (--frame-fill). */
 .frame {
-  width: min(280px, 80vw); aspect-ratio: 1; margin: 0 auto 16px;
-  overflow: hidden; border-radius: var(--radius);
-  border: 2px solid var(--gold); background: var(--panel);
+  --frame-fill: var(--bar);
+  width: min(260px, 72vw); aspect-ratio: 1; margin: 0 auto 18px;
+  overflow: hidden; border-radius: 6px;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(var(--frame-fill), var(--frame-fill)) padding-box,
+    conic-gradient(from 200deg, var(--gold-dk), var(--gold-lt), var(--gold), var(--gold-dk), var(--gold-lt), var(--gold-dk)) border-box;
+  box-shadow: 0 0 0 1px var(--bg), 0 10px 24px rgba(0, 0, 0, .45);
 }
+/* Medallion frames (round portraits). */
+.portrait-frame, .regard-frame { border-radius: 50%; }
 .frame img { width: 100%; height: 100%; object-fit: contain; display: block; user-select: none; -webkit-user-drag: none; }
 .portrait-frame img { transform: scale(1.08); transition: filter .5s ease, transform .6s ease; }
-.silhouette-frame { background: #d9d2bf; }
+.silhouette-frame { --frame-fill: #d9d2bf; }
 .silhouette-frame img { filter: brightness(0); transition: transform .5s ease; }
 .silhouette-frame img.revealed { filter: none; }
-.regard-frame { position: relative; border-radius: 50%; background: #808080; }
+.regard-frame { position: relative; --frame-fill: #808080; }
 .regard-frame img {
   position: absolute; left: 50%; top: 50%; height: auto; max-width: none;
   transform: translate(-50%, -50%); transition: width .5s ease;
 }
-.regard-frame.revealed { background: var(--panel); }
+.regard-frame.revealed { --frame-fill: var(--bar); }
 .regard-frame.revealed img { position: static; width: 100%; height: 100%; transform: none; }
 /* City-state icons have a uniform #181818 background (BBG site). */
-.citystate-frame { background: #181818; }
+.citystate-frame { --frame-fill: #181818; }
 /* Tech / civic icons: 160 px, transparent; padding keeps the blur inside the frame. */
 .techcivic-frame img { padding: 14%; box-sizing: border-box; transition: filter .5s ease; }
 
 .toggle { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 0 12px; cursor: pointer; user-select: none; }
-.toggle input { width: 18px; height: 18px; accent-color: var(--gold); cursor: pointer; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; }
 .toggle-hint { color: var(--muted); font-size: .85rem; }
+@media (max-width: 480px) {
+  .toggle { flex-wrap: wrap; row-gap: 0; }
+  .toggle-hint { flex-basis: 100%; text-align: center; }
+}
 
 /* Description */
 .quotes blockquote {
   margin: 0 0 10px; padding: 12px 16px;
-  background: var(--panel); border-left: 3px solid var(--gold); border-radius: var(--radius);
-  font-family: Georgia, serif; font-style: italic;
+  background: var(--bar); border: 1px solid var(--panel-2); border-radius: var(--radius);
+  font-family: var(--serif); font-size: 1.1rem; font-style: italic;
 }
 .quotes .more { text-align: center; color: var(--muted); font-size: .85rem; }
 
@@ -116,10 +162,12 @@ main { max-width: 760px; margin: 0 auto; padding: 12px 16px 40px; }
 .history { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
 .guess-row {
   display: flex; align-items: center; gap: 10px; max-width: 420px; width: 100%; margin: 0 auto;
-  padding: 6px 10px; border-radius: var(--radius); background: var(--ko);
+  padding: 6px 14px 6px 6px; border-radius: var(--radius);
+  background: #2A0F12; border: 1px solid var(--ko); color: #fff; font-weight: 600;
 }
-.guess-row.ok { background: var(--ok); }
-.guess-row img { width: 36px; height: 36px; object-fit: cover; border-radius: 50%; background: rgba(0,0,0,.2); }
+.guess-row.ok { background: #062A14; border-color: #1E9A45; }
+.guess-row img { width: 40px; height: 40px; object-fit: cover; border-radius: 50%; background: rgba(0,0,0,.3); border: 2px solid var(--ko); }
+.guess-row.ok img { border-color: #1E9A45; }
 
 /* Classic table */
 .classic-scroll { overflow-x: auto; margin-top: 12px; }
@@ -129,11 +177,11 @@ main { max-width: 760px; margin: 0 auto; padding: 12px 16px 40px; }
   gap: 4px; min-width: calc(150px + var(--cols) * 96px);
 }
 .classic-table { margin-top: 4px; gap: 4px; }
-.classic-header .cell { background: none; font-size: .8rem; color: var(--muted); min-height: 0; padding: 2px 4px; border-bottom: 1px solid var(--panel-2); }
+.classic-header .cell { background: none; border: 0; font-size: .8rem; font-weight: 600; color: var(--gold); min-height: 0; padding: 2px 4px; border-bottom: 1px solid var(--gold-dk); border-radius: 0; }
 .cell {
   display: flex; align-items: center; justify-content: center; text-align: center;
-  min-height: 56px; padding: 4px 6px; border-radius: 6px;
-  font-size: .82rem; background: var(--panel); word-break: break-word;
+  min-height: 56px; padding: 4px 6px; border-radius: var(--radius);
+  font-size: .82rem; background: var(--panel); border: 1px solid var(--panel-2); color: #fff; word-break: break-word;
 }
 .cell.ok { background: var(--ok); } .cell.partial { background: var(--partial); } .cell.ko { background: var(--ko); }
 .cell.name { justify-content: flex-start; gap: 8px; text-align: left; }
@@ -152,17 +200,24 @@ main { max-width: 760px; margin: 0 auto; padding: 12px 16px 40px; }
 
 /* Win panel */
 .win {
-  display: flex; align-items: center; gap: 16px; justify-content: center;
-  margin: 16px auto; padding: 16px; max-width: 480px;
-  background: var(--panel); border: 1px solid var(--gold); border-radius: var(--radius);
+  display: flex; align-items: center; gap: 18px; justify-content: center;
+  margin: 16px auto; padding: 18px 20px; max-width: 520px;
+  background: var(--panel-hi); border: 1px solid var(--gold-dk); border-radius: 6px;
+  box-shadow: inset 0 1px 0 rgba(232, 212, 166, .15);
 }
-.win-portrait { width: 84px; height: 84px; object-fit: cover; border-radius: 50%; background: var(--panel-2); }
+.win-portrait {
+  width: 88px; height: 88px; object-fit: cover; border-radius: 50%; flex: none;
+  border: 3px solid var(--gold); background: var(--bar);
+}
+.win-title { font-family: var(--serif); font-size: 1.25rem; }
 .win p { margin: 4px 0; }
-.win-title strong { color: var(--gold); }
+.win-title strong { color: var(--gold-lt); }
 .win button {
-  margin-top: 6px; padding: 8px 14px; border: 0; border-radius: 6px;
-  background: var(--gold); color: #1a1a1a; font-weight: 600; cursor: pointer;
+  margin-top: 6px; padding: 10px 16px; min-height: 44px; border: 1px solid var(--gold-lt); border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--gold) 0%, #A88A52 100%); color: #1A1408;
+  font: inherit; font-weight: 600; cursor: pointer;
 }
+.win button:hover { filter: brightness(1.08); }
 .next { color: var(--muted); font-size: .9rem; }
 
 footer { text-align: center; color: var(--muted); font-size: .75rem; padding: 0 16px 24px; }

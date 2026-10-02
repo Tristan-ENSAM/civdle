@@ -70,10 +70,13 @@ export function mountMode(mode, env) {
   // Drop stored ids that no longer exist in the data.
   state.guesses = state.guesses.filter((id) => byId.has(id));
 
+  // .board groups the rule, the clue and the input in one panel (css/style.css).
   container.innerHTML = `
-    <p class="hint"></p>
-    <div class="clue"></div>
-    <div class="input-slot"></div>
+    <section class="board">
+      <p class="hint"></p>
+      <div class="clue"></div>
+      <div class="input-slot"></div>
+    </section>
     <p class="counter"></p>
     <div class="win" hidden></div>
     <div class="history"></div>
