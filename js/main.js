@@ -3,7 +3,7 @@
  * The selected mode is kept in the URL hash (#classic, #portrait, …) so a
  * link can point directly to a mode. The site title links to #accueil, the
  * summary of the modes (js/home.js); an empty or unknown hash still opens the
- * first mode.
+ * first mode. Display settings (gear button) are in js/core/settings.js.
  */
 import { loadData } from "./core/data.js";
 import { dateInTimezone, pickDaily } from "./core/daily.js";
@@ -11,8 +11,10 @@ import { loadState } from "./core/storage.js";
 import { mountMode } from "./core/game.js";
 import modes from "./modes/index.js";
 import { renderHome, HOME_ID } from "./home.js";
+import { initSettings } from "./core/settings.js";
 
 async function main() {
+  initSettings();
   const tabs = document.getElementById("tabs");
   const container = document.getElementById("game");
   let data;

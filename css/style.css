@@ -8,6 +8,9 @@
  *   Emergency_Bronze #CE7C33.
  * Not from the game: --muted, --panel-hi, and --partial (Emergency_Bronze
  * darkened so that white text stays readable), chosen here.
+ * Colour-blind mode (html.colorblind, js/core/settings.js): --ok becomes
+ * Okabe-Ito blue #0072B2 and --ko a neutral grey #4A5058 (chosen here);
+ * --partial is unchanged.
  * Fonts: the game uses Minion Pro (titles) and Myriad Pro (text), Adobe
  * commercial fonts; the site uses the free Crimson Pro and Source Sans 3
  * (Google Fonts, index.html) as look-alikes, not equivalents.
@@ -27,9 +30,21 @@
   --ok: #076E27;
   --partial: #A8601F;
   --ko: #981E1E;
+  /* History rows (non-classic modes): dark fill + brighter border. */
+  --ok-line: #1E9A45;
+  --ok-row: #062A14;
+  --ko-row: #2A0F12;
   --radius: 4px;
   --serif: "Crimson Pro", Georgia, "Times New Roman", serif;
   --sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+
+html.colorblind {
+  --ok: #0072B2;
+  --ko: #4A5058;
+  --ok-line: #3A9AD9;
+  --ok-row: #062236;
+  --ko-row: #1C1F23;
 }
 
 * { box-sizing: border-box; }
@@ -70,6 +85,33 @@ nav a {
 nav a:hover { color: #fff; background: rgba(41, 74, 108, .45); }
 nav a.active { color: #fff; background: var(--panel-hi); box-shadow: inset 0 -2px 0 var(--accent); }
 nav a.solved::after { content: " ✓"; color: var(--gold); }
+
+/* Settings button (gear) and dialog, js/core/settings.js */
+header .bar { position: relative; padding-right: 64px; padding-left: 64px; }
+.icon-btn {
+  position: absolute; right: 16px; top: 10px;
+  width: 44px; height: 44px; display: grid; place-items: center; padding: 0;
+  color: var(--gold); background: none; border: 1px solid transparent; border-radius: 50%; cursor: pointer;
+}
+.icon-btn:hover { color: var(--gold-lt); background: rgba(41, 74, 108, .45); }
+.icon-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#settings {
+  width: min(420px, calc(100vw - 32px)); padding: 20px 24px 24px;
+  color: var(--text); background: linear-gradient(180deg, var(--panel-hi) 0%, #0A1C2C 100%);
+  border: 1px solid var(--gold-dk); border-radius: 6px; box-shadow: 0 20px 40px rgba(0, 0, 0, .6);
+}
+#settings::backdrop { background: rgba(7, 15, 23, .7); }
+#settings h2 { margin: 0 0 16px; font-family: var(--serif); font-weight: 600; font-size: 1.5rem; color: var(--gold-lt); }
+.setting { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; }
+.setting input { flex: none; width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--accent); cursor: pointer; }
+.setting-label { display: block; font-weight: 600; color: #fff; }
+.setting-hint { display: block; font-size: .85rem; color: var(--muted); }
+.dialog-close {
+  display: block; margin: 20px 0 0 auto; padding: 10px 16px; min-height: 44px;
+  color: var(--text); background: var(--bar); border: 1px solid var(--gold-dk); border-radius: var(--radius);
+  font: inherit; font-weight: 600; cursor: pointer;
+}
+.dialog-close:hover { border-color: var(--gold); color: #fff; }
 
 main { max-width: 760px; margin: 0 auto; padding: 32px 16px 40px; }
 
@@ -196,11 +238,11 @@ main { max-width: 760px; margin: 0 auto; padding: 32px 16px 40px; }
 .guess-row {
   display: flex; align-items: center; gap: 10px; max-width: 420px; width: 100%; margin: 0 auto;
   padding: 6px 14px 6px 6px; border-radius: var(--radius);
-  background: #2A0F12; border: 1px solid var(--ko); color: #fff; font-weight: 600;
+  background: var(--ko-row); border: 1px solid var(--ko); color: #fff; font-weight: 600;
 }
-.guess-row.ok { background: #062A14; border-color: #1E9A45; }
+.guess-row.ok { background: var(--ok-row); border-color: var(--ok-line); }
 .guess-row img { width: 40px; height: 40px; object-fit: cover; border-radius: 50%; background: rgba(0,0,0,.3); border: 2px solid var(--ko); }
-.guess-row.ok img { border-color: #1E9A45; }
+.guess-row.ok img { border-color: var(--ok-line); }
 
 /* Classic table */
 .classic-scroll { overflow-x: auto; margin-top: 12px; }

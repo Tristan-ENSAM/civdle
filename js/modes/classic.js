@@ -17,7 +17,13 @@
  * displayed as icons from `data/catalogs.json` (see fillValue).
  */
 
+import { getSettings } from "../core/settings.js";
+
 const EMPTY_LABEL = "Aucun";
+
+// Share squares per status; colour-blind palette mirrors css/style.css.
+const SQUARES = { ok: "🟩", partial: "🟧", ko: "🟥" };
+const SQUARES_COLORBLIND = { ok: "🟦", partial: "🟧", ko: "⬛" };
 
 function asArray(v) {
   if (v == null) return [];
@@ -152,12 +158,13 @@ export default {
 
   shareGrid(ctx) {
     const attrs = ctx.config.classicAttributes ?? [];
+    const squares = getSettings().colorblind ? SQUARES_COLORBLIND : SQUARES;
     return ctx.state.guesses.map((id) => {
       const l = ctx.byId.get(id);
       return attrs.map((attr) => {
         const r = compareAttribute(attr, l[attr.key], ctx.answer[attr.key], ctx.config);
         if (r.arrow) return r.arrow === "up" ? "⬆️" : "⬇️";
-        return { ok: "🟩", partial: "🟧", ko: "🟥" }[r.status];
+        return squares[r.status];
       }).join("");
     }).join("\n");
   },
