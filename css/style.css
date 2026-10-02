@@ -52,9 +52,20 @@ html.colorblind {
 
 body {
   margin: 0;
-  background: var(--bg);
+  /* Main-menu art of the game (statue carrying the globe, img/bg/), darkened
+     and tinted night blue so that text stays readable; 960 px version below
+     960 px wide. Some browsers (iOS Safari) ignore "fixed" and let the image
+     scroll with the page. */
+  --bg-shade:
+    linear-gradient(180deg, rgba(7, 15, 23, .55) 0%, rgba(7, 15, 23, .7) 45%, rgba(7, 15, 23, .95) 85%, var(--bg) 100%),
+    radial-gradient(ellipse 90% 80% at 50% 35%, transparent 30%, rgba(5, 29, 51, .7) 100%);
+  background: var(--bg-shade), url("../img/bg/atlas.webp") center 15% / cover no-repeat, var(--bg);
+  background-attachment: fixed;
   color: var(--text);
   font: 16px/1.45 var(--sans);
+}
+@media (max-width: 960px) {
+  body { background-image: var(--bg-shade), url("../img/bg/atlas-960.webp"); }
 }
 
 /* Top bar */
