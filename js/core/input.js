@@ -7,21 +7,31 @@ import { normalize } from "./data.js";
  * Create the guess input.
  *
  * @param {object}   opts
- * @param {object[]} opts.leaders         All leader records.
+ * @param {object[]} opts.leaders         Records that can be guessed (leaders, or
+ *        another pool such as city-states); each needs `id`, `name`, `_search`.
  * @param {() => Set<string>} opts.excluded  Ids to hide (already guessed).
- * @param {(leader: object) => void} opts.onSubmit  Called with the chosen leader.
+ * @param {(leader: object) => void} opts.onSubmit  Called with the chosen record.
+ * @param {string}  [opts.placeholder]     Input placeholder.
+ * @param {string}  [opts.label]           Accessible name of the input.
+ * @param {boolean} [opts.images=true]     Show each suggestion's thumbnail
+ *        (`portrait`, else `icon`). Off when the thumbnail would give the
+ *        answer away (city-state icons).
  * @returns {{ el: HTMLElement, disable: () => void, focus: () => void }}
  */
-export function createGuessInput({ leaders, excluded, onSubmit }) {
+export function createGuessInput({
+  leaders, excluded, onSubmit,
+  placeholder = "Tape le nom d'un leader…", label = "Nom du leader", images = true,
+}) {
   const wrap = document.createElement("div");
   wrap.className = "guess";
   wrap.innerHTML = `
     <input type="text" autocomplete="off" spellcheck="false"
-           placeholder="Tape le nom d'un leader…" aria-label="Nom du leader"
            role="combobox" aria-expanded="false" aria-autocomplete="list">
     <ul class="suggestions" role="listbox" hidden></ul>`;
   const input = wrap.querySelector("input");
   const list = wrap.querySelector("ul");
+  input.placeholder = placeholder;
+  input.setAttribute("aria-label", label);
   let matches = [];
   let active = 0;
 
@@ -51,7 +61,8 @@ export function createGuessInput({ leaders, excluded, onSubmit }) {
       const li = document.createElement("li");
       li.role = "option";
       li.className = i === active ? "active" : "";
-      li.innerHTML = `${l.portrait ? `<img src="${l.portrait}" alt="">` : ""}<span></span>`;
+      const thumb = images ? (l.portrait ?? l.icon) : null;
+      li.innerHTML = `${thumb ? `<img src="${thumb}" alt="">` : ""}<span></span>`;
       li.querySelector("span").textContent = l.name;
       li.addEventListener("mousedown", (e) => { e.preventDefault(); choose(l); });
       list.appendChild(li);

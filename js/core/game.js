@@ -13,6 +13,11 @@
  *     renderGuess(ctx, leader),      // optional: element added to the history
  *     shareGrid(ctx),                // optional: extra lines for the share text
  *     revealMs(ctx),                 // optional: ms to wait before the win panel
+ *     pool: "cityStates",            // optional: answer pool other than the
+ *                                    // leaders (key of the object returned by
+ *                                    // loadData); resolved by main.js
+ *     texts: {...},                  // optional: wording for that pool, see TEXTS
+ *     suggestionImages: false,       // optional: hide thumbnails in the input
  *   }
  *
  * The engine owns: daily answer, input, history list, win detection,
@@ -22,21 +27,39 @@ import { pickDaily, shiftDate, msUntilNextDay } from "./daily.js";
 import { loadState, saveState } from "./storage.js";
 import { createGuessInput } from "./input.js";
 
+/** Default wording (leader pool); a mode can override any key with `mode.texts`. */
+const TEXTS = {
+  none: "Aucun leader éligible pour ce mode (données manquantes).",
+  placeholder: "Tape le nom d'un leader…",
+  label: "Nom du leader",
+  next: "Prochain leader dans",
+  yesterday: "Le leader d'hier était :",
+};
+
+/** Thumbnail of a record: leader portrait, else icon (city-states). */
+export function thumbOf(item) {
+  return item.portrait ?? item.icon ?? null;
+}
+
 /**
  * Mount a mode into a container.
  *
  * @param {object} mode
- * @param {object} env  { leaders, config, dateStr, container, onSolved }
+ * @param {object} env  { leaders, config, dateStr, container, onSolved };
+ *        `leaders` is the answer pool of the mode (the leaders, or e.g. the
+ *        city-states for a mode with `pool: "cityStates"`).
  */
 export function mountMode(mode, env) {
   const { leaders, config, dateStr, container } = env;
   const eligible = (l) => (mode.eligible ? mode.eligible(l, config) : true);
   const answer = pickDaily(leaders, mode.id, dateStr, config, eligible);
   const byId = new Map(leaders.map((l) => [l.id, l]));
+  const texts = { ...TEXTS, ...(mode.texts ?? {}) };
 
   container.innerHTML = "";
   if (!answer) {
-    container.innerHTML = `<p class="notice">Aucun leader éligible pour ce mode (données manquantes).</p>`;
+    container.innerHTML = `<p class="notice"></p>`;
+    container.querySelector(".notice").textContent = texts.none;
     return;
   }
 
@@ -69,6 +92,9 @@ export function mountMode(mode, env) {
     leaders,
     excluded: () => new Set(state.guesses),
     onSubmit: (leader) => guess(leader),
+    placeholder: texts.placeholder,
+    label: texts.label,
+    images: mode.suggestionImages ?? true,
   });
   container.querySelector(".input-slot").appendChild(input.el);
 
@@ -108,14 +134,15 @@ export function mountMode(mode, env) {
     const n = state.guesses.length;
     els.win.hidden = false;
     els.win.innerHTML = `
-      ${answer.portrait ? `<img class="win-portrait" src="${answer.portrait}" alt="">` : ""}
+      ${thumbOf(answer) ? `<img class="win-portrait" src="${thumbOf(answer)}" alt="">` : ""}
       <div>
         <p class="win-title">Bravo ! C'était <strong></strong></p>
         <p>Trouvé en ${n} essai${n > 1 ? "s" : ""}.</p>
         <button type="button" class="share">Copier le résultat</button>
-        <p class="next">Prochain leader dans <span class="countdown"></span></p>
+        <p class="next"><span class="next-label"></span> <span class="countdown"></span></p>
       </div>`;
     els.win.querySelector("strong").textContent = answer.name;
+    els.win.querySelector(".next-label").textContent = texts.next;
     els.win.querySelector(".share").addEventListener("click", (e) => share(e.currentTarget));
     startCountdown(els.win.querySelector(".countdown"));
   }
@@ -151,7 +178,7 @@ export function mountMode(mode, env) {
 
   // Yesterday's answer, like pokedle.
   const y = pickDaily(leaders, mode.id, shiftDate(dateStr, -1), config, eligible);
-  if (y) container.querySelector(".yesterday").textContent = `Le leader d'hier était : ${y.name}`;
+  if (y) container.querySelector(".yesterday").textContent = `${texts.yesterday} ${y.name}`;
 
   // Replay stored guesses without animation (history shows newest first).
   state.guesses.forEach((id) => addHistory(byId.get(id), false));
@@ -159,11 +186,12 @@ export function mountMode(mode, env) {
   if (!state.won) input.focus();
 }
 
-/** Default history row: portrait + name, green if correct, red otherwise. */
+/** Default history row: thumbnail + name, green if correct, red otherwise. */
 export function defaultGuessRow(leader, answer) {
   const row = document.createElement("div");
   row.className = `guess-row ${leader.id === answer.id ? "ok" : "ko"}`;
-  row.innerHTML = `${leader.portrait ? `<img src="${leader.portrait}" alt="">` : ""}<span></span>`;
+  const thumb = thumbOf(leader);
+  row.innerHTML = `${thumb ? `<img src="${thumb}" alt="">` : ""}<span></span>`;
   row.querySelector("span").textContent = leader.name;
   return row;
 }

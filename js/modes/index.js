@@ -8,5 +8,6 @@ import portrait from "./portrait.js";
 import silhouette from "./silhouette.js";
 import description from "./description.js";
 import regard from "./regard.js";
+import citystates from "./citystates.js";
 
-export default [classic, portrait, silhouette, regard, description];
+export default [classic, portrait, silhouette, regard, description, citystates];

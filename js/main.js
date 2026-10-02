@@ -21,7 +21,9 @@ async function main() {
       `${err.message}. Si tu as ouvert index.html directement (file://), lance un serveur local : voir README.`;
     return;
   }
-  const { config, leaders } = data;
+  const { config } = data;
+  // Answer pool of a mode: the leaders, unless the mode names another pool.
+  const poolOf = (m) => (m.pool ? data[m.pool] ?? [] : data.leaders);
   document.title = config.siteTitle ?? "Civdle";
   document.getElementById("site-title").textContent = config.siteTitle ?? "Civdle";
   const dateStr = dateInTimezone(config.timezone);
@@ -33,7 +35,7 @@ async function main() {
       a.href = `#${m.id}`;
       a.className = m.id === currentId ? "active" : "";
       const st = loadState(m.id, dateStr);
-      const ans = pickDaily(leaders, m.id, dateStr, config, (l) => (m.eligible ? m.eligible(l, config) : true));
+      const ans = pickDaily(poolOf(m), m.id, dateStr, config, (l) => (m.eligible ? m.eligible(l, config) : true));
       if (st.won && ans && st.answerId === ans.id) a.classList.add("solved");
       a.textContent = m.label;
       tabs.appendChild(a);
@@ -44,7 +46,7 @@ async function main() {
     const id = location.hash.slice(1);
     const mode = modes.find((m) => m.id === id) ?? modes[0];
     renderTabs(mode.id);
-    mountMode(mode, { leaders, config, dateStr, container, onSolved: () => renderTabs(mode.id) });
+    mountMode(mode, { leaders: poolOf(mode), config, dateStr, container, onSolved: () => renderTabs(mode.id) });
   }
 
   window.addEventListener("hashchange", route);

@@ -27,6 +27,8 @@ css/style.css
 data/config.json        réglages + colonnes du mode Classique
 data/leaders.json       88 leaders (généré, voir « Données »)
 data/catalogs.json      catalogues identifiant -> libellé + icône (quartiers, types d'unités)
+data/city_states.json   48 cités-États du mode Cités-État (généré, voir « Cités-État »)
+img/city-states/        emblèmes des cités-États : couleur (<id>.webp) et gris (<id>-grey.webp)
 img/portraits/          portraits (générés depuis le site BBG)
 img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
@@ -128,6 +130,23 @@ Option `catalog` : les valeurs sont des identifiants, comparés tels quels, affi
 - Les incohérences (id en double, attribut absent, identifiant absent d'un catalogue) sont signalées dans la console du navigateur.
 - `tools/csv2json.py` reste disponible pour saisir des leaders à la main depuis un tableur.
 
+### Cités-État
+
+`data/city_states.json` et `img/city-states/` sont **générés** par `tools/bbg/build_city_states.py` depuis la page des cités-États du site BBG :
+
+```
+git -C bbg sparse-checkout add '/fr_FR/city_states_7.5.html' '/en_US/city_states_7.5.html' '/images/city_states/'
+python tools/bbg/build_city_states.py bbg 7.5
+```
+
+| Champ | Source |
+|---|---|
+| `name`, `type` | `fr_FR/city_states_7.5.html` (nom affiché, rubrique Culturelle / Industrielle / …) |
+| `aliases` | nom anglais de `en_US/city_states_7.5.html` s'il diffère |
+| `id` | nom du fichier d'icône BBG (nom anglais), ex. `Vatican City.webp` → `vatican-city`. La clé LOC n'est pas utilisée car certaines sont d'anciennes clés du jeu (`PALENQUE` → Mitla, `LISBON` → Mogadiscio, `ANTIOCH` → Venise, `BABYLON` → Anshan) ; elle est conservée dans `source.locKey` |
+| `icon` | `images/city_states/*.webp` du site BBG, copiée telle quelle |
+| `iconGrey` | calculée : sur les icônes BBG, fond uniforme (24, 24, 24) et une seule couleur de glyphe, qui correspond au type (vérifié sur les 48 icônes de la 7.5 ; le script s'arrête si une icône ne suit pas ce schéma). Une simple conversion en niveaux de gris laisserait deviner le type (glyphe rouge → gris foncé, blanc → blanc) ; chaque pixel est donc projeté sur l'axe fond → couleur du glyphe et redessiné dans un gris unique (`GREY = 190`, arbitraire), anticrénelage conservé |
+
 ## Fonctionnement du tirage quotidien
 
 Pour chaque mode, les `id` éligibles sont triés puis mélangés par un générateur pseudo-aléatoire initialisé avec `salt` + id du mode. Le jour N (compté depuis `epoch` dans `timezone`) prend l'élément `N mod nombre_de_leaders`.
@@ -162,6 +181,8 @@ export default {
 
 2. L'ajouter dans `js/modes/index.js` (l'ordre du tableau = ordre des onglets).
 
+Pour un mode dont la réponse n'est pas un leader, ajouter `pool: "cityStates"` (clé renvoyée par `loadData` dans `js/core/data.js`), `texts` (libellés : `none`, `placeholder`, `label`, `next`, `yesterday`, voir `TEXTS` dans `js/core/game.js`) et, si les vignettes trahissent la réponse, `suggestionImages: false`. Les autres modes ne sont pas affectés : chaque mode a sa propre séquence.
+
 Le moteur (`js/core/game.js`) gère le reste : leader du jour, saisie, historique, détection de victoire, sauvegarde, panneau de fin, compte à rebours, leader de la veille.
 
 `ctx` contient : `answer`, `leaders`, `byId`, `config`, `state` (`guesses`, `won`), `dateStr`, `els` (`clue`, `history`, `win`, `counter`). Un mode peut y stocker ses propres références (ex. `ctx.portraitImg`).
@@ -173,6 +194,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - `js/modes/portrait.js` : `BLUR_START = 24` (px), `STEPS = 8` (flou nul après 8 essais) ; case « Mode challenger » : nuances de gris + rotation du jour entre `ROTATE_MIN = 60` et `ROTATE_MAX = 300` degrés, jusqu'à la victoire (affichage seulement, même leader du jour ; cochée par défaut, état de la case mémorisé dans le navigateur).
 - `css/style.css` : apparition des cases du mode Classique, 350 ms entre deux cases (`--reveal-step`), 550 ms par case.
 - `js/modes/regard.js` : `EYE_SIDE = "daily"` (œil droit ou gauche tiré chaque jour ; `"right"`/`"left"` pour le fixer), cadre rond, diamètre visible de `VIEW_START = 1.6` à `VIEW_END = 3` fois la largeur de l'œil en `STEPS = 10` essais. `VIEW_END` doit être identique dans `tools/bbg/make_eye_images.py` (l'image contient exactement cette vue) ; au-delà de ~3, l'autre œil entre dans le cadre. Source : portraits BBG de 256 px, où un œil mesure environ 15 à 25 px.
+- `js/modes/citystates.js` : aucun indice supplémentaire après un essai raté. Case « Mode challenger » cochée par défaut (état mémorisé dans le navigateur) : emblème en gris uniforme (`iconGrey`), couleurs affichées à la victoire. Suggestions de saisie sans icône (sinon la liste permettrait de comparer les formes).
 - `js/modes/silhouette.js` : `ZOOM_START = 3.5`, `STEPS = 12` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues

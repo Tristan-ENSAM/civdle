@@ -61,25 +61,39 @@ export function validateLeaders(leaders, config) {
 }
 
 /**
- * Load config, catalogs and leaders from the data folder.
+ * Load config, catalogs, leaders and the other answer pools from the data
+ * folder.
  *
  * `catalogs.json` maps catalog name -> { id: { label, icon } } and is exposed
  * as `config.catalogs`. It is optional: if the file is missing, attributes
  * are displayed as plain text.
  *
- * @returns {Promise<{config: object, leaders: object[]}>}
+ * `city_states.json` (mode "Cités-État", written by
+ * tools/bbg/build_city_states.py) is optional too: if it is missing, the pool
+ * is empty and the mode shows a notice.
+ *
+ * @returns {Promise<{config: object, leaders: object[], cityStates: object[]}>}
  */
 export async function loadData(base = "data") {
-  const [config, leaders, catalogs] = await Promise.all([
+  const optional = (url, fallback) =>
+    fetchJson(url).catch((e) => { console.warn("[données]", e.message); return fallback; });
+  const [config, leaders, catalogs, cityStates] = await Promise.all([
     fetchJson(`${base}/config.json`),
     fetchJson(`${base}/leaders.json`),
-    fetchJson(`${base}/catalogs.json`).catch((e) => { console.warn("[données]", e.message); return {}; }),
+    optional(`${base}/catalogs.json`, {}),
+    optional(`${base}/city_states.json`, []),
   ]);
   config.catalogs = catalogs;
-  for (const l of leaders) {
-    l._search = [l.name, ...(l.aliases ?? [])].map(normalize);
+  for (const item of [...leaders, ...cityStates]) {
+    item._search = [item.name, ...(item.aliases ?? [])].map(normalize);
   }
   const warnings = validateLeaders(leaders, config);
+  const csIds = new Set();
+  for (const c of cityStates) {
+    if (!c.id || !c.name) warnings.push(`Cité-État sans "id" ou "name" : ${JSON.stringify(c).slice(0, 60)}`);
+    else if (csIds.has(c.id)) warnings.push(`Cité-État : id en double : ${c.id}`);
+    csIds.add(c.id);
+  }
   warnings.forEach((w) => console.warn("[données]", w));
-  return { config, leaders };
+  return { config, leaders, cityStates };
 }

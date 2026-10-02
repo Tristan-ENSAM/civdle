@@ -1,0 +1,616 @@
+[
+  {
+    "id": "akkad",
+    "name": "Akkad",
+    "aliases": [],
+    "type": "Militariste",
+    "icon": "img/city-states/akkad.webp",
+    "iconGrey": "img/city-states/akkad-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_AKKAD"
+    }
+  },
+  {
+    "id": "anshan",
+    "name": "Anshan",
+    "aliases": [],
+    "type": "Scientifique",
+    "icon": "img/city-states/anshan.webp",
+    "iconGrey": "img/city-states/anshan-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_BABYLON"
+    }
+  },
+  {
+    "id": "antananarivo",
+    "name": "Antananarivo",
+    "aliases": [],
+    "type": "Culturelle",
+    "icon": "img/city-states/antananarivo.webp",
+    "iconGrey": "img/city-states/antananarivo-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_ANTANANARIVO"
+    }
+  },
+  {
+    "id": "armagh",
+    "name": "Armagh",
+    "aliases": [],
+    "type": "Religieuse",
+    "icon": "img/city-states/armagh.webp",
+    "iconGrey": "img/city-states/armagh-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_ARMAGH"
+    }
+  },
+  {
+    "id": "auckland",
+    "name": "Auckland",
+    "aliases": [],
+    "type": "Industrielle",
+    "icon": "img/city-states/auckland.webp",
+    "iconGrey": "img/city-states/auckland-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_AUCKLAND"
+    }
+  },
+  {
+    "id": "ayutthaya",
+    "name": "Ayutthaya",
+    "aliases": [],
+    "type": "Culturelle",
+    "icon": "img/city-states/ayutthaya.webp",
+    "iconGrey": "img/city-states/ayutthaya-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_AYUTTHAYA"
+    }
+  },
+  {
+    "id": "bandar-brunei",
+    "name": "Bandar Brunei",
+    "aliases": [],
+    "type": "Commerciale",
+    "icon": "img/city-states/bandar-brunei.webp",
+    "iconGrey": "img/city-states/bandar-brunei-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_BANDAR_BRUNEI"
+    }
+  },
+  {
+    "id": "bologna",
+    "name": "Bologne",
+    "aliases": [
+      "Bologna"
+    ],
+    "type": "Scientifique",
+    "icon": "img/city-states/bologna.webp",
+    "iconGrey": "img/city-states/bologna-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_BOLOGNA"
+    }
+  },
+  {
+    "id": "brussels",
+    "name": "Bruxelles",
+    "aliases": [
+      "Brussels"
+    ],
+    "type": "Industrielle",
+    "icon": "img/city-states/brussels.webp",
+    "iconGrey": "img/city-states/brussels-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_BRUSSELS"
+    }
+  },
+  {
+    "id": "buenos-aires",
+    "name": "Buenos Aires",
+    "aliases": [],
+    "type": "Industrielle",
+    "icon": "img/city-states/buenos-aires.webp",
+    "iconGrey": "img/city-states/buenos-aires-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_BUENOS_AIRES"
+    }
+  },
+  {
+    "id": "caguana",
+    "name": "Caguana",
+    "aliases": [],
+    "type": "Culturelle",
+    "icon": "img/city-states/caguana.webp",
+    "iconGrey": "img/city-states/caguana-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_CAGUANA"
+    }
+  },
+  {
+    "id": "cahokia",
+    "name": "Cahokia",
+    "aliases": [],
+    "type": "Commerciale",
+    "icon": "img/city-states/cahokia.webp",
+    "iconGrey": "img/city-states/cahokia-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_CAHOKIA"
+    }
+  },
+  {
+    "id": "cardiff",
+    "name": "Cardiff",
+    "aliases": [],
+    "type": "Industrielle",
+    "icon": "img/city-states/cardiff.webp",
+    "iconGrey": "img/city-states/cardiff-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_CARDIFF"
+    }
+  },
+  {
+    "id": "chinguetti",
+    "name": "Chinguetti",
+    "aliases": [],
+    "type": "Religieuse",
+    "icon": "img/city-states/chinguetti.webp",
+    "iconGrey": "img/city-states/chinguetti-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_CHINGUETTI"
+    }
+  },
+  {
+    "id": "fez",
+    "name": "Fès",
+    "aliases": [
+      "Fez"
+    ],
+    "type": "Scientifique",
+    "icon": "img/city-states/fez.webp",
+    "iconGrey": "img/city-states/fez-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_FEZ"
+    }
+  },
+  {
+    "id": "geneva",
+    "name": "Genève",
+    "aliases": [
+      "Geneva"
+    ],
+    "type": "Scientifique",
+    "icon": "img/city-states/geneva.webp",
+    "iconGrey": "img/city-states/geneva-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_GENEVA"
+    }
+  },
+  {
+    "id": "granada",
+    "name": "Grenade",
+    "aliases": [
+      "Granada"
+    ],
+    "type": "Militariste",
+    "icon": "img/city-states/granada.webp",
+    "iconGrey": "img/city-states/granada-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_GRANADA"
+    }
+  },
+  {
+    "id": "hattusa",
+    "name": "Hattusa",
+    "aliases": [],
+    "type": "Scientifique",
+    "icon": "img/city-states/hattusa.webp",
+    "iconGrey": "img/city-states/hattusa-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_HATTUSA"
+    }
+  },
+  {
+    "id": "hong-kong",
+    "name": "Hong Kong",
+    "aliases": [],
+    "type": "Industrielle",
+    "icon": "img/city-states/hong-kong.webp",
+    "iconGrey": "img/city-states/hong-kong-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_HONG_KONG"
+    }
+  },
+  {
+    "id": "hunza",
+    "name": "Hunza",
+    "aliases": [],
+    "type": "Commerciale",
+    "icon": "img/city-states/hunza.webp",
+    "iconGrey": "img/city-states/hunza-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_HUNZA"
+    }
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jérusalem",
+    "aliases": [
+      "Jerusalem"
+    ],
+    "type": "Religieuse",
+    "icon": "img/city-states/jerusalem.webp",
+    "iconGrey": "img/city-states/jerusalem-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_JERUSALEM"
+    }
+  },
+  {
+    "id": "johannesburg",
+    "name": "Johannesbourg",
+    "aliases": [
+      "Johannesburg"
+    ],
+    "type": "Industrielle",
+    "icon": "img/city-states/johannesburg.webp",
+    "iconGrey": "img/city-states/johannesburg-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_JOHANNESBURG"
+    }
+  },
+  {
+    "id": "kabul",
+    "name": "Kaboul",
+    "aliases": [
+      "Kabul"
+    ],
+    "type": "Militariste",
+    "icon": "img/city-states/kabul.webp",
+    "iconGrey": "img/city-states/kabul-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_KABUL"
+    }
+  },
+  {
+    "id": "kandy",
+    "name": "Kandy",
+    "aliases": [],
+    "type": "Religieuse",
+    "icon": "img/city-states/kandy.webp",
+    "iconGrey": "img/city-states/kandy-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_KANDY"
+    }
+  },
+  {
+    "id": "kumasi",
+    "name": "Kumasi",
+    "aliases": [],
+    "type": "Culturelle",
+    "icon": "img/city-states/kumasi.webp",
+    "iconGrey": "img/city-states/kumasi-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_KUMASI"
+    }
+  },
+  {
+    "id": "la-venta",
+    "name": "La Venta",
+    "aliases": [],
+    "type": "Religieuse",
+    "icon": "img/city-states/la-venta.webp",
+    "iconGrey": "img/city-states/la-venta-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_LA_VENTA"
+    }
+  },
+  {
+    "id": "lahore",
+    "name": "Lahore",
+    "aliases": [],
+    "type": "Militariste",
+    "icon": "img/city-states/lahore.webp",
+    "iconGrey": "img/city-states/lahore-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_LAHORE"
+    }
+  },
+  {
+    "id": "mexico-city",
+    "name": "Mexico",
+    "aliases": [
+      "Mexico City"
+    ],
+    "type": "Industrielle",
+    "icon": "img/city-states/mexico-city.webp",
+    "iconGrey": "img/city-states/mexico-city-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_MEXICO_CITY"
+    }
+  },
+  {
+    "id": "mitla",
+    "name": "Mitla",
+    "aliases": [],
+    "type": "Scientifique",
+    "icon": "img/city-states/mitla.webp",
+    "iconGrey": "img/city-states/mitla-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_PALENQUE"
+    }
+  },
+  {
+    "id": "mogadishu",
+    "name": "Mogadiscio",
+    "aliases": [
+      "Mogadishu"
+    ],
+    "type": "Commerciale",
+    "icon": "img/city-states/mogadishu.webp",
+    "iconGrey": "img/city-states/mogadishu-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_LISBON"
+    }
+  },
+  {
+    "id": "mohenjo-daro",
+    "name": "Mohenjo-daro",
+    "aliases": [
+      "Mohenjo-Daro"
+    ],
+    "type": "Culturelle",
+    "icon": "img/city-states/mohenjo-daro.webp",
+    "iconGrey": "img/city-states/mohenjo-daro-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_MOHENJO_DARO"
+    }
+  },
+  {
+    "id": "muscat",
+    "name": "Mascate",
+    "aliases": [
+      "Muscat"
+    ],
+    "type": "Commerciale",
+    "icon": "img/city-states/muscat.webp",
+    "iconGrey": "img/city-states/muscat-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_MUSCAT"
+    }
+  },
+  {
+    "id": "nalanda",
+    "name": "Nālandā",
+    "aliases": [
+      "Nalanda"
+    ],
+    "type": "Scientifique",
+    "icon": "img/city-states/nalanda.webp",
+    "iconGrey": "img/city-states/nalanda-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_NALANDA"
+    }
+  },
+  {
+    "id": "nan-madol",
+    "name": "Nan Madol",
+    "aliases": [],
+    "type": "Culturelle",
+    "icon": "img/city-states/nan-madol.webp",
+    "iconGrey": "img/city-states/nan-madol-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_NAN_MADOL"
+    }
+  },
+  {
+    "id": "nazca",
+    "name": "Nazca",
+    "aliases": [],
+    "type": "Religieuse",
+    "icon": "img/city-states/nazca.webp",
+    "iconGrey": "img/city-states/nazca-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_NAZCA"
+    }
+  },
+  {
+    "id": "ngazargamu",
+    "name": "Ngazargamu",
+    "aliases": [],
+    "type": "Militariste",
+    "icon": "img/city-states/ngazargamu.webp",
+    "iconGrey": "img/city-states/ngazargamu-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_NGAZARGAMU"
+    }
+  },
+  {
+    "id": "preslav",
+    "name": "Preslav",
+    "aliases": [],
+    "type": "Militariste",
+    "icon": "img/city-states/preslav.webp",
+    "iconGrey": "img/city-states/preslav-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_PRESLAV"
+    }
+  },
+  {
+    "id": "rapa-nui",
+    "name": "Rapa Nui",
+    "aliases": [],
+    "type": "Culturelle",
+    "icon": "img/city-states/rapa-nui.webp",
+    "iconGrey": "img/city-states/rapa-nui-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_RAPA_NUI"
+    }
+  },
+  {
+    "id": "samarkand",
+    "name": "Samarcande",
+    "aliases": [
+      "Samarkand"
+    ],
+    "type": "Commerciale",
+    "icon": "img/city-states/samarkand.webp",
+    "iconGrey": "img/city-states/samarkand-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_SAMARKAND"
+    }
+  },
+  {
+    "id": "singapore",
+    "name": "Singapour",
+    "aliases": [
+      "Singapore"
+    ],
+    "type": "Industrielle",
+    "icon": "img/city-states/singapore.webp",
+    "iconGrey": "img/city-states/singapore-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_SINGAPORE"
+    }
+  },
+  {
+    "id": "taruga",
+    "name": "Taruga",
+    "aliases": [],
+    "type": "Scientifique",
+    "icon": "img/city-states/taruga.webp",
+    "iconGrey": "img/city-states/taruga-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_TARUGA"
+    }
+  },
+  {
+    "id": "valletta",
+    "name": "La Valette",
+    "aliases": [
+      "Valletta"
+    ],
+    "type": "Militariste",
+    "icon": "img/city-states/valletta.webp",
+    "iconGrey": "img/city-states/valletta-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_VALLETTA"
+    }
+  },
+  {
+    "id": "vatican-city",
+    "name": "Vatican",
+    "aliases": [
+      "Vatican City"
+    ],
+    "type": "Religieuse",
+    "icon": "img/city-states/vatican-city.webp",
+    "iconGrey": "img/city-states/vatican-city-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_VATICAN_CITY"
+    }
+  },
+  {
+    "id": "venice",
+    "name": "Venise",
+    "aliases": [
+      "Venice"
+    ],
+    "type": "Commerciale",
+    "icon": "img/city-states/venice.webp",
+    "iconGrey": "img/city-states/venice-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_ANTIOCH"
+    }
+  },
+  {
+    "id": "vilnius",
+    "name": "Vilnius",
+    "aliases": [],
+    "type": "Culturelle",
+    "icon": "img/city-states/vilnius.webp",
+    "iconGrey": "img/city-states/vilnius-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_VILNIUS"
+    }
+  },
+  {
+    "id": "wolin",
+    "name": "Wolin",
+    "aliases": [],
+    "type": "Militariste",
+    "icon": "img/city-states/wolin.webp",
+    "iconGrey": "img/city-states/wolin-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_WOLIN"
+    }
+  },
+  {
+    "id": "yerevan",
+    "name": "Erevan",
+    "aliases": [
+      "Yerevan"
+    ],
+    "type": "Religieuse",
+    "icon": "img/city-states/yerevan.webp",
+    "iconGrey": "img/city-states/yerevan-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_YEREVAN"
+    }
+  },
+  {
+    "id": "zanzibar",
+    "name": "Zanzibar",
+    "aliases": [],
+    "type": "Commerciale",
+    "icon": "img/city-states/zanzibar.webp",
+    "iconGrey": "img/city-states/zanzibar-grey.webp",
+    "source": {
+      "bbg": "city_states_7.5.html",
+      "locKey": "LOC_CIVILIZATION_ZANZIBAR"
+    }
+  }
+]
