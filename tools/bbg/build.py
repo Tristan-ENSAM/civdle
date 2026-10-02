@@ -320,6 +320,18 @@ def main(bbg_dir, version):
             "source": {"bbg": f"leaders_{version}.html", "civKey": f["civKey"], "leaderKey": f["leaderKey"]},
         })
 
+    # `eyes` (mode Regard) comes from tools/bbg/detect_eyes.py, which needs a
+    # separate Python environment: keep the values already in leaders.json.
+    previous = ROOT / "data" / "leaders.json"
+    if previous.exists():
+        old_eyes = {l["id"]: l["eyes"] for l in json.loads(previous.read_text(encoding="utf-8")) if l.get("eyes")}
+        for l in leaders:
+            if l["id"] in old_eyes:
+                l["eyes"] = old_eyes[l["id"]]
+        missing = [l["id"] for l in leaders if "eyes" not in l]
+        if missing:
+            warn(f"no eyes for {missing}: run tools/bbg/detect_eyes.py")
+
     (ROOT / "data" / "leaders.json").write_text(json.dumps(leaders, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (ROOT / "data" / "catalogs.json").write_text(json.dumps({"districts": DISTRICTS, "unitClasses": UNIT_CLASSES},
                                                             ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

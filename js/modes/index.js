@@ -7,5 +7,6 @@ import classic from "./classic.js";
 import portrait from "./portrait.js";
 import silhouette from "./silhouette.js";
 import description from "./description.js";
+import regard from "./regard.js";
 
-export default [classic, portrait, silhouette, description];
+export default [classic, portrait, silhouette, regard, description];

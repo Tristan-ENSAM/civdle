@@ -57,6 +57,7 @@ tools/leaders_template.csv
 | `silhouetteSource` | `"game"` (fichiers du jeu), `"mod"` (fichiers du mod BBG Expanded), `"cutout"` (détourage estimé) ou `null`. Le mode Silhouette n'utilise que les sources listées dans `SOURCES` de `js/modes/silhouette.js` (actuellement `["game", "mod"]`) |
 | `silhouetteFocus` | calculé : point du contour, dans le quart supérieur de la figure (tête, coiffe) |
 | `reveal` | image en couleur du personnage qui a servi à la silhouette, affichée à la victoire en mode Silhouette (écrite par `tools/game/import_textures.py` dans `img/reveal/`, même cadrage que la silhouette) ; sans elle, le portrait BBG est affiché |
+| `eyes` | mode Regard : centre et largeur (coin à coin) de chaque œil, `{"right": [cx, cy, w], "left": [cx, cy, w], "angle": a}` en % du portrait BBG, et inclinaison de la ligne des yeux en degrés. Détecté par `tools/bbg/detect_eyes.py` (MediaPipe Face Mesh, repères 33/133 et 263/362), vérifié visuellement sur une planche contact (`--sheet`) ; valeurs manuelles dans `tools/bbg/eyes_overrides.json`, exclusions dans `tools/bbg/eyes_rejected.json` (aucun des deux fichiers n'existe pour l'instant). `build.py` conserve les valeurs existantes. Le script demande `mediapipe==0.10.14` (Python ≤ 3.12), les versions récentes téléchargent leur modèle à l'exécution |
 | `era` | **non renseigné** : aucune source ; colonne retirée du mode Classique tant qu'elle est vide |
 
 Le détail (règles, cas interprétés marqués `"interpretation": true`) est dans `tools/bbg/sources.json`.
@@ -170,6 +171,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 
 - `js/modes/portrait.js` : `BLUR_START = 24` (px), `STEPS = 8` (flou nul après 8 essais) ; case « Mode challenger » : nuances de gris + rotation du jour entre `ROTATE_MIN = 60` et `ROTATE_MAX = 300` degrés, jusqu'à la victoire (affichage seulement, même leader du jour ; cochée par défaut, état de la case mémorisé dans le navigateur).
 - `css/style.css` : apparition des cases du mode Classique, 350 ms entre deux cases (`--reveal-step`), 550 ms par case.
+- `js/modes/regard.js` : `EYE_SIDE = "daily"` (œil droit ou gauche tiré chaque jour ; `"right"`/`"left"` pour le fixer), vue de `VIEW_START = 1.8` à `VIEW_END = 5` fois la largeur de l'œil en `STEPS = 10` essais ; cadre 3:2 (`.regard-frame` dans `css/style.css`). Les portraits font 256 px, un œil y mesure environ 15 à 25 px : l'image de départ est agrandie et donc floue.
 - `js/modes/silhouette.js` : `ZOOM_START = 3.5`, `STEPS = 12` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues

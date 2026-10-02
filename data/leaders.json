@@ -40,6 +40,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_AMERICA_NAME",
       "leaderKey": "LOC_LEADER_ABRAHAM_LINCOLN_NAME"
+    },
+    "eyes": {
+      "right": [
+        38.29,
+        40.29,
+        6.14
+      ],
+      "left": [
+        54.36,
+        39.39,
+        8.51
+      ],
+      "angle": -3.2
     }
   },
   {
@@ -88,6 +101,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_AMERICA_NAME",
       "leaderKey": "LOC_LEADER_T_ROOSEVELT_ORIGINAL_NAME"
+    },
+    "eyes": {
+      "right": [
+        32.7,
+        41.34,
+        8.48
+      ],
+      "left": [
+        51.72,
+        38.81,
+        8.72
+      ],
+      "angle": -7.6
     }
   },
   {
@@ -139,6 +165,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_AMERICA_NAME",
       "leaderKey": "LOC_LEADER_T_ROOSEVELT_ROUGHRIDER_NAME"
+    },
+    "eyes": {
+      "right": [
+        39.77,
+        54.25,
+        7.77
+      ],
+      "left": [
+        57.86,
+        51.44,
+        8.66
+      ],
+      "angle": -8.9
     }
   },
   {
@@ -185,6 +224,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ARABIA_NAME",
       "leaderKey": "LOC_LEADER_SALADIN_ORIGINAL_NAME"
+    },
+    "eyes": {
+      "right": [
+        32.94,
+        52.13,
+        7.18
+      ],
+      "left": [
+        49.82,
+        46.18,
+        8.96
+      ],
+      "angle": -19.4
     }
   },
   {
@@ -231,6 +283,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ARABIA_NAME",
       "leaderKey": "LOC_LEADER_SALADIN_ALT_NAME"
+    },
+    "eyes": {
+      "right": [
+        37.76,
+        48.59,
+        7.4
+      ],
+      "left": [
+        55.62,
+        50.84,
+        9.0
+      ],
+      "angle": 7.2
     }
   },
   {
@@ -274,6 +339,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_AUSTRALIA_NAME",
       "leaderKey": "LOC_LEADER_JOHN_CURTIN_NAME"
+    },
+    "eyes": {
+      "right": [
+        35.3,
+        39.36,
+        7.96
+      ],
+      "left": [
+        54.22,
+        36.34,
+        9.32
+      ],
+      "angle": -9.1
     }
   },
   {
@@ -319,6 +397,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_AZTEC_NAME",
       "leaderKey": "LOC_LEADER_MONTEZUMA_NAME"
+    },
+    "eyes": {
+      "right": [
+        41.58,
+        38.13,
+        8.26
+      ],
+      "left": [
+        59.9,
+        37.7,
+        8.32
+      ],
+      "angle": -1.3
     }
   },
   {
@@ -361,6 +452,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_BABYLON_STK_NAME",
       "leaderKey": "LOC_LEADER_HAMMURABI_NAME"
+    },
+    "eyes": {
+      "right": [
+        48.14,
+        49.46,
+        8.27
+      ],
+      "left": [
+        64.8,
+        50.42,
+        6.86
+      ],
+      "angle": 3.3
     }
   },
   {
@@ -412,6 +516,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_BRAZIL_NAME",
       "leaderKey": "LOC_LEADER_PEDRO_NAME"
+    },
+    "eyes": {
+      "right": [
+        49.39,
+        31.18,
+        7.13
+      ],
+      "left": [
+        62.18,
+        29.07,
+        5.23
+      ],
+      "angle": -9.4
     }
   },
   {
@@ -463,6 +580,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_BYZANTIUM_NAME",
       "leaderKey": "LOC_LEADER_BASIL_NAME"
+    },
+    "eyes": {
+      "right": [
+        52.14,
+        41.22,
+        7.53
+      ],
+      "left": [
+        66.95,
+        40.68,
+        6.11
+      ],
+      "angle": -2.1
     }
   },
   {
@@ -511,6 +641,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_BYZANTIUM_NAME",
       "leaderKey": "LOC_LEADER_THEODORA_NAME"
+    },
+    "eyes": {
+      "right": [
+        36.71,
+        55.06,
+        8.44
+      ],
+      "left": [
+        56.21,
+        53.0,
+        9.37
+      ],
+      "angle": -6.0
     }
   },
   {
@@ -554,6 +697,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CANADA_NAME",
       "leaderKey": "LOC_LEADER_LAURIER_NAME"
+    },
+    "eyes": {
+      "right": [
+        32.42,
+        36.46,
+        9.25
+      ],
+      "left": [
+        54.53,
+        34.6,
+        10.2
+      ],
+      "angle": -4.8
     }
   },
   {
@@ -601,6 +757,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CHINA_NAME",
       "leaderKey": "LOC_LEADER_KUBLAI_KHAN_C_NAME"
+    },
+    "eyes": {
+      "right": [
+        44.86,
+        35.74,
+        8.47
+      ],
+      "left": [
+        62.47,
+        34.58,
+        7.37
+      ],
+      "angle": -3.8
     }
   },
   {
@@ -646,6 +815,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CHINA_NAME",
       "leaderKey": "LOC_LEADER_QIN_ORIGINAL_NAME"
+    },
+    "eyes": {
+      "right": [
+        44.34,
+        38.19,
+        7.61
+      ],
+      "left": [
+        60.5,
+        38.51,
+        7.15
+      ],
+      "angle": 1.1
     }
   },
   {
@@ -691,6 +873,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CHINA_NAME",
       "leaderKey": "LOC_LEADER_QIN_ALT_NAME"
+    },
+    "eyes": {
+      "right": [
+        37.04,
+        48.02,
+        6.23
+      ],
+      "left": [
+        52.37,
+        47.59,
+        7.62
+      ],
+      "angle": -1.6
     }
   },
   {
@@ -733,6 +928,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CHINA_NAME",
       "leaderKey": "LOC_LEADER_WU_ZETIAN_NAME"
+    },
+    "eyes": {
+      "right": [
+        43.21,
+        57.79,
+        7.45
+      ],
+      "left": [
+        59.1,
+        59.8,
+        6.63
+      ],
+      "angle": 7.2
     }
   },
   {
@@ -778,6 +986,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CHINA_NAME",
       "leaderKey": "LOC_LEADER_YONGLE_NAME"
+    },
+    "eyes": {
+      "right": [
+        50.01,
+        48.1,
+        7.97
+      ],
+      "left": [
+        65.31,
+        48.25,
+        6.44
+      ],
+      "angle": 0.6
     }
   },
   {
@@ -820,6 +1041,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CREE_NAME",
       "leaderKey": "LOC_LEADER_POUNDMAKER_NAME"
+    },
+    "eyes": {
+      "right": [
+        41.43,
+        43.5,
+        9.05
+      ],
+      "left": [
+        60.99,
+        44.24,
+        8.75
+      ],
+      "angle": 2.2
     }
   },
   {
@@ -866,6 +1100,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_CVS_TAINO_NAME",
       "leaderKey": "LOC_LEADER_CVS_ANACAONA_NAME"
+    },
+    "eyes": {
+      "right": [
+        30.36,
+        45.6,
+        6.02
+      ],
+      "left": [
+        47.8,
+        48.6,
+        9.92
+      ],
+      "angle": 9.8
     }
   },
   {
@@ -913,6 +1160,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_EGYPT_NAME",
       "leaderKey": "LOC_LEADER_CLEOPATRA_ORIGINAL_NAME"
+    },
+    "eyes": {
+      "right": [
+        47.71,
+        54.16,
+        9.89
+      ],
+      "left": [
+        67.92,
+        52.24,
+        8.76
+      ],
+      "angle": -5.4
     }
   },
   {
@@ -960,6 +1220,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_EGYPT_NAME",
       "leaderKey": "LOC_LEADER_CLEOPATRA_ALT_NAME"
+    },
+    "eyes": {
+      "right": [
+        45.5,
+        49.8,
+        10.28
+      ],
+      "left": [
+        66.77,
+        48.66,
+        9.12
+      ],
+      "angle": -3.1
     }
   },
   {
@@ -1005,6 +1278,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_EGYPT_NAME",
       "leaderKey": "LOC_LEADER_RAMSES_NAME"
+    },
+    "eyes": {
+      "right": [
+        46.26,
+        50.81,
+        8.73
+      ],
+      "left": [
+        63.72,
+        50.35,
+        7.51
+      ],
+      "angle": -1.5
     }
   },
   {
@@ -1055,6 +1341,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
       "leaderKey": "LOC_LEADER_ELEANOR_NAME"
+    },
+    "eyes": {
+      "right": [
+        37.45,
+        44.44,
+        8.55
+      ],
+      "left": [
+        56.84,
+        45.44,
+        9.4
+      ],
+      "angle": 2.9
     }
   },
   {
@@ -1105,6 +1404,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
       "leaderKey": "LOC_LEADER_ELIZABETH_NAME"
+    },
+    "eyes": {
+      "right": [
+        34.86,
+        48.91,
+        6.03
+      ],
+      "left": [
+        50.42,
+        48.88,
+        8.51
+      ],
+      "angle": -0.1
     }
   },
   {
@@ -1155,6 +1467,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
       "leaderKey": "LOC_LEADER_VICTORIA_ORIGINAL_NAME"
+    },
+    "eyes": {
+      "right": [
+        37.39,
+        45.05,
+        8.43
+      ],
+      "left": [
+        56.28,
+        49.47,
+        9.5
+      ],
+      "angle": 13.2
     }
   },
   {
@@ -1202,6 +1527,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ENGLAND_NAME",
       "leaderKey": "LOC_LEADER_VICTORIA_ALT_NAME"
+    },
+    "eyes": {
+      "right": [
+        39.89,
+        53.25,
+        6.51
+      ],
+      "left": [
+        54.84,
+        52.24,
+        7.26
+      ],
+      "angle": -3.9
     }
   },
   {
@@ -1244,6 +1582,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ETHIOPIA_NAME",
       "leaderKey": "LOC_LEADER_MENELIK_NAME"
+    },
+    "eyes": {
+      "right": [
+        38.19,
+        43.93,
+        7.16
+      ],
+      "left": [
+        53.56,
+        39.4,
+        7.77
+      ],
+      "angle": -16.4
     }
   },
   {
@@ -1292,6 +1643,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_FRANCE_NAME",
       "leaderKey": "LOC_LEADER_CATHERINE_DE_MEDICI_EXPANDED_NAME"
+    },
+    "eyes": {
+      "right": [
+        55.03,
+        51.46,
+        9.78
+      ],
+      "left": [
+        73.35,
+        46.84,
+        8.21
+      ],
+      "angle": -14.2
     }
   },
   {
@@ -1340,6 +1704,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_FRANCE_NAME",
       "leaderKey": "LOC_LEADER_CATHERINE_DE_MEDICI_ALT_NAME"
+    },
+    "eyes": {
+      "right": [
+        37.79,
+        45.52,
+        7.75
+      ],
+      "left": [
+        56.5,
+        42.58,
+        9.32
+      ],
+      "angle": -8.9
     }
   },
   {
@@ -1388,6 +1765,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_FRANCE_NAME",
       "leaderKey": "LOC_LEADER_ELEANOR_FRANCE_NAME"
+    },
+    "eyes": {
+      "right": [
+        40.92,
+        50.09,
+        8.52
+      ],
+      "left": [
+        59.6,
+        46.52,
+        8.47
+      ],
+      "angle": -10.8
     }
   },
   {
@@ -1432,6 +1822,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GAUL_NAME",
       "leaderKey": "LOC_LEADER_AMBIORIX_NAME"
+    },
+    "eyes": {
+      "right": [
+        31.79,
+        43.54,
+        6.43
+      ],
+      "left": [
+        47.53,
+        41.91,
+        8.32
+      ],
+      "angle": -5.9
     }
   },
   {
@@ -1479,6 +1882,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GAUL_NAME",
       "leaderKey": "LOC_LEADER_SUK_VERCINGETORIX_NAME"
+    },
+    "eyes": {
+      "right": [
+        49.26,
+        46.58,
+        11.01
+      ],
+      "left": [
+        70.68,
+        50.1,
+        9.39
+      ],
+      "angle": 9.3
     }
   },
   {
@@ -1522,6 +1938,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GEORGIA_NAME",
       "leaderKey": "LOC_LEADER_TAMAR_NAME"
+    },
+    "eyes": {
+      "right": [
+        35.83,
+        50.08,
+        8.17
+      ],
+      "left": [
+        56.04,
+        50.47,
+        9.82
+      ],
+      "angle": 1.1
     }
   },
   {
@@ -1574,6 +2003,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GERMANY_NAME",
       "leaderKey": "LOC_LEADER_BARBAROSSA_NAME"
+    },
+    "eyes": {
+      "right": [
+        39.67,
+        49.14,
+        7.91
+      ],
+      "left": [
+        57.73,
+        47.43,
+        8.21
+      ],
+      "angle": -5.4
     }
   },
   {
@@ -1621,6 +2063,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GERMANY_NAME",
       "leaderKey": "LOC_LEADER_LUDWIG_NAME"
+    },
+    "eyes": {
+      "right": [
+        47.0,
+        42.97,
+        9.38
+      ],
+      "left": [
+        66.55,
+        42.62,
+        7.89
+      ],
+      "angle": -1.0
     }
   },
   {
@@ -1667,6 +2122,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GRAN_COLOMBIA_NAME",
       "leaderKey": "LOC_LEADER_SIMON_BOLIVAR_NAME"
+    },
+    "eyes": {
+      "right": [
+        27.79,
+        45.34,
+        7.15
+      ],
+      "left": [
+        47.17,
+        42.57,
+        9.98
+      ],
+      "angle": -8.1
     }
   },
   {
@@ -1714,6 +2182,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GREECE_NAME",
       "leaderKey": "LOC_LEADER_GORGO_NAME"
+    },
+    "eyes": {
+      "right": [
+        38.06,
+        50.4,
+        8.44
+      ],
+      "left": [
+        57.59,
+        51.29,
+        9.67
+      ],
+      "angle": 2.6
     }
   },
   {
@@ -1761,6 +2242,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_GREECE_NAME",
       "leaderKey": "LOC_LEADER_PERICLES_NAME"
+    },
+    "eyes": {
+      "right": [
+        41.01,
+        39.98,
+        7.01
+      ],
+      "left": [
+        58.7,
+        42.37,
+        9.13
+      ],
+      "angle": 7.7
     }
   },
   {
@@ -1809,6 +2303,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_HUNGARY_NAME",
       "leaderKey": "LOC_LEADER_MATTHIAS_CORVINUS_NAME"
+    },
+    "eyes": {
+      "right": [
+        32.52,
+        47.31,
+        9.07
+      ],
+      "left": [
+        54.12,
+        46.77,
+        10.31
+      ],
+      "angle": -1.4
     }
   },
   {
@@ -1856,6 +2363,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_INCA_NAME",
       "leaderKey": "LOC_LEADER_PACHACUTI_NAME"
+    },
+    "eyes": {
+      "right": [
+        48.38,
+        35.2,
+        11.54
+      ],
+      "left": [
+        71.44,
+        35.05,
+        9.36
+      ],
+      "angle": -0.4
     }
   },
   {
@@ -1898,6 +2418,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_INDIA_NAME",
       "leaderKey": "LOC_LEADER_CHANDRAGUPTA_NAME"
+    },
+    "eyes": {
+      "right": [
+        46.98,
+        49.03,
+        8.23
+      ],
+      "left": [
+        64.14,
+        47.38,
+        7.32
+      ],
+      "angle": -5.5
     }
   },
   {
@@ -1940,6 +2473,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_INDIA_NAME",
       "leaderKey": "LOC_LEADER_GANDHI_NAME"
+    },
+    "eyes": {
+      "right": [
+        41.93,
+        40.98,
+        11.71
+      ],
+      "left": [
+        67.43,
+        37.89,
+        10.61
+      ],
+      "angle": -6.9
     }
   },
   {
@@ -1985,6 +2531,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_INDONESIA_NAME",
       "leaderKey": "LOC_LEADER_GITARJA_NAME"
+    },
+    "eyes": {
+      "right": [
+        44.71,
+        44.93,
+        10.45
+      ],
+      "left": [
+        67.35,
+        46.4,
+        9.62
+      ],
+      "angle": 3.7
     }
   },
   {
@@ -2031,6 +2590,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_JAPAN_NAME",
       "leaderKey": "LOC_LEADER_HOJO_NAME"
+    },
+    "eyes": {
+      "right": [
+        53.57,
+        44.37,
+        9.74
+      ],
+      "left": [
+        72.16,
+        47.7,
+        7.09
+      ],
+      "angle": 10.1
     }
   },
   {
@@ -2073,6 +2645,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_JAPAN_NAME",
       "leaderKey": "LOC_LEADER_TOKUGAWA_NAME"
+    },
+    "eyes": {
+      "right": [
+        34.22,
+        49.49,
+        6.3
+      ],
+      "left": [
+        50.52,
+        48.64,
+        8.3
+      ],
+      "angle": -3.0
     }
   },
   {
@@ -2117,6 +2702,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_KHMER_NAME",
       "leaderKey": "LOC_LEADER_JAYAVARMAN_NAME"
+    },
+    "eyes": {
+      "right": [
+        49.5,
+        31.79,
+        10.63
+      ],
+      "left": [
+        69.45,
+        32.19,
+        7.56
+      ],
+      "angle": 1.2
     }
   },
   {
@@ -2162,6 +2760,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_KONGO_NAME",
       "leaderKey": "LOC_LEADER_MVEMBA_NAME"
+    },
+    "eyes": {
+      "right": [
+        46.48,
+        43.2,
+        9.52
+      ],
+      "left": [
+        66.61,
+        44.26,
+        8.69
+      ],
+      "angle": 3.0
     }
   },
   {
@@ -2211,6 +2822,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_KONGO_NAME",
       "leaderKey": "LOC_LEADER_NZINGA_MBANDE_NAME"
+    },
+    "eyes": {
+      "right": [
+        40.95,
+        43.1,
+        8.15
+      ],
+      "left": [
+        59.09,
+        39.94,
+        8.43
+      ],
+      "angle": -9.9
     }
   },
   {
@@ -2255,6 +2879,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_KOREA_NAME",
       "leaderKey": "LOC_LEADER_SEJONG_NAME"
+    },
+    "eyes": {
+      "right": [
+        35.89,
+        49.59,
+        7.12
+      ],
+      "left": [
+        52.84,
+        49.6,
+        8.36
+      ],
+      "angle": 0.0
     }
   },
   {
@@ -2299,6 +2936,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_KOREA_NAME",
       "leaderKey": "LOC_LEADER_SEONDEOK_NAME"
+    },
+    "eyes": {
+      "right": [
+        44.91,
+        47.51,
+        10.37
+      ],
+      "left": [
+        66.4,
+        45.06,
+        8.73
+      ],
+      "angle": -6.5
     }
   },
   {
@@ -2347,6 +2997,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MACEDON_NAME",
       "leaderKey": "LOC_LEADER_ALEXANDER_NAME"
+    },
+    "eyes": {
+      "right": [
+        39.22,
+        39.58,
+        10.03
+      ],
+      "left": [
+        61.78,
+        41.62,
+        10.45
+      ],
+      "angle": 5.2
     }
   },
   {
@@ -2389,6 +3052,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MACEDON_NAME",
       "leaderKey": "LOC_LEADER_JFD_OLYMPIAS_NAME"
+    },
+    "eyes": {
+      "right": [
+        43.82,
+        43.48,
+        9.65
+      ],
+      "left": [
+        62.9,
+        42.82,
+        8.28
+      ],
+      "angle": -2.0
     }
   },
   {
@@ -2437,6 +3113,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MALI_NAME",
       "leaderKey": "LOC_LEADER_MANSA_MUSA_NAME"
+    },
+    "eyes": {
+      "right": [
+        32.59,
+        36.55,
+        9.46
+      ],
+      "left": [
+        55.93,
+        36.89,
+        10.79
+      ],
+      "angle": 0.8
     }
   },
   {
@@ -2486,6 +3175,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MALI_NAME",
       "leaderKey": "LOC_LEADER_SUNDIATA_KEITA_NAME"
+    },
+    "eyes": {
+      "right": [
+        38.4,
+        58.87,
+        6.88
+      ],
+      "left": [
+        54.61,
+        56.95,
+        7.75
+      ],
+      "angle": -6.7
     }
   },
   {
@@ -2530,6 +3232,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MAORI_NAME",
       "leaderKey": "LOC_LEADER_KUPE_NAME"
+    },
+    "eyes": {
+      "right": [
+        35.99,
+        37.81,
+        10.66
+      ],
+      "left": [
+        60.2,
+        37.03,
+        10.3
+      ],
+      "angle": -1.9
     }
   },
   {
@@ -2572,6 +3287,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MAPUCHE_NAME",
       "leaderKey": "LOC_LEADER_LAUTARO_NAME"
+    },
+    "eyes": {
+      "right": [
+        36.7,
+        43.03,
+        9.84
+      ],
+      "left": [
+        59.41,
+        44.37,
+        10.34
+      ],
+      "angle": 3.4
     }
   },
   {
@@ -2620,6 +3348,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MAYA_NAME",
       "leaderKey": "LOC_LEADER_LADY_SIX_SKY_NAME"
+    },
+    "eyes": {
+      "right": [
+        40.19,
+        47.48,
+        10.78
+      ],
+      "left": [
+        63.46,
+        48.2,
+        10.3
+      ],
+      "angle": 1.8
     }
   },
   {
@@ -2665,6 +3406,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MAYA_NAME",
       "leaderKey": "LOC_LEADER_LL_TEKINICH_II_NAME"
+    },
+    "eyes": {
+      "right": [
+        38.56,
+        46.84,
+        8.89
+      ],
+      "left": [
+        58.07,
+        45.14,
+        8.74
+      ],
+      "angle": -5.0
     }
   },
   {
@@ -2710,6 +3464,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MER_AUSTRIA_NAME",
       "leaderKey": "LOC_LEADER_MER_MARIA_THERESA_NAME"
+    },
+    "eyes": {
+      "right": [
+        40.64,
+        37.24,
+        7.6
+      ],
+      "left": [
+        58.81,
+        36.91,
+        8.66
+      ],
+      "angle": -1.0
     }
   },
   {
@@ -2758,6 +3525,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MER_GOTHS_NAME",
       "leaderKey": "LOC_LEADER_MER_THEODORIC_NAME"
+    },
+    "eyes": {
+      "right": [
+        44.62,
+        38.67,
+        7.84
+      ],
+      "left": [
+        60.12,
+        37.02,
+        6.54
+      ],
+      "angle": -6.1
     }
   },
   {
@@ -2803,6 +3583,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MONGOLIA_NAME",
       "leaderKey": "LOC_LEADER_GENGHIS_KHAN_NAME"
+    },
+    "eyes": {
+      "right": [
+        45.35,
+        41.93,
+        9.8
+      ],
+      "left": [
+        66.58,
+        44.61,
+        9.05
+      ],
+      "angle": 7.2
     }
   },
   {
@@ -2850,6 +3643,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_MONGOLIA_NAME",
       "leaderKey": "LOC_LEADER_KUBLAI_KHAN_NAME"
+    },
+    "eyes": {
+      "right": [
+        42.59,
+        36.62,
+        8.64
+      ],
+      "left": [
+        60.6,
+        35.29,
+        7.68
+      ],
+      "angle": -4.2
     }
   },
   {
@@ -2895,6 +3701,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_NETHERLANDS_NAME",
       "leaderKey": "LOC_LEADER_WILHELMINA_NAME"
+    },
+    "eyes": {
+      "right": [
+        39.81,
+        49.82,
+        8.14
+      ],
+      "left": [
+        57.91,
+        49.11,
+        8.34
+      ],
+      "angle": -2.2
     }
   },
   {
@@ -2943,6 +3762,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_NORWAY_NAME",
       "leaderKey": "LOC_LEADER_HARALD_ALT_NAME"
+    },
+    "eyes": {
+      "right": [
+        40.47,
+        46.9,
+        6.86
+      ],
+      "left": [
+        55.57,
+        48.33,
+        6.93
+      ],
+      "angle": 5.4
     }
   },
   {
@@ -2994,6 +3826,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_NORWAY_NAME",
       "leaderKey": "LOC_LEADER_HARDRADA_ORIGINAL_NAME"
+    },
+    "eyes": {
+      "right": [
+        43.4,
+        41.37,
+        9.07
+      ],
+      "left": [
+        63.58,
+        42.61,
+        8.77
+      ],
+      "angle": 3.5
     }
   },
   {
@@ -3039,6 +3884,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_NUBIA_NAME",
       "leaderKey": "LOC_LEADER_AMANITORE_NAME"
+    },
+    "eyes": {
+      "right": [
+        41.56,
+        40.79,
+        8.83
+      ],
+      "left": [
+        60.42,
+        38.48,
+        8.52
+      ],
+      "angle": -7.0
     }
   },
   {
@@ -3089,6 +3947,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_OTTOMAN_NAME",
       "leaderKey": "LOC_LEADER_SULEIMAN_ORIGINAL_NAME"
+    },
+    "eyes": {
+      "right": [
+        34.01,
+        40.18,
+        9.81
+      ],
+      "left": [
+        57.65,
+        43.9,
+        11.38
+      ],
+      "angle": 8.9
     }
   },
   {
@@ -3136,6 +4007,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_OTTOMAN_NAME",
       "leaderKey": "LOC_LEADER_SULEIMAN_ALT_NAME"
+    },
+    "eyes": {
+      "right": [
+        37.97,
+        46.97,
+        6.24
+      ],
+      "left": [
+        54.61,
+        46.46,
+        8.87
+      ],
+      "angle": -1.8
     }
   },
   {
@@ -3179,6 +4063,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_PERSIA_NAME",
       "leaderKey": "LOC_LEADER_CYRUS_NAME"
+    },
+    "eyes": {
+      "right": [
+        32.17,
+        42.02,
+        7.39
+      ],
+      "left": [
+        50.99,
+        41.07,
+        9.55
+      ],
+      "angle": -2.9
     }
   },
   {
@@ -3223,6 +4120,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_PERSIA_NAME",
       "leaderKey": "LOC_LEADER_NADER_SHAH_NAME"
+    },
+    "eyes": {
+      "right": [
+        49.11,
+        47.79,
+        7.66
+      ],
+      "left": [
+        64.93,
+        48.03,
+        6.74
+      ],
+      "angle": 0.9
     }
   },
   {
@@ -3271,6 +4181,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_PHOENICIA_NAME",
       "leaderKey": "LOC_LEADER_DIDO_NAME"
+    },
+    "eyes": {
+      "right": [
+        31.82,
+        54.94,
+        9.59
+      ],
+      "left": [
+        54.9,
+        52.43,
+        11.02
+      ],
+      "angle": -6.2
     }
   },
   {
@@ -3317,6 +4240,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_PHOENICIA_NAME",
       "leaderKey": "LOC_LEADER_LIME_PHOE_AHIRAM_NAME"
+    },
+    "eyes": {
+      "right": [
+        28.21,
+        42.16,
+        9.51
+      ],
+      "left": [
+        51.07,
+        41.81,
+        11.14
+      ],
+      "angle": -0.9
     }
   },
   {
@@ -3362,6 +4298,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_POLAND_NAME",
       "leaderKey": "LOC_LEADER_JADWIGA_NAME"
+    },
+    "eyes": {
+      "right": [
+        32.71,
+        56.97,
+        7.09
+      ],
+      "left": [
+        51.07,
+        53.19,
+        9.58
+      ],
+      "angle": -11.6
     }
   },
   {
@@ -3410,6 +4359,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_POLAND_NAME",
       "leaderKey": "LOC_LEADER_JFD_STANISLAW_NAME"
+    },
+    "eyes": {
+      "right": [
+        28.19,
+        44.01,
+        6.72
+      ],
+      "left": [
+        45.69,
+        43.85,
+        9.17
+      ],
+      "angle": -0.5
     }
   },
   {
@@ -3457,6 +4419,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_PORTUGAL_NAME",
       "leaderKey": "LOC_LEADER_JOAO_III_NAME"
+    },
+    "eyes": {
+      "right": [
+        43.77,
+        36.01,
+        8.82
+      ],
+      "left": [
+        61.6,
+        36.1,
+        7.6
+      ],
+      "angle": 0.3
     }
   },
   {
@@ -3509,6 +4484,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ROME_NAME",
       "leaderKey": "LOC_LEADER_JULIUS_CAESAR_NAME"
+    },
+    "eyes": {
+      "right": [
+        36.3,
+        47.82,
+        6.95
+      ],
+      "left": [
+        53.58,
+        47.1,
+        8.81
+      ],
+      "angle": -2.4
     }
   },
   {
@@ -3553,6 +4541,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ROME_NAME",
       "leaderKey": "LOC_LEADER_TRAJAN_NAME"
+    },
+    "eyes": {
+      "right": [
+        52.02,
+        35.61,
+        9.73
+      ],
+      "left": [
+        69.81,
+        38.1,
+        7.42
+      ],
+      "angle": 8.0
     }
   },
   {
@@ -3601,6 +4602,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_RUSSIA_NAME",
       "leaderKey": "LOC_LEADER_PETER_GREAT_NAME"
+    },
+    "eyes": {
+      "right": [
+        39.01,
+        35.56,
+        8.49
+      ],
+      "left": [
+        57.95,
+        35.81,
+        8.66
+      ],
+      "angle": 0.8
     }
   },
   {
@@ -3646,6 +4660,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_SCOTLAND_NAME",
       "leaderKey": "LOC_LEADER_ROBERT_THE_BRUCE_NAME"
+    },
+    "eyes": {
+      "right": [
+        40.07,
+        36.74,
+        6.95
+      ],
+      "left": [
+        56.83,
+        39.0,
+        8.57
+      ],
+      "angle": 7.7
     }
   },
   {
@@ -3688,6 +4715,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_SCYTHIA_NAME",
       "leaderKey": "LOC_LEADER_TOMYRIS_NAME"
+    },
+    "eyes": {
+      "right": [
+        46.01,
+        47.85,
+        8.47
+      ],
+      "left": [
+        64.37,
+        50.6,
+        8.28
+      ],
+      "angle": 8.5
     }
   },
   {
@@ -3733,6 +4773,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_SPAIN_NAME",
       "leaderKey": "LOC_LEADER_PHILIP_II_NAME"
+    },
+    "eyes": {
+      "right": [
+        35.78,
+        35.07,
+        6.15
+      ],
+      "left": [
+        52.02,
+        33.56,
+        8.46
+      ],
+      "angle": -5.3
     }
   },
   {
@@ -3775,6 +4828,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_SUMERIA_NAME",
       "leaderKey": "LOC_LEADER_GILGAMESH_NAME"
+    },
+    "eyes": {
+      "right": [
+        37.61,
+        38.55,
+        9.11
+      ],
+      "left": [
+        58.87,
+        37.78,
+        10.23
+      ],
+      "angle": -2.1
     }
   },
   {
@@ -3818,6 +4884,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_SUK_SWAHILI_NAME",
       "leaderKey": "LOC_LEADER_SUK_AL_HASAN_NAME"
+    },
+    "eyes": {
+      "right": [
+        36.64,
+        43.37,
+        6.82
+      ],
+      "left": [
+        53.18,
+        43.5,
+        8.33
+      ],
+      "angle": 0.4
     }
   },
   {
@@ -3866,6 +4945,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_SWEDEN_NAME",
       "leaderKey": "LOC_LEADER_KRISTINA_NAME"
+    },
+    "eyes": {
+      "right": [
+        42.61,
+        37.31,
+        11.38
+      ],
+      "left": [
+        65.13,
+        36.14,
+        8.98
+      ],
+      "angle": -3.0
     }
   },
   {
@@ -3908,6 +5000,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_LIME_THULE_NAME",
       "leaderKey": "LOC_LEADER_LIME_THULE_DAVE_NAME"
+    },
+    "eyes": {
+      "right": [
+        38.43,
+        43.86,
+        9.57
+      ],
+      "left": [
+        60.15,
+        43.08,
+        10.27
+      ],
+      "angle": -2.1
     }
   },
   {
@@ -3953,6 +5058,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_SUK_TIBET_NAME",
       "leaderKey": "LOC_LEADER_SUK_TRISONG_DETSEN_NAME"
+    },
+    "eyes": {
+      "right": [
+        44.39,
+        45.57,
+        10.98
+      ],
+      "left": [
+        66.61,
+        45.56,
+        9.16
+      ],
+      "angle": -0.0
     }
   },
   {
@@ -3997,6 +5115,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_VIETNAM_NAME",
       "leaderKey": "LOC_LEADER_LADY_TRIEU_NAME"
+    },
+    "eyes": {
+      "right": [
+        50.6,
+        53.92,
+        9.72
+      ],
+      "left": [
+        69.61,
+        57.42,
+        7.7
+      ],
+      "angle": 10.4
     }
   },
   {
@@ -4044,6 +5175,19 @@
       "bbg": "leaders_7.5.html",
       "civKey": "LOC_CIVILIZATION_ZULU_NAME",
       "leaderKey": "LOC_LEADER_SHAKA_NAME"
+    },
+    "eyes": {
+      "right": [
+        47.4,
+        45.36,
+        8.94
+      ],
+      "left": [
+        66.39,
+        47.47,
+        8.24
+      ],
+      "angle": 6.4
     }
   }
 ]
