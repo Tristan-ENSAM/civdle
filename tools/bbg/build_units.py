@@ -12,8 +12,8 @@ Inputs
   the English names used as search aliases). Layout relied upon: each unit is
   introduced by an HTML comment ``<!--LOC_UNIT_<KEY>_NAME-->`` followed by
   ``<h2 class="civ-name">Name <img src="/images/units/X.webp">``.
-- ``<bbg>/images/units/*.webp``: unit icons, copied as is (shown blurred as a
-  late clue, then sharp once the unit is found). The page links some icons
+- ``<bbg>/images/units/*.webp``: unit icons, copied as is (shown in the
+  history and once the unit is found; never as a clue). The page links some icons
   that the folder does not have (``Longbowman.webp`` in 7.5; the site then
   shows a generic image): ``icon`` is ``null`` for those units.
 - ``audio/units/<id>.<ext>`` (optional, not produced by this script): the

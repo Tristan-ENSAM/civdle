@@ -1,8 +1,8 @@
 /**
  * Mode "Son": a sound of a military unit (selection, movement or attack, as
  * provided) is played; the player types unit names until the right one is
- * found. After ICON_AFTER wrong guesses, the unit icon appears blurred and
- * gets sharper with each further wrong guess.
+ * found. The sound is the only clue: nothing else appears after a wrong
+ * guess. The unit icon is shown once the unit is found (win panel).
  *
  * Pool: the military units of the BBG site (data/units.json, written by
  * tools/bbg/build_units.py). Only units with a `sound` can be the answer of
@@ -14,25 +14,10 @@
  * image clues (js/core/clue.js), the file is still downloaded, so the Network
  * panel of the dev tools gives it: a static site cannot prevent this.
  *
- * Suggestions in the input are shown without icons, otherwise the list itself
- * would let the player match the blurred icon.
- *
- * Tuning (arbitrary values, to adjust): ICON_AFTER wrong guesses before the
- * icon appears; it starts at BLUR_START px and is sharp after STEPS more.
+ * Suggestions in the input are shown with their icons (they say nothing
+ * about a sound).
  */
 import { defaultGuessRow } from "../core/game.js";
-import { createClue } from "../core/clue.js";
-
-const ICON_AFTER = 5;
-const BLUR_START = 16;
-const STEPS = 6;
-
-/** Blur in px of the icon after `nGuesses` wrong guesses, null while hidden. */
-export function iconBlurFor(nGuesses, won) {
-  if (won) return 0;
-  if (nGuesses < ICON_AFTER) return null;
-  return Math.max(0, BLUR_START * (1 - (nGuesses - ICON_AFTER) / STEPS));
-}
 
 /**
  * Player of one sound file. The AudioContext is created on the first click
@@ -72,7 +57,6 @@ export default {
   label: "Son",
   hint: "Retrouve l'unité militaire à partir de son bruitage.",
   pool: "units",
-  suggestionImages: false,
   texts: {
     none: "Aucune unité avec un son disponible (fichiers audio manquants, voir tools/bbg/build_units.py).",
     placeholder: "Tape le nom d'une unité…",
@@ -88,8 +72,7 @@ export default {
         <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
         <span>Écouter</span>
       </button>
-      <p class="sound-note" hidden></p>
-      <div class="frame unit-frame" hidden><img alt="Unité mystère" draggable="false"></div>`;
+      <p class="sound-note" hidden></p>`;
     const btn = ctx.els.clue.querySelector(".sound-play");
     const note = ctx.els.clue.querySelector(".sound-note");
     const player = createPlayer(ctx.answer.sound);
@@ -106,17 +89,6 @@ export default {
         btn.classList.remove("playing");
       }
     });
-    ctx.unitFrame = ctx.els.clue.querySelector(".unit-frame");
-    // Padding as in css/style.css (keeps the blur inside the frame).
-    ctx.unitClue = ctx.answer.icon ? createClue(ctx.unitFrame, ctx.answer.icon, { padding: 0.12 }) : null;
-  },
-
-  update(ctx) {
-    if (!ctx.unitClue) return;
-    const blur = iconBlurFor(ctx.state.guesses.length, ctx.state.won);
-    ctx.unitFrame.hidden = blur === null;
-    if (ctx.state.won) ctx.unitClue.reveal(ctx.answer.icon);
-    else if (blur !== null) ctx.unitClue.set({ blur });
   },
 
   renderGuess: (ctx, unit) => defaultGuessRow(unit, ctx.answer),
