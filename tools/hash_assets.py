@@ -34,20 +34,22 @@ file is needed:
     improvements.json  icon         img/improvements/<id>.<ext>
     techs_civics.json  icon         img/techs-civics/<id>.<ext>
     units.json         icon         img/units/<id>.<ext>
-                       sound        audio/units/<id>.<ext>
+                       sounds       audio/units/<id>-<kind>.<ext>
 """
 
 import hashlib
 import json
 import re
+import shutil
 import subprocess
 import sys
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
 # File -> list of (field, directory, suffix of the readable name).
-# ``eyeImages`` is a dict {side: path}; its suffix is "-<side>".
+# ``eyeImages`` and ``sounds`` are dicts {side: path}; their suffix is "-<side>".
 TARGETS = {
     "data/leaders.json": [
         ("portrait", "img/portraits", ""),
@@ -63,7 +65,7 @@ TARGETS = {
     "data/techs_civics.json": [("icon", "img/techs-civics", "")],
     "data/units.json": [
         ("icon", "img/units", ""),
-        ("sound", "audio/units", ""),
+        ("sounds", "audio/units", None),
     ],
 }
 
@@ -83,22 +85,42 @@ def readable_path(path, directory, rid, suffix):
     return f"{directory}/{rid}{suffix}{Path(path).suffix}"
 
 
-def move(src, dst):
-    """Rename a file, through git when it is tracked so history follows it."""
+def is_tracked(path):
+    return subprocess.run(["git", "ls-files", "--error-unmatch", path], cwd=ROOT,
+                          capture_output=True).returncode == 0
+
+
+def move(src, dst, keep_src=False):
+    """Rename a file, through git when it is tracked so history follows it.
+
+    Several records may use files with the same content (sounds shared by
+    units of a class): hashing gives them one file, so an existing ``dst``
+    with the same bytes is reused and ``src`` dropped. ``keep_src`` copies
+    instead of moving (restoring a file that other records still use)."""
     if src == dst:
         return
     if (ROOT / dst).exists():
-        raise SystemExit(f"refusing to overwrite {dst} (while renaming {src})")
-    tracked = subprocess.run(["git", "ls-files", "--error-unmatch", src], cwd=ROOT,
-                             capture_output=True).returncode == 0
-    if tracked:
+        if (ROOT / dst).read_bytes() != (ROOT / src).read_bytes():
+            raise SystemExit(f"refusing to overwrite {dst} (while renaming {src})")
+        if not keep_src:
+            if is_tracked(src):
+                subprocess.run(["git", "rm", "-q", src], cwd=ROOT, check=True)
+            else:
+                (ROOT / src).unlink()
+        return
+    if keep_src:
+        shutil.copyfile(ROOT / src, ROOT / dst)
+    elif is_tracked(src):
         subprocess.run(["git", "mv", src, dst], cwd=ROOT, check=True)
     else:
         (ROOT / src).rename(ROOT / dst)
 
 
-def convert(path, directory, rid, suffix, restore):
-    """Return the new path of one image and rename the file."""
+def convert(path, directory, rid, suffix, restore, uses):
+    """Return the new path of one image and rename the file.
+
+    ``uses`` counts the records not converted yet that point to each path: a
+    hashed file shared by several records is copied until its last use."""
     if not path.startswith(directory + "/"):
         raise SystemExit(f"{rid}: {path} is not under {directory}/")
     if restore:
@@ -111,7 +133,8 @@ def convert(path, directory, rid, suffix, restore):
             # --restore rebuilds the name from the id: refuse a name it could not rebuild.
             raise SystemExit(f"{rid}: {path} does not follow the expected name {expected}")
         new = hashed_path(path)
-    move(path, new)
+    uses[path] -= 1
+    move(path, new, keep_src=restore and uses[path] > 0)
     return new
 
 
@@ -121,6 +144,12 @@ def main(argv):
     for rel, fields in TARGETS.items():
         f = ROOT / rel
         records = json.loads(f.read_text(encoding="utf-8"))
+        uses = Counter()
+        for rec in records:
+            for field, _, _ in fields:
+                value = rec.get(field)
+                if value:
+                    uses.update(value.values() if isinstance(value, dict) else [value])
         for rec in records:
             rid = rec["id"]
             for field, directory, suffix in fields:
@@ -129,11 +158,11 @@ def main(argv):
                     continue
                 if isinstance(value, dict):
                     for side, path in value.items():
-                        new = convert(path, directory, rid, f"-{side}", restore)
+                        new = convert(path, directory, rid, f"-{side}", restore, uses)
                         renamed += new != path
                         value[side] = new
                 else:
-                    new = convert(value, directory, rid, suffix, restore)
+                    new = convert(value, directory, rid, suffix, restore, uses)
                     renamed += new != value
                     rec[field] = new
         f.write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
