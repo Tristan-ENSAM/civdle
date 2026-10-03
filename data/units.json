@@ -6,7 +6,7 @@
       "Aircraft Carrier"
     ],
     "icon": "img/units/246b6c5da543cdc8.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_AIRCRAFT_CARRIER"
@@ -19,7 +19,7 @@
       "Anti-Air Gun"
     ],
     "icon": "img/units/7322973b422bbfbd.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ANTIAIR_GUN"
@@ -30,7 +30,11 @@
     "name": "Archer",
     "aliases": [],
     "icon": "img/units/848fb9a62160deea.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/701e3a46f806b7b8.mp3",
+      "move": "audio/units/501b1f1fb7fa9ee8.mp3",
+      "select": "audio/units/afd500b22ae81d05.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ARCHER"
@@ -43,7 +47,11 @@
       "Artillery"
     ],
     "icon": "img/units/4a6dce50b6b064d0.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/f6a54a6bad15496f.mp3",
+      "move": "audio/units/2e967d488511eb0b.mp3",
+      "select": "audio/units/21ec97c58c9041ab.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ARTILLERY"
@@ -56,7 +64,7 @@
       "AT Crew"
     ],
     "icon": "img/units/a29a4034256e0582.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_AT_CREW"
@@ -69,7 +77,7 @@
       "Barbary Corsair"
     ],
     "icon": "img/units/8a0a92085ba70989.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_OTTOMAN_BARBARY_CORSAIR"
@@ -82,7 +90,11 @@
       "Battering Ram"
     ],
     "icon": "img/units/60be7237b7a506ba.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/7d6d45bbfb5ef244.mp3",
+      "move": "audio/units/51505043e956da34.mp3",
+      "select": "audio/units/0911a07ba3dcafc4.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BATTERING_RAM"
@@ -95,7 +107,11 @@
       "Battleship"
     ],
     "icon": "img/units/481870cd56ba3320.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b107a7975ea225d0.mp3",
+      "move": "audio/units/ba147844000cc1a3.mp3",
+      "select": "audio/units/2ff94e566cdd5c11.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BATTLESHIP"
@@ -106,7 +122,7 @@
     "name": "Berserker",
     "aliases": [],
     "icon": "img/units/b82c07ef7fbe4a9c.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_NORWEGIAN_BERSERKER"
@@ -119,7 +135,11 @@
       "Biplane"
     ],
     "icon": "img/units/efc849c138d1a41c.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/6592cfadb6e2d846.mp3",
+      "move": "audio/units/10282159a3fca534.mp3",
+      "select": "audio/units/207ae44d1ce337d4.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BIPLANE"
@@ -132,7 +152,7 @@
       "Bireme"
     ],
     "icon": "img/units/d3f45bbae5f7548b.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_PHOENICIA_BIREME"
@@ -145,7 +165,7 @@
       "Black Army"
     ],
     "icon": "img/units/98633d9f259f91af.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_HUNGARY_BLACK_ARMY"
@@ -158,7 +178,11 @@
       "Bombard"
     ],
     "icon": "img/units/d25591e069981596.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/793d31faf149a887.mp3",
+      "move": "audio/units/a816d410d5949406.mp3",
+      "select": "audio/units/109d88208ae7aa60.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BOMBARD"
@@ -171,7 +195,11 @@
       "Bomber"
     ],
     "icon": "img/units/4853609721e1ea57.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b34fa4942827e33a.mp3",
+      "move": "audio/units/7d111a7d5ebecb08.mp3",
+      "select": "audio/units/a0213ada055e0350.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BOMBER"
@@ -184,7 +212,11 @@
       "Caravel"
     ],
     "icon": "img/units/c2c1eda9f8a78a27.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/9d7997531816686e.mp3",
+      "move": "audio/units/3413c032d11b8895.mp3",
+      "select": "audio/units/af4816f1995f689b.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CARAVEL"
@@ -197,7 +229,7 @@
       "Carolean"
     ],
     "icon": "img/units/27f7882a90038871.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SWEDEN_CAROLEAN"
@@ -210,7 +242,7 @@
       "Catapult"
     ],
     "icon": "img/units/6a467e35b9e07a76.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CATAPULT"
@@ -223,7 +255,11 @@
       "Cavalry"
     ],
     "icon": "img/units/5b5b2f91bb32a077.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/83ff5a4ecd0558c9.mp3",
+      "move": "audio/units/1460145b57fd07ea.mp3",
+      "select": "audio/units/91ff540625ca5c63.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CAVALRY"
@@ -234,7 +270,7 @@
     "name": "Conquistador",
     "aliases": [],
     "icon": "img/units/3c687d298ced5034.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SPANISH_CONQUISTADOR"
@@ -247,7 +283,7 @@
       "Cossack"
     ],
     "icon": "img/units/79e22a7266eef567.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_RUSSIAN_COSSACK"
@@ -260,7 +296,11 @@
       "Courser"
     ],
     "icon": "img/units/895ae6f6446ab9d6.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/572562fcbeab964b.mp3",
+      "move": "audio/units/eb32415b8ebd324e.mp3",
+      "select": "audio/units/241cab52efebfcf4.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_COURSER"
@@ -273,7 +313,11 @@
       "Crossbowman"
     ],
     "icon": "img/units/a8b985b7846de9c4.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/fa73e8d3228ead69.mp3",
+      "move": "audio/units/d5c217a43a10ae68.mp3",
+      "select": "audio/units/222a3657c9705c8a.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CROSSBOWMAN"
@@ -286,7 +330,7 @@
       "Crouching Tiger"
     ],
     "icon": "img/units/314b5d0a8f9345c0.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CHINESE_CROUCHING_TIGER"
@@ -297,7 +341,11 @@
     "name": "Cuirassier",
     "aliases": [],
     "icon": "img/units/537c9922c393977f.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/83ff5a4ecd0558c9.mp3",
+      "move": "audio/units/1cebd6ae8b95218b.mp3",
+      "select": "audio/units/a81002fb9f7da863.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CUIRASSIER"
@@ -308,7 +356,7 @@
     "name": "De Zeven Provinciën",
     "aliases": [],
     "icon": "img/units/28bf87ee645d4a9b.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_DE_ZEVEN_PROVINCIEN"
@@ -319,7 +367,11 @@
     "name": "Destroyer",
     "aliases": [],
     "icon": "img/units/fc0ec4f303df7560.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/a58ced0dabe9874b.mp3",
+      "move": "audio/units/ba147844000cc1a3.mp3",
+      "select": "audio/units/0af39eadf6faae4e.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_DESTROYER"
@@ -330,7 +382,7 @@
     "name": "Digger",
     "aliases": [],
     "icon": "img/units/e946f3ace60a1806.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_DIGGER"
@@ -343,7 +395,7 @@
       "Dogsled Hunter"
     ],
     "icon": "img/units/a96e03e91e7776fa.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_LIME_THULE_DOGSLED"
@@ -354,7 +406,7 @@
     "name": "Domrey",
     "aliases": [],
     "icon": "img/units/e08a6b57ff5fd01a.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_KHMER_DOMREY"
@@ -365,7 +417,7 @@
     "name": "Dromon",
     "aliases": [],
     "icon": "img/units/125bab2c73495394.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BYZANTINE_DROMON"
@@ -376,7 +428,7 @@
     "name": "Drone",
     "aliases": [],
     "icon": "img/units/ec5d538399031957.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_DRONE"
@@ -389,7 +441,7 @@
       "Eagle Warrior"
     ],
     "icon": "img/units/6de7f8cc52856ed2.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_AZTEC_EAGLE_WARRIOR"
@@ -402,7 +454,7 @@
       "Ehuatl Wearer"
     ],
     "icon": "img/units/06bb8194bc31a685.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_LIME_TEO_OWL_WARRIOR"
@@ -415,7 +467,11 @@
       "Field Cannon"
     ],
     "icon": "img/units/70ba4db1f096c753.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/8cf763fbd4e47b18.mp3",
+      "move": "audio/units/7d740ebb32e4cc63.mp3",
+      "select": "audio/units/0264d7bbef53c3ff.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_FIELD_CANNON"
@@ -428,7 +484,11 @@
       "Fighter"
     ],
     "icon": "img/units/0b93d40d8c14233e.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/0458858b94643b54.mp3",
+      "move": "audio/units/36599bfbedb0c5d5.mp3",
+      "select": "audio/units/7eafd1c22d2a0874.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_FIGHTER"
@@ -441,7 +501,11 @@
       "Frigate"
     ],
     "icon": "img/units/230c7b1f3db2eb2c.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/9d7997531816686e.mp3",
+      "move": "audio/units/3413c032d11b8895.mp3",
+      "select": "audio/units/cf942928b957d991.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_FRIGATE"
@@ -452,7 +516,7 @@
     "name": "Gadrauht",
     "aliases": [],
     "icon": "img/units/48c9efb9c177b4c5.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MER_GADRAUHT"
@@ -465,7 +529,7 @@
       "Gaesatae"
     ],
     "icon": "img/units/d4cca95f5e13f723.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_GAUL_GAESATAE"
@@ -478,7 +542,11 @@
       "Galley"
     ],
     "icon": "img/units/b21db020eea41be9.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/d22e98ea06f53203.mp3",
+      "move": "audio/units/be903d676f895e51.mp3",
+      "select": "audio/units/ced8b5f31a8d20a5.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_GALLEY"
@@ -491,7 +559,7 @@
       "Garde Impériale"
     ],
     "icon": "img/units/c7b22cec3ddd8908.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_FRENCH_GARDE_IMPERIALE"
@@ -504,7 +572,11 @@
       "Giant Death Robot"
     ],
     "icon": "img/units/52289b81864090f9.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/8516d4b1d75ac53f.mp3",
+      "move": "audio/units/56688db4f967f167.mp3",
+      "select": "audio/units/3a95638f2d4b941d.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_GIANT_DEATH_ROBOT"
@@ -517,7 +589,7 @@
       "Grenzer"
     ],
     "icon": "img/units/67572168138d907c.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MER_GRENZER"
@@ -530,7 +602,11 @@
       "Heavy Chariot"
     ],
     "icon": "img/units/a7b966b59feb553b.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/83a7e2c07763e03b.mp3",
+      "move": "audio/units/31a77c9825145e7b.mp3",
+      "select": "audio/units/f2acc2c31012492b.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_HEAVY_CHARIOT"
@@ -543,7 +619,11 @@
       "Helicopter"
     ],
     "icon": "img/units/9b259aafdd0a5273.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/63865c99c2a64f0c.mp3",
+      "move": "audio/units/c4e67caa5f3ab3bc.mp3",
+      "select": "audio/units/cf2ff8aecb605c95.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_HELICOPTER"
@@ -556,7 +636,7 @@
       "Hetairoi"
     ],
     "icon": "img/units/9de410db45342ff2.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MACEDONIAN_HETAIROI"
@@ -567,7 +647,7 @@
     "name": "Highlander",
     "aliases": [],
     "icon": "img/units/c567485ee9c3ae9b.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SCOTTISH_HIGHLANDER"
@@ -578,7 +658,7 @@
     "name": "Hoplite",
     "aliases": [],
     "icon": "img/units/8629b1732c6c97da.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_GREEK_HOPLITE"
@@ -591,7 +671,11 @@
       "Horseman"
     ],
     "icon": "img/units/127a3eca1031906f.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/572562fcbeab964b.mp3",
+      "move": "audio/units/eb32415b8ebd324e.mp3",
+      "select": "audio/units/29571ba9c7d08ac0.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_HORSEMAN"
@@ -604,7 +688,7 @@
       "Hul'che"
     ],
     "icon": "img/units/9738a7d63b7bc16e.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MAYAN_HULCHE"
@@ -617,7 +701,7 @@
       "Huszár"
     ],
     "icon": "img/units/f4d49f1399273288.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_HUNGARY_HUSZAR"
@@ -628,7 +712,7 @@
     "name": "Hwacha",
     "aliases": [],
     "icon": "img/units/fe9caf2bdbb2208d.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_KOREAN_HWACHA"
@@ -641,7 +725,7 @@
       "Hypaspist"
     ],
     "icon": "img/units/db5ed6714a9344dd.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MACEDONIAN_HYPASPIST"
@@ -654,7 +738,7 @@
       "Immortal"
     ],
     "icon": "img/units/5f79eac5563a0d88.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_PERSIAN_IMMORTAL"
@@ -665,7 +749,7 @@
     "name": "Impi",
     "aliases": [],
     "icon": "img/units/0a4ecbc12e984a17.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ZULU_IMPI"
@@ -678,7 +762,11 @@
       "Infantry"
     ],
     "icon": "img/units/e298995823346ee5.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/bc955d43fc1b9d29.mp3",
+      "move": "audio/units/d767516d46344577.mp3",
+      "select": "audio/units/57e46ad8c31a8f3d.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_INFANTRY"
@@ -691,7 +779,11 @@
       "Ironclad"
     ],
     "icon": "img/units/a2cc209f1edde7a5.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/35af4111358cfa58.mp3",
+      "move": "audio/units/285f95f8a5a8f67a.mp3",
+      "select": "audio/units/a45acbe9fe7b38d0.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_IRONCLAD"
@@ -702,7 +794,7 @@
     "name": "Jahazi",
     "aliases": [],
     "icon": "img/units/98d955733f3d7885.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SUK_JAHAZI"
@@ -715,7 +807,7 @@
       "Janissary"
     ],
     "icon": "img/units/6e9822ea7ea5282d.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SULEIMAN_JANISSARY"
@@ -728,7 +820,11 @@
       "Jet Bomber"
     ],
     "icon": "img/units/5c5a264282155d19.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/1951b15c4e3a16eb.mp3",
+      "move": "audio/units/fdc7db8d61f396dd.mp3",
+      "select": "audio/units/b112367fca871470.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_JET_BOMBER"
@@ -741,7 +837,11 @@
       "Jet Fighter"
     ],
     "icon": "img/units/325dc2b3e841c7cd.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/5589fa6465e56157.mp3",
+      "move": "audio/units/12b1eb14769042c5.mp3",
+      "select": "audio/units/62411df404964306.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_JET_FIGHTER"
@@ -754,7 +854,7 @@
       "Jong"
     ],
     "icon": "img/units/be5ec5ed612adafa.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_INDONESIAN_JONG"
@@ -767,7 +867,7 @@
       "Keshig"
     ],
     "icon": "img/units/1430bc2ba7aed37b.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MONGOLIAN_KESHIG"
@@ -780,7 +880,7 @@
       "Khevsur"
     ],
     "icon": "img/units/a283ff90d4616fdb.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_GEORGIAN_KHEVSURETI"
@@ -793,7 +893,11 @@
       "Knight"
     ],
     "icon": "img/units/647c666394bd5a3b.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/c42d6f1e2f176955.mp3",
+      "move": "audio/units/1cebd6ae8b95218b.mp3",
+      "select": "audio/units/3aec070232a290a0.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_KNIGHT"
@@ -806,7 +910,7 @@
       "Legion"
     ],
     "icon": "img/units/59770989f0a28f63.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ROMAN_LEGION"
@@ -819,7 +923,11 @@
       "Line Infantry"
     ],
     "icon": "img/units/8487f68e59675b01.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/4ce9781500ed343d.mp3",
+      "move": "audio/units/2f7bef38a6a3b43b.mp3",
+      "select": "audio/units/5fa5ff41456e7f5d.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_LINE_INFANTRY"
@@ -830,7 +938,7 @@
     "name": "Llanero",
     "aliases": [],
     "icon": "img/units/3601d19797d2b23d.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_COLOMBIAN_LLANERO"
@@ -841,7 +949,7 @@
     "name": "Longbowman",
     "aliases": [],
     "icon": null,
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ENGLISH_LONGBOWMAN"
@@ -852,7 +960,7 @@
     "name": "Macana",
     "aliases": [],
     "icon": "img/units/6df85c8fdd4bc165.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CVS_TAINO_UU"
@@ -865,7 +973,11 @@
       "Machine Gun"
     ],
     "icon": "img/units/def42015806e9a08.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/cffc2361e0528e3b.mp3",
+      "move": "audio/units/f5a612d5586d8d1f.mp3",
+      "select": "audio/units/688aa54a35350f38.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MACHINE_GUN"
@@ -878,7 +990,7 @@
       "Malón Raider"
     ],
     "icon": "img/units/6ab7d5bc0f456a15.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MAPUCHE_MALON_RAIDER"
@@ -891,7 +1003,7 @@
       "Mamluk"
     ],
     "icon": "img/units/1fa50957e4aca234.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ARABIAN_MAMLUK"
@@ -904,7 +1016,11 @@
       "Man-At-Arms"
     ],
     "icon": "img/units/80025eafab8bce25.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b6ac3382f0d3b982.mp3",
+      "move": "audio/units/6bd5f9133abe048b.mp3",
+      "select": "audio/units/ac012c8e3c4c4d28.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MAN_AT_ARMS"
@@ -917,7 +1033,7 @@
       "Mandekalu Cavalry"
     ],
     "icon": "img/units/6308c182b842a12f.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MALI_MANDEKALU_CAVALRY"
@@ -930,7 +1046,7 @@
       "Maryannu Chariot Archer"
     ],
     "icon": "img/units/93275ae319ff7d50.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER"
@@ -943,7 +1059,11 @@
       "Mechanized Infantry"
     ],
     "icon": "img/units/2245c5ecea78668b.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/36489e01bf914883.mp3",
+      "move": "audio/units/29b81180f2b1a23c.mp3",
+      "select": "audio/units/96821504444a4381.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MECHANIZED_INFANTRY"
@@ -956,7 +1076,7 @@
       "Medic"
     ],
     "icon": "img/units/c353a272208f0871.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MEDIC"
@@ -969,7 +1089,7 @@
       "Military Engineer"
     ],
     "icon": "img/units/91ec6712994b536e.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MILITARY_ENGINEER"
@@ -980,7 +1100,7 @@
     "name": "Militōnd",
     "aliases": [],
     "icon": "img/units/f0d473b068478d95.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MER_MILITOND"
@@ -991,7 +1111,7 @@
     "name": "Minas Geraes",
     "aliases": [],
     "icon": "img/units/9ac4aa1f5d8bd884.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BRAZILIAN_MINAS_GERAES"
@@ -1004,7 +1124,11 @@
       "Missile Cruiser"
     ],
     "icon": "img/units/1f157e125ecac1d3.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/5ba3277764edd4dd.mp3",
+      "move": "audio/units/33bd93bb5fa581e5.mp3",
+      "select": "audio/units/af6ab10229aa8aaa.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MISSILE_CRUISER"
@@ -1017,7 +1141,11 @@
       "Mobile SAM"
     ],
     "icon": "img/units/8a9426b014eeb3d0.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b95a99d56fe748b1.mp3",
+      "move": "audio/units/2398553d3045760e.mp3",
+      "select": "audio/units/0c4f83fdf3dfd5eb.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MOBILE_SAM"
@@ -1030,7 +1158,11 @@
       "Modern Armor"
     ],
     "icon": "img/units/3600f715bb995bd0.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/9591e77e7824d3a9.mp3",
+      "move": "audio/units/43d4a265ee034cc6.mp3",
+      "select": "audio/units/3a172a4315613861.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MODERN_ARMOR"
@@ -1043,7 +1175,7 @@
       "Modern AT"
     ],
     "icon": "img/units/a9b986f3b3c8d85d.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MODERN_AT"
@@ -1056,7 +1188,7 @@
       "Mountie"
     ],
     "icon": "img/units/ac7e0111c322b488.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CANADA_MOUNTIE"
@@ -1069,7 +1201,11 @@
       "Musketman"
     ],
     "icon": "img/units/2a702efacd88976d.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/ce033b0dd0622ee1.mp3",
+      "move": "audio/units/2a8120fe78221cf0.mp3",
+      "select": "audio/units/87f52bf614cfe048.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MUSKETMAN"
@@ -1080,7 +1216,7 @@
     "name": "Nau",
     "aliases": [],
     "icon": "img/units/d345ba53120c5070.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_PORTUGUESE_NAU"
@@ -1091,7 +1227,7 @@
     "name": "Ngao Mbeba",
     "aliases": [],
     "icon": "img/units/907a89483e58e101.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_KONGO_SHIELD_BEARER"
@@ -1102,7 +1238,7 @@
     "name": "Nihang",
     "aliases": [],
     "icon": "img/units/6d396ea698347aa9.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_LAHORE_NIHANG"
@@ -1115,7 +1251,11 @@
       "Nuclear Submarine"
     ],
     "icon": "img/units/a048086a0df46727.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/4fe23a243467a687.mp3",
+      "move": "audio/units/e7ace8ed6b09c396.mp3",
+      "select": "audio/units/b0ae8ff96a1b62ca.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_NUCLEAR_SUBMARINE"
@@ -1128,7 +1268,7 @@
       "Observation Balloon"
     ],
     "icon": "img/units/2a61cefa484f644d.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_OBSERVATION_BALLOON"
@@ -1141,7 +1281,7 @@
       "Okihtcitaw"
     ],
     "icon": "img/units/f4c689c66b9081ab.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_CREE_OKIHTCITAW"
@@ -1154,7 +1294,7 @@
       "Onager"
     ],
     "icon": "img/units/1f114af2ceb7e893.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ROMAN_ONAGER"
@@ -1167,7 +1307,7 @@
       "Oromo Cavalry"
     ],
     "icon": "img/units/482f4bc83835d81e.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY"
@@ -1178,7 +1318,7 @@
     "name": "P-51 Mustang",
     "aliases": [],
     "icon": "img/units/e55685e390c44fca.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_AMERICAN_P51"
@@ -1191,7 +1331,11 @@
       "Pike and Shot"
     ],
     "icon": "img/units/d7b2845f8e650dc7.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/60cfa15b18cb392f.mp3",
+      "move": "audio/units/6bd5f9133abe048b.mp3",
+      "select": "audio/units/01108624897aa130.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_PIKE_AND_SHOT"
@@ -1204,7 +1348,11 @@
       "Pikeman"
     ],
     "icon": "img/units/0443913898e49893.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/dbebf5100aa56eba.mp3",
+      "move": "audio/units/286f8a1caa6b3dc2.mp3",
+      "select": "audio/units/a4833f956df1017c.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_PIKEMAN"
@@ -1217,7 +1365,7 @@
       "Pítati Archer"
     ],
     "icon": "img/units/6a6ea58a08e62689.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_NUBIAN_PITATI"
@@ -1230,7 +1378,11 @@
       "Privateer"
     ],
     "icon": "img/units/1f510dcd3ad0c300.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/c50bf12eb4927f6b.mp3",
+      "move": "audio/units/3413c032d11b8895.mp3",
+      "select": "audio/units/051f35bd55ded1c0.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_PRIVATEER"
@@ -1243,7 +1395,11 @@
       "Quadrireme"
     ],
     "icon": "img/units/eb0d0bbd21f9b914.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/707cb82a177eea1d.mp3",
+      "move": "audio/units/be903d676f895e51.mp3",
+      "select": "audio/units/c771f1ee5f0f7f83.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_QUADRIREME"
@@ -1254,7 +1410,11 @@
     "name": "Ranger",
     "aliases": [],
     "icon": "img/units/a984ff90286c7906.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/9f86d45e73cfa5d3.mp3",
+      "move": "audio/units/6bd5f9133abe048b.mp3",
+      "select": "audio/units/f1e0f8d21855e2c2.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_RANGER"
@@ -1267,7 +1427,7 @@
       "Redcoat"
     ],
     "icon": "img/units/93542b7cb060e536.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ENGLISH_REDCOAT"
@@ -1280,7 +1440,7 @@
       "Rocket Artillery"
     ],
     "icon": "img/units/2f3fe64742e644b6.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ROCKET_ARTILLERY"
@@ -1291,7 +1451,7 @@
     "name": "Rough Rider",
     "aliases": [],
     "icon": "img/units/8e7ea9b90616f088.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_AMERICAN_ROUGH_RIDER"
@@ -1302,7 +1462,7 @@
     "name": "Rta Pa",
     "aliases": [],
     "icon": "img/units/7b5acd7f56775a70.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SUK_TIBET_RTA_PA"
@@ -1315,7 +1475,7 @@
       "Sabum Kibittum"
     ],
     "icon": "img/units/60f8332d3ce4c416.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BABYLONIAN_SABUM_KIBITTUM"
@@ -1328,7 +1488,7 @@
       "Saka Horse Archer"
     ],
     "icon": "img/units/1c368689640228c3.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SCYTHIAN_HORSE_ARCHER"
@@ -1341,7 +1501,7 @@
       "Samurai"
     ],
     "icon": "img/units/05971f5e8a3631aa.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_JAPANESE_SAMURAI"
@@ -1354,7 +1514,11 @@
       "Scout"
     ],
     "icon": "img/units/eb21caaba73b90aa.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b6ac3382f0d3b982.mp3",
+      "move": "audio/units/6bd5f9133abe048b.mp3",
+      "select": "audio/units/20435ddbd16719db.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SCOUT"
@@ -1367,7 +1531,7 @@
       "Sea Dog"
     ],
     "icon": "img/units/876a5e1c51c8adcf.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_ENGLISH_SEADOG"
@@ -1380,7 +1544,7 @@
       "Siege Tower"
     ],
     "icon": "img/units/83a38f9665d6039e.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SIEGE_TOWER"
@@ -1393,7 +1557,11 @@
       "Skirmisher"
     ],
     "icon": "img/units/c23adffabdeb84b6.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/701e3a46f806b7b8.mp3",
+      "move": "audio/units/67657d8f9f38446a.mp3",
+      "select": "audio/units/08fac7c96db5a953.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SKIRMISHER"
@@ -1406,7 +1574,11 @@
       "Slinger"
     ],
     "icon": "img/units/3f437043a6f631f8.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b7279c058a1a7ec5.mp3",
+      "move": "audio/units/20494cb3f8621627.mp3",
+      "select": "audio/units/7d65a48552dbb2b6.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SLINGER"
@@ -1419,7 +1591,11 @@
       "Spearman"
     ],
     "icon": "img/units/ae2a4d793773d233.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/dbebf5100aa56eba.mp3",
+      "move": "audio/units/327e85073132afd8.mp3",
+      "select": "audio/units/d7a651422798977e.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SPEARMAN"
@@ -1432,7 +1608,11 @@
       "Spec Ops"
     ],
     "icon": "img/units/e34385b2b2d5eafb.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/de3caaa62034ac52.mp3",
+      "move": "audio/units/6bd5f9133abe048b.mp3",
+      "select": "audio/units/37cd608d73d546e2.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SPEC_OPS"
@@ -1445,7 +1625,11 @@
       "Submarine"
     ],
     "icon": "img/units/aa10325fa04f38a5.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/d7799153553da5b8.mp3",
+      "move": "audio/units/52f4c19e2b3fe082.mp3",
+      "select": "audio/units/37d1d05d785a8d45.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SUBMARINE"
@@ -1458,7 +1642,7 @@
       "Supply Convoy"
     ],
     "icon": "img/units/6a847900df0b72c9.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SUPPLY_CONVOY"
@@ -1471,7 +1655,11 @@
       "Swordsman"
     ],
     "icon": "img/units/a31c45becd75d197.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b6ac3382f0d3b982.mp3",
+      "move": "audio/units/286f8a1caa6b3dc2.mp3",
+      "select": "audio/units/93f3f63e0095c556.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SWORDSMAN"
@@ -1482,7 +1670,7 @@
     "name": "Tagma",
     "aliases": [],
     "icon": "img/units/c4649a923e884773.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_BYZANTINE_TAGMA"
@@ -1495,7 +1683,11 @@
       "Tank"
     ],
     "icon": "img/units/57b71ac6729d33b1.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/dbc7a267eb5bfd1c.mp3",
+      "move": "audio/units/5e6eff405118f95f.mp3",
+      "select": "audio/units/e8861893224bade2.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_TANK"
@@ -1508,7 +1700,7 @@
       "Tiger I"
     ],
     "icon": "img/units/271524ae2b4ac19c.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_GERMAN_PANZER"
@@ -1519,7 +1711,7 @@
     "name": "Toa",
     "aliases": [],
     "icon": "img/units/d0e33989feb3e47b.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_MAORI_TOA"
@@ -1532,7 +1724,11 @@
       "Trebuchet"
     ],
     "icon": "img/units/e38ac2d544333ef7.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/34da7fd2401b952b.mp3",
+      "move": "audio/units/e4c648ebe7cb8506.mp3",
+      "select": "audio/units/805bfcc8dd703b1e.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_TREBUCHET"
@@ -1545,7 +1741,7 @@
       "U-Boat"
     ],
     "icon": "img/units/968a9df42a59fd0c.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_GERMAN_UBOAT"
@@ -1556,7 +1752,7 @@
     "name": "Uhlan",
     "aliases": [],
     "icon": "img/units/0a67e9c2511b556e.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_JFD_UHLAN"
@@ -1569,7 +1765,7 @@
       "Varu"
     ],
     "icon": "img/units/a415c1bdf94c4342.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_INDIAN_VARU"
@@ -1582,7 +1778,7 @@
       "Viking Longship"
     ],
     "icon": "img/units/f8d66fe83ddce2c4.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_NORWEGIAN_LONGSHIP"
@@ -1593,7 +1789,7 @@
     "name": "Voi Chiến",
     "aliases": [],
     "icon": "img/units/0bfc6ea15e2ef3ef.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_VIETNAMESE_VOI_CHIEN"
@@ -1606,7 +1802,7 @@
       "War-Cart"
     ],
     "icon": "img/units/ea95b61890e0ee12.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_SUMERIAN_WAR_CART"
@@ -1619,7 +1815,7 @@
       "Warak’aq"
     ],
     "icon": "img/units/d33d9801f9a79c16.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_INCA_WARAKAQ"
@@ -1632,7 +1828,11 @@
       "Warrior"
     ],
     "icon": "img/units/e7cd8bbd7d3a94d8.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/b6ac3382f0d3b982.mp3",
+      "move": "audio/units/20494cb3f8621627.mp3",
+      "select": "audio/units/6b45c37915d97fc9.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_WARRIOR"
@@ -1645,7 +1845,11 @@
       "Warrior Monk"
     ],
     "icon": "img/units/6e3819582da5d43d.webp",
-    "sound": null,
+    "sounds": {
+      "attack": "audio/units/0060ac7cc2b02456.mp3",
+      "move": "audio/units/cc6d8993d8e83ef5.mp3",
+      "select": "audio/units/20278c54c5018b1c.mp3"
+    },
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_WARRIOR_MONK"
@@ -1658,7 +1862,7 @@
       "Winged Hussar"
     ],
     "icon": "img/units/445589d1feaa8523.webp",
-    "sound": null,
+    "sounds": null,
     "source": {
       "bbg": "units_7.5.html",
       "locKey": "LOC_UNIT_POLISH_HUSSAR"

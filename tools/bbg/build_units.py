@@ -16,15 +16,15 @@ Inputs
   history and once the unit is found; never as a clue). The page links some icons
   that the folder does not have (``Longbowman.webp`` in 7.5; the site then
   shows a generic image): ``icon`` is ``null`` for those units.
-- ``audio/units/<id>.<ext>`` (optional, not produced by this script): the
-  sound of each unit, see "Sons" below.
+- ``audio/units/<id>-<kind>.<ext>`` (optional, not produced by this script):
+  the sounds of each unit, see "Sons" below.
 
 Outputs
 -------
 - ``data/units.json`` (overwritten): one record per military unit: ``id``
   (icon file stem, e.g. ``man-at-arms``), ``name`` (French), ``aliases``
-  (English name if different), ``icon``, ``sound`` (path of the sound file,
-  or ``null`` if there is none), ``source`` (page and LOC key).
+  (English name if different), ``icon``, ``sounds`` (``{kind: path}`` of the
+  sound files, or ``null`` if there is none), ``source`` (page and LOC key).
 - ``img/units/<id>.webp``
 
 Choices
@@ -39,12 +39,23 @@ Choices
 
 Sons
 ----
-The BBG site has no sounds, so they are not downloaded here. Put one file per
-unit in ``audio/units/`` named after the unit id (``audio/units/knight.ogg``;
+The BBG site has no sounds, so they are not downloaded here. Put the files in
+``audio/units/`` named ``<id>-<kind>.<ext>``, ``kind`` being one of SOUND_KINDS
+(``audio/units/knight-move.mp3``, ``knight-attack.mp3``, ``knight-select.mp3``;
 ``.ogg``, ``.mp3``, ``.m4a``, ``.wav`` or ``.webm``) and run this script
-again: it fills ``sound`` for the units that have a file and lists the
-files whose name is not a unit id. Units without a sound stay in the data but
-are never the answer of the day (``eligible`` in ``js/modes/son.js``).
+again: it fills ``sounds`` for the units that have files and lists the files
+whose name is not ``<unit id>-<kind>``. Only units with the three sounds can be
+the answer of the day (``eligible`` in ``js/modes/son.js``); the others stay
+in the data as possible guesses.
+
+The files of the repository come from the game (Civilization VI, Windows,
+base game and DLC Wwise banks) and cover the non-unique units only (no
+TraitType in the game's Units table): the selection sound (event
+``Unit_Selected``), the movement sound (``Unit_Move_2D``, grassland terrain)
+and the attack sound (``Unit_Attack_2D``), with the unit's "Unit" switch
+value from ``ArtDefs/Units.artdef``. A unit got sounds only when its selection
+sound holds a recording that no other non-unique unit plays; movement and
+attack sounds are often shared by a class of units.
 
 The script stops if a key is missing in one language, or if an id or a
 French name is duplicated (the guess input matches on names).
@@ -63,6 +74,8 @@ OUT_JSON = ROOT / "data" / "units.json"
 OUT_IMG = ROOT / "img" / "units"
 AUDIO_DIR = ROOT / "audio" / "units"
 AUDIO_EXT = {".ogg", ".mp3", ".m4a", ".wav", ".webm"}
+# Kinds of sound of a unit (suffix of the file name), see js/modes/son.js.
+SOUND_KINDS = ("move", "attack", "select")
 
 # Religious units of the page (not military).
 NON_MILITARY = {"MISSIONARY", "APOSTLE", "INQUISITOR", "GURU"}
@@ -92,16 +105,22 @@ def make_id(img):
 
 
 def find_sounds():
-    """``{id: "audio/units/<id>.<ext>"}`` for the sound files present."""
+    """``{id: {kind: "audio/units/<id>-<kind>.<ext>"}}`` for the sound files
+    present; files not named ``<id>-<kind>`` are listed under the key ``None``."""
     if not AUDIO_DIR.is_dir():
         return {}
     out = {}
     for f in sorted(AUDIO_DIR.iterdir()):
         if f.suffix.lower() not in AUDIO_EXT:
             continue
-        if f.stem in out:
-            sys.exit(f"Two sound files for {f.stem} in {AUDIO_DIR.relative_to(ROOT)}")
-        out[f.stem] = f.relative_to(ROOT).as_posix()
+        rid, _, kind = f.stem.rpartition("-")
+        path = f.relative_to(ROOT).as_posix()
+        if kind not in SOUND_KINDS or not rid:
+            out.setdefault(None, []).append(path)
+            continue
+        if kind in out.setdefault(rid, {}):
+            sys.exit(f"Two {kind} sound files for {rid} in {AUDIO_DIR.relative_to(ROOT)}")
+        out[rid][kind] = path
     return out
 
 
@@ -146,18 +165,21 @@ def main(bbg_dir, version):
             "name": e["name"],
             "aliases": [name_en] if name_en != e["name"] else [],
             "icon": icon,
-            "sound": sounds.get(rid),
+            "sounds": sounds.get(rid),
             "source": {"bbg": page, "locKey": f"LOC_UNIT_{e['key']}"},
         })
 
-    unknown = sorted(set(sounds) - ids)
-    for u in unknown:
-        print(f"sound file not matching any unit id: {sounds[u]}", file=sys.stderr)
+    unknown = [p for u in set(sounds) - ids for p in
+               (sounds[u] if u is None else sounds[u].values())]
+    for path in sorted(unknown):
+        print(f"sound file not named <unit id>-<kind>: {path}", file=sys.stderr)
     records.sort(key=lambda r: r["id"])
     OUT_JSON.write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n",
                         encoding="utf-8")
-    n_sound = sum(1 for r in records if r["sound"])
-    print(f"{len(records)} units ({n_sound} with a sound) -> {OUT_JSON.relative_to(ROOT)}")
+    n_full = sum(1 for r in records if r["sounds"] and all(k in r["sounds"] for k in SOUND_KINDS))
+    n_some = sum(1 for r in records if r["sounds"])
+    print(f"{len(records)} units ({n_full} with the {len(SOUND_KINDS)} sounds, "
+          f"{n_some} with at least one) -> {OUT_JSON.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

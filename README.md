@@ -35,7 +35,7 @@ data/improvements.json  58 aménagements du mode Aménagement (généré)
 img/improvements/       icônes des aménagements
 data/units.json         133 unités militaires du mode Son (généré)
 img/units/              icônes des unités
-audio/units/            sons des unités (à fournir, voir « Son »)
+audio/units/            sons des unités, tirés du jeu (voir « Son »)
 img/portraits/          portraits (générés depuis le site BBG)
 img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
@@ -200,11 +200,13 @@ python tools/bbg/build_units.py bbg 7.5
 
 `name` vient de `fr_FR/units_7.5.html`, `aliases` du nom anglais (`en_US`) s'il diffère, `icon` de `images/units/` (copiée telle quelle, affichée à la victoire et dans l'historique), `id` du nom du fichier d'icône sans accents (`Voi_Chiến.webp` → `voi-chien`). Les 4 unités religieuses (missionnaire, apôtre, inquisiteur, guru) sont écartées ; les unités de soutien (bélier, médecin, convoi…) sont gardées. En 7.5, `COG` n'a pas de nom sur la page (« Not found ») et est ignorée ; l'icône de `Longbowman` manque dans le dossier BBG (`icon: null`).
 
-**Sons** : le site BBG n'en a pas, ils ne sont donc pas dans le dépôt. Déposer un fichier par unité dans `audio/units/`, nommé d'après l'`id` de l'unité (`audio/units/knight.mp3` ; `.mp3`, `.ogg`, `.m4a`, `.wav` ou `.webm`), puis relancer `build_units.py` (après `hash_assets.py --restore`) : il remplit `sound` et signale les fichiers dont le nom n'est pas un `id`. Seules les unités qui ont un son peuvent être la réponse du jour ; sans aucun son, le mode affiche un message. Chaque nouveau son change la séquence du mode (voir « Fonctionnement du tirage quotidien »).
+**Sons** : le site BBG n'en a pas. Trois sons par unité dans `audio/units/`, nommés `<id>-<type>` avec `type` = `move` (déplacement), `attack` (attaque) ou `select` (sélection) (`audio/units/knight-move.mp3` ; `.mp3`, `.ogg`, `.m4a`, `.wav` ou `.webm`), puis relancer `build_units.py` (après `hash_assets.py --restore`) : il remplit `sounds` (`{move, attack, select}`) et signale les fichiers mal nommés. Seules les unités qui ont les trois sons peuvent être la réponse du jour ; sans aucune, le mode affiche un message. Chaque nouveau son change la séquence du mode (voir « Fonctionnement du tirage quotidien »).
+
+Les fichiers du dépôt sont tirés des banques Wwise de Civilization VI (Windows, jeu de base et DLC) et ne couvrent que les **unités non uniques** (sans `TraitType` dans la table `Units` du jeu) : 51 unités. Pour chacune, le son joué par le jeu à la sélection (`Unit_Selected`), au déplacement (`Unit_Move_2D`, terrain prairie) et à l'attaque (`Unit_Attack_2D`), selon la valeur du switch Wwise « Unit » donnée par `ArtDefs/Units.artdef`. Une unité n'a des sons que si son son de sélection contient un enregistrement qu'aucune autre unité non unique ne joue ; les sons de déplacement et d'attaque, eux, sont souvent communs à toute une classe (fantassins, cavaliers, navires…). Des unités qui ont exactement le même bruitage partagent un seul fichier (voir « Noms des images »).
 
 ### Noms des images
 
-Dans le dépôt, les images indices (portraits, silhouettes, `reveal`, yeux, emblèmes des cités-États, aménagements, technologies et dogmes, icônes des unités) et les sons du mode Son portent un nom tiré d'un hash de leur contenu (`img/silhouettes/3f9c0d….png`), et non l'id de la réponse : sinon l'outil d'inspection du navigateur montrerait la réponse dans le `src` de l'image indice. `tools/hash_assets.py` fait le renommage et réécrit les chemins dans `data/*.json` ; `--restore` remet les noms lisibles, déduits de l'`id` et du champ de chaque enregistrement (tableau dans l'en-tête du script). Les deux sens sont idempotents. Les sections ci-dessus décrivent les noms lisibles, ceux que les générateurs produisent.
+Dans le dépôt, les images indices (portraits, silhouettes, `reveal`, yeux, emblèmes des cités-États, aménagements, technologies et dogmes, icônes des unités) et les sons du mode Son portent un nom tiré d'un hash de leur contenu (`img/silhouettes/3f9c0d….png`), et non l'id de la réponse : sinon l'outil d'inspection du navigateur montrerait la réponse dans le `src` de l'image indice. `tools/hash_assets.py` fait le renommage et réécrit les chemins dans `data/*.json` ; `--restore` remet les noms lisibles, déduits de l'`id` et du champ de chaque enregistrement (tableau dans l'en-tête du script). Les deux sens sont idempotents. Deux fichiers au contenu identique (bruitage commun à plusieurs unités) deviennent un seul fichier haché, recopié sous chaque nom lisible par `--restore`. Les sections ci-dessus décrivent les noms lisibles, ceux que les générateurs produisent.
 
 ## Fonctionnement du tirage quotidien
 
@@ -256,7 +258,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - `js/modes/citystates.js` : aucun indice supplémentaire après un essai raté. Case « Mode challenger » cochée par défaut (état mémorisé dans le navigateur) : emblème en gris uniforme (`iconGrey`), couleurs affichées à la victoire. Suggestions de saisie sans icône (sinon la liste permettrait de comparer les formes).
 - `js/modes/techscivics.js` : `BLUR_START = 24` (px), `STEPS = 8` (mêmes valeurs que Portrait) ; réponse tirée parmi les technologies et les dogmes réunis. Suggestions de saisie sans icône.
 - `js/modes/improvements.js` : `BLUR_START = 10` (px), `STEPS = 6`, flou plus léger que Portrait et Technologies. Suggestions de saisie sans icône.
-- `js/modes/son.js` : le son est le seul indice, rien n'apparaît après un essai raté ; l'icône de l'unité s'affiche à la victoire. Le son est joué par l'API Web Audio (pas d'élément `<audio>` dont le `src` serait visible dans l'inspecteur).
+- `js/modes/son.js` : les sons sont les seuls indices, du plus général au plus parlant : déplacement dès le départ, attaque après `UNLOCK.attack = 2` essais ratés, sélection après `UNLOCK.select = 4` ; rien d'autre n'apparaît après un essai raté, l'icône de l'unité s'affiche à la victoire. Les sons sont joués par l'API Web Audio (pas d'élément `<audio>` dont le `src` serait visible dans l'inspecteur). Les unités uniques restent proposées à la saisie mais ne sont jamais la réponse.
 - `js/modes/silhouette.js` : `ZOOM_START = 3.5`, `STEPS = 12` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues
