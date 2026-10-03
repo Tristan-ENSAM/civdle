@@ -1,4 +1,4 @@
-"""Build the data of the "Son" mode (military units) from the BBG site.
+"""Build the data of the "Unité" mode (military units) from the BBG site.
 
 Usage (from the repository root):
 
@@ -55,7 +55,8 @@ TraitType in the game's Units table): the selection sound (event
 and the attack sound (``Unit_Attack_2D``), with the unit's "Unit" switch
 value from ``ArtDefs/Units.artdef``. A unit got sounds only when its selection
 sound holds a recording that no other non-unique unit plays; movement and
-attack sounds are often shared by a class of units.
+attack sounds are often shared by a class of units. The game loops these
+sounds (steps, several blows): each file keeps a single one.
 
 The script stops if a key is missing in one language, or if an id or a
 French name is duplicated (the guess input matches on names).
