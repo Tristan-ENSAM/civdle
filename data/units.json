@@ -1,0 +1,1667 @@
+[
+  {
+    "id": "aircraft-carrier",
+    "name": "Porte-avions",
+    "aliases": [
+      "Aircraft Carrier"
+    ],
+    "icon": "img/units/246b6c5da543cdc8.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_AIRCRAFT_CARRIER"
+    }
+  },
+  {
+    "id": "anti-air-gun",
+    "name": "Canon antiaérien",
+    "aliases": [
+      "Anti-Air Gun"
+    ],
+    "icon": "img/units/7322973b422bbfbd.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ANTIAIR_GUN"
+    }
+  },
+  {
+    "id": "archer",
+    "name": "Archer",
+    "aliases": [],
+    "icon": "img/units/848fb9a62160deea.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ARCHER"
+    }
+  },
+  {
+    "id": "artillery",
+    "name": "Artillerie",
+    "aliases": [
+      "Artillery"
+    ],
+    "icon": "img/units/4a6dce50b6b064d0.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ARTILLERY"
+    }
+  },
+  {
+    "id": "at-crew",
+    "name": "Unité antichar",
+    "aliases": [
+      "AT Crew"
+    ],
+    "icon": "img/units/a29a4034256e0582.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_AT_CREW"
+    }
+  },
+  {
+    "id": "barbary-corsair",
+    "name": "Corsaire barbaresque",
+    "aliases": [
+      "Barbary Corsair"
+    ],
+    "icon": "img/units/8a0a92085ba70989.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_OTTOMAN_BARBARY_CORSAIR"
+    }
+  },
+  {
+    "id": "battering-ram",
+    "name": "Bélier",
+    "aliases": [
+      "Battering Ram"
+    ],
+    "icon": "img/units/60be7237b7a506ba.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BATTERING_RAM"
+    }
+  },
+  {
+    "id": "battleship",
+    "name": "Cuirassé",
+    "aliases": [
+      "Battleship"
+    ],
+    "icon": "img/units/481870cd56ba3320.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BATTLESHIP"
+    }
+  },
+  {
+    "id": "berserker",
+    "name": "Berserker",
+    "aliases": [],
+    "icon": "img/units/b82c07ef7fbe4a9c.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_NORWEGIAN_BERSERKER"
+    }
+  },
+  {
+    "id": "biplane",
+    "name": "Biplan",
+    "aliases": [
+      "Biplane"
+    ],
+    "icon": "img/units/efc849c138d1a41c.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BIPLANE"
+    }
+  },
+  {
+    "id": "bireme",
+    "name": "Birème",
+    "aliases": [
+      "Bireme"
+    ],
+    "icon": "img/units/d3f45bbae5f7548b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_PHOENICIA_BIREME"
+    }
+  },
+  {
+    "id": "black-army",
+    "name": "Armée noire",
+    "aliases": [
+      "Black Army"
+    ],
+    "icon": "img/units/98633d9f259f91af.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_HUNGARY_BLACK_ARMY"
+    }
+  },
+  {
+    "id": "bombard",
+    "name": "Bombarde",
+    "aliases": [
+      "Bombard"
+    ],
+    "icon": "img/units/d25591e069981596.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BOMBARD"
+    }
+  },
+  {
+    "id": "bomber",
+    "name": "Bombardier",
+    "aliases": [
+      "Bomber"
+    ],
+    "icon": "img/units/4853609721e1ea57.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BOMBER"
+    }
+  },
+  {
+    "id": "caravel",
+    "name": "Caravelle",
+    "aliases": [
+      "Caravel"
+    ],
+    "icon": "img/units/c2c1eda9f8a78a27.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CARAVEL"
+    }
+  },
+  {
+    "id": "carolean",
+    "name": "Caroléen",
+    "aliases": [
+      "Carolean"
+    ],
+    "icon": "img/units/27f7882a90038871.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SWEDEN_CAROLEAN"
+    }
+  },
+  {
+    "id": "catapult",
+    "name": "Catapulte",
+    "aliases": [
+      "Catapult"
+    ],
+    "icon": "img/units/6a467e35b9e07a76.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CATAPULT"
+    }
+  },
+  {
+    "id": "cavalry",
+    "name": "Cavalerie",
+    "aliases": [
+      "Cavalry"
+    ],
+    "icon": "img/units/5b5b2f91bb32a077.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CAVALRY"
+    }
+  },
+  {
+    "id": "conquistador",
+    "name": "Conquistador",
+    "aliases": [],
+    "icon": "img/units/3c687d298ced5034.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SPANISH_CONQUISTADOR"
+    }
+  },
+  {
+    "id": "cossack",
+    "name": "Cosaque",
+    "aliases": [
+      "Cossack"
+    ],
+    "icon": "img/units/79e22a7266eef567.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_RUSSIAN_COSSACK"
+    }
+  },
+  {
+    "id": "courser",
+    "name": "Coursier",
+    "aliases": [
+      "Courser"
+    ],
+    "icon": "img/units/895ae6f6446ab9d6.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_COURSER"
+    }
+  },
+  {
+    "id": "crossbowman",
+    "name": "Arbalétrier",
+    "aliases": [
+      "Crossbowman"
+    ],
+    "icon": "img/units/a8b985b7846de9c4.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CROSSBOWMAN"
+    }
+  },
+  {
+    "id": "crouching-tiger",
+    "name": "Tigre accroupi",
+    "aliases": [
+      "Crouching Tiger"
+    ],
+    "icon": "img/units/314b5d0a8f9345c0.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CHINESE_CROUCHING_TIGER"
+    }
+  },
+  {
+    "id": "cuirassier",
+    "name": "Cuirassier",
+    "aliases": [],
+    "icon": "img/units/537c9922c393977f.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CUIRASSIER"
+    }
+  },
+  {
+    "id": "de-zeven-provincien",
+    "name": "De Zeven Provinciën",
+    "aliases": [],
+    "icon": "img/units/28bf87ee645d4a9b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_DE_ZEVEN_PROVINCIEN"
+    }
+  },
+  {
+    "id": "destroyer",
+    "name": "Destroyer",
+    "aliases": [],
+    "icon": "img/units/fc0ec4f303df7560.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_DESTROYER"
+    }
+  },
+  {
+    "id": "digger",
+    "name": "Digger",
+    "aliases": [],
+    "icon": "img/units/e946f3ace60a1806.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_DIGGER"
+    }
+  },
+  {
+    "id": "dogsled-hunter",
+    "name": "Chasseur à traîneau",
+    "aliases": [
+      "Dogsled Hunter"
+    ],
+    "icon": "img/units/a96e03e91e7776fa.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_LIME_THULE_DOGSLED"
+    }
+  },
+  {
+    "id": "domrey",
+    "name": "Domrey",
+    "aliases": [],
+    "icon": "img/units/e08a6b57ff5fd01a.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_KHMER_DOMREY"
+    }
+  },
+  {
+    "id": "dromon",
+    "name": "Dromon",
+    "aliases": [],
+    "icon": "img/units/125bab2c73495394.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BYZANTINE_DROMON"
+    }
+  },
+  {
+    "id": "drone",
+    "name": "Drone",
+    "aliases": [],
+    "icon": "img/units/ec5d538399031957.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_DRONE"
+    }
+  },
+  {
+    "id": "eagle-warrior",
+    "name": "Guerrier aigle",
+    "aliases": [
+      "Eagle Warrior"
+    ],
+    "icon": "img/units/6de7f8cc52856ed2.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_AZTEC_EAGLE_WARRIOR"
+    }
+  },
+  {
+    "id": "ehuatl-wearer",
+    "name": "Guerrier chouette",
+    "aliases": [
+      "Ehuatl Wearer"
+    ],
+    "icon": "img/units/06bb8194bc31a685.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_LIME_TEO_OWL_WARRIOR"
+    }
+  },
+  {
+    "id": "field-cannon",
+    "name": "Canon de campagne",
+    "aliases": [
+      "Field Cannon"
+    ],
+    "icon": "img/units/70ba4db1f096c753.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_FIELD_CANNON"
+    }
+  },
+  {
+    "id": "fighter",
+    "name": "Chasseur",
+    "aliases": [
+      "Fighter"
+    ],
+    "icon": "img/units/0b93d40d8c14233e.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_FIGHTER"
+    }
+  },
+  {
+    "id": "frigate",
+    "name": "Frégate",
+    "aliases": [
+      "Frigate"
+    ],
+    "icon": "img/units/230c7b1f3db2eb2c.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_FRIGATE"
+    }
+  },
+  {
+    "id": "gadrauht",
+    "name": "Gadrauht",
+    "aliases": [],
+    "icon": "img/units/48c9efb9c177b4c5.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MER_GADRAUHT"
+    }
+  },
+  {
+    "id": "gaesatae",
+    "name": "Gésates",
+    "aliases": [
+      "Gaesatae"
+    ],
+    "icon": "img/units/d4cca95f5e13f723.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_GAUL_GAESATAE"
+    }
+  },
+  {
+    "id": "galley",
+    "name": "Galère",
+    "aliases": [
+      "Galley"
+    ],
+    "icon": "img/units/b21db020eea41be9.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_GALLEY"
+    }
+  },
+  {
+    "id": "garde-imperiale",
+    "name": "Garde impérial",
+    "aliases": [
+      "Garde Impériale"
+    ],
+    "icon": "img/units/c7b22cec3ddd8908.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_FRENCH_GARDE_IMPERIALE"
+    }
+  },
+  {
+    "id": "giant-death-robot",
+    "name": "Robot géant de la mort",
+    "aliases": [
+      "Giant Death Robot"
+    ],
+    "icon": "img/units/52289b81864090f9.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_GIANT_DEATH_ROBOT"
+    }
+  },
+  {
+    "id": "grenzer",
+    "name": "Garde-frontière",
+    "aliases": [
+      "Grenzer"
+    ],
+    "icon": "img/units/67572168138d907c.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MER_GRENZER"
+    }
+  },
+  {
+    "id": "heavy-chariot",
+    "name": "Char lourd",
+    "aliases": [
+      "Heavy Chariot"
+    ],
+    "icon": "img/units/a7b966b59feb553b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_HEAVY_CHARIOT"
+    }
+  },
+  {
+    "id": "helicopter",
+    "name": "Hélicoptère",
+    "aliases": [
+      "Helicopter"
+    ],
+    "icon": "img/units/9b259aafdd0a5273.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_HELICOPTER"
+    }
+  },
+  {
+    "id": "hetairoi",
+    "name": "Hétairoi",
+    "aliases": [
+      "Hetairoi"
+    ],
+    "icon": "img/units/9de410db45342ff2.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MACEDONIAN_HETAIROI"
+    }
+  },
+  {
+    "id": "highlander",
+    "name": "Highlander",
+    "aliases": [],
+    "icon": "img/units/c567485ee9c3ae9b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SCOTTISH_HIGHLANDER"
+    }
+  },
+  {
+    "id": "hoplite",
+    "name": "Hoplite",
+    "aliases": [],
+    "icon": "img/units/8629b1732c6c97da.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_GREEK_HOPLITE"
+    }
+  },
+  {
+    "id": "horseman",
+    "name": "Cavalier",
+    "aliases": [
+      "Horseman"
+    ],
+    "icon": "img/units/127a3eca1031906f.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_HORSEMAN"
+    }
+  },
+  {
+    "id": "hul-che",
+    "name": "Hul-Che",
+    "aliases": [
+      "Hul'che"
+    ],
+    "icon": "img/units/9738a7d63b7bc16e.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MAYAN_HULCHE"
+    }
+  },
+  {
+    "id": "huszar",
+    "name": "Hussard",
+    "aliases": [
+      "Huszár"
+    ],
+    "icon": "img/units/f4d49f1399273288.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_HUNGARY_HUSZAR"
+    }
+  },
+  {
+    "id": "hwacha",
+    "name": "Hwacha",
+    "aliases": [],
+    "icon": "img/units/fe9caf2bdbb2208d.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_KOREAN_HWACHA"
+    }
+  },
+  {
+    "id": "hypaspist",
+    "name": "Hypaspiste",
+    "aliases": [
+      "Hypaspist"
+    ],
+    "icon": "img/units/db5ed6714a9344dd.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MACEDONIAN_HYPASPIST"
+    }
+  },
+  {
+    "id": "immortal",
+    "name": "Immortel",
+    "aliases": [
+      "Immortal"
+    ],
+    "icon": "img/units/5f79eac5563a0d88.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_PERSIAN_IMMORTAL"
+    }
+  },
+  {
+    "id": "impi",
+    "name": "Impi",
+    "aliases": [],
+    "icon": "img/units/0a4ecbc12e984a17.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ZULU_IMPI"
+    }
+  },
+  {
+    "id": "infantry",
+    "name": "Infanterie",
+    "aliases": [
+      "Infantry"
+    ],
+    "icon": "img/units/e298995823346ee5.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_INFANTRY"
+    }
+  },
+  {
+    "id": "ironclad",
+    "name": "Cuirassé à vapeur",
+    "aliases": [
+      "Ironclad"
+    ],
+    "icon": "img/units/a2cc209f1edde7a5.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_IRONCLAD"
+    }
+  },
+  {
+    "id": "jahazi",
+    "name": "Jahazi",
+    "aliases": [],
+    "icon": "img/units/98d955733f3d7885.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SUK_JAHAZI"
+    }
+  },
+  {
+    "id": "janissary",
+    "name": "Janissaire",
+    "aliases": [
+      "Janissary"
+    ],
+    "icon": "img/units/6e9822ea7ea5282d.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SULEIMAN_JANISSARY"
+    }
+  },
+  {
+    "id": "jet-bomber",
+    "name": "Bombardier à réaction",
+    "aliases": [
+      "Jet Bomber"
+    ],
+    "icon": "img/units/5c5a264282155d19.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_JET_BOMBER"
+    }
+  },
+  {
+    "id": "jet-fighter",
+    "name": "Chasseur à réaction",
+    "aliases": [
+      "Jet Fighter"
+    ],
+    "icon": "img/units/325dc2b3e841c7cd.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_JET_FIGHTER"
+    }
+  },
+  {
+    "id": "jong",
+    "name": "Jonque",
+    "aliases": [
+      "Jong"
+    ],
+    "icon": "img/units/be5ec5ed612adafa.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_INDONESIAN_JONG"
+    }
+  },
+  {
+    "id": "keshig",
+    "name": "Keshik",
+    "aliases": [
+      "Keshig"
+    ],
+    "icon": "img/units/1430bc2ba7aed37b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MONGOLIAN_KESHIG"
+    }
+  },
+  {
+    "id": "khevsur",
+    "name": "Khevsour",
+    "aliases": [
+      "Khevsur"
+    ],
+    "icon": "img/units/a283ff90d4616fdb.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_GEORGIAN_KHEVSURETI"
+    }
+  },
+  {
+    "id": "knight",
+    "name": "Chevalier",
+    "aliases": [
+      "Knight"
+    ],
+    "icon": "img/units/647c666394bd5a3b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_KNIGHT"
+    }
+  },
+  {
+    "id": "legion",
+    "name": "Légion",
+    "aliases": [
+      "Legion"
+    ],
+    "icon": "img/units/59770989f0a28f63.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ROMAN_LEGION"
+    }
+  },
+  {
+    "id": "line-infantry",
+    "name": "Infanterie de ligne",
+    "aliases": [
+      "Line Infantry"
+    ],
+    "icon": "img/units/8487f68e59675b01.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_LINE_INFANTRY"
+    }
+  },
+  {
+    "id": "llanero",
+    "name": "Llanero",
+    "aliases": [],
+    "icon": "img/units/3601d19797d2b23d.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_COLOMBIAN_LLANERO"
+    }
+  },
+  {
+    "id": "longbowman",
+    "name": "Longbowman",
+    "aliases": [],
+    "icon": null,
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ENGLISH_LONGBOWMAN"
+    }
+  },
+  {
+    "id": "macana",
+    "name": "Macana",
+    "aliases": [],
+    "icon": "img/units/6df85c8fdd4bc165.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CVS_TAINO_UU"
+    }
+  },
+  {
+    "id": "machine-gun",
+    "name": "Mitrailleuse",
+    "aliases": [
+      "Machine Gun"
+    ],
+    "icon": "img/units/def42015806e9a08.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MACHINE_GUN"
+    }
+  },
+  {
+    "id": "malon-raider",
+    "name": "Cavalier malón",
+    "aliases": [
+      "Malón Raider"
+    ],
+    "icon": "img/units/6ab7d5bc0f456a15.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MAPUCHE_MALON_RAIDER"
+    }
+  },
+  {
+    "id": "mamluk",
+    "name": "Mamelouk",
+    "aliases": [
+      "Mamluk"
+    ],
+    "icon": "img/units/1fa50957e4aca234.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ARABIAN_MAMLUK"
+    }
+  },
+  {
+    "id": "man-at-arms",
+    "name": "Homme d'armes",
+    "aliases": [
+      "Man-At-Arms"
+    ],
+    "icon": "img/units/80025eafab8bce25.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MAN_AT_ARMS"
+    }
+  },
+  {
+    "id": "mandekalu-cavalry",
+    "name": "Cavalerie Mandékalou",
+    "aliases": [
+      "Mandekalu Cavalry"
+    ],
+    "icon": "img/units/6308c182b842a12f.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MALI_MANDEKALU_CAVALRY"
+    }
+  },
+  {
+    "id": "maryannu-chariot-archer",
+    "name": "Archer sur char Maryannu",
+    "aliases": [
+      "Maryannu Chariot Archer"
+    ],
+    "icon": "img/units/93275ae319ff7d50.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER"
+    }
+  },
+  {
+    "id": "mechanized-infantry",
+    "name": "Infanterie mécanisée",
+    "aliases": [
+      "Mechanized Infantry"
+    ],
+    "icon": "img/units/2245c5ecea78668b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MECHANIZED_INFANTRY"
+    }
+  },
+  {
+    "id": "medic",
+    "name": "Médecin",
+    "aliases": [
+      "Medic"
+    ],
+    "icon": "img/units/c353a272208f0871.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MEDIC"
+    }
+  },
+  {
+    "id": "military-engineer",
+    "name": "Ingénieur militaire",
+    "aliases": [
+      "Military Engineer"
+    ],
+    "icon": "img/units/91ec6712994b536e.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MILITARY_ENGINEER"
+    }
+  },
+  {
+    "id": "militond",
+    "name": "Militōnd",
+    "aliases": [],
+    "icon": "img/units/f0d473b068478d95.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MER_MILITOND"
+    }
+  },
+  {
+    "id": "minas-geraes",
+    "name": "Minas Geraes",
+    "aliases": [],
+    "icon": "img/units/9ac4aa1f5d8bd884.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BRAZILIAN_MINAS_GERAES"
+    }
+  },
+  {
+    "id": "missile-cruiser",
+    "name": "Croiseur lance-missiles",
+    "aliases": [
+      "Missile Cruiser"
+    ],
+    "icon": "img/units/1f157e125ecac1d3.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MISSILE_CRUISER"
+    }
+  },
+  {
+    "id": "mobile-sam",
+    "name": "Lance-missiles SAM",
+    "aliases": [
+      "Mobile SAM"
+    ],
+    "icon": "img/units/8a9426b014eeb3d0.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MOBILE_SAM"
+    }
+  },
+  {
+    "id": "modern-armor",
+    "name": "Blindé moderne",
+    "aliases": [
+      "Modern Armor"
+    ],
+    "icon": "img/units/3600f715bb995bd0.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MODERN_ARMOR"
+    }
+  },
+  {
+    "id": "modern-at",
+    "name": "Unité antichar moderne",
+    "aliases": [
+      "Modern AT"
+    ],
+    "icon": "img/units/a9b986f3b3c8d85d.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MODERN_AT"
+    }
+  },
+  {
+    "id": "mountie",
+    "name": "Police montée",
+    "aliases": [
+      "Mountie"
+    ],
+    "icon": "img/units/ac7e0111c322b488.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CANADA_MOUNTIE"
+    }
+  },
+  {
+    "id": "musketman",
+    "name": "Mousquetaire",
+    "aliases": [
+      "Musketman"
+    ],
+    "icon": "img/units/2a702efacd88976d.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MUSKETMAN"
+    }
+  },
+  {
+    "id": "nau",
+    "name": "Nau",
+    "aliases": [],
+    "icon": "img/units/d345ba53120c5070.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_PORTUGUESE_NAU"
+    }
+  },
+  {
+    "id": "ngao-mbeba",
+    "name": "Ngao Mbeba",
+    "aliases": [],
+    "icon": "img/units/907a89483e58e101.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_KONGO_SHIELD_BEARER"
+    }
+  },
+  {
+    "id": "nihang",
+    "name": "Nihang",
+    "aliases": [],
+    "icon": "img/units/6d396ea698347aa9.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_LAHORE_NIHANG"
+    }
+  },
+  {
+    "id": "nuclear-submarine",
+    "name": "Sous-marin nucléaire",
+    "aliases": [
+      "Nuclear Submarine"
+    ],
+    "icon": "img/units/a048086a0df46727.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_NUCLEAR_SUBMARINE"
+    }
+  },
+  {
+    "id": "observation-balloon",
+    "name": "Ballon d'observation",
+    "aliases": [
+      "Observation Balloon"
+    ],
+    "icon": "img/units/2a61cefa484f644d.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_OBSERVATION_BALLOON"
+    }
+  },
+  {
+    "id": "okihtcitaw",
+    "name": "Okichitaw",
+    "aliases": [
+      "Okihtcitaw"
+    ],
+    "icon": "img/units/f4c689c66b9081ab.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_CREE_OKIHTCITAW"
+    }
+  },
+  {
+    "id": "onager",
+    "name": "Onagre",
+    "aliases": [
+      "Onager"
+    ],
+    "icon": "img/units/1f114af2ceb7e893.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ROMAN_ONAGER"
+    }
+  },
+  {
+    "id": "oromo-cavalry",
+    "name": "Cavalerie oromo",
+    "aliases": [
+      "Oromo Cavalry"
+    ],
+    "icon": "img/units/482f4bc83835d81e.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY"
+    }
+  },
+  {
+    "id": "p-51-mustang",
+    "name": "P-51 Mustang",
+    "aliases": [],
+    "icon": "img/units/e55685e390c44fca.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_AMERICAN_P51"
+    }
+  },
+  {
+    "id": "pike-and-shot",
+    "name": "Pique et tir",
+    "aliases": [
+      "Pike and Shot"
+    ],
+    "icon": "img/units/d7b2845f8e650dc7.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_PIKE_AND_SHOT"
+    }
+  },
+  {
+    "id": "pikeman",
+    "name": "Piquier",
+    "aliases": [
+      "Pikeman"
+    ],
+    "icon": "img/units/0443913898e49893.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_PIKEMAN"
+    }
+  },
+  {
+    "id": "pitati-archer",
+    "name": "Archer Pítati",
+    "aliases": [
+      "Pítati Archer"
+    ],
+    "icon": "img/units/6a6ea58a08e62689.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_NUBIAN_PITATI"
+    }
+  },
+  {
+    "id": "privateer",
+    "name": "Corsaire",
+    "aliases": [
+      "Privateer"
+    ],
+    "icon": "img/units/1f510dcd3ad0c300.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_PRIVATEER"
+    }
+  },
+  {
+    "id": "quadrireme",
+    "name": "Quadrirème",
+    "aliases": [
+      "Quadrireme"
+    ],
+    "icon": "img/units/eb0d0bbd21f9b914.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_QUADRIREME"
+    }
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "aliases": [],
+    "icon": "img/units/a984ff90286c7906.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_RANGER"
+    }
+  },
+  {
+    "id": "redcoat",
+    "name": "Tunique rouge",
+    "aliases": [
+      "Redcoat"
+    ],
+    "icon": "img/units/93542b7cb060e536.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ENGLISH_REDCOAT"
+    }
+  },
+  {
+    "id": "rocket-artillery",
+    "name": "Lance-roquettes",
+    "aliases": [
+      "Rocket Artillery"
+    ],
+    "icon": "img/units/2f3fe64742e644b6.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ROCKET_ARTILLERY"
+    }
+  },
+  {
+    "id": "rough-rider",
+    "name": "Rough Rider",
+    "aliases": [],
+    "icon": "img/units/8e7ea9b90616f088.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_AMERICAN_ROUGH_RIDER"
+    }
+  },
+  {
+    "id": "rta-pa",
+    "name": "Rta Pa",
+    "aliases": [],
+    "icon": "img/units/7b5acd7f56775a70.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SUK_TIBET_RTA_PA"
+    }
+  },
+  {
+    "id": "sabum-kibittum",
+    "name": "Sâbum kibittum",
+    "aliases": [
+      "Sabum Kibittum"
+    ],
+    "icon": "img/units/60f8332d3ce4c416.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BABYLONIAN_SABUM_KIBITTUM"
+    }
+  },
+  {
+    "id": "saka-horse-archer",
+    "name": "Archer monté Saka",
+    "aliases": [
+      "Saka Horse Archer"
+    ],
+    "icon": "img/units/1c368689640228c3.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SCYTHIAN_HORSE_ARCHER"
+    }
+  },
+  {
+    "id": "samurai",
+    "name": "Samouraï",
+    "aliases": [
+      "Samurai"
+    ],
+    "icon": "img/units/05971f5e8a3631aa.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_JAPANESE_SAMURAI"
+    }
+  },
+  {
+    "id": "scout",
+    "name": "Éclaireur",
+    "aliases": [
+      "Scout"
+    ],
+    "icon": "img/units/eb21caaba73b90aa.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SCOUT"
+    }
+  },
+  {
+    "id": "sea-dog",
+    "name": "Chien de mer",
+    "aliases": [
+      "Sea Dog"
+    ],
+    "icon": "img/units/876a5e1c51c8adcf.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_ENGLISH_SEADOG"
+    }
+  },
+  {
+    "id": "siege-tower",
+    "name": "Tour de siège",
+    "aliases": [
+      "Siege Tower"
+    ],
+    "icon": "img/units/83a38f9665d6039e.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SIEGE_TOWER"
+    }
+  },
+  {
+    "id": "skirmisher",
+    "name": "Escarmoucheur",
+    "aliases": [
+      "Skirmisher"
+    ],
+    "icon": "img/units/c23adffabdeb84b6.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SKIRMISHER"
+    }
+  },
+  {
+    "id": "slinger",
+    "name": "Frondeur",
+    "aliases": [
+      "Slinger"
+    ],
+    "icon": "img/units/3f437043a6f631f8.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SLINGER"
+    }
+  },
+  {
+    "id": "spearman",
+    "name": "Lancier",
+    "aliases": [
+      "Spearman"
+    ],
+    "icon": "img/units/ae2a4d793773d233.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SPEARMAN"
+    }
+  },
+  {
+    "id": "spec-ops",
+    "name": "Forces spéciales",
+    "aliases": [
+      "Spec Ops"
+    ],
+    "icon": "img/units/e34385b2b2d5eafb.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SPEC_OPS"
+    }
+  },
+  {
+    "id": "submarine",
+    "name": "Sous-marin",
+    "aliases": [
+      "Submarine"
+    ],
+    "icon": "img/units/aa10325fa04f38a5.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SUBMARINE"
+    }
+  },
+  {
+    "id": "supply-convoy",
+    "name": "Convoi de ravitaillement",
+    "aliases": [
+      "Supply Convoy"
+    ],
+    "icon": "img/units/6a847900df0b72c9.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SUPPLY_CONVOY"
+    }
+  },
+  {
+    "id": "swordsman",
+    "name": "Spadassin",
+    "aliases": [
+      "Swordsman"
+    ],
+    "icon": "img/units/a31c45becd75d197.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SWORDSMAN"
+    }
+  },
+  {
+    "id": "tagma",
+    "name": "Tagma",
+    "aliases": [],
+    "icon": "img/units/c4649a923e884773.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_BYZANTINE_TAGMA"
+    }
+  },
+  {
+    "id": "tank",
+    "name": "Blindé",
+    "aliases": [
+      "Tank"
+    ],
+    "icon": "img/units/57b71ac6729d33b1.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_TANK"
+    }
+  },
+  {
+    "id": "tiger-i",
+    "name": "Tigre I",
+    "aliases": [
+      "Tiger I"
+    ],
+    "icon": "img/units/271524ae2b4ac19c.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_GERMAN_PANZER"
+    }
+  },
+  {
+    "id": "toa",
+    "name": "Toa",
+    "aliases": [],
+    "icon": "img/units/d0e33989feb3e47b.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_MAORI_TOA"
+    }
+  },
+  {
+    "id": "trebuchet",
+    "name": "Trébuchet",
+    "aliases": [
+      "Trebuchet"
+    ],
+    "icon": "img/units/e38ac2d544333ef7.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_TREBUCHET"
+    }
+  },
+  {
+    "id": "u-boat",
+    "name": "U-Boot",
+    "aliases": [
+      "U-Boat"
+    ],
+    "icon": "img/units/968a9df42a59fd0c.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_GERMAN_UBOAT"
+    }
+  },
+  {
+    "id": "uhlan",
+    "name": "Uhlan",
+    "aliases": [],
+    "icon": "img/units/0a67e9c2511b556e.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_JFD_UHLAN"
+    }
+  },
+  {
+    "id": "varu",
+    "name": "Vāru",
+    "aliases": [
+      "Varu"
+    ],
+    "icon": "img/units/a415c1bdf94c4342.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_INDIAN_VARU"
+    }
+  },
+  {
+    "id": "viking-longship",
+    "name": "Langskip",
+    "aliases": [
+      "Viking Longship"
+    ],
+    "icon": "img/units/f8d66fe83ddce2c4.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_NORWEGIAN_LONGSHIP"
+    }
+  },
+  {
+    "id": "voi-chien",
+    "name": "Voi Chiến",
+    "aliases": [],
+    "icon": "img/units/0bfc6ea15e2ef3ef.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_VIETNAMESE_VOI_CHIEN"
+    }
+  },
+  {
+    "id": "war-cart",
+    "name": "Char de guerre",
+    "aliases": [
+      "War-Cart"
+    ],
+    "icon": "img/units/ea95b61890e0ee12.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_SUMERIAN_WAR_CART"
+    }
+  },
+  {
+    "id": "warakaq",
+    "name": "Huaraca",
+    "aliases": [
+      "Warak’aq"
+    ],
+    "icon": "img/units/d33d9801f9a79c16.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_INCA_WARAKAQ"
+    }
+  },
+  {
+    "id": "warrior",
+    "name": "Guerrier",
+    "aliases": [
+      "Warrior"
+    ],
+    "icon": "img/units/e7cd8bbd7d3a94d8.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_WARRIOR"
+    }
+  },
+  {
+    "id": "warrior-monk",
+    "name": "Moine-guerrier",
+    "aliases": [
+      "Warrior Monk"
+    ],
+    "icon": "img/units/6e3819582da5d43d.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_WARRIOR_MONK"
+    }
+  },
+  {
+    "id": "winged-hussar",
+    "name": "Hussard ailé",
+    "aliases": [
+      "Winged Hussar"
+    ],
+    "icon": "img/units/445589d1feaa8523.webp",
+    "sound": null,
+    "source": {
+      "bbg": "units_7.5.html",
+      "locKey": "LOC_UNIT_POLISH_HUSSAR"
+    }
+  }
+]

@@ -33,6 +33,9 @@ data/techs_civics.json  77 technologies + 61 dogmes du mode Technologies & Dogme
 img/techs-civics/       icônes des technologies et dogmes
 data/improvements.json  58 aménagements du mode Aménagement (généré)
 img/improvements/       icônes des aménagements
+data/units.json         133 unités militaires du mode Son (généré)
+img/units/              icônes des unités
+audio/units/            sons des unités (à fournir, voir « Son »)
 img/portraits/          portraits (générés depuis le site BBG)
 img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
@@ -186,9 +189,22 @@ python tools/bbg/build_improvements.py bbg 7.5
 
 `name` vient de `fr_FR/improvements_7.5.html`, `aliases` du nom anglais (`en_US`) s'il diffère, `icon` de `images/improvements/` (fond transparent, copiée telle quelle), `id` du nom du fichier d'icône sans accents (`Pā.webp` → `pa`). Les 3 icônes du dossier BBG que la page n'utilise pas sont ignorées.
 
+### Son
+
+`data/units.json` et `img/units/` sont **générés** par `tools/bbg/build_units.py` depuis la page des unités du site BBG :
+
+```
+git -C bbg sparse-checkout add '/fr_FR/units_7.5.html' '/en_US/units_7.5.html' '/images/units/'
+python tools/bbg/build_units.py bbg 7.5
+```
+
+`name` vient de `fr_FR/units_7.5.html`, `aliases` du nom anglais (`en_US`) s'il diffère, `icon` de `images/units/` (copiée telle quelle, affichée à la victoire et dans l'historique), `id` du nom du fichier d'icône sans accents (`Voi_Chiến.webp` → `voi-chien`). Les 4 unités religieuses (missionnaire, apôtre, inquisiteur, guru) sont écartées ; les unités de soutien (bélier, médecin, convoi…) sont gardées. En 7.5, `COG` n'a pas de nom sur la page (« Not found ») et est ignorée ; l'icône de `Longbowman` manque dans le dossier BBG (`icon: null`).
+
+**Sons** : le site BBG n'en a pas, ils ne sont donc pas dans le dépôt. Déposer un fichier par unité dans `audio/units/`, nommé d'après l'`id` de l'unité (`audio/units/knight.mp3` ; `.mp3`, `.ogg`, `.m4a`, `.wav` ou `.webm`), puis relancer `build_units.py` (après `hash_assets.py --restore`) : il remplit `sound` et signale les fichiers dont le nom n'est pas un `id`. Seules les unités qui ont un son peuvent être la réponse du jour ; sans aucun son, le mode affiche un message. Chaque nouveau son change la séquence du mode (voir « Fonctionnement du tirage quotidien »).
+
 ### Noms des images
 
-Dans le dépôt, les images indices (portraits, silhouettes, `reveal`, yeux, emblèmes des cités-États, aménagements, technologies et dogmes) portent un nom tiré d'un hash de leur contenu (`img/silhouettes/3f9c0d….png`), et non l'id de la réponse : sinon l'outil d'inspection du navigateur montrerait la réponse dans le `src` de l'image indice. `tools/hash_assets.py` fait le renommage et réécrit les chemins dans `data/*.json` ; `--restore` remet les noms lisibles, déduits de l'`id` et du champ de chaque enregistrement (tableau dans l'en-tête du script). Les deux sens sont idempotents. Les sections ci-dessus décrivent les noms lisibles, ceux que les générateurs produisent.
+Dans le dépôt, les images indices (portraits, silhouettes, `reveal`, yeux, emblèmes des cités-États, aménagements, technologies et dogmes, icônes des unités) et les sons du mode Son portent un nom tiré d'un hash de leur contenu (`img/silhouettes/3f9c0d….png`), et non l'id de la réponse : sinon l'outil d'inspection du navigateur montrerait la réponse dans le `src` de l'image indice. `tools/hash_assets.py` fait le renommage et réécrit les chemins dans `data/*.json` ; `--restore` remet les noms lisibles, déduits de l'`id` et du champ de chaque enregistrement (tableau dans l'en-tête du script). Les deux sens sont idempotents. Les sections ci-dessus décrivent les noms lisibles, ceux que les générateurs produisent.
 
 ## Fonctionnement du tirage quotidien
 
@@ -240,6 +256,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - `js/modes/citystates.js` : aucun indice supplémentaire après un essai raté. Case « Mode challenger » cochée par défaut (état mémorisé dans le navigateur) : emblème en gris uniforme (`iconGrey`), couleurs affichées à la victoire. Suggestions de saisie sans icône (sinon la liste permettrait de comparer les formes).
 - `js/modes/techscivics.js` : `BLUR_START = 24` (px), `STEPS = 8` (mêmes valeurs que Portrait) ; réponse tirée parmi les technologies et les dogmes réunis. Suggestions de saisie sans icône.
 - `js/modes/improvements.js` : `BLUR_START = 10` (px), `STEPS = 6`, flou plus léger que Portrait et Technologies. Suggestions de saisie sans icône.
+- `js/modes/son.js` : le son est le seul indice, rien n'apparaît après un essai raté ; l'icône de l'unité s'affiche à la victoire. Le son est joué par l'API Web Audio (pas d'élément `<audio>` dont le `src` serait visible dans l'inspecteur).
 - `js/modes/silhouette.js` : `ZOOM_START = 3.5`, `STEPS = 12` ; la vue est centrée sur `silhouetteFocus` (point aléatoire `30–70 %` s'il est absent).
 
 ## Limites connues
@@ -248,4 +265,4 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - **Silhouette** : l'image doit avoir un fond transparent, sinon tout le cadre devient noir. Sans `silhouetteFocus`, le point de zoom aléatoire peut tomber dans le vide au début.
 - **Masquage des descriptions** : insensible à la casse mais pas aux accents (« Zeta » ne masque pas « Zêta ») ; ajouter les variantes dans `aliases` ou `maskWords`.
 - **Progression** : stockée dans le `localStorage` du navigateur, donc propre à chaque appareil.
-- **Droits** : les portraits (issus du site BBG) et les textes du jeu appartiennent à leurs ayants droit.
+- **Droits** : les portraits (issus du site BBG) et les textes du jeu appartiennent à leurs ayants droit, de même que les sons du mode Son s'ils sont tirés du jeu.

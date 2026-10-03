@@ -71,6 +71,7 @@ const EXTRA_POOLS = {
   cityStates: { file: "city_states.json", label: "Cité-État" },     // tools/bbg/build_city_states.py
   techsCivics: { file: "techs_civics.json", label: "Tech/dogme" },  // tools/bbg/build_techs_civics.py
   improvements: { file: "improvements.json", label: "Aménagement" }, // tools/bbg/build_improvements.py
+  units: { file: "units.json", label: "Unité" },                     // tools/bbg/build_units.py
 };
 
 /**

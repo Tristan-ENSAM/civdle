@@ -5,7 +5,8 @@ Aménagement, Technologies & Dogmes) is an <img> whose ``src`` used to be
 named after the answer (``img/silhouettes/america-abraham-lincoln.png``), so
 a glance at the browser's inspector gave the answer away. This script renames
 those images after a hash of their content (``img/silhouettes/3f9c….png``)
-and rewrites the paths in ``data/*.json``.
+and rewrites the paths in ``data/*.json``. The sounds of the Son mode
+(``audio/units/``) are renamed the same way.
 
 Limit: this only hides the answer from a glance. The site is static, so the
 daily draw (``js/core/daily.js``) and the data are public, and someone who
@@ -32,6 +33,8 @@ file is needed:
                        iconGrey     img/city-states/<id>-grey.<ext>
     improvements.json  icon         img/improvements/<id>.<ext>
     techs_civics.json  icon         img/techs-civics/<id>.<ext>
+    units.json         icon         img/units/<id>.<ext>
+                       sound        audio/units/<id>.<ext>
 """
 
 import hashlib
@@ -58,6 +61,10 @@ TARGETS = {
     ],
     "data/improvements.json": [("icon", "img/improvements", "")],
     "data/techs_civics.json": [("icon", "img/techs-civics", "")],
+    "data/units.json": [
+        ("icon", "img/units", ""),
+        ("sound", "audio/units", ""),
+    ],
 }
 
 HASH_LEN = 16
