@@ -33,9 +33,9 @@ data/techs_civics.json  77 technologies + 61 dogmes du mode Technologies & Dogme
 img/techs-civics/       icônes des technologies et dogmes
 data/improvements.json  58 aménagements du mode Aménagement (généré)
 img/improvements/       icônes des aménagements
-data/units.json         133 unités militaires du mode Son (généré)
+data/units.json         133 unités militaires du mode Unité (généré)
 img/units/              icônes des unités
-audio/units/            sons des unités, tirés du jeu (voir « Son »)
+audio/units/            sons des unités, tirés du jeu (voir « Unité »)
 img/portraits/          portraits (générés depuis le site BBG)
 img/silhouettes/        silhouettes (textures du jeu, ou détourage estimé)
 img/icons/              icônes des quartiers et types d'unités
@@ -189,7 +189,7 @@ python tools/bbg/build_improvements.py bbg 7.5
 
 `name` vient de `fr_FR/improvements_7.5.html`, `aliases` du nom anglais (`en_US`) s'il diffère, `icon` de `images/improvements/` (fond transparent, copiée telle quelle), `id` du nom du fichier d'icône sans accents (`Pā.webp` → `pa`). Les 3 icônes du dossier BBG que la page n'utilise pas sont ignorées.
 
-### Son
+### Unité
 
 `data/units.json` et `img/units/` sont **générés** par `tools/bbg/build_units.py` depuis la page des unités du site BBG :
 
@@ -202,11 +202,13 @@ python tools/bbg/build_units.py bbg 7.5
 
 **Sons** : le site BBG n'en a pas. Trois sons par unité dans `audio/units/`, nommés `<id>-<type>` avec `type` = `move` (déplacement), `attack` (attaque) ou `select` (sélection) (`audio/units/knight-move.mp3` ; `.mp3`, `.ogg`, `.m4a`, `.wav` ou `.webm`), puis relancer `build_units.py` (après `hash_assets.py --restore`) : il remplit `sounds` (`{move, attack, select}`) et signale les fichiers mal nommés. Seules les unités qui ont les trois sons peuvent être la réponse du jour ; sans aucune, le mode affiche un message. Chaque nouveau son change la séquence du mode (voir « Fonctionnement du tirage quotidien »).
 
-Les fichiers du dépôt sont tirés des banques Wwise de Civilization VI (Windows, jeu de base et DLC) et ne couvrent que les **unités non uniques** (sans `TraitType` dans la table `Units` du jeu) : 51 unités. Pour chacune, le son joué par le jeu à la sélection (`Unit_Selected`), au déplacement (`Unit_Move_2D`, terrain prairie) et à l'attaque (`Unit_Attack_2D`), selon la valeur du switch Wwise « Unit » donnée par `ArtDefs/Units.artdef`. Une unité n'a des sons que si son son de sélection contient un enregistrement qu'aucune autre unité non unique ne joue ; les sons de déplacement et d'attaque, eux, sont souvent communs à toute une classe (fantassins, cavaliers, navires…). Des unités qui ont exactement le même bruitage partagent un seul fichier (voir « Noms des images »).
+Les fichiers du dépôt sont tirés des banques Wwise de Civilization VI (Windows, jeu de base et DLC) et ne couvrent que les **unités non uniques** (sans `TraitType` dans la table `Units` du jeu) : 51 unités. Pour chacune, le son joué par le jeu à la sélection (`Unit_Selected`), au déplacement (`Unit_Move_2D`, terrain prairie) et à l'attaque (`Unit_Attack_2D`), selon la valeur du switch Wwise « Unit » donnée par `ArtDefs/Units.artdef`. Une unité n'a des sons que si son son de sélection contient un enregistrement qu'aucune autre unité non unique ne joue ; les sons de déplacement et d'attaque, eux, sont souvent communs à toute une classe (fantassins, cavaliers, navires…). Le jeu joue ces sons en boucle (un pas répété au déplacement, plusieurs coups à l'attaque) : chaque fichier n'en garde qu'**un seul** (boucles Wwise jouées une fois, puis premier bruitage séparé du suivant par un silence, au plus 2,5 s pour le déplacement et l'attaque, 4 s pour la sélection). Des unités qui ont exactement le même bruitage partagent un seul fichier (voir « Noms des images »).
+
+Le mode s'appelait « Son » : son identifiant reste `son` (adresse `#son`, progression enregistrée et tirage quotidien inchangés).
 
 ### Noms des images
 
-Dans le dépôt, les images indices (portraits, silhouettes, `reveal`, yeux, emblèmes des cités-États, aménagements, technologies et dogmes, icônes des unités) et les sons du mode Son portent un nom tiré d'un hash de leur contenu (`img/silhouettes/3f9c0d….png`), et non l'id de la réponse : sinon l'outil d'inspection du navigateur montrerait la réponse dans le `src` de l'image indice. `tools/hash_assets.py` fait le renommage et réécrit les chemins dans `data/*.json` ; `--restore` remet les noms lisibles, déduits de l'`id` et du champ de chaque enregistrement (tableau dans l'en-tête du script). Les deux sens sont idempotents. Deux fichiers au contenu identique (bruitage commun à plusieurs unités) deviennent un seul fichier haché, recopié sous chaque nom lisible par `--restore`. Les sections ci-dessus décrivent les noms lisibles, ceux que les générateurs produisent.
+Dans le dépôt, les images indices (portraits, silhouettes, `reveal`, yeux, emblèmes des cités-États, aménagements, technologies et dogmes, icônes des unités) et les sons du mode Unité portent un nom tiré d'un hash de leur contenu (`img/silhouettes/3f9c0d….png`), et non l'id de la réponse : sinon l'outil d'inspection du navigateur montrerait la réponse dans le `src` de l'image indice. `tools/hash_assets.py` fait le renommage et réécrit les chemins dans `data/*.json` ; `--restore` remet les noms lisibles, déduits de l'`id` et du champ de chaque enregistrement (tableau dans l'en-tête du script). Les deux sens sont idempotents. Deux fichiers au contenu identique (bruitage commun à plusieurs unités) deviennent un seul fichier haché, recopié sous chaque nom lisible par `--restore`. Les sections ci-dessus décrivent les noms lisibles, ceux que les générateurs produisent.
 
 ## Fonctionnement du tirage quotidien
 
@@ -267,4 +269,4 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - **Silhouette** : l'image doit avoir un fond transparent, sinon tout le cadre devient noir. Sans `silhouetteFocus`, le point de zoom aléatoire peut tomber dans le vide au début.
 - **Masquage des descriptions** : insensible à la casse mais pas aux accents (« Zeta » ne masque pas « Zêta ») ; ajouter les variantes dans `aliases` ou `maskWords`.
 - **Progression** : stockée dans le `localStorage` du navigateur, donc propre à chaque appareil.
-- **Droits** : les portraits (issus du site BBG) et les textes du jeu appartiennent à leurs ayants droit, de même que les sons du mode Son s'ils sont tirés du jeu.
+- **Droits** : les portraits (issus du site BBG) et les textes du jeu appartiennent à leurs ayants droit, de même que les sons du mode Unité s'ils sont tirés du jeu.

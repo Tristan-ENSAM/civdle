@@ -5,7 +5,7 @@ Aménagement, Technologies & Dogmes) is an <img> whose ``src`` used to be
 named after the answer (``img/silhouettes/america-abraham-lincoln.png``), so
 a glance at the browser's inspector gave the answer away. This script renames
 those images after a hash of their content (``img/silhouettes/3f9c….png``)
-and rewrites the paths in ``data/*.json``. The sounds of the Son mode
+and rewrites the paths in ``data/*.json``. The sounds of the Unité mode
 (``audio/units/``) are renamed the same way.
 
 Limit: this only hides the answer from a glance. The site is static, so the
@@ -104,7 +104,9 @@ def move(src, dst, keep_src=False):
             raise SystemExit(f"refusing to overwrite {dst} (while renaming {src})")
         if not keep_src:
             if is_tracked(src):
-                subprocess.run(["git", "rm", "-q", src], cwd=ROOT, check=True)
+                # -f: src may be staged with other content (a regenerated
+                # file); its bytes are those of dst, so nothing is lost.
+                subprocess.run(["git", "rm", "-q", "-f", src], cwd=ROOT, check=True)
             else:
                 (ROOT / src).unlink()
         return

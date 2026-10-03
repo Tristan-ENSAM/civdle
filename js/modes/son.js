@@ -1,8 +1,9 @@
 /**
- * Mode "Son": three sounds of a military unit, taken from the game, are the
+ * Mode "Unité": three sounds of a military unit, taken from the game, are the
  * clues; the player types unit names until the right one is found. Nothing
  * else appears after a wrong guess. The unit icon is shown once the unit is
- * found (win panel).
+ * found (win panel). The mode was named "Son": its id stays "son" (URL hash,
+ * stored progress and daily draw are unchanged).
  *
  * The sounds go from the most general to the most telling (SOUNDS): the
  * movement sound is available from the start, the attack sound after
@@ -79,7 +80,7 @@ function createPlayer() {
 
 export default {
   id: "son",
-  label: "Son",
+  label: "Unité",
   hint: "Retrouve l'unité militaire à partir de ses bruitages : un nouveau son se débloque au fil des essais.",
   pool: "units",
   texts: {
