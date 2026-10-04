@@ -64,6 +64,7 @@
     "name": "Theodore Roosevelt (Élan)",
     "aliases": [
       "Teddy Roosevelt",
+      "Teddy BM",
       "Teddy Roosevelt (Bull Moose)",
       "Theodore Roosevelt"
     ],
@@ -129,6 +130,7 @@
     "name": "Theodore Roosevelt (Rough Rider)",
     "aliases": [
       "Teddy Roosevelt",
+      "Teddy RR",
       "Teddy Roosevelt (Rough Rider)",
       "Theodore Roosevelt"
     ],
@@ -197,6 +199,7 @@
     "name": "Saladin (vizir)",
     "aliases": [
       "Saladin",
+      "Vizir",
       "Saladin (Vizier)"
     ],
     "civilization": "Arabie",
@@ -260,6 +263,7 @@
     "name": "Saladin (sultan)",
     "aliases": [
       "Saladin",
+      "Sultan",
       "Saladin (Sultan)"
     ],
     "civilization": "Arabie",
@@ -765,6 +769,7 @@
     "name": "Kubilai Khan (Chine)",
     "aliases": [
       "Kubilai Khan",
+      "Kubilai Chine",
       "Kublai Khan",
       "Kublai Khan (China)"
     ],
@@ -829,6 +834,7 @@
     "name": "Qin (Mandat du Ciel)",
     "aliases": [
       "Qin",
+      "Qin Shi",
       "Qin (Mandate of Heaven)"
     ],
     "civilization": "Chine",
@@ -1072,7 +1078,9 @@
   {
     "id": "cree-poundmaker",
     "name": "Poundmaker",
-    "aliases": [],
+    "aliases": [
+      "Cree"
+    ],
     "civilization": "Cris",
     "era": null,
     "continent": [
@@ -1196,6 +1204,7 @@
     "name": "Cléopâtre (Égyptienne)",
     "aliases": [
       "Cleopatra",
+      "Cléo Egypte",
       "Cleopatra (Egyptian)",
       "Cléopâtre"
     ],
@@ -1260,6 +1269,7 @@
     "name": "Cléopâtre (Ptolémaïque)",
     "aliases": [
       "Cleopatra",
+      "Ptole",
       "Cleopatra (Ptolemaic)",
       "Cléopâtre"
     ],
@@ -1386,6 +1396,7 @@
     "name": "Aliénor d'Aquitaine (Angleterre)",
     "aliases": [
       "Aliénor d'Aquitaine",
+      "Aliénor Angleterre",
       "Eleanor of Aquitaine",
       "Eleanor of Aquitaine (England)"
     ],
@@ -1520,6 +1531,7 @@
     "name": "Victoria (ère impériale)",
     "aliases": [
       "Victoria",
+      "Vicky Impé",
       "Victoria (Age of Empire)"
     ],
     "civilization": "Angleterre",
@@ -1587,6 +1599,7 @@
     "name": "Victoria (ère de la vapeur)",
     "aliases": [
       "Victoria",
+      "Vicky Steam",
       "Victoria (Age of Steam)"
     ],
     "civilization": "Angleterre",
@@ -1710,6 +1723,9 @@
     "name": "Catherine de Médicis (reine noire)",
     "aliases": [
       "Catherine de Medici",
+      "BQ",
+      "Catherine BQ",
+      "Black Queen",
       "Catherine de Medici (Black Queen)",
       "Catherine de Médicis"
     ],
@@ -1775,6 +1791,8 @@
     "name": "Catherine de Médicis (splendeur)",
     "aliases": [
       "Catherine de Medici",
+      "Catherine Magnifique",
+      "Magnifique",
       "Catherine de Medici (Magnificence)",
       "Catherine de Médicis"
     ],
@@ -1840,6 +1858,7 @@
     "name": "Aliénor d'Aquitaine (France)",
     "aliases": [
       "Aliénor d'Aquitaine",
+      "Aliénor France",
       "Eleanor of Aquitaine",
       "Eleanor of Aquitaine (France)"
     ],
@@ -2221,7 +2240,9 @@
   {
     "id": "gran-colombia-simon-bolivar",
     "name": "Simón Bolívar",
-    "aliases": [],
+    "aliases": [
+      "Bolivar"
+    ],
     "civilization": "Grande Colombie",
     "era": null,
     "continent": [
