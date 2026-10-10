@@ -36,6 +36,12 @@ const SOUNDS = [
   ["select", "Sélection"],
 ];
 
+/**
+ * Playback volume, as a gain on the sound files (1 = as in the files). 0.5
+ * halves the amplitude (about -6 dB); arbitrary value, to adjust.
+ */
+const VOLUME = 0.5;
+
 /** Wrong guesses needed before a sound can be played. */
 const UNLOCK = { move: 0, attack: 2, select: 4 };
 
@@ -48,17 +54,23 @@ export function guessesBeforeUnlock(kind, nGuesses, won) {
  * Player of the sound files. The AudioContext is created on the first click
  * (browsers refuse to start audio without a user gesture), shared by every
  * sound, and the decoded sounds are kept for the next plays. Starting a sound
- * stops the one being played.
+ * stops the one being played. Every sound goes through one gain node (VOLUME).
  */
 function createPlayer() {
   let audioCtx = null;
+  let gain = null;
   let current = null;
   const buffers = new Map();
   return {
     async play(src) {
       const AC = window.AudioContext ?? window.webkitAudioContext;
       if (!AC) throw new Error("Web Audio API indisponible");
-      audioCtx ??= new AC();
+      if (!audioCtx) {
+        audioCtx = new AC();
+        gain = audioCtx.createGain();
+        gain.gain.value = VOLUME;
+        gain.connect(audioCtx.destination);
+      }
       if (audioCtx.state === "suspended") await audioCtx.resume();
       if (!buffers.has(src)) {
         const res = await fetch(src);
@@ -70,7 +82,7 @@ function createPlayer() {
       current?.stop();
       const node = audioCtx.createBufferSource();
       node.buffer = buffers.get(src);
-      node.connect(audioCtx.destination);
+      node.connect(gain);
       node.start();
       current = node;
       return new Promise((done) => { node.onended = () => { if (current === node) current = null; done(); }; });
