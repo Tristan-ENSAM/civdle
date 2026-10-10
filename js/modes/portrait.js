@@ -3,8 +3,8 @@
  * sharper after each wrong guess.
  *
  * "Mode challenger" checkbox: the portrait is also shown in shades of grey
- * and rotated by an angle drawn each day (deterministic from the date and the
- * leader, ROTATE_MIN..ROTATE_MAX degrees). It only changes the display: the
+ * and rotated by a quarter turn drawn each day among ROTATIONS (deterministic
+ * from the date and the leader). It only changes the display: the
  * daily leader and the progress are the same with or without it. Grey and
  * rotation are removed once the leader is found. Ticked by default; the
  * checkbox state is kept in localStorage (per browser; without storage the
@@ -22,10 +22,9 @@ import { defaultGuessRow } from "../core/game.js";
 import { hashString, mulberry32 } from "../core/daily.js";
 import { createClue } from "../core/clue.js";
 
-const BLUR_START = 24;
+const BLUR_START = 16;
 const STEPS = 8;
-const ROTATE_MIN = 60;
-const ROTATE_MAX = 300;
+const ROTATIONS = [90, 180, 270];
 const CHALLENGE_KEY = "civdle:portrait:challenge";
 
 export function blurFor(nGuesses, won) {
@@ -33,10 +32,10 @@ export function blurFor(nGuesses, won) {
   return Math.max(0, BLUR_START * (1 - nGuesses / STEPS));
 }
 
-/** Daily rotation angle in degrees, in [ROTATE_MIN, ROTATE_MAX]. */
+/** Daily rotation angle in degrees, one of ROTATIONS. */
 export function rotationFor(dateStr, leaderId) {
   const rng = mulberry32(hashString(`${dateStr}::${leaderId}::rotate`));
-  return Math.round(ROTATE_MIN + rng() * (ROTATE_MAX - ROTATE_MIN));
+  return ROTATIONS[Math.floor(rng() * ROTATIONS.length)];
 }
 
 // On by default: only an explicit "0" (the player unticked the box) turns it off.
