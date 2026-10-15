@@ -6,11 +6,10 @@
 import classic from "./classic.js";
 import portrait from "./portrait.js";
 import silhouette from "./silhouette.js";
-import description from "./description.js";
 import regard from "./regard.js";
 import citystates from "./citystates.js";
 import techscivics from "./techscivics.js";
 import improvements from "./improvements.js";
 import son from "./son.js";
 
-export default [classic, portrait, silhouette, regard, description, citystates, techscivics, improvements, son];
+export default [classic, portrait, silhouette, regard, citystates, techscivics, improvements, son];

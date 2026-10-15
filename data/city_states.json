@@ -4,6 +4,7 @@
     "name": "Akkad",
     "aliases": [],
     "type": "Militariste",
+    "bonus": "Les unités de combat rapproché et d'anti-cavalerie infligent des dégâts complets aux remparts de la ville.",
     "icon": "img/city-states/1f7ba0593e742a0d.webp",
     "iconGrey": "img/city-states/fc9ecb443523b15e.webp",
     "source": {
@@ -16,6 +17,7 @@
     "name": "Anshan",
     "aliases": [],
     "type": "Scientifique",
+    "bonus": "Science +2 pour chaque chef-d'œuvre littéraire. Science +1 pour chaque relique et artefact.",
     "icon": "img/city-states/4efd0c477ca58e1f.webp",
     "iconGrey": "img/city-states/c4d9a0f0dcddda53.webp",
     "source": {
@@ -28,6 +30,7 @@
     "name": "Antananarivo",
     "aliases": [],
     "type": "Culturelle",
+    "bonus": "Culture +2% par Personnage illustre recruté, jusqu'à +30%.",
     "icon": "img/city-states/8ccef6184e52d8e9.webp",
     "iconGrey": "img/city-states/1eb2d8916edac74e.webp",
     "source": {
@@ -40,6 +43,7 @@
     "name": "Armagh",
     "aliases": [],
     "type": "Religieuse",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire un monastère.\n\nNourriture +1, Foi +3 et Habitations +1. Foi +1 par quartier adjacent à l'Église Réformée. Habitations +1 à Colonialisme. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du Tourisme par le biais de la Foi après la découverte de l'Aviation. Ne peut pas être construit à côté d'un autre monastère.",
     "icon": "img/city-states/0b964a8d76294bdb.webp",
     "iconGrey": "img/city-states/32cb0f5a75f8c894.webp",
     "source": {
@@ -52,6 +56,7 @@
     "name": "Auckland",
     "aliases": [],
     "type": "Industrielle",
+    "bonus": "Production +1 pour les cases de côte aménagées (passe à +2 une fois l'ère industrielle atteinte).",
     "icon": "img/city-states/ece698a5e7a9aa0c.webp",
     "iconGrey": "img/city-states/33a05bd5ea94387d.webp",
     "source": {
@@ -64,6 +69,7 @@
     "name": "Ayutthaya",
     "aliases": [],
     "type": "Culturelle",
+    "bonus": "Gain de Culture égal à 15% du coût en Production à chaque bâtiment terminé.",
     "icon": "img/city-states/c160bd99ea225118.webp",
     "iconGrey": "img/city-states/378e01fa86108f12.webp",
     "source": {
@@ -76,6 +82,7 @@
     "name": "Bandar Brunei",
     "aliases": [],
     "type": "Commerciale",
+    "bonus": "Or +1 pour toutes les routes commerciales traversant ou arrivant à vos comptoirs commerciaux étrangers. Or +2 pour les routes commerciales.",
     "icon": "img/city-states/f1d19eade0b79150.webp",
     "iconGrey": "img/city-states/1b804a8e0bbbbf5f.webp",
     "source": {
@@ -90,6 +97,7 @@
       "Bologna"
     ],
     "type": "Scientifique",
+    "bonus": "Vos quartiers avec un bâtiment génèrent un point de Personnage illustre de même type qu'eux (Écrivain illustre, Artiste illustre et Musicien illustre pour la Place du théâtre).",
     "icon": "img/city-states/2be62de8562a1087.webp",
     "iconGrey": "img/city-states/7d397c29f3cd4330.webp",
     "source": {
@@ -104,6 +112,7 @@
       "Brussels"
     ],
     "type": "Industrielle",
+    "bonus": "Production +15% pour la construction de merveilles dans vos villes.",
     "icon": "img/city-states/b9a9842643b3dc31.webp",
     "iconGrey": "img/city-states/af6fe801abf5972b.webp",
     "source": {
@@ -116,6 +125,7 @@
     "name": "Buenos Aires",
     "aliases": [],
     "type": "Industrielle",
+    "bonus": "Vos ressources bonus fonctionnent comme des ressources de luxe, vous octroyant une Activité par type.",
     "icon": "img/city-states/fbfc456c470bb1ed.webp",
     "iconGrey": "img/city-states/f9da73d82b92590c.webp",
     "source": {
@@ -128,6 +138,7 @@
     "name": "Caguana",
     "aliases": [],
     "type": "Culturelle",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire un batey.\n\nCulture +1. Production +1 pour chaque ressource stratégique adjacente, Or +1 pour chaque ressource de luxe adjacente et Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'Exploration). Génère du Tourisme par le biais de la Culture une fois l'Aviation découverte. Ne peut pas être construit à côté d'un autre batey.",
     "icon": "img/city-states/41d45fc3d5d60b52.webp",
     "iconGrey": "img/city-states/17bbcb4e160afd6e.webp",
     "source": {
@@ -140,6 +151,7 @@
     "name": "Cahokia",
     "aliases": [],
     "type": "Commerciale",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.\n\nOr +3 et Activités +1 (l'Activité est limitée à 1 par ville, puis 2 à l'Histoire Naturelle). Nourriture +1 toutes les 2 cases de quartiers adjacentes à la Féodalité (pour chaque quartier adjacent à Pièces de Rechange). Habitations +1 (passe à +2 au Patrimoine Culturel découvert). Deux monts de Cahokia ne peuvent pas être adjacents.",
     "icon": "img/city-states/399e2dc95357353d.webp",
     "iconGrey": "img/city-states/39a34f086d22b8c3.webp",
     "source": {
@@ -152,6 +164,7 @@
     "name": "Cardiff",
     "aliases": [],
     "type": "Industrielle",
+    "bonus": "Production +1, Or +1 et Électricité +2 pour les bâtiments du Port.",
     "icon": "img/city-states/406234f41833150d.webp",
     "iconGrey": "img/city-states/7f6c08b2b01ce921.webp",
     "source": {
@@ -164,6 +177,7 @@
     "name": "Chinguetti",
     "aliases": [],
     "type": "Religieuse",
+    "bonus": "Foi +4 pour les routes commerciales.",
     "icon": "img/city-states/ae8bed99f4cfc211.webp",
     "iconGrey": "img/city-states/acb4edfb9179bc3a.webp",
     "source": {
@@ -178,6 +192,7 @@
       "Fez"
     ],
     "type": "Scientifique",
+    "bonus": "Lorsque l'une de vos unités religieuses convertit une ville pour la première fois, vous gagnez 10 points de Science par Citoyen de cette ville.",
     "icon": "img/city-states/08cedbb3263294fb.webp",
     "iconGrey": "img/city-states/7b1e5d4dbb8c6695.webp",
     "source": {
@@ -192,6 +207,7 @@
       "Geneva"
     ],
     "type": "Scientifique",
+    "bonus": "Les Eurêka ! fournissent 5% supplémentaires vers l'obtention des technologies.",
     "icon": "img/city-states/9b6d2a9b1ffd3a44.webp",
     "iconGrey": "img/city-states/49fe5dcf101cbd87.webp",
     "source": {
@@ -206,6 +222,7 @@
       "Granada"
     ],
     "type": "Militariste",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire un alcázar.\n\nProduction +1 et Culture +2. Culture +1 par Campement adjacent. Octroie une quantité de Science égale à 50% de l'Attrait de la case. Puissance de combat en défense +4 et retranchement instantané. Génère du Tourisme par le biais de la Culture une fois l'Aviation découverte. Deux alcázars ne peuvent pas être adjacents.",
     "icon": "img/city-states/612e717a286a60df.webp",
     "iconGrey": "img/city-states/6d0e295ac323172a.webp",
     "source": {
@@ -218,6 +235,7 @@
     "name": "Hattusa",
     "aliases": [],
     "type": "Scientifique",
+    "bonus": "Vous octroie 2 ressources stratégiques découvertes de chaque type par tour.",
     "icon": "img/city-states/d85f028dad36a9ce.webp",
     "iconGrey": "img/city-states/9705b89c376b1b74.webp",
     "source": {
@@ -230,6 +248,7 @@
     "name": "Hong Kong",
     "aliases": [],
     "type": "Industrielle",
+    "bonus": "Production +20% pour tous vos projets de ville.",
     "icon": "img/city-states/dd08a342c58732d9.webp",
     "iconGrey": "img/city-states/fb2e951830ee444c.webp",
     "source": {
@@ -242,6 +261,7 @@
     "name": "Hunza",
     "aliases": [],
     "type": "Commerciale",
+    "bonus": "Or +1 toutes les 5 cases traversées par vos routes commerciales.",
     "icon": "img/city-states/41b9772fcf77e62a.webp",
     "iconGrey": "img/city-states/1e03bb00e7529068.webp",
     "source": {
@@ -256,6 +276,7 @@
       "Jerusalem"
     ],
     "type": "Religieuse",
+    "bonus": "Vos villes possédant un lieu saint exercent de la pression comme si elles étaient des villes saintes : pression religieuse x4 pour toutes les villes dans un rayon de dix cases.",
     "icon": "img/city-states/bc69900bea19058c.webp",
     "iconGrey": "img/city-states/91b02443dc46ca93.webp",
     "source": {
@@ -270,6 +291,7 @@
       "Johannesburg"
     ],
     "type": "Industrielle",
+    "bonus": "Production +1 dans vos villes pour chaque type de ressource aménagé (bonus/luxe/stratégique) (+1 à Ballistiques et +1 à Industrialisation).",
     "icon": "img/city-states/d252a5fef24cc6c0.webp",
     "iconGrey": "img/city-states/b7b00a02fda1dddb.webp",
     "source": {
@@ -284,6 +306,7 @@
       "Kabul"
     ],
     "type": "Militariste",
+    "bonus": "Expérience de combat +100% pour les unités militaires lorsqu'elles engagent le combat.",
     "icon": "img/city-states/c899363e72e1efd6.webp",
     "iconGrey": "img/city-states/886071ffd104155b.webp",
     "source": {
@@ -296,6 +319,7 @@
     "name": "Kandy",
     "aliases": [],
     "type": "Religieuse",
+    "bonus": "Vous recevez une relique chaque fois que vous découvrez une merveille naturelle. Foi +50% pour vos reliques.",
     "icon": "img/city-states/ea6440f2d79fc9fc.webp",
     "iconGrey": "img/city-states/7ff1eb4ffcf3b866.webp",
     "source": {
@@ -308,6 +332,7 @@
     "name": "Kumasi",
     "aliases": [],
     "type": "Culturelle",
+    "bonus": "Les routes commerciales à destination d'une Cité-état gagnent +2 Culture, ainsi que +1 Or et +1 Culture par quartier spécialisé dans la ville de départ.",
     "icon": "img/city-states/6d7bd6ecd291481a.webp",
     "iconGrey": "img/city-states/9523ce899cf5c25d.webp",
     "source": {
@@ -320,6 +345,7 @@
     "name": "La Venta",
     "aliases": [],
     "type": "Religieuse",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire une tête colossale.\n\nNourriture +1, Foi +2 et Habitations +1. Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à l'Humanisme). Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à l'Humanisme). Génère du Tourisme par le biais de la Foi une fois l'Aviation découverte. Construction impossible sur la neige ou une colline enneigée.",
     "icon": "img/city-states/fc19017e7d961b3b.webp",
     "iconGrey": "img/city-states/cc5ec13817e5f8dd.webp",
     "source": {
@@ -332,6 +358,7 @@
     "name": "Lahore",
     "aliases": [],
     "type": "Militariste",
+    "bonus": "Permet d'acheter une unité exclusive à Lahore, le Nihang. Possède un arbre de compétences spécifique. Peut être achetée avec de la Foi. Puissance de combat +12 si vous possédez une caserne. De même si vous possédez une armurerie ou une école militaire. Reçoit les bonus des Généraux illustres de toutes les ères.",
     "icon": "img/city-states/4524fda6b92afc88.webp",
     "iconGrey": "img/city-states/c3e1dc87f58291d0.webp",
     "source": {
@@ -346,6 +373,7 @@
       "Mexico City"
     ],
     "type": "Industrielle",
+    "bonus": "La zone d'effets régionaux des Zones industrielles, des Complexes de loisirs et des Parcs aquatiques augmente de 3 cases. Activités +1 pour les villes possédant un Aqueduc.",
     "icon": "img/city-states/d3a00c430208dade.webp",
     "iconGrey": "img/city-states/069d6025bb75ed2d.webp",
     "source": {
@@ -358,6 +386,7 @@
     "name": "Mitla",
     "aliases": [],
     "type": "Scientifique",
+    "bonus": "Croissance +15% dans les villes avec un Campus.",
     "icon": "img/city-states/fb615a9697db0510.webp",
     "iconGrey": "img/city-states/705e353b49d8313c.webp",
     "source": {
@@ -372,6 +401,7 @@
       "Mogadishu"
     ],
     "type": "Commerciale",
+    "bonus": "Tous vos Négociants sont immunisés contre le pillage. Or +2 pour les routes commerciales internationales.",
     "icon": "img/city-states/5210acbf45ac691f.webp",
     "iconGrey": "img/city-states/d70ff4c406a72786.webp",
     "source": {
@@ -386,6 +416,7 @@
       "Mohenjo-Daro"
     ],
     "type": "Culturelle",
+    "bonus": "Habitations maximum pour toutes vos villes, comme si elles étaient toutes adjacentes à de l'eau douce.",
     "icon": "img/city-states/3eb43f097bb24c72.webp",
     "iconGrey": "img/city-states/906113727f34ad0f.webp",
     "source": {
@@ -400,6 +431,7 @@
       "Muscat"
     ],
     "type": "Commerciale",
+    "bonus": "Activités +1 pour chaque Plateforme commerciale.",
     "icon": "img/city-states/68b7c10e44d31aad.webp",
     "iconGrey": "img/city-states/46958e1f0a6471f6.webp",
     "source": {
@@ -414,6 +446,7 @@
       "Nalanda"
     ],
     "type": "Scientifique",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire un mahavihara.\n\nScience +2 et Habitations +1. Science +1 pour chaque Campus adjacent (passe à +2 à la Théorie Scientifique). Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.",
     "icon": "img/city-states/43ae4a0874ac0c85.webp",
     "iconGrey": "img/city-states/05d6f5ab2478deef.webp",
     "source": {
@@ -426,6 +459,7 @@
     "name": "Nan Madol",
     "aliases": [],
     "type": "Culturelle",
+    "bonus": "Culture +1 pour vos quartiers construits sur ou adjacents à une case de côte ou de lac (passe à +2 à l'Exploration).",
     "icon": "img/city-states/d836eddf44f30e22.webp",
     "iconGrey": "img/city-states/58cc3c0f3819fb76.webp",
     "source": {
@@ -438,6 +472,7 @@
     "name": "Nazca",
     "aliases": [],
     "type": "Religieuse",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.\n\nFoi +1 pour les cases adjacentes. Foi +1 pour les cases adjacentes disposant d'une ressource. Nourriture +1 pour les cases de désert et de colline désertique adjacentes à la Fonction Publique. Production +1 pour les cases plates adjacentes à la Production en Série. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée.",
     "icon": "img/city-states/c713fe8762327b94.webp",
     "iconGrey": "img/city-states/7277afb8545efaea.webp",
     "source": {
@@ -450,6 +485,7 @@
     "name": "Ngazargamu",
     "aliases": [],
     "type": "Militariste",
+    "bonus": "Le prix en Or et en Foi des unités militaires ou de soutien terrestres baisse de 10% par bâtiment du Campement construit dans cette ville.",
     "icon": "img/city-states/9d8ee4c7852f1fda.webp",
     "iconGrey": "img/city-states/d16b41d576ba35f4.webp",
     "source": {
@@ -462,6 +498,7 @@
     "name": "Preslav",
     "aliases": [],
     "type": "Militariste",
+    "bonus": "Loyauté +40 dans toutes vos villes, vous assurant une loyauté sans faille dans tout votre Empire.",
     "icon": "img/city-states/1d04cd5eb62ad6bd.webp",
     "iconGrey": "img/city-states/3f9faf686e8cefb5.webp",
     "source": {
@@ -474,6 +511,7 @@
     "name": "Rapa Nui",
     "aliases": [],
     "type": "Culturelle",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire un moaï.\n\nCulture +1. Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à Foires Médiévales). Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. Culture +1 si adjacent à une case de côte ou de lac. Génère du Tourisme par le biais de la Culture une fois l'Aviation découverte.",
     "icon": "img/city-states/adaff9994bad3d59.webp",
     "iconGrey": "img/city-states/65578b92e5e6fa40.webp",
     "source": {
@@ -488,6 +526,7 @@
       "Samarkand"
     ],
     "type": "Commerciale",
+    "bonus": "Débloque la compétence de Bâtisseur permettant de construire un dôme commercial.\n\nOr +2. Or +1 pour chaque ressource de luxe adjacente. Or +2 et Foi +1 pour vos routes commerciales internationales pour chaque dôme commercial dans la ville d'origine. Deux dômes commerciaux ne peuvent pas être adjacents.",
     "icon": "img/city-states/21827ccefbf6ab98.webp",
     "iconGrey": "img/city-states/05baa30bf67eba4d.webp",
     "source": {
@@ -502,6 +541,7 @@
       "Singapore"
     ],
     "type": "Industrielle",
+    "bonus": "Production +2 pour les routes commerciales internationales.",
     "icon": "img/city-states/b1c7e6f08686c35e.webp",
     "iconGrey": "img/city-states/76a718def283186d.webp",
     "source": {
@@ -514,6 +554,7 @@
     "name": "Taruga",
     "aliases": [],
     "type": "Scientifique",
+    "bonus": "Science +5% dans toutes les villes pour chaque ressource stratégique aménagée différente qu'elles possèdent.",
     "icon": "img/city-states/8c3970bec363baa4.webp",
     "iconGrey": "img/city-states/1e6fb7695aebed46.webp",
     "source": {
@@ -528,6 +569,7 @@
       "Valletta"
     ],
     "type": "Militariste",
+    "bonus": "Les bâtiments du Centre-ville et du Campement peuvent être achetés avec de la Foi. Le coût d'achat de tous les remparts est réduit.",
     "icon": "img/city-states/e376e201c044e5c1.webp",
     "iconGrey": "img/city-states/4ef022c68a090878.webp",
     "source": {
@@ -542,6 +584,7 @@
       "Vatican City"
     ],
     "type": "Religieuse",
+    "bonus": "Lorsque vous activez un Personnage illustre, il génère 400 points de pression religieuse pour la religion que vous avez fondée (ou dominante) dans les villes dans un rayon de 6 cases.",
     "icon": "img/city-states/71c079ac88bf3a79.webp",
     "iconGrey": "img/city-states/21a23e763597e6ed.webp",
     "source": {
@@ -556,6 +599,7 @@
       "Venice"
     ],
     "type": "Commerciale",
+    "bonus": "Or +2 pour chaque ressource de luxe dans la ville d'arrivée pour vos routes commerciales internationales.",
     "icon": "img/city-states/99f884bd2c33c411.webp",
     "iconGrey": "img/city-states/62c9d3fe102bd2fc.webp",
     "source": {
@@ -568,6 +612,7 @@
     "name": "Vilnius",
     "aliases": [],
     "type": "Culturelle",
+    "bonus": "Toutes les Places du théâtre reçoivent +50%/+100%/+150% de bonus de proximité si vous possédez une alliance de niveau 1/2/3. Non cumulable avec plusieurs alliances.",
     "icon": "img/city-states/d60476c2d531988e.webp",
     "iconGrey": "img/city-states/7fde748f3abb83fb.webp",
     "source": {
@@ -580,6 +625,7 @@
     "name": "Wolin",
     "aliases": [],
     "type": "Militariste",
+    "bonus": "Chaque victoire militaire rapporte une quantité de points de Général illustre (combat terrestre) ou de points d'Amiral illustre (combat naval), égale à 25% de la Puissance de combat de l'unité vaincue (vitesse normale).",
     "icon": "img/city-states/6ac699e052262126.webp",
     "iconGrey": "img/city-states/d9ec8190f6300c17.webp",
     "source": {
@@ -594,6 +640,7 @@
       "Yerevan"
     ],
     "type": "Religieuse",
+    "bonus": "Vos Apôtres peuvent choisir n'importe quelle promotion, plutôt que de recevoir une promotion aléatoire.",
     "icon": "img/city-states/229fb045c802bdc5.webp",
     "iconGrey": "img/city-states/9c8a130c923179a9.webp",
     "source": {
@@ -606,6 +653,7 @@
     "name": "Zanzibar",
     "aliases": [],
     "type": "Commerciale",
+    "bonus": "Vous recevez de la Cannelle (et des Clous de girofle à Banques), deux ressources de luxe exclusives à Zanzibar qui offrent 6 Activités chacune.",
     "icon": "img/city-states/b7914e6fc2ab9d19.webp",
     "iconGrey": "img/city-states/95c8c0f760db4ba3.webp",
     "source": {

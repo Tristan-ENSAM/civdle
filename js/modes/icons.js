@@ -16,8 +16,6 @@ const ICONS = {
   silhouette: svg('<path d="M12 3.5a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM4.5 20.5c.6-4.3 3.7-6.8 7.5-6.8s6.9 2.5 7.5 6.8z" fill="currentColor"/>'),
   // Eye.
   regard: svg('<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>'),
-  // Quoted text lines.
-  description: svg('<path d="M4 6.5h16M4 11h16M4 15.5h10"/><path d="M17 15v4.5M20 15v4.5" stroke-width="2.2"/>'),
   // Flag on a pole.
   citystates: svg('<path d="M5 21V3.5"/><path d="M5 4.5h12l-2.5 4 2.5 4H5"/>'),
   // Flask.

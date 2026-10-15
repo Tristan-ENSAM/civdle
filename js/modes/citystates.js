@@ -1,8 +1,11 @@
 /**
  * Mode "Cités-État": the icon of a city-state is shown; the player types
- * city-state names until the right one is found. No clue changes after a
- * wrong guess (same principle as "Regard" without the widening view: the
- * player just tries again).
+ * city-state names until the right one is found. After BONUS_AFTER guesses,
+ * the city-state's bonus (`bonus`, text of the BBG page) is shown under the
+ * icon, with the city-state's `name` and `aliases` masked (case-insensitive,
+ * whole words; e.g. "exclusives à Zanzibar"). Other words that point to the
+ * city-state (an adjective, a unique improvement) are not masked. The text
+ * is shown unmasked once the city-state is found.
  *
  * Pool: the city-states of the BBG site (data/city_states.json, written by
  * tools/bbg/build_city_states.py), not the leaders. The daily draw uses the
@@ -27,6 +30,24 @@
 import { defaultGuessRow } from "../core/game.js";
 
 const CHALLENGE_KEY = "civdle:citystates:challenge";
+// Number of guesses after which the bonus is shown (asked by the site owner).
+const BONUS_AFTER = 5;
+const MASK = "▇▇▇";
+
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** Hide the city-state's name and aliases in its bonus text. */
+function maskBonus(cityState) {
+  const tokens = [cityState.name, ...(cityState.aliases ?? [])]
+    .map((t) => String(t ?? "").trim())
+    .filter((t) => t.length >= 2)
+    .sort((a, b) => b.length - a.length);
+  if (!tokens.length) return cityState.bonus;
+  const re = new RegExp(`(?<![\\p{L}\\p{N}])(?:${tokens.map(escapeRegExp).join("|")})(?![\\p{L}\\p{N}])`, "giu");
+  return cityState.bonus.replace(re, MASK);
+}
 
 // On by default: only an explicit "0" (the player unticked the box) turns it off.
 function loadChallenge() {
@@ -40,7 +61,7 @@ function saveChallenge(on) {
 export default {
   id: "citystates",
   label: "Cités-État",
-  hint: "Retrouve la cité-État à partir de son emblème.",
+  hint: `Retrouve la cité-État à partir de son emblème. Son bonus s'affiche après ${BONUS_AFTER} essais.`,
   pool: "cityStates",
   suggestionImages: false,
   texts: {
@@ -55,8 +76,10 @@ export default {
   setup(ctx) {
     ctx.els.clue.innerHTML = `
       <label class="toggle"><input type="checkbox"> Mode challenger <span class="toggle-hint">(emblème en gris, sans la couleur du type)</span></label>
-      <div class="frame citystate-frame"><img alt="Emblème mystère" draggable="false"></div>`;
+      <div class="frame citystate-frame"><img alt="Emblème mystère" draggable="false"></div>
+      <div class="cs-bonus"></div>`;
     ctx.csImg = ctx.els.clue.querySelector("img");
+    ctx.csBonus = ctx.els.clue.querySelector(".cs-bonus");
     ctx.csImg.addEventListener("contextmenu", (e) => e.preventDefault());
     const box = ctx.els.clue.querySelector(".toggle input");
     box.checked = loadChallenge();
@@ -73,6 +96,22 @@ export default {
     const src = grey ? ctx.answer.iconGrey : ctx.answer.icon;
     // Only touch src when it changes, to avoid reloading the image.
     if (ctx.csImg.getAttribute("src") !== src) ctx.csImg.setAttribute("src", src);
+
+    const box = ctx.csBonus;
+    box.innerHTML = "";
+    if (!ctx.answer.bonus) return;
+    const n = ctx.state.guesses.length;
+    if (ctx.state.won || n >= BONUS_AFTER) {
+      const q = document.createElement("blockquote");
+      q.textContent = ctx.state.won ? ctx.answer.bonus : maskBonus(ctx.answer);
+      box.appendChild(q);
+    } else {
+      const left = BONUS_AFTER - n;
+      const p = document.createElement("p");
+      p.className = "more";
+      p.textContent = `Bonus de la cité-État dans ${left} essai${left > 1 ? "s" : ""}`;
+      box.appendChild(p);
+    }
   },
 
   renderGuess: (ctx, cityState) => defaultGuessRow(cityState, ctx.answer),

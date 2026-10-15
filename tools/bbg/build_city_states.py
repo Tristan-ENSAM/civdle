@@ -16,7 +16,10 @@ Inputs
   an HTML comment ``<!--LOC_CIVILIZATION_<KEY>_NAME-->`` or
   ``<!--LOC_CIVILIZATION_<KEY>_FRONTEND_NAME-->`` followed by
   ``<h2 class="civ-name">Name <img src="/images/city_states/X.webp">``.
-  French names and types are read here.
+  French names and types are read here. The bonus is the
+  ``<p class="civ-ability-desc actual-text">`` that follows the
+  ``<!--LOC_CIVILIZATION_<KEY>_BONUS...-->`` comment of the entry (the
+  ``base-game-text`` block after it is the unmodded text, not used).
 - ``<bbg>/en_US/city_states_<version>.html``: same layout; the English names
   are used as search aliases. Both pages must list the same keys.
 - ``<bbg>/images/city_states/*.webp``: icons, 256x256 RGB, a uniform dark
@@ -27,7 +30,8 @@ Outputs
 -------
 - ``data/city_states.json`` (overwritten): one record per city-state:
   ``id``, ``name`` (French), ``aliases`` (English name if different),
-  ``type`` (French type label, as on the BBG page), ``icon`` (colour image),
+  ``type`` (French type label, as on the BBG page), ``bonus`` (French bonus
+  text, see ``clean_bonus``), ``icon`` (colour image),
   ``iconGrey`` (challenger image), ``source`` (page and LOC key).
 - ``img/city-states/<id>.webp``: icon copied as is.
 - ``img/city-states/<id>-grey.webp``: challenger icon. On the BBG icons the
@@ -72,6 +76,31 @@ ENTRY_RE = re.compile(
     r'<h2 class="civ-name">(.*?)\s*<img[^>]*src="([^"]+)"',
     re.S,
 )
+# The bonus key is not always the entry key (Bandar Brunei: ``JAKARTA_BONUS``),
+# so the bonus is taken as the first one after the entry header.
+BONUS_RE = re.compile(
+    r'<!--LOC_CIVILIZATION_\w+?_BONUS\w*-->\s*'
+    r'<p class="civ-ability-desc actual-text"[^>]*>(.*?)</p>',
+    re.S,
+)
+
+
+def clean_bonus(raw):
+    """BBG bonus HTML -> plain text.
+
+    ``<br>`` becomes a line break; inline icons (``<img src="/images/ICON_*">``)
+    and other tags are dropped: on the 7.5 page every icon is followed by the
+    word it stands for ("Or", "Foi"...), so no information is lost. The game
+    colour markers ``[COLOR_...]`` / ``[ENDCOLOR]`` left in some texts are
+    removed too.
+    """
+    text = re.sub(r"<br\s*/?>", "\n", raw)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"\[(?:COLOR_\w+|ENDCOLOR)\]", "", text)
+    text = html.unescape(text)
+    text = re.sub(r"\(\s+", "(", text)  # "(<img> l'Activité" -> "(l'Activité"
+    lines = [re.sub(r"[ \t]+", " ", l).strip() for l in text.split("\n")]
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
 
 
 def parse_page(path):
@@ -85,21 +114,27 @@ def parse_page(path):
     Returns
     -------
     list of dict
-        ``{"type", "key", "name", "img"}``; ``type`` is the id of the last
-        type header seen before the entry (``None`` if there is none).
+        ``{"type", "key", "name", "img", "bonus"}``; ``type`` is the id of
+        the last type header seen before the entry (``None`` if there is
+        none); ``bonus`` is ``None`` if no bonus is found before the next
+        entry.
     """
     text = path.read_text(encoding="utf-8")
     text = text[text.find("<main"):]  # skip the sidebar (type menu)
     out, current = [], None
-    for m in ENTRY_RE.finditer(text):
+    matches = list(ENTRY_RE.finditer(text))
+    for i, m in enumerate(matches):
         if m.group(1):
             current = m.group(1)
             continue
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        b = BONUS_RE.search(text, m.end(), end)
         out.append({
             "type": current,
             "key": m.group(2),
             "name": html.unescape(m.group(3).strip()),
             "img": m.group(4),
+            "bonus": clean_bonus(b.group(1)) if b else None,
         })
     return out
 
@@ -181,6 +216,8 @@ def main(bbg_dir, version):
         seen.add(cid)
         if e["type"] is None:
             sys.exit(f"{e['key']}: no type header before the entry")
+        if not e["bonus"]:
+            sys.exit(f"{e['key']}: no bonus found after the entry")
         src = bbg / e["img"].lstrip("/")
         rgb = np.asarray(Image.open(src).convert("RGB")).astype(float)
         bg, glyph = check_icon(rgb, src.name)
@@ -193,6 +230,7 @@ def main(bbg_dir, version):
             "name": e["name"],
             "aliases": [name_en] if name_en != e["name"] else [],
             "type": e["type"],
+            "bonus": e["bonus"],
             "icon": f"img/city-states/{cid}.webp",
             "iconGrey": f"img/city-states/{cid}-grey.webp",
             "source": {"bbg": page, "locKey": f"LOC_CIVILIZATION_{e['key']}"},

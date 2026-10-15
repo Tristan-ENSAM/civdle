@@ -138,6 +138,7 @@ Option `catalog` : les valeurs sont des identifiants, comparés tels quels, affi
 }
 ```
 
+- `descriptions` et `maskWords` ne sont plus lus par le site depuis le retrait du mode Description ; `tools/bbg/build.py` les écrit toujours.
 - Recherche à la saisie : insensible à la casse et aux accents, sur `name` et `aliases` (noms anglais inclus).
 - Les incohérences (id en double, attribut absent, identifiant absent d'un catalogue) sont signalées dans la console du navigateur.
 - `tools/csv2json.py` reste disponible pour saisir des leaders à la main depuis un tableur.
@@ -155,6 +156,7 @@ python tools/bbg/build_city_states.py bbg 7.5
 |---|---|
 | `name`, `type` | `fr_FR/city_states_7.5.html` (nom affiché, rubrique Culturelle / Industrielle / …) |
 | `aliases` | nom anglais de `en_US/city_states_7.5.html` s'il diffère |
+| `bonus` | texte du bonus de `fr_FR/city_states_7.5.html` (bloc `actual-text` qui suit le commentaire `LOC_CIVILIZATION_<CLÉ>_BONUS…`), en texte brut : icônes en ligne retirées (chacune est suivie du mot qu'elle illustre), balises de couleur `[COLOR_…]` retirées, `<br>` → saut de ligne |
 | `id` | nom du fichier d'icône BBG (nom anglais), ex. `Vatican City.webp` → `vatican-city`. La clé LOC n'est pas utilisée car certaines sont d'anciennes clés du jeu (`PALENQUE` → Mitla, `LISBON` → Mogadiscio, `ANTIOCH` → Venise, `BABYLON` → Anshan) ; elle est conservée dans `source.locKey` |
 | `icon` | `images/city_states/*.webp` du site BBG, copiée telle quelle |
 | `iconGrey` | calculée : sur les icônes BBG, fond uniforme (24, 24, 24) et une seule couleur de glyphe, qui correspond au type (vérifié sur les 48 icônes de la 7.5 ; le script s'arrête si une icône ne suit pas ce schéma). Une simple conversion en niveaux de gris laisserait deviner le type (glyphe rouge → gris foncé, blanc → blanc) ; chaque pixel est donc projeté sur l'axe fond → couleur du glyphe et redessiné dans un gris unique (`GREY = 190`, arbitraire), anticrénelage conservé |
@@ -257,7 +259,7 @@ Valeurs par défaut arbitraires, en tête de fichier :
 - `js/modes/portrait.js` : `BLUR_START = 16` (px), `STEPS = 8` (flou nul après 8 essais) ; case « Mode challenger » : nuances de gris + rotation du jour tirée parmi `ROTATIONS = [90, 180, 270]` degrés, jusqu'à la victoire (affichage seulement, même leader du jour ; cochée par défaut, état de la case mémorisé dans le navigateur).
 - `css/style.css` : apparition des cases du mode Classique, 350 ms entre deux cases (`--reveal-step`), 550 ms par case.
 - `js/modes/regard.js` : `EYE_SIDE = "daily"` (œil droit ou gauche tiré chaque jour ; `"right"`/`"left"` pour le fixer), cadre rond, diamètre visible de `VIEW_START = 1.6` à `VIEW_END = 3` fois la largeur de l'œil en `STEPS = 10` essais. `VIEW_END` doit être identique dans `tools/bbg/make_eye_images.py` (l'image contient exactement cette vue) ; au-delà de ~3, l'autre œil entre dans le cadre. Source : portraits BBG de 256 px, où un œil mesure environ 15 à 25 px.
-- `js/modes/citystates.js` : aucun indice supplémentaire après un essai raté. Case « Mode challenger » cochée par défaut (état mémorisé dans le navigateur) : emblème en gris uniforme (`iconGrey`), couleurs affichées à la victoire. Suggestions de saisie sans icône (sinon la liste permettrait de comparer les formes).
+- `js/modes/citystates.js` : bonus de la cité-État affiché après `BONUS_AFTER = 5` essais, nom et alias masqués (texte complet à la victoire). Case « Mode challenger » cochée par défaut (état mémorisé dans le navigateur) : emblème en gris uniforme (`iconGrey`), couleurs affichées à la victoire. Suggestions de saisie sans icône (sinon la liste permettrait de comparer les formes).
 - `js/modes/techscivics.js` : `BLUR_START = 24` (px), `STEPS = 8` ; réponse tirée parmi les technologies et les dogmes réunis. Suggestions de saisie sans icône.
 - `js/modes/improvements.js` : `BLUR_START = 10` (px), `STEPS = 6`, flou plus léger que Portrait et Technologies. Suggestions de saisie sans icône.
 - `js/modes/son.js` : les sons sont les seuls indices, du plus général au plus parlant : déplacement dès le départ, attaque après `UNLOCK.attack = 2` essais ratés, sélection après `UNLOCK.select = 4` ; rien d'autre n'apparaît après un essai raté, l'icône de l'unité s'affiche à la victoire. Les sons sont joués par l'API Web Audio (pas d'élément `<audio>` dont le `src` serait visible dans l'inspecteur), au volume `VOLUME = 0.5` (amplitude des fichiers divisée par 2, environ -6 dB). Les unités uniques restent proposées à la saisie mais ne sont jamais la réponse.
@@ -267,6 +269,6 @@ Valeurs par défaut arbitraires, en tête de fichier :
 
 - **Triche** : la réponse est calculée dans le navigateur ; les outils de développement permettent de la retrouver. Inhérent à un site statique. Les noms opaques des images (« Noms des images ») et le hash de la réponse dans le `localStorage` (`answerKey`) évitent seulement qu'elle se lise d'un coup d'œil dans l'inspecteur : le code du tirage et les données restent publics. Les indices en image (flou, gris, rotation, zoom, recadrage de l'œil) sont dessinés sur un `<canvas>` par `js/core/clue.js`, donc l'inspecteur ne montre ni l'image nette ni un filtre CSS à retirer ; mais le fichier d'origine reste téléchargé et visible dans l'onglet Réseau.
 - **Silhouette** : l'image doit avoir un fond transparent, sinon tout le cadre devient noir. Sans `silhouetteFocus`, le point de zoom aléatoire peut tomber dans le vide au début.
-- **Masquage des descriptions** : insensible à la casse mais pas aux accents (« Zeta » ne masque pas « Zêta ») ; ajouter les variantes dans `aliases` ou `maskWords`.
+- **Masquage du bonus des cités-États** : seuls `name` et `aliases` sont masqués, insensible à la casse mais pas aux accents. Les autres mots qui désignent la cité-État (adjectif, aménagement exclusif) restent visibles.
 - **Progression** : stockée dans le `localStorage` du navigateur, donc propre à chaque appareil.
 - **Droits** : les portraits (issus du site BBG) et les textes du jeu appartiennent à leurs ayants droit, de même que les sons du mode Unité s'ils sont tirés du jeu.
