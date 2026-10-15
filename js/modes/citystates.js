@@ -1,8 +1,10 @@
 /**
  * Mode "Cités-État": the icon of a city-state is shown; the player types
  * city-state names until the right one is found. After BONUS_AFTER guesses,
- * the city-state's bonus (`bonus`, text of the BBG page) is shown under the
- * icon, with the city-state's `name` and `aliases` masked (case-insensitive,
+ * a button unlocks the city-state's bonus (`bonus`, text of the BBG page):
+ * the player chooses whether to show it. Once shown, it stays shown for the
+ * day (kept in localStorage per date). It is displayed under the icon, with
+ * the city-state's `name` and `aliases` masked (case-insensitive,
  * whole words; e.g. "exclusives à Zanzibar"). Other words that point to the
  * city-state (an adjective, a unique improvement) are not masked. The text
  * is shown unmasked once the city-state is found.
@@ -33,6 +35,15 @@ const CHALLENGE_KEY = "civdle:citystates:challenge";
 // Number of guesses after which the bonus is shown (asked by the site owner).
 const BONUS_AFTER = 5;
 const MASK = "▇▇▇";
+const BONUS_KEY = "civdle:citystates:bonus:"; // + dateStr
+
+function loadBonusShown(dateStr) {
+  try { return localStorage.getItem(BONUS_KEY + dateStr) === "1"; } catch (_) { return false; }
+}
+
+function saveBonusShown(dateStr) {
+  try { localStorage.setItem(BONUS_KEY + dateStr, "1"); } catch (_) { /* ignore */ }
+}
 
 function escapeRegExp(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -61,7 +72,7 @@ function saveChallenge(on) {
 export default {
   id: "citystates",
   label: "Cités-État",
-  hint: `Retrouve la cité-État à partir de son emblème. Son bonus s'affiche après ${BONUS_AFTER} essais.`,
+  hint: `Retrouve la cité-État à partir de son emblème. Après ${BONUS_AFTER} essais, tu peux afficher son bonus.`,
   pool: "cityStates",
   suggestionImages: false,
   texts: {
@@ -80,6 +91,7 @@ export default {
       <div class="cs-bonus"></div>`;
     ctx.csImg = ctx.els.clue.querySelector("img");
     ctx.csBonus = ctx.els.clue.querySelector(".cs-bonus");
+    ctx.bonusShown = loadBonusShown(ctx.dateStr);
     ctx.csImg.addEventListener("contextmenu", (e) => e.preventDefault());
     const box = ctx.els.clue.querySelector(".toggle input");
     box.checked = loadChallenge();
@@ -101,17 +113,27 @@ export default {
     box.innerHTML = "";
     if (!ctx.answer.bonus) return;
     const n = ctx.state.guesses.length;
-    if (ctx.state.won || n >= BONUS_AFTER) {
+    if (ctx.state.won || ctx.bonusShown) {
       const q = document.createElement("blockquote");
       q.textContent = ctx.state.won ? ctx.answer.bonus : maskBonus(ctx.answer);
       box.appendChild(q);
+      return;
+    }
+    const btn = document.createElement("button");
+    btn.type = "button";
+    if (n >= BONUS_AFTER) {
+      btn.textContent = "Voir le bonus de la cité-État";
+      btn.addEventListener("click", () => {
+        ctx.bonusShown = true;
+        saveBonusShown(ctx.dateStr);
+        this.update(ctx);
+      });
     } else {
       const left = BONUS_AFTER - n;
-      const p = document.createElement("p");
-      p.className = "more";
-      p.textContent = `Bonus de la cité-État dans ${left} essai${left > 1 ? "s" : ""}`;
-      box.appendChild(p);
+      btn.disabled = true;
+      btn.textContent = `Indice : bonus de la cité-État (dans ${left} essai${left > 1 ? "s" : ""})`;
     }
+    box.appendChild(btn);
   },
 
   renderGuess: (ctx, cityState) => defaultGuessRow(cityState, ctx.answer),
