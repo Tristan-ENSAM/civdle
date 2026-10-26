@@ -3,7 +3,7 @@
   "timezone": "Europe/Paris",
   "epoch": "2026-01-01",
   "salt": "2bc1128a8f66bd57",
-  "feedbackEndpoint": "",
+  "feedbackEndpoint": "https://formspree.io/f/xwlllbvv",
   "eras": [],
   "classicAttributes": [
     {
