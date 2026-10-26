@@ -4,7 +4,7 @@
  * link can point directly to a mode. The site title links to #accueil, the
  * summary of the modes (js/home.js); an empty or unknown hash still opens the
  * first mode. Display settings (gear button) are in js/core/settings.js,
- * the visitor feedback form (footer) in js/core/feedback.js.
+ * the visitor feedback form (speech bubble) in js/core/feedback.js.
  */
 import { loadData } from "./core/data.js";
 import { dateInTimezone, pickDaily } from "./core/daily.js";

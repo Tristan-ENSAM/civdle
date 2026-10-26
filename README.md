@@ -21,7 +21,7 @@ Le bouton « Copier le résultat » utilise l'API presse-papiers, qui exige HTTP
 
 ## Avis des visiteurs
 
-Le bouton « Donner un avis » (pied de page) ouvre un formulaire envoyé à un service externe, le site n'ayant pas de serveur. L'adresse du formulaire est `feedbackEndpoint` dans `data/config.json` ; tant qu'elle est vide, le bouton est masqué.
+Le bouton « Donner un avis » (bulle dans le bandeau du haut, à côté de l'engrenage) ouvre un formulaire envoyé à un service externe, le site n'ayant pas de serveur. L'adresse du formulaire est `feedbackEndpoint` dans `data/config.json` ; tant qu'elle est vide, le bouton est masqué.
 
 Le code (`js/core/feedback.js`) suit le format de Formspree : créer un formulaire sur formspree.io, puis copier son adresse (`https://formspree.io/f/<id>`) dans `feedbackEndpoint`. Les messages arrivent alors par e-mail et dans le tableau de bord Formspree. Champs envoyés : `message`, `email` (facultatif), `mode` (onglet ouvert), `_gotcha` (piège à robots).
 

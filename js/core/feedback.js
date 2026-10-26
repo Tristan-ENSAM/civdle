@@ -1,5 +1,6 @@
 /**
- * Visitor feedback form (button "Donner un avis" in the footer, index.html).
+ * Visitor feedback form (speech bubble button "Donner un avis" in the top
+ * bar, next to the settings gear, index.html).
  *
  * The site has no server, so the form is sent to an external form service
  * whose URL is `config.feedbackEndpoint` (data/config.json). It is written for
