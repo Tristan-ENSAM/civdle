@@ -366,5 +366,28 @@ footer { text-align: center; color: var(--muted); font-size: .75rem; padding: 0 
 footer p { margin: 6px 0; }
 footer a { color: var(--gold); }
 footer a:hover { color: var(--gold-lt); }
-.other-dle { font-size: .85rem; }
+/* "Tu en veux plus ?" panel: links to other -dle games */
+.other-dle {
+  max-width: 460px; margin: 8px auto 20px; padding: 16px 20px 18px;
+  background: linear-gradient(180deg, var(--panel-hi) 0%, #0A1C2C 100%);
+  border: 1px solid var(--gold-dk); border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--bg), 0 12px 28px rgba(0, 0, 0, .45);
+}
+.other-dle-kicker { margin: 0; font-family: var(--serif); font-size: 1.05rem; color: var(--accent); }
+.other-dle h2 { margin: 2px 0 12px; font-family: var(--serif); font-weight: 600; font-size: 1.25rem; color: var(--gold-lt); }
+.other-dle ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 8px; }
+.other-dle a {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  width: 92px; padding: 8px 4px; border-radius: 8px;
+  color: var(--text); text-decoration: none; font-size: .85rem; font-weight: 600;
+}
+.other-dle a:hover, .other-dle a:focus-visible { color: #fff; background: rgba(41, 74, 108, .45); outline: none; }
+.other-dle a:hover svg { transform: scale(1.08); }
+.other-dle svg { width: 44px; height: 44px; transition: transform .15s; }
 
+@media (max-width: 420px) {
+  .other-dle { padding: 14px 10px 16px; }
+  .other-dle ul { gap: 4px; }
+  .other-dle a { width: 70px; padding: 8px 0; font-size: .76rem; }
+  .other-dle svg { width: 40px; height: 40px; }
+}
