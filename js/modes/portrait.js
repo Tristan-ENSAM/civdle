@@ -22,7 +22,7 @@ import { defaultGuessRow } from "../core/game.js";
 import { hashString, mulberry32 } from "../core/daily.js";
 import { createClue } from "../core/clue.js";
 
-const BLUR_START = 16;
+const BLUR_START = 20;
 const STEPS = 8;
 const ROTATIONS = [90, 180, 270];
 const CHALLENGE_KEY = "civdle:portrait:challenge";
