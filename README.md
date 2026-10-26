@@ -19,6 +19,12 @@ puis ouvrir http://localhost:8000.
 N'importe quel hébergement statique convient (GitHub Pages, Netlify, etc.) : il suffit de publier le dossier tel quel.
 Le bouton « Copier le résultat » utilise l'API presse-papiers, qui exige HTTPS (ou localhost) ; sinon une boîte de dialogue affiche le texte à copier.
 
+## Avis des visiteurs
+
+Le bouton « Donner un avis » (pied de page) ouvre un formulaire envoyé à un service externe, le site n'ayant pas de serveur. L'adresse du formulaire est `feedbackEndpoint` dans `data/config.json` ; tant qu'elle est vide, le bouton est masqué.
+
+Le code (`js/core/feedback.js`) suit le format de Formspree : créer un formulaire sur formspree.io, puis copier son adresse (`https://formspree.io/f/<id>`) dans `feedbackEndpoint`. Les messages arrivent alors par e-mail et dans le tableau de bord Formspree. Champs envoyés : `message`, `email` (facultatif), `mode` (onglet ouvert), `_gotcha` (piège à robots).
+
 ## Arborescence
 
 ```
@@ -42,7 +48,7 @@ img/icons/              icônes des quartiers et types d'unités
 js/main.js              chargement, onglets, routage (#classic, #portrait…, #accueil)
 js/home.js              sommaire des modes (#accueil, lien sur le titre « Civdle »)
 js/modes/icons.js       icônes des modes pour le sommaire (SVG dessinées pour le site)
-js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage, réglages)
+js/core/                moteur commun (tirage quotidien, saisie, sauvegarde, partage, réglages, avis)
 js/modes/               un fichier par mode + index.js (registre)
 tools/bbg/               génération des données depuis BBG + sources.json
 tools/csv2json.py       conversion CSV -> leaders.json

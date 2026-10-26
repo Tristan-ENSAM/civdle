@@ -36,7 +36,34 @@
     </label>
     <button type="button" class="dialog-close">Fermer</button>
   </dialog>
+  <dialog id="feedback" aria-labelledby="feedback-title">
+    <h2 id="feedback-title">Donner un avis</h2>
+    <form id="feedback-form">
+      <label class="field">
+        <span class="setting-label">Message</span>
+        <textarea name="message" rows="5" maxlength="2000" required placeholder="Une erreur dans un indice, une idée de mode, un bug…"></textarea>
+      </label>
+      <label class="field">
+        <span class="setting-label">E-mail <span class="setting-hint-inline">(facultatif, pour une réponse)</span></span>
+        <input type="email" name="email" autocomplete="email">
+      </label>
+      <!-- Honeypot: hidden from people, filled by some bots (Formspree drops those). -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <p class="feedback-status" role="status"></p>
+      <div class="dialog-actions">
+        <button type="button" class="dialog-close">Fermer</button>
+        <button type="submit" class="dialog-submit">Envoyer</button>
+      </div>
+    </form>
+  </dialog>
   <footer>
+    <p class="other-dle">Autres jeux en -dle :
+      <a href="https://pokedle.net/" target="_blank" rel="noopener">Pokédle</a> ·
+      <a href="https://loldle.net/" target="_blank" rel="noopener">LoLdle</a> ·
+      <a href="https://narutodle.net/" target="_blank" rel="noopener">Narutodle</a> ·
+      <a href="https://onepiecedle.net/" target="_blank" rel="noopener">Onepiecedle</a>
+    </p>
+    <p><button type="button" id="feedback-open" class="link-btn" hidden>Donner un avis</button></p>
     <p>Site de fans non officiel, sans lien avec Firaxis Games ni 2K.</p>
   </footer>
   <script type="module" src="js/main.js"></script>

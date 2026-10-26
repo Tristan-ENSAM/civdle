@@ -3,7 +3,8 @@
  * The selected mode is kept in the URL hash (#classic, #portrait, …) so a
  * link can point directly to a mode. The site title links to #accueil, the
  * summary of the modes (js/home.js); an empty or unknown hash still opens the
- * first mode. Display settings (gear button) are in js/core/settings.js.
+ * first mode. Display settings (gear button) are in js/core/settings.js,
+ * the visitor feedback form (footer) in js/core/feedback.js.
  */
 import { loadData } from "./core/data.js";
 import { dateInTimezone, pickDaily } from "./core/daily.js";
@@ -12,6 +13,7 @@ import { mountMode } from "./core/game.js";
 import modes from "./modes/index.js";
 import { renderHome, HOME_ID } from "./home.js";
 import { initSettings } from "./core/settings.js";
+import { initFeedback } from "./core/feedback.js";
 
 async function main() {
   initSettings();
@@ -27,6 +29,7 @@ async function main() {
     return;
   }
   const { config } = data;
+  initFeedback(config);
   // Answer pool of a mode: the leaders, unless the mode names another pool.
   const poolOf = (m) => (m.pool ? data[m.pool] ?? [] : data.leaders);
   document.title = config.siteTitle ?? "Civdle";
