@@ -1,20 +1,18 @@
 /**
- * Mode "Unité": three sounds of a military unit, taken from the game, are the
+ * Mode "Unité": two sounds of a military unit, taken from the game, are the
  * clues; the player types unit names until the right one is found. Nothing
  * else appears after a wrong guess. The unit icon is shown once the unit is
  * found (win panel). The mode was named "Son": its id stays "son" (URL hash,
  * stored progress and daily draw are unchanged).
  *
- * The sounds go from the most general to the most telling (SOUNDS): the
- * movement sound is available from the start, the attack sound after
- * UNLOCK.attack wrong guesses, the selection sound after UNLOCK.select. In the
- * game, movement and attack sounds are often shared by a whole class of units
- * (foot soldiers, horsemen, ships...); the selection sound is specific to the
- * unit. Every sound is available once the unit is found. Thresholds are
- * arbitrary defaults, to adjust.
+ * Clue order (SOUNDS): the selection sound is available from the start, the
+ * attack sound after UNLOCK.attack wrong guesses. Every sound is available
+ * once the unit is found. Thresholds are arbitrary defaults, to adjust. The
+ * movement sounds of audio/units/ (`sounds.move` in data/units.json) are no
+ * longer played.
  *
  * Pool: the military units of the BBG site (data/units.json, written by
- * tools/bbg/build_units.py). Only units with all three `sounds` can be the
+ * tools/bbg/build_units.py). Only units with the sounds of SOUNDS can be the
  * answer of the day: the files of audio/units/ cover the non-unique units only
  * (see build_units.py). Without any, the mode shows a notice. Unique units stay
  * in the guess list.
@@ -31,9 +29,8 @@ import { defaultGuessRow } from "../core/game.js";
 
 /** Clue order: key in `sounds`, button label. */
 const SOUNDS = [
-  ["move", "Déplacement"],
-  ["attack", "Attaque"],
   ["select", "Sélection"],
+  ["attack", "Attaque"],
 ];
 
 /**
@@ -43,7 +40,7 @@ const SOUNDS = [
 const VOLUME = 0.5;
 
 /** Wrong guesses needed before a sound can be played. */
-const UNLOCK = { move: 0, attack: 2, select: 4 };
+const UNLOCK = { select: 0, attack: 2 };
 
 /** Number of wrong guesses before `kind` unlocks (0 once unlocked). */
 export function guessesBeforeUnlock(kind, nGuesses, won) {
